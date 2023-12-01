@@ -1,0 +1,6 @@
+165.154.162.102 unknown unknown [11/28 15:25:20 UTC] "GET /" 404 0 "" "null"
+165.154.162.102 unknown unknown [11/28 15:25:29 UTC] "GET /favicon.ico" 404 0 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"
+165.154.162.102 unknown unknown [11/28 15:25:31 UTC] "GET /robots.txt" 404 0 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"
+165.154.162.102 unknown unknown [11/28 15:25:41 UTC] "GET /sitemap.xml" 404 0 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"
+165.154.162.102 unknown unknown [11/28 15:25:44 UTC] "GET /Tb5q/" 200 247899 "beacon beacon stager x86" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"
+165.154.162.102 unknown unknown [11/28 15:25:51 UTC] "GET /iVGW/" 200 307271 "beacon beacon stager x64" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"

