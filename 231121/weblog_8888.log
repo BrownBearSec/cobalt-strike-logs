@@ -1,0 +1,5 @@
+162.142.125.215 unknown unknown [11/21 21:28:09 UTC] "GET /" 404 0 "" "null"
+162.142.125.215 unknown unknown [11/21 21:28:12 UTC] "GET /" 404 0 "" "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)"
+162.142.125.215 unknown unknown [11/21 21:28:12 UTC] "PRI *" 400 0 "" "null"
+162.142.125.215 unknown unknown [11/21 21:28:16 UTC] "GET /aaa9/" 200 247877 "beacon beacon stager x86" "Go-http-client/1.1"
+162.142.125.215 unknown unknown [11/21 21:28:16 UTC] "GET /aab9/" 200 307271 "beacon beacon stager x64" "Go-http-client/1.1"
