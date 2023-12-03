@@ -1,0 +1,19 @@
+12/01 12:40:57 UTC [output]
+beacon exit.
+
+12/01 12:40:57 UTC [output]
+received output:
+ERROR: GetCurrentForest : Exception calling "GetCurrentForest" with "0" argument(s): "El formato del nombr
+ERROR: e de dominio especificado no es válido.
+ERROR: "
+ERROR: 
+ERROR: At line:4344 char:96
+ERROR: +             $ForestObject = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest <
+ERROR: <<< ()
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+
+
+12/01 12:41:00 UTC [input] <y> exit
+12/01 12:41:00 UTC [task] <> Tasked beacon to exit
