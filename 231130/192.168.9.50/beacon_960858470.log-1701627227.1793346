@@ -1,0 +1,9 @@
+11/30 10:27:07 UTC [metadata] 201.148.22.37 <- 192.168.9.50; computer: PARAMUNICIPALES; user: MSSQLSERVER; process: rundll32.exe; pid: 8184; os: Windows; version: 6.3; build: 9600; beacon arch: x64 (x64)
+11/30 10:27:51 UTC [task] <T1029> Tasked beacon to become interactive
+11/30 10:28:07 UTC [checkin] host called home, sent: 16 bytes
+11/30 10:56:17 UTC [input] <y> exit
+11/30 10:56:17 UTC [task] <> Tasked beacon to exit
+11/30 10:56:17 UTC [checkin] host called home, sent: 8 bytes
+11/30 10:56:18 UTC [output]
+beacon exit.
+
