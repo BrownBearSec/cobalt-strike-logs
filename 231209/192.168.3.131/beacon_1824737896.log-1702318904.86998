@@ -1,0 +1,4 @@
+12/09 02:56:27 UTC [metadata] 51.79.236.56 <- 192.168.3.131; computer: DESKTOP-PESL5DR; user: Administrator *; process: Wy1.exe; pid: 1752; os: Windows; version: 10.0; build: 22621; beacon arch: x86 (x64)
+12/09 02:57:19 UTC [checkin] host called home, sent: 12 bytes
+12/09 02:57:27 UTC [input] <dog11> sleep 1
+12/09 02:57:27 UTC [task] <T1029> Tasked beacon to sleep for 1s
