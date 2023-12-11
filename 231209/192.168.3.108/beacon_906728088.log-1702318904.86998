@@ -1,0 +1,5 @@
+12/09 02:57:07 UTC [metadata] 113.200.213.53 <- 192.168.3.108; computer: ATONE°; user: 77064; process: Wy1.exe; pid: 22804; os: Windows; version: 10.0; build: 22621; beacon arch: x86 (x64)
+12/09 02:57:32 UTC [input] <dog11> sleep 1
+12/09 02:57:32 UTC [task] <T1029> Tasked beacon to sleep for 1s
+12/09 02:58:00 UTC [checkin] host called home, sent: 28 bytes
+12/09 02:58:13 UTC [checkin] host called home, sent: 19 bytes
