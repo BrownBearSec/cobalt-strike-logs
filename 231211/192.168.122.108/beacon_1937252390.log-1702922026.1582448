@@ -1,0 +1,3 @@
+12/11 10:19:02 UTC [metadata] 35.230.174.91 <- 192.168.122.108; computer: AZURE-PC; user: azure *; process: 70e28fd37d5c47adef1a0e97dbcab7e932d1b5e627c; pid: 2360; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+12/11 10:21:47 UTC [input] <jhc> shell curl ipinfo.io
+12/11 10:21:47 UTC [task] <T1059> Tasked beacon to run: curl ipinfo.io
