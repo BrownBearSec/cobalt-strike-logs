@@ -1,0 +1,7 @@
+12/10 17:50:57 UTC [metadata] 118.99.57.43 <- 118.99.57.43; computer: DESKTOP-1R1OK2U; user: Administrator *; process: jhc.exe; pid: 13988; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/10 17:52:43 UTC [input] <jhc> exit
+12/10 17:52:43 UTC [task] <> Tasked beacon to exit
+12/10 17:52:44 UTC [checkin] host called home, sent: 8 bytes
+12/10 17:52:44 UTC [output]
+beacon exit.
+
