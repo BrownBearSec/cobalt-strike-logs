@@ -1,0 +1,3 @@
+12/11 10:19:32 UTC [metadata] 34.82.55.36 <- 172.16.1.2; computer: LOUISE-PC; user: Louise *; process: tmpks1o5prh.exe; pid: 2860; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+12/11 10:23:46 UTC [input] <jhc> shell curl ipinfo.io
+12/11 10:23:46 UTC [task] <T1059> Tasked beacon to run: curl ipinfo.io
