@@ -1,0 +1,2 @@
+219.134.115.92 unknown unknown [04/30 03:24:48 UTC] "GET /a" 200 196428 "page Scripted Web Delivery (powershell)" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
+219.134.115.92 unknown unknown [04/30 03:24:49 UTC] "GET /favicon.ico" 404 0 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36"
