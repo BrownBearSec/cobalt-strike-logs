@@ -1,0 +1,4 @@
+223.73.66.235 unknown unknown [12/21 17:55:49 UTC] "GET /jquery-3.3.2.slim.min.js" 200 267252 "beacon beacon stager x64" "Mozilla/5.0 (Windows NT 11.0; Win32; x86) AppleWebKit/531.26 (KHTML, like Gecko) Chrome/92.0.4615.117 Safari/537.11"
+219.135.130.158 unknown unknown [12/21 17:59:57 UTC] "GET /jquery-3.3.2.slim.min.js" 200 267252 "beacon beacon stager x64" "Mozilla/5.0 (Windows NT 11.0; Win32; x86) AppleWebKit/531.26 (KHTML, like Gecko) Chrome/92.0.4615.117 Safari/537.11"
+23.95.107.90 unknown unknown [12/21 18:41:28 UTC] "GET /" 404 0 "" "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)"
+54.194.231.108 unknown unknown [12/21 18:44:00 UTC] "GET /.git/config" 404 0 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36 OPR/62.0.3331.72"
