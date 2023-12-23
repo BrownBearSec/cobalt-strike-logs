@@ -1,0 +1,4 @@
+12/20 01:46:12 UTC [metadata] 120.197.64.101 <- 192.168.11.1; computer: LAPTOP-P9197NDV; user: jufan; process: IE11-Mfce.exe; pid: 21768; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/20 01:46:18 UTC [input] <s09> sleep 1
+12/20 01:46:18 UTC [task] <T1029> Tasked beacon to sleep for 1s
+12/20 01:46:26 UTC [checkin] host called home, sent: 16 bytes
