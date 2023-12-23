@@ -1,0 +1,7 @@
+12/21 17:55:57 UTC [metadata] 223.73.66.235 <- 192.168.11.1; computer: LAPTOP-P9197NDV; user: jufan; process: IE11-Mfc.exe; pid: 30068; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+12/21 17:55:53 UTC [input] <s09> exit
+12/21 17:55:53 UTC [task] <> Tasked beacon to exit
+12/21 17:56:07 UTC [checkin] host called home, sent: 8 bytes
+12/21 17:56:07 UTC [output]
+beacon exit.
+
