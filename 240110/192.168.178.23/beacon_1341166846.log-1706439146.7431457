@@ -1,0 +1,4 @@
+01/10 00:57:56 UTC [metadata] 111.193.129.109 <- 192.168.178.23; computer: DC-WIN7; user: Tb; process: rundll32.exe; pid: 2228; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+01/10 00:57:51 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/10 00:57:52 UTC [note] Bid: 1341166846  NT: 6.1
+01/10 00:57:52 UTC [checkin] host called home, sent: 16 bytes
