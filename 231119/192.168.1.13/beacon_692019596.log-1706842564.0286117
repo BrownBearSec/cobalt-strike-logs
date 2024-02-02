@@ -1,0 +1,23 @@
+11/19 00:00:05 UTC [checkin] host called home, sent: 48 bytes
+11/19 00:14:07 UTC [input] <admin1> shell whoami
+11/19 00:14:07 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 00:14:13 UTC [checkin] host called home, sent: 37 bytes
+11/19 00:14:19 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+11/19 00:14:23 UTC [input] <admin1> getuid
+11/19 00:14:23 UTC [task] <> Tasked beacon to get userid
+11/19 00:14:24 UTC [checkin] host called home, sent: 8 bytes
+11/19 00:14:25 UTC [output]
+You are NOT-FOUND-404\kaeiy
+
+11/19 00:27:21 UTC [input] <admin1> shell whoami
+11/19 00:27:21 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 00:27:23 UTC [checkin] host called home, sent: 37 bytes
+11/19 00:27:23 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
