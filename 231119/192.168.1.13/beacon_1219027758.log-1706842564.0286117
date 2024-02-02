@@ -1,0 +1,7 @@
+11/19 05:56:01 UTC [metadata] 23.158.104.160 <- 192.168.1.13; computer: NOT-FOUND-404; user: kaeiy *; process: rundll32.exe; pid: 8224; os: Windows; version: 10.0; build: 19045; beacon arch: x64 (x64)
+11/19 05:55:58 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/19 05:55:58 UTC [note] Bid: 1219027758  NT: 10.0
+11/19 05:55:58 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 05:56:36 UTC [input] <admin1> exit
+11/19 05:56:36 UTC [task] <> Tasked beacon to exit
+11/19 05:57:00 UTC [checkin] host called home, sent: 40 bytes
