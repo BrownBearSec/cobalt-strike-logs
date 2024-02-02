@@ -1,0 +1,6 @@
+11/19 05:10:41 UTC [metadata] 23.158.104.160 <- 192.168.1.13; computer: NOT-FOUND-404; user: kaeiy *; process: artifact_x64.exe; pid: 9812; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/19 05:10:35 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/19 05:10:35 UTC [note] Bid: 658276860  NT: 6.2
+11/19 05:10:35 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 05:10:40 UTC [input] <admin1> sleep 0
+11/19 05:10:40 UTC [task] <T1029> Tasked beacon to become interactive
