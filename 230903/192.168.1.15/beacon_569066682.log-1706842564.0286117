@@ -1,0 +1,10 @@
+09/03 15:26:38 UTC [metadata] unknown <- 192.168.1.15; computer: NOT-FOUND-404; user: kaeiy; process: beacon_x64.exe; pid: 19484; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+09/03 15:26:30 UTC [checkin] host called home, sent: 8 bytes
+09/03 15:26:42 UTC [input] <neo> shell whoami
+09/03 15:26:42 UTC [task] <T1059> Tasked beacon to run: whoami
+09/03 15:27:30 UTC [checkin] host called home, sent: 37 bytes
+09/03 15:27:30 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
