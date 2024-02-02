@@ -1,0 +1,13 @@
+11/19 03:46:51 UTC [metadata] 23.158.104.160 <- 192.168.1.13; computer: NOT-FOUND-404; user: kaeiy; process: beacon_x64.exe; pid: 17308; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/19 03:46:44 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/19 03:46:44 UTC [note] Bid: 1147607284  NT: 6.2
+11/19 03:46:44 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 03:48:51 UTC [metadata] 23.158.104.160 <- 192.168.1.13; computer: NOT-FOUND-404; user: kaeiy; process: beacon_x64.exe; pid: 17308; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+11/19 03:48:49 UTC [checkin] host called home, sent: 32 bytes
+11/19 03:48:50 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/19 03:48:50 UTC [note] Bid: 1147607284  NT: 6.2
+11/19 03:48:50 UTC [task] <T1029> Tasked beacon to become interactive
+11/19 03:48:50 UTC [checkin] host called home, sent: 32 bytes
+11/19 03:49:00 UTC [input] <admin1> exit
+11/19 03:49:00 UTC [task] <> Tasked beacon to exit
+11/19 03:49:00 UTC [checkin] host called home, sent: 8 bytes
